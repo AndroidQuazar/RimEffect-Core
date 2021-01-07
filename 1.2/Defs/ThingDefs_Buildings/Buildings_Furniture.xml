@@ -249,6 +249,8 @@
           <li>EndTable</li>
           <li>Dresser</li>
 		  <li>RE_PrefabDresser</li>
+		  <li>RE_PrefabEndTable</li>
+		  <li>RE_PrefabEndTableWithLamp</li>
         </linkableFacilities>
       </li>
     </comps>
@@ -303,6 +305,8 @@
           <li>EndTable</li>
           <li>Dresser</li>
 		  <li>RE_PrefabDresser</li>
+		  <li>RE_PrefabEndTable</li>
+		  <li>RE_PrefabEndTableWithLamp</li>
         </linkableFacilities>
       </li>
     </comps>
@@ -586,6 +590,7 @@
 	  <drawSize>(2,2)</drawSize>
 	  <shaderType>CutoutComplex</shaderType>
     </graphicData>
+	<uiIconScale>0.65</uiIconScale>
     <statBases>
       <MaxHitPoints>75</MaxHitPoints>
       <WorkToBuild>600</WorkToBuild>
@@ -629,6 +634,67 @@
     </comps>
     <staticSunShadowHeight>0</staticSunShadowHeight>
     <castEdgeShadows>false</castEdgeShadows>
+  </ThingDef>
+  
+  <ThingDef ParentName="BedWithQualityBase">
+    <defName>RE_PrefabMedicalBed</defName>
+    <label>prefab medical bed</label>
+    <description>A bed specially designed for use in hospitals. Adjustable for a patient and festooned with built-in equipment, it improves medical outcomes over normal beds.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabMedicalBed/PrefabMedicalBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <castEdgeShadows>True</castEdgeShadows>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+      <Mass>35</Mass>
+      <Flammability>1.0</Flammability>
+      <BedRestEffectiveness>1</BedRestEffectiveness>
+      <Comfort>0.90</Comfort>
+      <ImmunityGainSpeedFactor>1.21</ImmunityGainSpeedFactor>
+      <MedicalTendQualityOffset>0.20</MedicalTendQualityOffset>
+      <SurgerySuccessChanceFactor>1.2</SurgerySuccessChanceFactor>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>VitalsMonitor</li>
+          <li>EndTable</li>
+          <li>Dresser</li>
+		  <li>RE_PrefabDresser</li>
+		  <li>RE_PrefabEndTable</li>
+		  <li>RE_PrefabEndTableWithLamp</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <size>(1,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>80</costStuffCount>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <RE_PrefabComponent>5</RE_PrefabComponent>
+    </costList>
+    <building>
+      <bed_showSleeperBody>False</bed_showSleeperBody>
+      <bed_healPerDay>12</bed_healPerDay>
+      <bed_defaultMedical>true</bed_defaultMedical>
+      <buildingSizeCategory>Small</buildingSizeCategory>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <researchPrerequisites>
+      <li>RE_ComplexPrefabrication</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <techLevel>Spacer</techLevel>
+    <uiIconScale>0.90</uiIconScale>
   </ThingDef>
   
 </Defs>
