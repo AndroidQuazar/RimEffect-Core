@@ -177,7 +177,7 @@
     </costList>
     <comps>
       <li Class="CompProperties_Power">
-        <compClass>CompPowerPlantSolar</compClass>
+        <compClass>RimEffect.CompPowerPlantSolarCollectors</compClass>
         <basePowerConsumption>-1</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>
@@ -237,7 +237,7 @@
     </costList>
     <comps>
       <li Class="CompProperties_Power">
-        <compClass>CompPowerPlant</compClass>
+        <compClass>RimEffect.CompPowerFusionCell</compClass>
         <basePowerConsumption>-50</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>
