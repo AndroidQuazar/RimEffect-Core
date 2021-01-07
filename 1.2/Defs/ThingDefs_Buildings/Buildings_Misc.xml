@@ -9,7 +9,7 @@
     <graphicData>
       <texPath>Things/Building/Misc/GraveBodyBag/GraveBodyBagEmpty</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3,4)</drawSize>
+      <drawSize>(4,4)</drawSize>
     </graphicData>
     <constructEffect>ConstructDirt</constructEffect>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
@@ -33,7 +33,7 @@
       <fullGraveGraphicData>
         <texPath>Things/Building/Misc/GraveBodyBag/GraveBodyBagFull</texPath>
         <graphicClass>Graphic_Multi</graphicClass>
-        <drawSize>(3,4)</drawSize>
+        <drawSize>(4,4)</drawSize>
       </fullGraveGraphicData>
       <fixedStorageSettings>
         <filter>
