@@ -95,6 +95,9 @@
     <placeWorkers>
       <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
     </placeWorkers>
+    <researchPrerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </researchPrerequisites>
   </ThingDef>
   
 </Defs>
