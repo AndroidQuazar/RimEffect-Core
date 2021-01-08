@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Heavy charge blaster -->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>RE_Bullet_YMIRHeavyMassAccelerator</defName>
+    <label>heavy mass accelerator shot</label>
+    <graphicData>
+      <texPath>Things/Projectile/Shot_MassAccelerated_Large</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <speed>90</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef Abstract="True" ParentName="BaseGunWithQuality" Name="RE_Gun_MechHeavyMassAccelerator">
+    <label>heavy mass accelerator</label>
+    <description>A twin automatic mass accelerated cannon.</description>
+    <graphicData>
+      <texPath>Things/Pawn/YMIRmech/YMIRHeavyMassAccelerator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+		<drawSize>1.22</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+      <Mass>22</Mass>
+      <AccuracyTouch>0.18</AccuracyTouch>
+      <AccuracyShort>0.26</AccuracyShort>
+      <AccuracyMedium>0.26</AccuracyMedium>
+      <AccuracyLong>0.18</AccuracyLong>
+      <RangedWeapon_Cooldown>7.4</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <menuHidden>True</menuHidden>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <comps>
+      <li>
+        <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="RE_Gun_MechHeavyMassAccelerator">
+    <defName>RE_YMIRMassAccelerator</defName>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>RE_Bullet_YMIRHeavyMassAccelerator</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>29.9</range>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <burstShotCount>18</burstShotCount>
+        <soundCast>RE_Shot_YMIRCannon</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags Inherit='False'>
+      <li>RE_YMIRGun</li>
+    </weaponTags>
+  </ThingDef>
+
+
+</Defs>
