@@ -5,6 +5,16 @@
     <defName>RE_ColonialFloorTileSteel</defName>
     <label>colonial floor</label>
   </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>RE_EndTables</defName>
+    <label>end tables</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>RE_BedSideTables</defName>
+    <label>bedside tables</label>
+  </DesignatorDropdownGroupDef>
 
 
 </Defs>
