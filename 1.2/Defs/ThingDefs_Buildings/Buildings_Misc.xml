@@ -18,7 +18,7 @@
     <tickerType>Rare</tickerType>
     <canOverlapZones>false</canOverlapZones>
     <statBases>
-      <WorkToBuild>800</WorkToBuild>
+      <WorkToBuild>100</WorkToBuild>
       <MeditationFocusStrength>0.06</MeditationFocusStrength>
     </statBases>
     <passability>Standable</passability>
