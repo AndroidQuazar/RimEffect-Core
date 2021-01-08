@@ -89,7 +89,7 @@
   </ThingDef>
   
   <ThingDef ParentName="ArmorHelmetMakeableBase">
-    <defName>Apparel_PowerArmorHelmet</defName>
+    <defName>RE_Apparel_PowerArmorHelmet</defName>
     <label>alliance helmet</label>
     <description>An alliance helmet covering the entirety of the head, with a visor, often used by frontline alliance infantry.</description>
     <techLevel>Spacer</techLevel>
