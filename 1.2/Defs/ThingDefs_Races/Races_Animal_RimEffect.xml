@@ -4,7 +4,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>RE_Pyjak</defName>
     <label>squirrel</label>
-    <description>Pyjak, sometimes referred to as "space monkey", is a primitive species found on several planets including Eletania, Tuchanka, and Zorya. It is known for being intelligent enough to steal things, and is generally considered rodent.</description>
+    <description>A social monkey-like creature with extreme adaptability. These small clever creatures considered in most places to be an invasive nuisance, out-competing native life. Their curiosity often makes them an annoyance to colonies, as they will often steal various technological parts because they find them interesting.</description>
     <statBases>
       <MoveSpeed>5.1</MoveSpeed>
       <MarketValue>300</MarketValue>
@@ -149,7 +149,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>RE_Varren</defName>
     <label>varren</label>
-    <description>Varren is omnivore with a preference for living prey. Originally native to the krogan homeworld of Tuchanka, it is—like most life from Tuchanka—savage, clannish, and consummate survivors. It is a pack hunter when vulnerable prey is readily available and become scavenger when outnumbered or outclassed.</description>
+    <description>A sleek predator that looks like a cross between a canine and a snake. Sometimes referred to as "fishdogs" due to their scaly skin, they are vicious pack hunters. They are found on many worlds, and are usually considered an invasive species due to their extreme adaptability and rapid breeding cycle.</description>
     <statBases>
       <MoveSpeed>5.0</MoveSpeed>
       <MarketValue>600</MarketValue>
@@ -335,7 +335,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>RE_SpaceCow</defName>
     <label>space cow</label>
-    <description>A version of space cattle. Can be trained to haul things. Has a set of arms.</description>
+    <description>Named more due to their ecological niche than any visual resemblance, these peaceful herbivores occasionally display increased intelligence. They are extremely passive, often not even reacting to being attacked.\n\nPerhaps the strangest feature of this creature is the fact that in addition to its four legs, it also has two arms in the front. One biologist studying the creature remarked regarding the arms, "You can’t trust any animal that can milk itself."</description>
     <statBases>
       <MoveSpeed>3.2</MoveSpeed>
       <ComfyTemperatureMin>-10</ComfyTemperatureMin>

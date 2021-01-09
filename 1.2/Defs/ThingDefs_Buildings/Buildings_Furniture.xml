@@ -137,7 +137,7 @@
 	<ThingDef ParentName="ArtableFurnitureBase">
 		<defName>RE_PrefabDresser</defName>
 		<label>prefab dresser</label>
-		<description>Hi-tech dresser that provides comfort in bedrooms. Placing more than one prefab dresser near the same bed will have no effect.</description>
+		<description>A simple dresser designed to be quickly and easily assembled in the process of setting up a new colony. Gives a non-stacking comfort bonus to nearby beds.</description>
 		<graphicData>
 			<texPath>Things/Building/Furniture/PrefabDresser/PrefabDresser</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -195,7 +195,7 @@
 	<ThingDef ParentName="ArtableFurnitureBase">
 		<defName>RE_PrefabChair</defName>
 		<label>prefab chair</label>
-		<description>A comfortable and attractive chair in spacer style. Can be used at tables, work stations, and elsewhere.</description>
+		<description>A simple and comfortable armchair designed to be quickly and easily assembled in the process of setting up a new colony.</description>
 		<graphicData>
 			<texPath>Things/Building/Furniture/PrefabChair/PrefabChair</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -244,7 +244,7 @@
    <ThingDef ParentName="BedWithQualityBase">
     <defName>RE_PrefabBed</defName>
     <label>prefab bed</label>
-    <description>A cozy orthopedic mattress and sheets on a frame for resting.</description>
+    <description>A comfortable bed designed to be quickly and easily assembled in the process of setting up a new colony.</description>
     <graphicData>
       <texPath>Things/Building/Furniture/Beds/PrefabBedSingle</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -306,7 +306,7 @@
   <ThingDef ParentName="ArtableBedBase">
     <defName>RE_PrefabDoubleBed</defName>
     <label>prefab double bed</label>
-    <description>A prefab double-wide bed that fits two people.</description>
+    <description>A comfortable double bed designed to be quickly and easily assembled in the process of setting up a new colony.</description>
     <graphicData>
       <texPath>Things/Building/Furniture/Beds/PrefabBedDouble</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
