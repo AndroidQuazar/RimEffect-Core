@@ -218,9 +218,6 @@
     <smeltable>true</smeltable>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-      <li>
-        <compClass>CompColorable</compClass>
-      </li>
     </comps>
   </ThingDef>
   
@@ -254,17 +251,16 @@
           <li>Uranium</li>
         </disallowedThingDefs>
       </defaultIngredientFilter>
-	  <researchPrerequisite>RE_ComplexSpacerClothing</researchPrerequisite>
     </recipeMaker>
-	<tradeTags>
-      <li>RE_SpacerApparel</li>
-    </tradeTags>
   </ThingDef>
   
    <ThingDef ParentName="RE_SpacerApparelMakeableBase">
     <defName>RE_Apparel_Fatigues</defName>
     <label>fatigues</label>
     <description>General fatigues.</description>
+	<recipeMaker>
+      <researchPrerequisite>RE_ComplexSpacerClothing</researchPrerequisite>
+    </recipeMaker>
     <graphicData>
       <texPath>Things/Apparel/Fatigues/Fatigues</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -297,14 +293,72 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>RE_SpacerClothes</li>
+        <li>RE_SpacerApparel</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+	<tradeTags>
+      <li>RE_SpacerApparel</li>
+    </tradeTags>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+  <ThingDef ParentName="RE_SpacerApparelMakeableBase">
+    <defName>RE_Apparel_AllianceDressJacket</defName>
+	<label>alliance dress jacket</label>
+    <description>An elegant uniform of the alliance forces, often worn by officers and strategists, as well as the navy.</description>
+    <recipeMaker>
+      <researchPrerequisite>RE_AllianceArmoury</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+	    <Cloth>60</Cloth>
+		<Gold>2</Gold>
+	</costList>
+    <graphicData>
+      <texPath>Things/Apparel/AllianceDressJacket/AllianceDressJacket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>8000</WorkToMake>
+      <Mass>0.3</Mass>
+      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.60</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/AllianceDressJacket/AllianceDressJacket</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>RE_AllianceSpacerApparel</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+	<tradeTags>
+      <li>RE_AllianceSpacerApparel</li>
+    </tradeTags>
   </ThingDef>
 
 </Defs>

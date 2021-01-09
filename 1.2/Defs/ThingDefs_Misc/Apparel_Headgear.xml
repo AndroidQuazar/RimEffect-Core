@@ -89,7 +89,7 @@
   </ThingDef>
   
   <ThingDef ParentName="ArmorHelmetMakeableBase">
-    <defName>RE_Apparel_PowerArmorHelmet</defName>
+    <defName>RE_Apparel_AllianceHelmet</defName>
     <label>alliance helmet</label>
     <description>An alliance helmet covering the entirety of the head, with a visor, often used by frontline alliance infantry.</description>
     <techLevel>Spacer</techLevel>
@@ -173,6 +173,54 @@
     <comps>
       <li Class="CompProperties_BiocodableApparel"/>
     </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="RE_SpacerApparelMakeableBase">
+    <defName>RE_Apparel_AllianceOfficerHat</defName>
+    <label>alliance officer hat</label>
+    <description>An elegant hat of an Alliance officer.</description>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Apparel/AllianceDressJacket/AllianceOfficerHat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7, 0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>0.1</Mass>
+      <EquipDelay>0.8</EquipDelay>
+      <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.17</StuffEffectMultiplierInsulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.15</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/AllianceDressJacket/AllianceOfficerHat</wornGraphicPath>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>RE_AllianceSpacerApparel</li>
+      </tags>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>RE_AllianceArmoury</researchPrerequisite>
+    </recipeMaker>
+	<costList>
+	    <Cloth>35</Cloth>
+		<Gold>1</Gold>
+	</costList>
+	<tradeTags>
+      <li>RE_AllianceSpacerApparel</li>
+    </tradeTags>
   </ThingDef>
   
 </Defs>
