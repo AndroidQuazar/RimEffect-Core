@@ -256,6 +256,9 @@
       </defaultIngredientFilter>
 	  <researchPrerequisite>RE_ComplexSpacerClothing</researchPrerequisite>
     </recipeMaker>
+	<tradeTags>
+      <li>RE_SpacerApparel</li>
+    </tradeTags>
   </ThingDef>
   
    <ThingDef ParentName="RE_SpacerApparelMakeableBase">
