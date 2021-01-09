@@ -254,6 +254,7 @@
           <li>Uranium</li>
         </disallowedThingDefs>
       </defaultIngredientFilter>
+	  <researchPrerequisite>RE_ComplexSpacerClothing</researchPrerequisite>
     </recipeMaker>
   </ThingDef>
   
