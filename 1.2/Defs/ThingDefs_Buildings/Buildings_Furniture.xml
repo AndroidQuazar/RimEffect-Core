@@ -1069,4 +1069,106 @@
     </comps>
   </ThingDef>
   
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>RE_PrefabPlantPot</defName>
+    <label>prefab plant pot</label>
+    <description>Plant decorative flowers here to improve the mood of people nearby.</description>
+    <thingClass>Building_PlantGrower</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabPlantPot/PrefabPlantPot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.55, 0.35, 0.3)</volume>
+        <offset>(0, 0, -0.28)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.20</fillPercent>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Mass>2</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+	<costList>
+	    <RE_PrefabComponent>1</RE_PrefabComponent>
+	</costList>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <fertility>1.05</fertility>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <building>
+      <defaultPlantToGrow>Plant_Daylily</defaultPlantToGrow>
+      <sowTag>Decorative</sowTag>
+    </building>
+    <rotatable>false</rotatable>
+    <uiIconOffset>(0, -0.05)</uiIconOffset>
+    <researchPrerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </researchPrerequisites>
+	<techLevel>Spacer</techLevel>
+  </ThingDef>
+  
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>RE_PrefabLargePlantPot</defName>
+    <label>prefab large plant pot</label>
+    <description>Plant decorative flowers here to improve the mood of people nearby.</description>
+    <thingClass>Building_PlantGrower</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabLargePlantPot/PrefabLargePlantPot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.7, 0.1, 0.8)</volume>
+        <offset>(0, 0.5, -0.18)</offset>
+      </shadowData>
+	  <shaderType>CutoutComplex</shaderType>
+	  <drawSize>(1.12,1.12)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.25</fillPercent>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Mass>2</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+	<costList>
+	    <RE_PrefabComponent>1</RE_PrefabComponent>
+	</costList>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <fertility>1.1</fertility>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <building>
+      <defaultPlantToGrow>Plant_Daylily</defaultPlantToGrow>
+      <sowTag>Decorative</sowTag>
+    </building>
+    <rotatable>false</rotatable>
+    <uiIconOffset>(0, -0.05)</uiIconOffset>
+    <researchPrerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </researchPrerequisites>
+	<techLevel>Spacer</techLevel>
+  </ThingDef>
+  
 </Defs>
