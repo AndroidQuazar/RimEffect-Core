@@ -259,4 +259,131 @@
     </researchPrerequisites>
   </ThingDef>
   
+	<ThingDef ParentName="BuildingBase">
+		<defName>RE_ElementZeroReactor</defName>
+		<label>element zero reactor</label>
+		<description>A large reactor repurposed from a ship power core. Consumes element zero to produce large amounts of power. Can be overloaded, resulting in even larger power output at the cost of local radiation.\n\nNuclear reactor will quickly overheat and should be cooled at all times.\n\nCannot be placed outdoors.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Power/ElementZeroReactor/ElementZeroReactor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6,6)</drawSize>
+			<shadowData>
+				<volume>(6.03,1.0,5.25)</volume>
+				<offset>(0,0,-0.25)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.3,0,5.4,6)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>450</pathCost>
+		<blockWind>true</blockWind>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<fillPercent>1.0</fillPercent>
+		<blockLight>false</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>18000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+			<Beauty>-30</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(6,6)</size>
+		<costList>
+			<Plasteel>340</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Silver>10</Silver>
+		</costList>
+		<comps>
+		</comps>
+		<placeWorkers>
+		</placeWorkers>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+		</building>
+		<constructEffect>ConstructMetal</constructEffect>
+        <researchPrerequisites>
+          <li>RE_EezoPowerGeneration</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+	</ThingDef>
+	
+  <ThingDef ParentName="BuildingBase">
+    <defName>RE_FusionReactor</defName>
+    <label>fusion reactor</label>
+    <description>Produces power by consuming uranium. Must be periodically loaded with uranium fuel by hand.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Power/FusionReactor/FusionReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,8)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <fillPercent>1.0</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>8000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>-15</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <canOverlapZones>false</canOverlapZones>
+    <size>(4,7)</size>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <costList>
+      <Plasteel>150</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-5000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+        <soundAmbientProducingPower>ChemfuelFiredGenerator_Ambience</soundAmbientProducingPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>15.0</fuelConsumptionRate>
+        <fuelCapacity>100.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </fuelFilter>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(152,167,250,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>8</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>RE_FusionReactor</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+  </ThingDef>
+  
 </Defs>
