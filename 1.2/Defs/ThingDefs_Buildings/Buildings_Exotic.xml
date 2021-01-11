@@ -38,15 +38,12 @@
     <drawerType>MapMeshOnly</drawerType>
     <repairEffect>ConstructMetal</repairEffect>
     <forceDebugSpawnable>true</forceDebugSpawnable>
-    <uiIconScale>1.4</uiIconScale>
+    <uiIconScale>1.0</uiIconScale>
     <building>
       <claimable>false</claimable>
       <soundAmbient>ShuttleIdle_Ambience</soundAmbient>
       <destroySound>BuildingDestroyed_Metal_Big</destroySound>
     </building>
-    <inspectorTabs>
-      <li>ITab_ContentsTransporter</li>
-    </inspectorTabs>
     <comps>
     </comps>
 	<costList>
