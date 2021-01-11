@@ -98,7 +98,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>RE_PrefabComponent</defName>
     <label>prefabrication component</label>
-    <description>Miscellaneous gears, capacitors, circuit boards, tubes, wheels, sensors, wires, chips, processors, and other electronic and industrial parts. Necessary for assembling prefab structures.</description>
+    <description>Miscellaneous parts packed ingeniously together in order to frontload the work required to construct the final result. Prefab components are slow to create but exceptionally fast to work with, leading to their widespread use through almost every part of colonial life.</description>
     <graphicData>
       <texPath>Things/Item/Resource/ComponentPrefabrication</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -127,7 +127,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>RE_ElementZero</defName>
     <label>element zero</label>
-    <description>Incredibly rare and valuable element zero capsules.</description>
+    <description>Colloquially known as "eezo", this material is the backbone of much advanced technology. By running a current through it, it is able to raise or lower the mass within an affected field. The civilizations of the galaxy call this phenomenon "Mass Effect".</description>
     <graphicData>
       <texPath>Things/Item/Resource/ElementZero</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>

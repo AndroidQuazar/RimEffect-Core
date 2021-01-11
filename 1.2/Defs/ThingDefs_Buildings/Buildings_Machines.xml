@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>RE_Mechanoids_FENRISBase</defName>
+    <thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
+    <label>FENRIS charging station</label>
+    <description>A station for assembling and recharging FENRIS mechs.</description>
+    <graphicData>
+      <texPath>Things/Pawn/FENRISmech/FENRISRechargePlatform</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.5,0.3,0.7)</volume>
+        <offset>(0,0,-0.15)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.234375,0,0.515625,0.984375)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+    <blockWind>false</blockWind>
+    <rotatable>false</rotatable>
+    <fillPercent>0.1</fillPercent>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>6</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+      <bed_humanlike>false</bed_humanlike>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+    </building>
+    <costList>
+      <Steel>45</Steel>
+	  <Plasteel>20</Plasteel>
+      <RE_PrefabComponent>6</RE_PrefabComponent>
+	  <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+	  <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+		<pawnToSpawn>RE_Mechanoids_FENRIS</pawnToSpawn>
+		<allowedWorkTypes>
+			<li>Hauling</li>
+		</allowedWorkTypes>
+		<extraChargingPower>1600</extraChargingPower>
+		<hoursToRecharge>6</hoursToRecharge>
+	  </li>
+    </comps>
+    <designationCategory>Misc</designationCategory>
+    <researchPrerequisites>
+      <li>RE_ColonyDefenseForce</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
+ 
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>RE_Mechanoids_LOKIBase</defName>
+    <thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
+    <label>LOKI charging station</label>
+    <description>A station for assembling and recharging LOKI mechs.</description>
+    <graphicData>
+      <texPath>Things/Pawn/LOKICombatmech/LOKICombatRechargePlatform</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.5,0.3,0.7)</volume>
+        <offset>(0,0,-0.15)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.234375,0,0.515625,0.984375)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+    <blockWind>false</blockWind>
+    <rotatable>false</rotatable>
+    <fillPercent>0.1</fillPercent>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>6</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+      <bed_humanlike>false</bed_humanlike>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+    </building>
+    <costList>
+      <Steel>45</Steel>
+	  <Plasteel>20</Plasteel>
+      <RE_PrefabComponent>8</RE_PrefabComponent>
+	  <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+	  <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+		<pawnToSpawn>RE_Mechanoids_LOKI</pawnToSpawn>
+		<allowedWorkTypes>
+		</allowedWorkTypes>
+		<extraChargingPower>1200</extraChargingPower>
+		<spawnWithWeapon>RE_Gun_AlliancePistol</spawnWithWeapon>
+		<hoursToRecharge>24</hoursToRecharge>
+	  </li>
+    </comps>
+    <designationCategory>Misc</designationCategory>
+    <researchPrerequisites>
+      <li>RE_ColonyDefenseForce</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>RE_Mechanoids_YMIRBase</defName>
+    <thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
+    <label>YMIR charging station</label>
+    <description>A station for assembling and recharging YMIR mechs.</description>
+    <graphicData>
+      <texPath>Things/Pawn/YMIRmech/YMIRRechargePlatform</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.5,0.3,0.7)</volume>
+        <offset>(0,0,-0.15)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.234375,0,0.515625,0.984375)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+    <blockWind>false</blockWind>
+    <rotatable>false</rotatable>
+    <fillPercent>0.1</fillPercent>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>6</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+      <bed_humanlike>false</bed_humanlike>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+    </building>
+    <costList>
+      <Steel>145</Steel>
+	  <Plasteel>85</Plasteel>
+      <RE_PrefabComponent>16</RE_PrefabComponent>
+	  <ComponentSpacer>12</ComponentSpacer>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+	  <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+		<pawnToSpawn>RE_Mechanoids_YMIR</pawnToSpawn>
+		<allowedWorkTypes>
+		</allowedWorkTypes>
+		<extraChargingPower>2200</extraChargingPower>
+		<spawnWithWeapon>RE_YMIRMassAccelerator</spawnWithWeapon>
+		<hoursToRecharge>48</hoursToRecharge>
+	  </li>
+    </comps>
+    <designationCategory>Misc</designationCategory>
+    <researchPrerequisites>
+      <li>RE_YMIRMech</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+  </ThingDef>
+  
+
+</Defs>

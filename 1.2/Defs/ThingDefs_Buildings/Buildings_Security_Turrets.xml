@@ -236,7 +236,7 @@
       <texPath>Things/Projectile/Shot_MassAcceleratorTurret_Heavy</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
+	<thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <damageDef>Bomb</damageDef>
       <explosionRadius>1.9</explosionRadius>
@@ -269,6 +269,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <defaultProjectile>RE_Bullet_HeavyMassAccelerator</defaultProjectile>
         <warmupTime>0</warmupTime>
+		<forcedMissRadius>0.9</forcedMissRadius>
         <minRange>6.9</minRange>
         <range>35.9</range>
         <ticksBetweenBurstShots>32</ticksBetweenBurstShots>

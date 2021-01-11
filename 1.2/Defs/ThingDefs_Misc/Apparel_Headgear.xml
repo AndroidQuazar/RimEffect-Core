@@ -89,7 +89,7 @@
   </ThingDef>
   
   <ThingDef ParentName="ArmorHelmetMakeableBase">
-    <defName>Apparel_PowerArmorHelmet</defName>
+    <defName>RE_Apparel_AllianceHelmet</defName>
     <label>alliance helmet</label>
     <description>An alliance helmet covering the entirety of the head, with a visor, often used by frontline alliance infantry.</description>
     <techLevel>Spacer</techLevel>
@@ -145,6 +145,140 @@
         <li>RE_AllianceArmoury</li>
       </tags>
 	  <useWornGraphicMask>true</useWornGraphicMask>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+      </options>
+    </colorGenerator>
+    <thingSetMakerTags>
+      <li>RE_AllianceArmoury</li>
+    </thingSetMakerTags>
+    <comps>
+      <li Class="CompProperties_BiocodableApparel"/>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="RE_SpacerApparelMakeableBase">
+    <defName>RE_Apparel_AllianceOfficerHat</defName>
+    <label>alliance officer hat</label>
+    <description>An elegant hat of an Alliance officer.</description>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Apparel/AllianceDressJacket/AllianceOfficerHat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7, 0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>0.1</Mass>
+      <EquipDelay>0.8</EquipDelay>
+      <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.17</StuffEffectMultiplierInsulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.15</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/AllianceDressJacket/AllianceOfficerHat</wornGraphicPath>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>RE_AllianceSpacerApparel</li>
+      </tags>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>RE_AllianceArmoury</researchPrerequisite>
+    </recipeMaker>
+	<costList>
+	    <Cloth>35</Cloth>
+		<Gold>1</Gold>
+	</costList>
+	<tradeTags>
+      <li>RE_AllianceSpacerApparel</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>RE_Apparel_HeavyAllianceHelmet</defName>
+    <label>heavy alliance helmet</label>
+    <description>An alliance helmet covering the entirety of the head, with a visor, often used by specialised alliance infantry.</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>RE_AllianceArmoury</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>RE_ManufacturingBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/HeavyAllianceArmor/HeavyAllianceArmorHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <uiIconScale>1.25</uiIconScale>
+    <tradeTags>
+      <li>RE_AllianceArmoury</li>
+    </tradeTags>
+    <generateCommonality>2</generateCommonality>
+    <statBases>
+      <WorkToMake>28000</WorkToMake>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Mass>2</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.65</ArmorRating_Heat>
+      <Insulation_Cold>8</Insulation_Cold>
+      <Insulation_Heat>6</Insulation_Heat>
+      <EquipDelay>6</EquipDelay>
+    </statBases>
+    <costList>
+      <ComponentSpacer>3</ComponentSpacer>
+      <Plasteel>75</Plasteel>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/HeavyAllianceArmor/HeavyAllianceArmorHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <tags>
+        <li>RE_HeavyAllianceArmoury</li>
+      </tags>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
       <options>

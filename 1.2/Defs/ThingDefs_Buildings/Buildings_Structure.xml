@@ -71,14 +71,6 @@
         <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
       </blueprintGraphicData>
     </building>
-    <comps>
-      <li Class="CompProperties_MeditationFocus">
-        <statDef>MeditationFocusStrength</statDef>
-        <focusTypes>
-          <li>Minimal</li>
-        </focusTypes>
-      </li>
-    </comps>
   </ThingDef>
 
   <!--============================== Column ==============================-->
@@ -128,6 +120,7 @@
         <rect>(0.2,0.2,0.6,0.6)</rect>
       </damageData>
     </graphicData>
+	<uiIconScale>0.65</uiIconScale>
   </ThingDef>
 
 </Defs>

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="BaseMechanoid" Name="BaseREMachine" Abstract="True">
+	<thingClass>VFEMech.Machine</thingClass>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseREMachine">
+    <defName>RE_Mechanoids_FENRIS</defName>
+    <label>FENRIS mech</label>
+    <description>A medium speed, simple-minded robot capable of efficiently hauling cargo across the local area.</description>
+    <statBases>
+      <MoveSpeed>2.9</MoveSpeed>
+      <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+      <PsychicSensitivity>0.25</PsychicSensitivity>
+    </statBases>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>VFE_Mechanoids_Machine</thinkTreeMain>
+      <body>MechanicalCentipede</body>
+      <baseBodySize>0.9</baseBodySize>
+      <baseHealthScale>1.5</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>RE_Pawn_Mech_FENRIS_Wounded</soundWounded>
+          <soundDeath>RE_Pawn_Mech_FENRIS_Death</soundDeath>
+          <soundCall>RE_Pawn_Mech_FENRIS_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>3000~20000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+	  <RE_PrefabComponent>4</RE_PrefabComponent>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Plasteel>10</Plasteel>
+    </butcherProducts>
+	<comps>
+      <li Class="VFE.Mechanoids.CompProperties_Machine">
+		<hoursActive>24</hoursActive>
+      </li>
+	</comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>RE_Mechanoids_FENRIS</defName>
+    <label>FENRIS mech</label>
+    <race>RE_Mechanoids_FENRIS</race>
+    <combatPower>99999</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/FENRISmech/FENRISMech</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+
+  <ThingDef ParentName="BaseREMachine">
+    <defName>RE_Mechanoids_LOKI</defName>
+    <label>LOKI mech</label>
+    <description>A simple-minded, slow combat drone. Often used as security across Alliance systems, LOKI mechs are expandable and very durable.</description>
+    <statBases>
+      <MoveSpeed>1.9</MoveSpeed>
+      <ArmorRating_Blunt>0.32</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.32</ArmorRating_Sharp>
+      <PsychicSensitivity>0.25</PsychicSensitivity>
+    </statBases>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>VFE_Mechanoids_ViolentMachine</thinkTreeMain>
+      <body>Lancer</body>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>4</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>RE_Pawn_Mech_LOKI_Wounded</soundWounded>
+          <soundDeath>RE_Pawn_Mech_LOKI_Death</soundDeath>
+          <soundCall>RE_Pawn_Mech_LOKI_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>3000~8000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+	  <RE_PrefabComponent>6</RE_PrefabComponent>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Plasteel>10</Plasteel>
+    </butcherProducts>
+	<comps>
+      <li Class="VFE.Mechanoids.CompProperties_Machine">
+		<violent>true</violent>
+		<hoursActive>72</hoursActive>
+      </li>
+	</comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>RE_Mechanoids_LOKI</defName>
+    <label>LOKI mech</label>
+    <race>RE_Mechanoids_LOKI</race>
+    <combatPower>99999</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/LOKICombatmech/LOKICombatMech</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+ <ThingDef ParentName="BaseREMachine">
+    <defName>RE_Mechanoids_YMIR</defName>
+    <label>YMIR mech</label>
+    <description>The Battle YMIR Mech, or Model 34-A, or more commonly called a Heavy Mech, is a massive killing machine designed for anti-infantry purposes. Clad in bone-white armor with red lights, they are utilized by Alliance military as infantry support.</description>
+    <statBases>
+      <MoveSpeed>1.9</MoveSpeed>
+      <ArmorRating_Blunt>0.62</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.74</ArmorRating_Sharp>
+      <PsychicSensitivity>0.25</PsychicSensitivity>
+    </statBases>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>VFE_Mechanoids_ViolentMachine</thinkTreeMain>
+      <body>Lancer</body>
+      <baseBodySize>4</baseBodySize>
+      <baseHealthScale>8</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>RE_Pawn_Mech_YMIR_Wounded</soundWounded>
+          <soundDeath>RE_Pawn_Mech_YMIR_Death</soundDeath>
+          <soundCall>RE_Pawn_Mech_YMIR_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>3000~8000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+	  <RE_PrefabComponent>12</RE_PrefabComponent>
+      <ComponentSpacer>8</ComponentSpacer>
+      <Plasteel>60</Plasteel>
+    </butcherProducts>
+	<comps>
+      <li Class="VFE.Mechanoids.CompProperties_Machine">
+		<violent>true</violent>
+		<hoursActive>72</hoursActive>
+      </li>
+		<li Class="VFEMech.CompProperties_ShieldMechBubble">
+			<EnergyShieldRechargeRate>0.03</EnergyShieldRechargeRate>
+			<EnergyShieldEnergyMax>100</EnergyShieldEnergyMax>
+		</li>
+	</comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>RE_Mechanoids_YMIR</defName>
+    <label>YMIR mech</label>
+    <race>RE_Mechanoids_YMIR</race>
+    <combatPower>99999</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/YMIRmech/YMIRMech</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.8</drawSize>
+          <shadowData>
+            <volume>(1, 1, 1)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+ 
+</Defs>

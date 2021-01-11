@@ -4,7 +4,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>RE_Gun_AllianceAssaultRifle</defName>
     <label>alliance assault rifle</label>
-    <description>tbd</description>
+    <description>A mass accelerator assault rifle. Firing slugs lightened by mass effect fields using precision electromagnetism, its projectiles shatter on impact to increase the damage to the target.\n\nThe Avenger is an automatic rifle, and standard issue for Alliance marines.</description>
     <techLevel>Ultra</techLevel>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/AllianceAssaultRifle</texPath>
@@ -93,7 +93,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>RE_Gun_AllianceBattleRifle</defName>
     <label>alliance battle rifle</label>
-    <description>tbd</description>
+    <description>A mass accelerator battle rifle. Firing slugs lightened by mass effect fields using precision electromagnetism, its projectiles shatter on impact to increase the damage to the target.\n\nThe Vindicator fires in bursts, and has superior accuracy and stopping power when compared to the Avenger rifle.</description>
     <techLevel>Ultra</techLevel>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/AllianceBattleRifle</texPath>
@@ -186,7 +186,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>RE_Gun_AllianceShotgun</defName>
     <label>alliance shotgun</label>
-    <description>tbd</description>
+    <description>A mass accelerator shotgun. Firing pellets lightened by mass effect fields using precision electromagnetism, it is designed to break down biotic barriers and shields.\n\nHighly effective at close range but weak against armor, the Katana shotgun is a common sight in the hands of Vanguards.</description>
     <techLevel>Ultra</techLevel>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/AllianceShotgun</texPath>
@@ -264,7 +264,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>RE_Gun_AllianceSniperRifle</defName>
     <label>alliance sniper rifle</label>
-    <description>tbd</description>
+    <description>A mass accelerator sniper rifle. Firing a slug lightened by mass effect fields using precision electromagnetism, its projectile shatters on impact to increase the damage to the target.\n\nThe Mantis is a powerful sniper rifle able to take out many targets in a single shot, though it struggles against shields and barriers.</description>
     <techLevel>Ultra</techLevel>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/AllianceSniperRifle</texPath>
@@ -357,7 +357,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>RE_Gun_AllianceSMG</defName>
     <label>alliance SMG</label>
-    <description>tbd</description>
+    <description>A mass accelerator submachine gun. Firing slugs lightened by mass effect fields using precision electromagnetism, its projectiles shatter on impact to increase the damage to the target.\n\nThe Tempest is an SMG and strong against shields and biotic barriers. They are often carried by Adepts, as they are light and maneuverable and able to strip away the protections that shields provide against biotic attacks.</description>
     <techLevel>Ultra</techLevel>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/AllianceSMG</texPath>
@@ -420,7 +420,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>RE_Gun_AlliancePistol</defName>
     <label>alliance pistol</label>
-    <description>tbd</description>
+    <description>A mass accelerator pistol. Firing slugs lightened by mass effect fields using precision electromagnetism, its projectiles shatter on impact to increase the damage to the target.\n\nOne of the most common weapons in the galaxy, the Predator pistol can be found in the hands of everyone from civilians to the military.</description>
     <techLevel>Ultra</techLevel>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/AlliancePistol</texPath>
@@ -499,7 +499,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>RE_Gun_AllianceHandcannon</defName>
     <label>alliance handcannon</label>
-    <description>tbd</description>
+    <description>A mass accelerator heavy pistol. Firing slugs lightened by mass effect fields using precision electromagnetism, its projectiles shatter on impact to increase the damage to the target.\n\nThe Phalanx pistol is the result of a project to deliver firepower superior to even an assault rifle. Devastating in the hands of a professional who can handle the recoil.</description>
     <techLevel>Ultra</techLevel>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/AllianceHandcannon</texPath>
@@ -578,7 +578,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>RE_Gun_AllianceAntimaterielRifle</defName>
     <label>alliance anti-materiel rifle</label>
-    <description>tbd</description>
+    <description>A mass accelerator anti-material rifle. Firing slugs lightened by mass effect fields using precision electromagnetism, its projectiles shatter on impact to increase the damage to the target.\n\nThe Widow was designed to combat armored vehicles and raging krogan. It takes an extremely well-trained individual to be able to wield it effectively, shattering bones with its recoil if unprepared.</description>
     <techLevel>Ultra</techLevel>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/AllianceAntimaterielRifle</texPath>
@@ -654,7 +654,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>RE_Gun_AllianceRocketLauncher</defName>
     <label>alliance rocket launcher</label>
-    <description>tbd</description>
+    <description>A single-use missile launcher that fires a explosive projectile. The ML-77 is well-suited to taking on an anti-vehicle role, or in clearing out groups of squishier foes.</description>
     <tickerType>Normal</tickerType>
     <techLevel>Ultra</techLevel>
     <graphicData>
@@ -752,7 +752,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>RE_Gun_AllianceChainShotgun</defName>
     <label>alliance chain shotgun</label>
-    <description>tbd</description>
+    <description>A mass accelerator automatic shotgun. Firing pellets lightened by mass effect fields using precision electromagnetism, it is designed to break down biotic barriers and shields.\n\nHighly effective at close range but weak against armor, the Hydra shotgun is capable of rapid fire.</description>
     <techLevel>Ultra</techLevel>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/AllianceChainShotgun</texPath>
