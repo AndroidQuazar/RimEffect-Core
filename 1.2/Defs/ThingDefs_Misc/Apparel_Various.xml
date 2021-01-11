@@ -590,5 +590,61 @@
 	    <li>RE_SpacerApparel</li>
 	</tradeTags>
   </ThingDef>
+ 
+   <ThingDef ParentName="RE_SpacerApparelMakeableBase">
+    <defName>RE_Apparel_BattleUniform</defName>
+    <label>battle uniform</label>
+    <description>A cloth-based suit of light armor often worn as an undergarment of soldiers..</description>
+	<recipeMaker>
+      <researchPrerequisite>RE_ComplexSpacerClothing</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/BattleUniform/BattleUniform</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>60</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>3400</WorkToMake>
+      <Mass>0.3</Mass>
+      <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+		<li>Legs</li>      
+	  </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Fatigues/Fatigues</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>RE_SpacerApparel</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+	<tradeTags>
+      <li>RE_SpacerApparel</li>
+    </tradeTags>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
 
 </Defs>
