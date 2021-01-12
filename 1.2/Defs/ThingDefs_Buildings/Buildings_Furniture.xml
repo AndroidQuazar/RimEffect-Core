@@ -1,975 +1,969 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef ParentName="BuildingBase">
-        <defName>RE_PrefabHeater</defName>
-        <label>prefab heater</label>
-        <description>A device that converts electricity into heat, more effectively than basic heater. It can automatically turn itself on or off to reach a specific target temperature.</description>
-        <thingClass>Building_Heater</thingClass>
-        <graphicData>
-            <texPath>Things/Building/Furniture/PrefabHeater/PrefabHeater</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shadowData>
-                <volume>(0.5,0.3,0.7)</volume>
-                <offset>(0,0,-0.15)</offset>
-            </shadowData>
-            <damageData>
-                <rect>(0.234375,0,0.515625,0.984375)</rect>
-                <cornerTL>Damage/Corner</cornerTL>
-                <cornerTR>Damage/Corner</cornerTR>
-                <cornerBL>Damage/Corner</cornerBL>
-                <cornerBR>Damage/Corner</cornerBR>
-            </damageData>
-        </graphicData>
-        <minifiedDef>MinifiedThing</minifiedDef>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
-        <pathCost>30</pathCost>
-        <blockWind>true</blockWind>
-        <rotatable>false</rotatable>
-        <fillPercent>0.4</fillPercent>
-        <thingCategories>
-            <li>BuildingsTemperature</li>
-        </thingCategories>
-        <statBases>
-            <WorkToBuild>2000</WorkToBuild>
-            <MaxHitPoints>100</MaxHitPoints>
-            <Mass>8</Mass>
-            <Flammability>0.5</Flammability>
-        </statBases>
-        <tickerType>Rare</tickerType>
-        <building>
-            <destroySound>BuildingDestroyed_Metal_Small</destroySound>
-        </building>
-        <costList>
-            <Plasteel>25</Plasteel>
-            <Steel>50</Steel>
-            <RE_PrefabComponent>5</RE_PrefabComponent>
-        </costList>
-        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-        <placeWorkers>
-            <li>PlaceWorker_Heater</li>
-        </placeWorkers>
-        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-        <comps>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
-                <basePowerConsumption>200</basePowerConsumption>
-                <shortCircuitInRain>true</shortCircuitInRain>
-            </li>
-            <li Class="CompProperties_Flickable"/>
-            <li Class="CompProperties_TempControl">
-                <energyPerSecond>16</energyPerSecond>
-            </li>
-            <li Class="CompProperties_Glower">
-                <glowRadius>3</glowRadius>
-                <glowColor>(255,150,100,0)</glowColor>
-            </li>
-            <li Class="CompProperties_Breakdownable"/>
-        </comps>
-        <designationCategory>Temperature</designationCategory>
-        <researchPrerequisites>
-            <li>RE_ComplexPrefabrication</li>
-        </researchPrerequisites>
-        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-        <techLevel>Spacer</techLevel>
-    </ThingDef>
-
-    <ThingDef>
-        <defName>RE_PrefabStandingLamp</defName>
-        <label>prefab standing lamp</label>
-        <description>An electrical prefab standing lamp that lights an area in mild blue. People need light to move and work at full speed.</description>
-        <thingClass>Building</thingClass>
-        <category>Building</category>
-        <minifiedDef>MinifiedThing</minifiedDef>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
-        <selectable>true</selectable>
-        <fillPercent>0.20</fillPercent>
-        <pathCost>14</pathCost>
-        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
-        <designationCategory>Furniture</designationCategory>
-        <rotatable>false</rotatable>
-        <uiIconOffset>(0, 0.03)</uiIconOffset>
-        <thingCategories>
-            <li>BuildingsFurniture</li>
-        </thingCategories>
-        <graphicData>
-            <texPath>Things/Building/Furniture/PrefabStandingLamp/PrefabStandingLamp</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shadowData>
-                <volume>(0.3, 0.6, 0.3)</volume>
-                <offset>(0,0,-0.1)</offset>
-            </shadowData>
-            <damageData>
-                <rect>(0.2,0.2,0.6,0.6)</rect>
-            </damageData>
-            <drawSize>1.5</drawSize>
-        </graphicData>
-        <comps>
-            <li Class="CompProperties_Flickable"/>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
-                <basePowerConsumption>20</basePowerConsumption>
-            </li>
-            <li Class="CompProperties_Glower">
-                <glowRadius>16</glowRadius>
-                <glowColor>(152,167,250,0)</glowColor>
-            </li>
-        </comps>
-        <statBases>
-            <MaxHitPoints>50</MaxHitPoints>
-            <WorkToBuild>400</WorkToBuild>
-            <Flammability>1.0</Flammability>
-            <Mass>3</Mass>
-        </statBases>
-        <costList>
-            <Steel>30</Steel>
-            <RE_PrefabComponent>1</RE_PrefabComponent>
-        </costList>
-        <researchPrerequisites>
-            <li>RE_BasicPrefabrication</li>
-        </researchPrerequisites>
-        <techLevel>Spacer</techLevel>
-    </ThingDef>
-
-    <ThingDef ParentName="ArtableFurnitureBase">
-        <defName>RE_PrefabDresser</defName>
-        <label>prefab dresser</label>
-        <description>A simple dresser designed to be quickly and easily assembled in the process of setting up a new colony. Gives a non-stacking comfort bonus to nearby beds.</description>
-        <graphicData>
-            <texPath>Things/Building/Furniture/PrefabDresser/PrefabDresser</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(2,1)</drawSize>
-            <damageData>
-                <cornerTL>Damage/Corner</cornerTL>
-                <cornerTR>Damage/Corner</cornerTR>
-                <cornerBL>Damage/Corner</cornerBL>
-                <cornerBR>Damage/Corner</cornerBR>
-            </damageData>
-        </graphicData>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
-        <fillPercent>0.4</fillPercent>
-        <castEdgeShadows>true</castEdgeShadows>
-        <pathCost>42</pathCost>
-        <stuffCategories>
-            <li>Metallic</li>
-            <li>Woody</li>
-        </stuffCategories>
-        <defaultPlacingRot>South</defaultPlacingRot>
-        <costStuffCount>50</costStuffCount>
-        <costList>
+  <ThingDef ParentName="BuildingBase">
+    <defName>RE_PrefabHeater</defName>
+    <label>prefab heater</label>
+    <description>A device that converts electricity into heat, more effectively than basic heater. It can automatically turn itself on or off to reach a specific target temperature.</description>
+    <thingClass>Building_Heater</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabHeater/PrefabHeater</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.5,0.3,0.7)</volume>
+        <offset>(0,0,-0.15)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.234375,0,0.515625,0.984375)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <blockWind>true</blockWind>
+    <rotatable>false</rotatable>
+    <fillPercent>0.4</fillPercent>
+    <thingCategories>
+      <li>BuildingsTemperature</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>8</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+    </building>
+    <costList>
+	  <Plasteel>25</Plasteel>
+      <Steel>50</Steel>
+      <RE_PrefabComponent>5</RE_PrefabComponent>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_TempControl">
+        <energyPerSecond>16</energyPerSecond>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(255,150,100,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <researchPrerequisites>
+      <li>RE_ComplexPrefabrication</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	<techLevel>Spacer</techLevel>
+  </ThingDef>
+  
+  <ThingDef>
+    <defName>RE_PrefabStandingLamp</defName>
+    <label>prefab standing lamp</label>
+    <description>An electrical prefab standing lamp that lights an area in mild blue. People need light to move and work at full speed.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <selectable>true</selectable>
+    <fillPercent>0.20</fillPercent>
+    <pathCost>14</pathCost>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <designationCategory>Furniture</designationCategory>
+    <rotatable>false</rotatable>
+    <uiIconOffset>(0, 0.03)</uiIconOffset>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabStandingLamp/PrefabStandingLamp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0,0,-0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+	  <drawSize>1.5</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>20</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>16</glowRadius>
+        <glowColor>(152,167,250,0)</glowColor>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>400</WorkToBuild>
+      <Flammability>1.0</Flammability>
+	  <Mass>3</Mass>
+    </statBases>
+	<costList>
+      <Steel>30</Steel>
+      <RE_PrefabComponent>1</RE_PrefabComponent>
+    </costList>
+    <researchPrerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </researchPrerequisites>
+	<techLevel>Spacer</techLevel>
+  </ThingDef>
+  
+	<ThingDef ParentName="ArtableFurnitureBase">
+		<defName>RE_PrefabDresser</defName>
+		<label>prefab dresser</label>
+		<description>A simple dresser designed to be quickly and easily assembled in the process of setting up a new colony. Gives a non-stacking comfort bonus to nearby beds.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/PrefabDresser/PrefabDresser</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>42</pathCost>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<costStuffCount>50</costStuffCount>
+	    <costList>
             <RE_PrefabComponent>2</RE_PrefabComponent>
         </costList>
-        <statBases>
-            <MaxHitPoints>120</MaxHitPoints>
-            <Mass>15</Mass>
-            <WorkToBuild>4000</WorkToBuild>
-            <Flammability>1.0</Flammability>
-            <Beauty>6</Beauty>
-        </statBases>
-        <size>(2,1)</size>
-        <staticSunShadowHeight>0.5</staticSunShadowHeight>
-        <surfaceType>Item</surfaceType>
-        <canOverlapZones>false</canOverlapZones>
-        <placeWorkers>
-            <li>PlaceWorker_ShowFacilitiesConnections</li>
-        </placeWorkers>
-        <researchPrerequisites>
-            <li>RE_BasicPrefabrication</li>
-        </researchPrerequisites>
-        <comps>
-            <li Class="CompProperties_Facility">
-                <statOffsets>
-                    <Comfort>0.1</Comfort>
-                </statOffsets>
-                <maxSimultaneous>1</maxSimultaneous>
-                <maxDistance>6</maxDistance>
-            </li>
-        </comps>
-        <techLevel>Spacer</techLevel>
-    </ThingDef>
-
-    <ThingDef ParentName="ArtableFurnitureBase">
-        <defName>RE_PrefabChair</defName>
-        <label>prefab chair</label>
-        <description>A simple and comfortable armchair designed to be quickly and easily assembled in the process of setting up a new colony.</description>
-        <graphicData>
-            <texPath>Things/Building/Furniture/PrefabChair/PrefabChair</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(1,1)</drawSize>
-            <damageData>
-                <rectN>(0.25,0.234375,0.5,0.28125)</rectN>
-                <rectS>(0.25,0.234375,0.5,0.28125)</rectS>
-                <rectE>(0.28125,0.25,0.453125,0.25)</rectE>
-                <rectW>(0.28125,0.25,0.453125,0.25)</rectW>
-            </damageData>
-            <shadowData>
-                <volume>(0.23, 0.26, 0.23)</volume>
-            </shadowData>
-            <shaderType>CutoutComplex</shaderType>
-        </graphicData>
-        <altitudeLayer>Building</altitudeLayer>
-        <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
-            <WorkToBuild>10000</WorkToBuild>
-            <Mass>5</Mass>
-            <Flammability>1.0</Flammability>
-            <Beauty>10</Beauty>
-            <Comfort>0.80</Comfort>
-        </statBases>
-        <socialPropernessMatters>true</socialPropernessMatters>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
-        <costStuffCount>45</costStuffCount>
-        <costList>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Mass>15</Mass>
+			<WorkToBuild>4000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>6</Beauty>
+		</statBases>
+		<size>(2,1)</size>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>RE_BasicPrefabrication</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.1</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<maxDistance>6</maxDistance>
+			</li>
+		</comps>
+		<techLevel>Spacer</techLevel>
+	</ThingDef>
+	
+	<ThingDef ParentName="ArtableFurnitureBase">
+		<defName>RE_PrefabChair</defName>
+		<label>prefab chair</label>
+		<description>A simple and comfortable armchair designed to be quickly and easily assembled in the process of setting up a new colony.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/PrefabChair/PrefabChair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(0.23, 0.26, 0.23)</volume>
+			</shadowData>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>10000</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>10</Beauty>
+			<Comfort>0.80</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+	    <costList>
             <RE_PrefabComponent>2</RE_PrefabComponent>
         </costList>
-        <pathCost>30</pathCost>
-        <fillPercent>0.35</fillPercent>
-        <defaultPlacingRot>South</defaultPlacingRot>
-        <building>
-            <isSittable>true</isSittable>
-        </building>
-        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-        <researchPrerequisites>
-            <li>RE_BasicPrefabrication</li>
-        </researchPrerequisites>
-        <techLevel>Spacer</techLevel>
-    </ThingDef>
-
-    <ThingDef ParentName="BedWithQualityBase">
-        <defName>RE_PrefabBed</defName>
-        <label>prefab bed</label>
-        <description>A comfortable bed designed to be quickly and easily assembled in the process of setting up a new colony.</description>
-        <graphicData>
-            <texPath>Things/Building/Furniture/Beds/PrefabBedSingle</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <drawSize>(2,2)</drawSize>
-            <damageData>
-                <rect>(0,0.05,1,1.95)</rect>
-            </damageData>
-        </graphicData>
-        <comps>
-            <li Class="CompProperties_AffectedByFacilities">
-                <linkableFacilities>
-                    <li>EndTable</li>
-                    <li>Dresser</li>
-                    <li>RE_PrefabDresser</li>
-                    <li>RE_PrefabEndTable</li>
-                    <li>RE_PrefabEndTableWithLamp</li>
-                    <li>RE_PrefabBedsideTable</li>
-                    <li>RE_PrefabBedsideTableLamp</li>
-                    <li>RE_PrefabWardrobe</li>
-                </linkableFacilities>
-            </li>
-        </comps>
-        <statBases>
-            <MaxHitPoints>140</MaxHitPoints>
-            <Flammability>1.0</Flammability>
-            <Beauty>1</Beauty>
-            <WorkToBuild>800</WorkToBuild>
-            <Mass>30</Mass>
-            <BedRestEffectiveness>1.1</BedRestEffectiveness>
-            <Comfort>0.8</Comfort>
-            <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
-            <SurgerySuccessChanceFactor>1.05</SurgerySuccessChanceFactor>
-        </statBases>
-        <size>(1,2)</size>
-        <stuffCategories>
-            <li>Metallic</li>
-            <li>Woody</li>
-        </stuffCategories>
-        <costStuffCount>50</costStuffCount>
-        <costList>
-            <RE_PrefabComponent>3</RE_PrefabComponent>
-        </costList>
-        <building>
-            <bed_showSleeperBody>False</bed_showSleeperBody>
-            <bed_healPerDay>5</bed_healPerDay>
-        </building>
-        <fillPercent>0.4</fillPercent>
-        <pathCost>42</pathCost>
-        <staticSunShadowHeight>0.17</staticSunShadowHeight>
-        <castEdgeShadows>True</castEdgeShadows>
-        <techLevel>Spacer</techLevel>
-        <researchPrerequisites>
-            <li>RE_BasicPrefabrication</li>
-        </researchPrerequisites>
-        <uiIconScale>0.90</uiIconScale>
-    </ThingDef>
-
-    <ThingDef ParentName="ArtableBedBase">
-        <defName>RE_PrefabDoubleBed</defName>
-        <label>prefab double bed</label>
-        <description>A comfortable double bed designed to be quickly and easily assembled in the process of setting up a new colony.</description>
-        <graphicData>
-            <texPath>Things/Building/Furniture/Beds/PrefabBedDouble</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <drawSize>(2.05,2.05)</drawSize>
-            <damageData>
-                <rect>(0,0.05,2,1.95)</rect>
-            </damageData>
-        </graphicData>
-        <comps>
-            <li Class="CompProperties_AffectedByFacilities">
-                <linkableFacilities>
-                    <li>EndTable</li>
-                    <li>Dresser</li>
-                    <li>RE_PrefabDresser</li>
-                    <li>RE_PrefabEndTable</li>
-                    <li>RE_PrefabEndTableWithLamp</li>
-                    <li>RE_PrefabBedsideTable</li>
-                    <li>RE_PrefabBedsideTableLamp</li>
-                    <li>RE_PrefabWardrobe</li>
-                </linkableFacilities>
-            </li>
-        </comps>
-        <thingSetMakerTags>
-            <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags>
-        <statBases>
-            <MaxHitPoints>200</MaxHitPoints>
-            <Flammability>1.0</Flammability>
-            <WorkToBuild>3000</WorkToBuild>
-            <Mass>50</Mass>
-            <Comfort>0.8</Comfort>
-            <Beauty>2</Beauty>
-            <BedRestEffectiveness>1.1</BedRestEffectiveness>
-            <ImmunityGainSpeedFactor>1.14</ImmunityGainSpeedFactor>
-            <SurgerySuccessChanceFactor>1.05</SurgerySuccessChanceFactor>
-        </statBases>
-        <size>(2,2)</size>
-        <stuffCategories>
-            <li>Metallic</li>
-            <li>Woody</li>
-        </stuffCategories>
-        <costStuffCount>95</costStuffCount>
-        <costList>
-            <RE_PrefabComponent>5</RE_PrefabComponent>
-        </costList>
-        <building>
-            <bed_showSleeperBody>False</bed_showSleeperBody>
-            <bed_healPerDay>5</bed_healPerDay>
-        </building>
-        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-        <fillPercent>0.4</fillPercent>
-        <pathCost>42</pathCost>
-        <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
-        <staticSunShadowHeight>0.17</staticSunShadowHeight>
-        <castEdgeShadows>True</castEdgeShadows>
-        <techLevel>Spacer</techLevel>
-        <researchPrerequisites>
-            <li>RE_BasicPrefabrication</li>
-        </researchPrerequisites>
-        <uiIconScale>0.90</uiIconScale>
-    </ThingDef>
-
-    <ThingDef ParentName="BuildingBase">
-        <defName>RE_PrefabCooler</defName>
-        <label>prefab cooler</label>
-        <description>A prefab air-cooling machine that fits into a wall. Cool air comes out one side, while hot exhaust comes out the other. Can be used to cool down rooms during summer, or to create a walk-in freezer.</description>
-        <thingClass>Building_Cooler</thingClass>
-        <graphicData>
-            <texPath>Things/Building/Furniture/PrefabCooler/PrefabCooler</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <damageData>
-                <cornerTL>Damage/Corner</cornerTL>
-                <cornerTR>Damage/Corner</cornerTR>
-                <cornerBL>Damage/Corner</cornerBL>
-                <cornerBR>Damage/Corner</cornerBR>
-            </damageData>
-        </graphicData>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>Impassable</passability>
-        <blockWind>true</blockWind>
-        <fillPercent>1</fillPercent>
-        <coversFloor>true</coversFloor>
-        <blockLight>true</blockLight>
-        <canOverlapZones>false</canOverlapZones>
-        <castEdgeShadows>true</castEdgeShadows>
-        <staticSunShadowHeight>1.0</staticSunShadowHeight>
-        <statBases>
-            <WorkToBuild>800</WorkToBuild>
-            <MaxHitPoints>100</MaxHitPoints>
-            <Flammability>0.7</Flammability>
-        </statBases>
-        <tickerType>Rare</tickerType>
-        <costList>
-            <Steel>50</Steel>
-            <Plasteel>45</Plasteel>
-            <RE_PrefabComponent>3</RE_PrefabComponent>
-        </costList>
-        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-        <placeWorkers>
-            <li>PlaceWorker_Cooler</li>
-        </placeWorkers>
-        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-        <building>
-            <canPlaceOverWall>true</canPlaceOverWall>
-        </building>
-        <comps>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
-                <basePowerConsumption>150</basePowerConsumption>
-            </li>
-            <li Class="CompProperties_Flickable"/>
-            <li Class="CompProperties_TempControl">
-                <energyPerSecond>-16</energyPerSecond>
-            </li>
-            <li Class="CompProperties_Breakdownable"/>
-        </comps>
-        <designationCategory>Temperature</designationCategory>
-        <researchPrerequisites>
-            <li>RE_ComplexPrefabrication</li>
-        </researchPrerequisites>
-        <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
-        <techLevel>Spacer</techLevel>
-    </ThingDef>
-
-    <ThingDef ParentName="BuildingBase">
-        <defName>RE_PrefabVent</defName>
-        <label>prefab vent</label>
-        <description>A prefab vent for equalizing the temperature between two rooms without allowing people to walk between them.</description>
-        <thingClass>Building_Vent</thingClass>
-        <graphicData>
-            <texPath>Things/Building/Furniture/PrefabVent/PrefabVent</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <damageData>
-                <cornerTL>Damage/Corner</cornerTL>
-                <cornerTR>Damage/Corner</cornerTR>
-                <cornerBL>Damage/Corner</cornerBL>
-                <cornerBR>Damage/Corner</cornerBR>
-            </damageData>
-        </graphicData>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>Impassable</passability>
-        <blockWind>true</blockWind>
-        <fillPercent>1</fillPercent>
-        <coversFloor>true</coversFloor>
-        <blockLight>true</blockLight>
-        <castEdgeShadows>true</castEdgeShadows>
-        <canOverlapZones>false</canOverlapZones>
-        <staticSunShadowHeight>1.0</staticSunShadowHeight>
-        <statBases>
-            <WorkToBuild>400</WorkToBuild>
-            <MaxHitPoints>100</MaxHitPoints>
-            <Flammability>1.0</Flammability>
-        </statBases>
-        <tickerType>Rare</tickerType>
-        <costList>
-            <Steel>30</Steel>
-            <RE_PrefabComponent>1</RE_PrefabComponent>
-        </costList>
-        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-        <placeWorkers>
-            <li>PlaceWorker_Vent</li>
-        </placeWorkers>
-        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-        <building>
-            <canPlaceOverWall>true</canPlaceOverWall>
-        </building>
-        <researchPrerequisites>
-            <li>RE_ComplexPrefabrication</li>
-        </researchPrerequisites>
-        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
-        <designationCategory>Temperature</designationCategory>
-        <comps>
-            <li Class="CompProperties_Flickable">
-                <commandTexture>UI/Commands/Vent</commandTexture>
-                <commandLabelKey>CommandDesignateOpenCloseVentLabel</commandLabelKey>
-                <commandDescKey>CommandDesignateOpenCloseVentDesc</commandDescKey>
-            </li>
-        </comps>
-        <techLevel>Spacer</techLevel>
-    </ThingDef>
-
-    <ThingDef ParentName="FurnitureWithQualityBase">
-        <defName>RE_PrefabShelf</defName>
-        <label>prefab shelf</label>
-        <description>A prefab shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
-        <thingClass>Building_Storage</thingClass>
-        <graphicData>
-            <texPath>Things/Building/Furniture/PrefabShelf/PrefabShelf</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(3,2)</drawSize>
-        </graphicData>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
-        <fillPercent>0.4</fillPercent>
-        <castEdgeShadows>true</castEdgeShadows>
-        <pathCost>50</pathCost>
-        <costList>
-            <Steel>15</Steel>
-            <Plasteel>5</Plasteel>
-            <RE_PrefabComponent>1</RE_PrefabComponent>
-        </costList>
-        <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
-            <Mass>8</Mass>
-            <WorkToBuild>400</WorkToBuild>
-            <Flammability>1.0</Flammability>
-            <Beauty>0.5</Beauty>
-        </statBases>
-        <size>(2,1)</size>
-        <defaultPlacingRot>South</defaultPlacingRot>
-        <building>
-            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
-            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-            <defaultStorageSettings>
-                <priority>Important</priority>
-                <filter>
-                    <categories>
-                        <li>Weapons</li>
-                    </categories>
-                </filter>
-            </defaultStorageSettings>
-        </building>
-        <inspectorTabs>
-            <li>ITab_Storage</li>
-        </inspectorTabs>
-        <staticSunShadowHeight>0.5</staticSunShadowHeight>
-        <surfaceType>Item</surfaceType>
-        <canOverlapZones>false</canOverlapZones>
-        <researchPrerequisites>
-            <li>RE_BasicPrefabrication</li>
-        </researchPrerequisites>
-        <techLevel>Spacer</techLevel>
-    </ThingDef>
-
-    <ThingDef ParentName="FurnitureWithQualityBase">
-        <defName>RE_PrefabEndTable</defName>
-        <label>prefab end table</label>
-        <description>A small prefab bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect.</description>
-        <surfaceType>Item</surfaceType>
-        <thingClass>Building</thingClass>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
-        <fillPercent>0.4</fillPercent>
-        <socialPropernessMatters>true</socialPropernessMatters>
-        <canOverlapZones>false</canOverlapZones>
-        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-        <graphicData>
-            <texPath>Things/Building/Furniture/PrefabEndTable/PrefabEndTable</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <shadowData>
-                <volume>(0.3, 0.6, 0.3)</volume>
-            </shadowData>
-        </graphicData>
-        <statBases>
-            <MaxHitPoints>75</MaxHitPoints>
-            <WorkToBuild>600</WorkToBuild>
-            <Mass>5</Mass>
-            <Flammability>1.0</Flammability>
-            <Beauty>3</Beauty>
-        </statBases>
-        <stuffCategories>
-            <li>Metallic</li>
-            <li>Woody</li>
-        </stuffCategories>
-        <costStuffCount>30</costStuffCount>
-        <costList>
-            <RE_PrefabComponent>1</RE_PrefabComponent>
-        </costList>
-        <pathCost>30</pathCost>
-        <defaultPlacingRot>South</defaultPlacingRot>
-        <placeWorkers>
-            <li>PlaceWorker_ShowFacilitiesConnections</li>
-        </placeWorkers>
-        <researchPrerequisites>
-            <li>RE_BasicPrefabrication</li>
-        </researchPrerequisites>
-        <comps>
-            <li Class="CompProperties_Facility">
-                <statOffsets>
-                    <Comfort>0.07</Comfort>
-                </statOffsets>
-                <maxSimultaneous>1</maxSimultaneous>
-                <mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
-            </li>
-        </comps>
-        <staticSunShadowHeight>0</staticSunShadowHeight>
-        <castEdgeShadows>false</castEdgeShadows>
-        <designatorDropdown>RE_EndTables</designatorDropdown>
-        <techLevel>Spacer</techLevel>
-    </ThingDef>
-
-    <ThingDef ParentName="FurnitureWithQualityBase">
-        <defName>RE_PrefabEndTableWithLamp</defName>
-        <label>prefab end table with lamp</label>
-        <description>A small prefab bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect. Lights a small area in mild blue.</description>
-        <surfaceType>Item</surfaceType>
-        <thingClass>Building</thingClass>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
-        <fillPercent>0.4</fillPercent>
-        <socialPropernessMatters>true</socialPropernessMatters>
-        <canOverlapZones>false</canOverlapZones>
-        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-        <graphicData>
-            <texPath>Things/Building/Furniture/PrefabEndTableLamp/PrefabEndTableLamp</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <shadowData>
-                <volume>(0.3, 0.6, 0.3)</volume>
-            </shadowData>
-            <drawSize>(2,2)</drawSize>
-            <shaderType>CutoutComplex</shaderType>
-        </graphicData>
-        <uiIconScale>0.65</uiIconScale>
-        <statBases>
-            <MaxHitPoints>75</MaxHitPoints>
-            <WorkToBuild>600</WorkToBuild>
-            <Mass>5</Mass>
-            <Flammability>1.0</Flammability>
-            <Beauty>3</Beauty>
-        </statBases>
-        <stuffCategories>
-            <li>Metallic</li>
-            <li>Woody</li>
-        </stuffCategories>
-        <costStuffCount>25</costStuffCount>
-        <costList>
-            <RE_PrefabComponent>2</RE_PrefabComponent>
-        </costList>
-        <pathCost>30</pathCost>
-        <defaultPlacingRot>South</defaultPlacingRot>
-        <placeWorkers>
-            <li>PlaceWorker_ShowFacilitiesConnections</li>
-        </placeWorkers>
-        <researchPrerequisites>
-            <li>RE_BasicPrefabrication</li>
-        </researchPrerequisites>
-        <comps>
-            <li Class="CompProperties_Facility">
-                <statOffsets>
-                    <Comfort>0.07</Comfort>
-                </statOffsets>
-                <maxSimultaneous>1</maxSimultaneous>
-                <mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
-            </li>
-            <li Class="CompProperties_Flickable"/>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
-                <basePowerConsumption>20</basePowerConsumption>
-            </li>
-            <li Class="CompProperties_Glower">
-                <glowRadius>10</glowRadius>
-                <glowColor>(152,167,250,0)</glowColor>
-            </li>
-        </comps>
-        <staticSunShadowHeight>0</staticSunShadowHeight>
-        <castEdgeShadows>false</castEdgeShadows>
-        <designatorDropdown>RE_EndTables</designatorDropdown>
-        <techLevel>Spacer</techLevel>
-    </ThingDef>
-
-    <ThingDef ParentName="BedWithQualityBase">
-        <defName>RE_PrefabMedicalBed</defName>
-        <label>prefab medical bed</label>
-        <description>A bed specially designed for use in hospitals. Adjustable for a patient and festooned with built-in equipment, it improves medical outcomes over normal beds.</description>
-        <graphicData>
-            <texPath>Things/Building/Furniture/PrefabMedicalBed/PrefabMedicalBed</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <drawSize>(2,2)</drawSize>
-        </graphicData>
-        <castEdgeShadows>True</castEdgeShadows>
-        <statBases>
-            <MaxHitPoints>150</MaxHitPoints>
-            <WorkToBuild>800</WorkToBuild>
-            <Mass>35</Mass>
-            <Flammability>1.0</Flammability>
-            <BedRestEffectiveness>1</BedRestEffectiveness>
-            <Comfort>0.90</Comfort>
-            <ImmunityGainSpeedFactor>1.21</ImmunityGainSpeedFactor>
-            <MedicalTendQualityOffset>0.20</MedicalTendQualityOffset>
-            <SurgerySuccessChanceFactor>1.2</SurgerySuccessChanceFactor>
-        </statBases>
-        <comps>
-            <li Class="CompProperties_AffectedByFacilities">
-                <linkableFacilities>
-                    <li>VitalsMonitor</li>
-                    <li>EndTable</li>
-                    <li>Dresser</li>
-                    <li>RE_PrefabDresser</li>
-                    <li>RE_PrefabEndTable</li>
-                    <li>RE_PrefabEndTableWithLamp</li>
-                    <li>RE_PrefabBedsideTable</li>
-                    <li>RE_PrefabBedsideTableLamp</li>
-                    <li>RE_PrefabWardrobe</li>
-                </linkableFacilities>
-            </li>
-        </comps>
-        <size>(1,2)</size>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
-        <costStuffCount>80</costStuffCount>
-        <costList>
-            <Plasteel>40</Plasteel>
-            <RE_PrefabComponent>5</RE_PrefabComponent>
-        </costList>
-        <building>
-            <bed_showSleeperBody>False</bed_showSleeperBody>
-            <bed_healPerDay>12</bed_healPerDay>
-            <bed_defaultMedical>true</bed_defaultMedical>
-            <buildingSizeCategory>Small</buildingSizeCategory>
-        </building>
-        <fillPercent>0.4</fillPercent>
-        <pathCost>42</pathCost>
-        <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
-        <staticSunShadowHeight>0.17</staticSunShadowHeight>
-        <researchPrerequisites>
-            <li>RE_ComplexPrefabrication</li>
-        </researchPrerequisites>
-        <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
-        <techLevel>Spacer</techLevel>
-        <uiIconScale>0.90</uiIconScale>
-    </ThingDef>
-
-    <ThingDef ParentName="FurnitureWithQualityBase">
-        <defName>RE_PrefabArmchair</defName>
-        <label>prefab armchair</label>
-        <description>A large, soft, comfy seat. Great for relaxation. Can be used at tables, work stations, and elsewhere.</description>
-        <graphicData>
-            <texPath>Things/Building/Furniture/PrefabArmchair/PrefabArmchair</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(3,3)</drawSize>
-            <damageData>
-                <rectN>(0,0,1,0.703125)</rectN>
-                <rectS>(0.09375,0,0.84375,1)</rectS>
-                <rectE>(0,0,0.84375,0.625)</rectE>
-                <rectW>(0.15625,0,0.84375,0.625)</rectW>
-            </damageData>
-            <shadowData>
-                <volume>(0.3, 0.33, 0.3)</volume>
-            </shadowData>
-        </graphicData>
-        <uiIconScale>0.9</uiIconScale>
-        <altitudeLayer>Building</altitudeLayer>
-        <statBases>
-            <MaxHitPoints>120</MaxHitPoints>
-            <WorkToBuild>14000</WorkToBuild>
-            <Mass>18</Mass>
-            <Flammability>1.0</Flammability>
-            <Beauty>4</Beauty>
-            <Comfort>0.8</Comfort>
-        </statBases>
-        <socialPropernessMatters>true</socialPropernessMatters>
-        <stuffCategories>
-            <li>Fabric</li>
-            <li>Leathery</li>
-        </stuffCategories>
-        <researchPrerequisites>
-            <li>RE_BasicPrefabrication</li>
-        </researchPrerequisites>
-        <costStuffCount>110</costStuffCount>
-        <costList>
-            <RE_PrefabComponent>3</RE_PrefabComponent>
-        </costList>
-        <pathCost>30</pathCost>
-        <fillPercent>0.40</fillPercent>
-        <defaultPlacingRot>South</defaultPlacingRot>
-        <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
-        <building>
-            <isSittable>true</isSittable>
-            <destroySound>BuildingDestroyed_Soft_Small</destroySound>
-        </building>
-        <techLevel>Spacer</techLevel>
-    </ThingDef>
-
-    <ThingDef ParentName="FurnitureWithQualityBase">
-        <defName>RE_PrefabBedsideTable</defName>
-        <label>prefab bedside table</label>
-        <description>A small prefab bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect.</description>
-        <surfaceType>Item</surfaceType>
-        <thingClass>Building</thingClass>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
-        <fillPercent>0.4</fillPercent>
-        <socialPropernessMatters>true</socialPropernessMatters>
-        <canOverlapZones>false</canOverlapZones>
-        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-        <graphicData>
-            <texPath>Things/Building/Furniture/PrefabBedsideTable/PrefabBedsideTable</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <shadowData>
-                <volume>(0.3, 0.6, 0.3)</volume>
-            </shadowData>
-        </graphicData>
-        <statBases>
-            <MaxHitPoints>75</MaxHitPoints>
-            <WorkToBuild>800</WorkToBuild>
-            <Mass>5</Mass>
-            <Flammability>1.0</Flammability>
-            <Beauty>3</Beauty>
-        </statBases>
-        <stuffCategories>
-            <li>Metallic</li>
-            <li>Woody</li>
-        </stuffCategories>
-        <costStuffCount>40</costStuffCount>
-        <costList>
-            <RE_PrefabComponent>1</RE_PrefabComponent>
-        </costList>
-        <pathCost>30</pathCost>
-        <defaultPlacingRot>South</defaultPlacingRot>
-        <placeWorkers>
-            <li>PlaceWorker_ShowFacilitiesConnections</li>
-        </placeWorkers>
-        <researchPrerequisites>
-            <li>RE_BasicPrefabrication</li>
-        </researchPrerequisites>
-        <comps>
-            <li Class="CompProperties_Facility">
-                <statOffsets>
-                    <Comfort>0.1</Comfort>
-                </statOffsets>
-                <maxSimultaneous>1</maxSimultaneous>
-                <mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
-            </li>
-        </comps>
-        <staticSunShadowHeight>0</staticSunShadowHeight>
-        <castEdgeShadows>false</castEdgeShadows>
-        <designatorDropdown>RE_BedSideTables</designatorDropdown>
-        <techLevel>Spacer</techLevel>
-    </ThingDef>
-
-    <ThingDef ParentName="FurnitureWithQualityBase">
-        <defName>RE_PrefabBedsideTableLamp</defName>
-        <label>prefab bedside table with lamp</label>
-        <description>A small prefab bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect. Lights a small area in mild blue.</description>
-        <surfaceType>Item</surfaceType>
-        <thingClass>Building</thingClass>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
-        <fillPercent>0.4</fillPercent>
-        <socialPropernessMatters>true</socialPropernessMatters>
-        <canOverlapZones>false</canOverlapZones>
-        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-        <graphicData>
-            <texPath>Things/Building/Furniture/PrefabEndTableLamp/PrefabEndTableLamp</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <shadowData>
-                <volume>(0.3, 0.6, 0.3)</volume>
-            </shadowData>
-            <drawSize>(2,2)</drawSize>
-            <shaderType>CutoutComplex</shaderType>
-        </graphicData>
-        <uiIconScale>0.65</uiIconScale>
-        <statBases>
-            <MaxHitPoints>75</MaxHitPoints>
-            <WorkToBuild>800</WorkToBuild>
-            <Mass>5</Mass>
-            <Flammability>1.0</Flammability>
-            <Beauty>3</Beauty>
-        </statBases>
-        <stuffCategories>
-            <li>Metallic</li>
-            <li>Woody</li>
-        </stuffCategories>
-        <costStuffCount>40</costStuffCount>
-        <costList>
-            <RE_PrefabComponent>2</RE_PrefabComponent>
-        </costList>
-        <pathCost>30</pathCost>
-        <defaultPlacingRot>South</defaultPlacingRot>
-        <placeWorkers>
-            <li>PlaceWorker_ShowFacilitiesConnections</li>
-        </placeWorkers>
-        <researchPrerequisites>
-            <li>RE_BasicPrefabrication</li>
-        </researchPrerequisites>
-        <comps>
-            <li Class="CompProperties_Facility">
-                <statOffsets>
-                    <Comfort>0.1</Comfort>
-                </statOffsets>
-                <maxSimultaneous>1</maxSimultaneous>
-                <mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
-            </li>
-            <li Class="CompProperties_Flickable"/>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
-                <basePowerConsumption>20</basePowerConsumption>
-            </li>
-            <li Class="CompProperties_Glower">
-                <glowRadius>10</glowRadius>
-                <glowColor>(152,167,250,0)</glowColor>
-            </li>
-        </comps>
-        <staticSunShadowHeight>0</staticSunShadowHeight>
-        <castEdgeShadows>false</castEdgeShadows>
-        <designatorDropdown>RE_BedSideTables</designatorDropdown>
-        <techLevel>Spacer</techLevel>
-    </ThingDef>
-
-    <ThingDef ParentName="FurnitureWithQualityBase">
-        <defName>RE_BriefingTable</defName>
-        <label>briefing table</label>
-        <description>A table that serves as a gathering spot.</description>
-        <thingClass>Building</thingClass>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
-        <castEdgeShadows>true</castEdgeShadows>
-        <pathCost>42</pathCost>
-        <fillPercent>0.4</fillPercent>
-        <socialPropernessMatters>true</socialPropernessMatters>
-        <canOverlapZones>false</canOverlapZones>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
-        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-        <staticSunShadowHeight>0.20</staticSunShadowHeight>
-        <surfaceType>Item</surfaceType>
-        <graphicData>
-            <texPath>Things/Building/Furniture/BriefingTable/BriefingTable3x5</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(4, 6)</drawSize>
-            <damageData>
-                <cornerTL>Damage/Corner</cornerTL>
-                <cornerTR>Damage/Corner</cornerTR>
-                <cornerBL>Damage/Corner</cornerBL>
-                <cornerBR>Damage/Corner</cornerBR>
-            </damageData>
-            <shaderType>CutoutComplex</shaderType>
-        </graphicData>
-        <uiIconScale>0.9</uiIconScale>
-        <statBases>
-            <MaxHitPoints>175</MaxHitPoints>
-            <WorkToBuild>5400</WorkToBuild>
-            <Mass>22</Mass>
-            <Flammability>1.0</Flammability>
-            <Beauty>2</Beauty>
-        </statBases>
-        <size>(3,5)</size>
-        <costStuffCount>120</costStuffCount>
-        <rotatable>true</rotatable>
-        <building>
-            <buildingSizeCategory>Medium</buildingSizeCategory>
-        </building>
-        <comps>
-            <li>
-                <compClass>CompGatherSpot</compClass>
-            </li>
-        </comps>
-        <techLevel>Spacer</techLevel>
-    </ThingDef>
-
-    <ThingDef ParentName="ArtableFurnitureBase">
-        <defName>RE_PrefabStool</defName>
-        <label>prefab stool</label>
-        <description>A stool in spacer style. Can be used at tables, work stations, and elsewhere.</description>
-        <graphicData>
-            <texPath>Things/Building/Furniture/PrefabStool/PrefabStool</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(1,1)</drawSize>
-            <damageData>
+		<pathCost>30</pathCost>
+		<fillPercent>0.35</fillPercent>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>RE_BasicPrefabrication</li>
+		</researchPrerequisites>
+		<techLevel>Spacer</techLevel>
+	</ThingDef>
+	
+   <ThingDef ParentName="BedWithQualityBase">
+    <defName>RE_PrefabBed</defName>
+    <label>prefab bed</label>
+    <description>A comfortable bed designed to be quickly and easily assembled in the process of setting up a new colony.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Beds/PrefabBedSingle</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+		  <li>RE_PrefabDresser</li>
+		  <li>RE_PrefabEndTable</li>
+		  <li>RE_PrefabEndTableWithLamp</li>
+		  <li>RE_PrefabBedsideTable</li>
+		  <li>RE_PrefabBedsideTableLamp</li>
+		  <li>RE_PrefabWardrobe</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+      <WorkToBuild>800</WorkToBuild>
+      <Mass>30</Mass>
+      <BedRestEffectiveness>1.1</BedRestEffectiveness>
+      <Comfort>0.8</Comfort>
+      <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>1.05</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(1,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <costList>
+        <RE_PrefabComponent>3</RE_PrefabComponent>
+    </costList>
+    <building>
+      <bed_showSleeperBody>False</bed_showSleeperBody>
+      <bed_healPerDay>5</bed_healPerDay>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <techLevel>Spacer</techLevel>
+    <researchPrerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </researchPrerequisites>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+  
+  <ThingDef ParentName="ArtableBedBase">
+    <defName>RE_PrefabDoubleBed</defName>
+    <label>prefab double bed</label>
+    <description>A comfortable double bed designed to be quickly and easily assembled in the process of setting up a new colony.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Beds/PrefabBedDouble</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2.05,2.05)</drawSize>
+      <damageData>
+        <rect>(0,0.05,2,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+		  <li>RE_PrefabDresser</li>
+		  <li>RE_PrefabEndTable</li>
+		  <li>RE_PrefabEndTableWithLamp</li>
+		  <li>RE_PrefabBedsideTable</li>
+		  <li>RE_PrefabBedsideTableLamp</li>
+		  <li>RE_PrefabWardrobe</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToBuild>3000</WorkToBuild>
+      <Mass>50</Mass>
+      <Comfort>0.8</Comfort>
+      <Beauty>2</Beauty>
+      <BedRestEffectiveness>1.1</BedRestEffectiveness>
+      <ImmunityGainSpeedFactor>1.14</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>1.05</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(2,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>95</costStuffCount>
+	<costList>
+        <RE_PrefabComponent>5</RE_PrefabComponent>
+    </costList>
+    <building>
+      <bed_showSleeperBody>False</bed_showSleeperBody>
+      <bed_healPerDay>5</bed_healPerDay>
+    </building>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <techLevel>Spacer</techLevel>
+    <researchPrerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </researchPrerequisites>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>RE_PrefabCooler</defName>
+    <label>prefab cooler</label>
+    <description>A prefab air-cooling machine that fits into a wall. Cool air comes out one side, while hot exhaust comes out the other. Can be used to cool down rooms during summer, or to create a walk-in freezer.</description>
+    <thingClass>Building_Cooler</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabCooler/PrefabCooler</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <costList>
+      <Steel>50</Steel>
+	  <Plasteel>45</Plasteel>
+      <RE_PrefabComponent>3</RE_PrefabComponent>
+    </costList>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>PlaceWorker_Cooler</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <building>
+      <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_TempControl">
+        <energyPerSecond>-16</energyPerSecond>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <researchPrerequisites>
+      <li>RE_ComplexPrefabrication</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+	<techLevel>Spacer</techLevel>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>RE_PrefabVent</defName>
+    <label>prefab vent</label>
+    <description>A prefab vent for equalizing the temperature between two rooms without allowing people to walk between them.</description>
+    <thingClass>Building_Vent</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabVent/PrefabVent</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <blockLight>true</blockLight>
+    <castEdgeShadows>true</castEdgeShadows>
+    <canOverlapZones>false</canOverlapZones>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <statBases>
+      <WorkToBuild>400</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <costList>
+      <Steel>30</Steel>
+	  <RE_PrefabComponent>1</RE_PrefabComponent>
+    </costList>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>PlaceWorker_Vent</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <building>
+      <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
+    <researchPrerequisites>
+      <li>RE_ComplexPrefabrication</li>
+    </researchPrerequisites>
+	<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <designationCategory>Temperature</designationCategory>
+    <comps>
+      <li Class="CompProperties_Flickable">
+        <commandTexture>UI/Commands/Vent</commandTexture>
+        <commandLabelKey>CommandDesignateOpenCloseVentLabel</commandLabelKey>
+        <commandDescKey>CommandDesignateOpenCloseVentDesc</commandDescKey>
+      </li>
+    </comps>
+	<techLevel>Spacer</techLevel>
+  </ThingDef>
+  
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>RE_PrefabShelf</defName>
+    <label>prefab shelf</label>
+    <description>A prefab shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabShelf/PrefabShelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>50</pathCost>
+    <costList>
+      <Steel>15</Steel>
+	  <Plasteel>5</Plasteel>
+      <RE_PrefabComponent>1</RE_PrefabComponent>
+    </costList>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>8</Mass>
+      <WorkToBuild>400</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>0.5</Beauty>
+    </statBases>
+    <size>(2,1)</size>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <researchPrerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </researchPrerequisites>
+	<techLevel>Spacer</techLevel>
+  </ThingDef>
+  
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>RE_PrefabEndTable</defName>
+    <label>prefab end table</label>
+    <description>A small prefab bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect.</description>
+    <surfaceType>Item</surfaceType>
+	<thingClass>Building</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <canOverlapZones>false</canOverlapZones>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabEndTable/PrefabEndTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>3</Beauty>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+	<costStuffCount>30</costStuffCount>
+	<costList>
+	    <RE_PrefabComponent>1</RE_PrefabComponent>
+	</costList>
+    <pathCost>30</pathCost>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <Comfort>0.07</Comfort>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
+      </li>
+    </comps>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <castEdgeShadows>false</castEdgeShadows>
+	<techLevel>Spacer</techLevel>
+  </ThingDef>
+  
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>RE_PrefabEndTableWithLamp</defName>
+    <label>prefab end table with lamp</label>
+    <description>A small prefab bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect. Lights a small area in mild blue.</description>
+    <surfaceType>Item</surfaceType>
+	<thingClass>Building</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <canOverlapZones>false</canOverlapZones>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabEndTableLamp/PrefabEndTableLamp</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+	  <drawSize>(2,2)</drawSize>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<uiIconScale>0.65</uiIconScale>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>3</Beauty>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+	<costStuffCount>25</costStuffCount>
+	<costList>
+	    <RE_PrefabComponent>2</RE_PrefabComponent>
+	</costList>
+    <pathCost>30</pathCost>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <Comfort>0.07</Comfort>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>20</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(152,167,250,0)</glowColor>
+      </li>
+    </comps>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <castEdgeShadows>false</castEdgeShadows>
+	<techLevel>Spacer</techLevel>
+  </ThingDef>
+  
+  <ThingDef ParentName="BedWithQualityBase">
+    <defName>RE_PrefabMedicalBed</defName>
+    <label>prefab medical bed</label>
+    <description>A bed specially designed for use in hospitals. Adjustable for a patient and festooned with built-in equipment, it improves medical outcomes over normal beds.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabMedicalBed/PrefabMedicalBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <castEdgeShadows>True</castEdgeShadows>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+      <Mass>35</Mass>
+      <Flammability>1.0</Flammability>
+      <BedRestEffectiveness>1</BedRestEffectiveness>
+      <Comfort>0.90</Comfort>
+      <ImmunityGainSpeedFactor>1.21</ImmunityGainSpeedFactor>
+      <MedicalTendQualityOffset>0.20</MedicalTendQualityOffset>
+      <SurgerySuccessChanceFactor>1.2</SurgerySuccessChanceFactor>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>VitalsMonitor</li>
+          <li>EndTable</li>
+          <li>Dresser</li>
+		  <li>RE_PrefabDresser</li>
+		  <li>RE_PrefabEndTable</li>
+		  <li>RE_PrefabEndTableWithLamp</li>
+		  <li>RE_PrefabBedsideTable</li>
+		  <li>RE_PrefabBedsideTableLamp</li>
+		  <li>RE_PrefabWardrobe</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <size>(1,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>80</costStuffCount>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <RE_PrefabComponent>5</RE_PrefabComponent>
+    </costList>
+    <building>
+      <bed_showSleeperBody>False</bed_showSleeperBody>
+      <bed_healPerDay>12</bed_healPerDay>
+      <bed_defaultMedical>true</bed_defaultMedical>
+      <buildingSizeCategory>Small</buildingSizeCategory>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <researchPrerequisites>
+      <li>RE_ComplexPrefabrication</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <techLevel>Spacer</techLevel>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+  
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>RE_PrefabArmchair</defName>
+    <label>prefab armchair</label>
+    <description>A large, soft, comfy seat. Great for relaxation. Can be used at tables, work stations, and elsewhere.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabArmchair/PrefabArmchair</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <rectN>(0,0,1,0.703125)</rectN>
+        <rectS>(0.09375,0,0.84375,1)</rectS>
+        <rectE>(0,0,0.84375,0.625)</rectE>
+        <rectW>(0.15625,0,0.84375,0.625)</rectW>
+      </damageData>
+      <shadowData>
+        <volume>(0.3, 0.33, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+    <uiIconScale>0.9</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>14000</WorkToBuild>
+      <Mass>18</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>4</Beauty>
+      <Comfort>0.8</Comfort>
+    </statBases>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <researchPrerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </researchPrerequisites>
+    <costStuffCount>110</costStuffCount>
+	<costList>
+        <RE_PrefabComponent>3</RE_PrefabComponent>
+    </costList>
+    <pathCost>30</pathCost>
+    <fillPercent>0.40</fillPercent>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    <building>
+      <isSittable>true</isSittable>
+      <destroySound>BuildingDestroyed_Soft_Small</destroySound>
+    </building>
+	<techLevel>Spacer</techLevel>
+  </ThingDef>
+  
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>RE_PrefabBedsideTable</defName>
+    <label>prefab bedside table</label>
+    <description>A small prefab bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect.</description>
+    <surfaceType>Item</surfaceType>
+	<thingClass>Building</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <canOverlapZones>false</canOverlapZones>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabBedsideTable/PrefabBedsideTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>3</Beauty>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+	<costStuffCount>40</costStuffCount>
+	<costList>
+	    <RE_PrefabComponent>1</RE_PrefabComponent>
+	</costList>
+    <pathCost>30</pathCost>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <Comfort>0.1</Comfort>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
+      </li>
+    </comps>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <castEdgeShadows>false</castEdgeShadows>
+	<techLevel>Spacer</techLevel>
+  </ThingDef>
+  
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>RE_PrefabBedsideTableLamp</defName>
+    <label>prefab bedside table with lamp</label>
+    <description>A small prefab bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect. Lights a small area in mild blue.</description>
+    <surfaceType>Item</surfaceType>
+	<thingClass>Building</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <canOverlapZones>false</canOverlapZones>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabEndTableLamp/PrefabEndTableLamp</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+	  <drawSize>(2,2)</drawSize>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<uiIconScale>0.65</uiIconScale>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>3</Beauty>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+	<costStuffCount>40</costStuffCount>
+	<costList>
+	    <RE_PrefabComponent>2</RE_PrefabComponent>
+	</costList>
+    <pathCost>30</pathCost>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <Comfort>0.1</Comfort>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>20</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(152,167,250,0)</glowColor>
+      </li>
+    </comps>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <castEdgeShadows>false</castEdgeShadows>
+	<techLevel>Spacer</techLevel>
+  </ThingDef>
+  
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>RE_BriefingTable</defName>
+    <label>briefing table</label>
+    <description>A table that serves as a gathering spot.</description>
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>42</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <canOverlapZones>false</canOverlapZones>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <graphicData>
+      <texPath>Things/Building/Furniture/BriefingTable/BriefingTable3x5</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4, 6)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconScale>0.9</uiIconScale>
+    <statBases>
+      <MaxHitPoints>175</MaxHitPoints>
+      <WorkToBuild>5400</WorkToBuild>
+      <Mass>22</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <size>(3,5)</size>
+    <costStuffCount>120</costStuffCount>
+    <rotatable>true</rotatable>
+    <building>
+      <buildingSizeCategory>Medium</buildingSizeCategory>
+    </building>
+    <comps>
+      <li>
+        <compClass>CompGatherSpot</compClass>
+      </li>
+    </comps>
+	<techLevel>Spacer</techLevel>
+  </ThingDef>
+  
+	<ThingDef ParentName="ArtableFurnitureBase">
+		<defName>RE_PrefabStool</defName>
+		<label>prefab stool</label>
+		<description>A stool in spacer style. Can be used at tables, work stations, and elsewhere.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/PrefabStool/PrefabStool</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
                 <rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
                 <rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
                 <rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
@@ -978,199 +972,199 @@
                 <cornerTR>Damage/Corner</cornerTR>
                 <cornerBL>Damage/Corner</cornerBL>
                 <cornerBR>Damage/Corner</cornerBR>
-            </damageData>
-            <shadowData>
-                <volume>(0.18, 0.23, 0.18)</volume>
-            </shadowData>
-        </graphicData>
-        <altitudeLayer>Building</altitudeLayer>
-        <statBases>
+			</damageData>
+			<shadowData>
+				<volume>(0.18, 0.23, 0.18)</volume>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
             <MaxHitPoints>75</MaxHitPoints>
             <WorkToBuild>800</WorkToBuild>
             <Mass>3</Mass>
             <Flammability>1.0</Flammability>
             <Beauty>0</Beauty>
             <Comfort>0.6</Comfort>
-        </statBases>
-        <socialPropernessMatters>true</socialPropernessMatters>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
-        <costStuffCount>25</costStuffCount>
-        <costList>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+	    <costList>
             <RE_PrefabComponent>1</RE_PrefabComponent>
         </costList>
-        <pathCost>30</pathCost>
-        <fillPercent>0.2</fillPercent>
-        <defaultPlacingRot>South</defaultPlacingRot>
-        <building>
-            <isSittable>true</isSittable>
-        </building>
-        <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
-        <researchPrerequisites>
-            <li>RE_BasicPrefabrication</li>
-        </researchPrerequisites>
-        <techLevel>Spacer</techLevel>
-    </ThingDef>
-
-    <ThingDef ParentName="FurnitureWithQualityBase">
-        <defName>RE_PrefabWardrobe</defName>
-        <label>prefab wardrobe</label>
-        <description>A tall spacer wardrobe for storing clothing and other items. Gives a sleep effectiveness bonus to all nearby beds. Placing more than one wardrobe near the same bed has no effect.</description>
-        <graphicData>
-            <texPath>Things/Building/Furniture/PrefabWardrobe/PrefabWardrobe</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(3.55,3.02)</drawSize>
-            <damageData>
-                <cornerTL>Damage/Corner</cornerTL>
-                <cornerTR>Damage/Corner</cornerTR>
-                <cornerBL>Damage/Corner</cornerBL>
-                <cornerBR>Damage/Corner</cornerBR>
-            </damageData>
-        </graphicData>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
-        <fillPercent>0.4</fillPercent>
-        <castEdgeShadows>true</castEdgeShadows>
-        <pathCost>60</pathCost>
-        <stuffCategories>
-            <li>Metallic</li>
-            <li>Woody</li>
-        </stuffCategories>
-        <defaultPlacingRot>South</defaultPlacingRot>
-        <costStuffCount>80</costStuffCount>
-        <costList>
-            <RE_PrefabComponent>2</RE_PrefabComponent>
-        </costList>
-        <statBases>
-            <MaxHitPoints>120</MaxHitPoints>
-            <Mass>25</Mass>
-            <WorkToBuild>5000</WorkToBuild>
-            <Flammability>1.0</Flammability>
-            <Beauty>8</Beauty>
-        </statBases>
-        <size>(2,1)</size>
-        <staticSunShadowHeight>0.5</staticSunShadowHeight>
-        <surfaceType>Item</surfaceType>
-        <canOverlapZones>false</canOverlapZones>
-        <placeWorkers>
-            <li>PlaceWorker_ShowFacilitiesConnections</li>
-        </placeWorkers>
-        <researchPrerequisites>
-            <li>RE_BasicPrefabrication</li>
-        </researchPrerequisites>
-        <techLevel>Spacer</techLevel>
-        <comps>
-            <li Class="CompProperties_Facility">
-                <statOffsets>
-                    <BedRestEffectiveness>0.1</BedRestEffectiveness>
-                </statOffsets>
-                <maxSimultaneous>1</maxSimultaneous>
-                <maxDistance>6</maxDistance>
-            </li>
-        </comps>
-    </ThingDef>
-
-    <ThingDef ParentName="FurnitureWithQualityBase">
-        <defName>RE_PrefabPlantPot</defName>
-        <label>prefab plant pot</label>
-        <description>Plant decorative flowers here to improve the mood of people nearby.</description>
-        <thingClass>Building_PlantGrower</thingClass>
-        <graphicData>
-            <texPath>Things/Building/Furniture/PrefabPlantPot/PrefabPlantPot</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shadowData>
-                <volume>(0.55, 0.35, 0.3)</volume>
-                <offset>(0, 0, -0.28)</offset>
-            </shadowData>
-            <damageData>
-                <rect>(0.2,0.2,0.6,0.6)</rect>
-            </damageData>
-        </graphicData>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
-        <fillPercent>0.20</fillPercent>
-        <statBases>
-            <MaxHitPoints>75</MaxHitPoints>
-            <WorkToBuild>100</WorkToBuild>
-            <Mass>2</Mass>
-            <Flammability>1.0</Flammability>
-        </statBases>
-        <stuffCategories>
-            <li>Metallic</li>
-            <li>Woody</li>
-        </stuffCategories>
-        <costStuffCount>20</costStuffCount>
-        <costList>
-            <RE_PrefabComponent>1</RE_PrefabComponent>
-        </costList>
-        <comps>
-            <li Class="CompProperties_Forbiddable"/>
-        </comps>
-        <fertility>1.05</fertility>
-        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-        <building>
-            <defaultPlantToGrow>Plant_Daylily</defaultPlantToGrow>
-            <sowTag>Decorative</sowTag>
-        </building>
-        <rotatable>false</rotatable>
-        <uiIconOffset>(0, -0.05)</uiIconOffset>
-        <researchPrerequisites>
-            <li>RE_BasicPrefabrication</li>
-        </researchPrerequisites>
-        <techLevel>Spacer</techLevel>
-    </ThingDef>
-
-    <ThingDef ParentName="FurnitureWithQualityBase">
-        <defName>RE_PrefabLargePlantPot</defName>
-        <label>prefab large plant pot</label>
-        <description>Plant decorative flowers here to improve the mood of people nearby.</description>
-        <thingClass>Building_PlantGrower</thingClass>
-        <graphicData>
-            <texPath>Things/Building/Furniture/PrefabLargePlantPot/PrefabLargePlantPot</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <damageData>
-                <rect>(0.2,0.2,0.6,0.6)</rect>
-            </damageData>
-            <shadowData>
-                <volume>(0.7, 0.1, 0.8)</volume>
-                <offset>(0, 0.5, -0.18)</offset>
-            </shadowData>
-            <shaderType>CutoutComplex</shaderType>
-            <drawSize>(1.12,1.12)</drawSize>
-        </graphicData>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
-        <fillPercent>0.25</fillPercent>
-        <statBases>
-            <MaxHitPoints>75</MaxHitPoints>
-            <WorkToBuild>100</WorkToBuild>
-            <Mass>2</Mass>
-            <Flammability>1.0</Flammability>
-        </statBases>
-        <stuffCategories>
-            <li>Metallic</li>
-            <li>Woody</li>
-        </stuffCategories>
-        <costStuffCount>30</costStuffCount>
-        <costList>
-            <RE_PrefabComponent>1</RE_PrefabComponent>
-        </costList>
-        <comps>
-            <li Class="CompProperties_Forbiddable"/>
-        </comps>
-        <fertility>1.1</fertility>
-        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-        <building>
-            <defaultPlantToGrow>Plant_Daylily</defaultPlantToGrow>
-            <sowTag>Decorative</sowTag>
-        </building>
-        <rotatable>false</rotatable>
-        <uiIconOffset>(0, -0.05)</uiIconOffset>
-        <researchPrerequisites>
-            <li>RE_BasicPrefabrication</li>
-        </researchPrerequisites>
-        <techLevel>Spacer</techLevel>
-    </ThingDef>
-
+		<pathCost>30</pathCost>
+		<fillPercent>0.2</fillPercent>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>RE_BasicPrefabrication</li>
+		</researchPrerequisites>
+		<techLevel>Spacer</techLevel>
+	</ThingDef>
+	
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>RE_PrefabWardrobe</defName>
+    <label>prefab wardrobe</label>
+    <description>A tall spacer wardrobe for storing clothing and other items. Gives a sleep effectiveness bonus to all nearby beds. Placing more than one wardrobe near the same bed has no effect.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabWardrobe/PrefabWardrobe</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.55,3.02)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>60</pathCost>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <costStuffCount>80</costStuffCount>
+	<costList>
+        <RE_PrefabComponent>2</RE_PrefabComponent>
+    </costList>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Mass>25</Mass>
+      <WorkToBuild>5000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>8</Beauty>
+    </statBases>
+    <size>(2,1)</size>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </researchPrerequisites>
+	<techLevel>Spacer</techLevel>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <BedRestEffectiveness>0.1</BedRestEffectiveness>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <maxDistance>6</maxDistance>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>RE_PrefabPlantPot</defName>
+    <label>prefab plant pot</label>
+    <description>Plant decorative flowers here to improve the mood of people nearby.</description>
+    <thingClass>Building_PlantGrower</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabPlantPot/PrefabPlantPot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.55, 0.35, 0.3)</volume>
+        <offset>(0, 0, -0.28)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.20</fillPercent>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Mass>2</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+	<costList>
+	    <RE_PrefabComponent>1</RE_PrefabComponent>
+	</costList>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <fertility>1.05</fertility>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <building>
+      <defaultPlantToGrow>Plant_Daylily</defaultPlantToGrow>
+      <sowTag>Decorative</sowTag>
+    </building>
+    <rotatable>false</rotatable>
+    <uiIconOffset>(0, -0.05)</uiIconOffset>
+    <researchPrerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </researchPrerequisites>
+	<techLevel>Spacer</techLevel>
+  </ThingDef>
+  
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>RE_PrefabLargePlantPot</defName>
+    <label>prefab large plant pot</label>
+    <description>Plant decorative flowers here to improve the mood of people nearby.</description>
+    <thingClass>Building_PlantGrower</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabLargePlantPot/PrefabLargePlantPot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.7, 0.1, 0.8)</volume>
+        <offset>(0, 0.5, -0.18)</offset>
+      </shadowData>
+	  <shaderType>CutoutComplex</shaderType>
+	  <drawSize>(1.12,1.12)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.25</fillPercent>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Mass>2</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+	<costList>
+	    <RE_PrefabComponent>1</RE_PrefabComponent>
+	</costList>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <fertility>1.1</fertility>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <building>
+      <defaultPlantToGrow>Plant_Daylily</defaultPlantToGrow>
+      <sowTag>Decorative</sowTag>
+    </building>
+    <rotatable>false</rotatable>
+    <uiIconOffset>(0, -0.05)</uiIconOffset>
+    <researchPrerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </researchPrerequisites>
+	<techLevel>Spacer</techLevel>
+  </ThingDef>
+  
 </Defs>
