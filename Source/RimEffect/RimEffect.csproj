@@ -41,8 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comps\CompPlantHarmRadiusIfBroken.cs" />
+    <Compile Include="Comps\CompPowerPlantZero.cs" />
+    <Compile Include="Comps\CompPowerPlantNuclear.cs" />
     <Compile Include="Comps\CompPowerPlantSolarCollectors.cs" />
     <Compile Include="Comps\CompPowerFusionCell.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_PlantHarmRadiusIfBroken.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_VariableHeatPusher.cs" />
+    <Compile Include="Comps\CompVariableHeatPusher.cs" />
     <Compile Include="Damages\DamageWorker_BombNoShake.cs" />
     <Compile Include="Interactions\InteractionWorker_PyjakNuzzle.cs" />
     <Compile Include="Jobs\JobDriver_PyjakNuzzle.cs" />

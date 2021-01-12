@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <ThoughtDef>
+    <defName>RE_EezoDrone</defName>
+    <stackLimit>1</stackLimit>
+    <durationDays>0.1</durationDays>
+    <effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+     
+      <li>
+        <label>eezo psychic drone</label>
+        <description>I feel like someone is always just out of sight, speaking to me. The voice changes but the message doesn't. I'm supposed to hurt people. Make it go away!</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    
+    </stages>
+  </ThoughtDef>
+  
+ 
+
+  
+  
+</Defs>
