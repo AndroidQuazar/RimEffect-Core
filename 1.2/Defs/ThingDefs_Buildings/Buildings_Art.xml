@@ -76,7 +76,7 @@
       <li>ITab_Art</li>
     </inspectorTabs>
     <tradeTags>
-      <li>Art</li>
+      <li>RE_Art</li>
     </tradeTags>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -108,7 +108,7 @@
   <ThingDef ParentName="RE_Sculptures">
     <defName>RE_SculptureModel</defName>
     <label>ship model</label>
-    <description>A torso-sized piece of material sculpted into an artistic ship model.</description>
+    <description>A piece of material sculpted into an artistic ship model.</description>
     <graphicData>
       <graphicClass>Graphic_Random</graphicClass>
       <texPath>Things/Building/Art/SculptureModel</texPath>
