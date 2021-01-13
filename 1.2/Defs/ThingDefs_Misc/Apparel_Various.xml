@@ -64,6 +64,7 @@
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <tags>
         <li>RE_AllianceArmoury</li>
+		<li>RE_AllianceNavyGearLight</li>
       </tags>
 	  <useWornGraphicMask>true</useWornGraphicMask>
     </apparel>
@@ -162,6 +163,7 @@
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <tags>
         <li>RE_AllianceArmoury</li>
+		<li>RE_AllianceNavyGearMedium</li>
       </tags>
 	  <useWornGraphicMask>true</useWornGraphicMask>
     </apparel>
@@ -427,6 +429,7 @@
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <tags>
         <li>RE_HeavyAllianceArmoury</li>
+		<li>RE_AllianceNavyGearHeavy</li>
       </tags>
 	  <useWornGraphicMask>true</useWornGraphicMask>
     </apparel>

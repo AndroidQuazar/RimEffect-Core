@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Name="AllianceBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionType>RE_SystemsAlliance</defaultFactionType>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+    <invNutrition>2.55</invNutrition>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_Alliance_Marine</defName>
+    <label>marine</label>
+    <combatPower>175</combatPower>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.6~2</gearHealthRange>
+    <apparelTags>
+		<li>RE_AllianceNavyGearMedium</li>
+    </apparelTags>
+    <apparelMoney>4000~4500</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <weaponTags>
+      <li>AllianceGun</li>
+    </weaponTags>
+    <weaponMoney>1250~2400</weaponMoney>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>200~700</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+        <modExtensions>
+            <li Class="VFECore.PawnKindDefExtension">
+                <factionColourApparelPartList>
+					<li>FullHead</li>
+                    <li>Torso</li>
+                    <li>Torso</li>
+                    <li>Torso</li>
+                    <li>Torso</li>
+                    <li>Legs</li>
+                </factionColourApparelPartList>
+                <factionColourApparelLayerList>
+				    <li>Overhead</li>
+                    <li>OnSkin</li>
+                    <li>Middle</li>
+                    <li>Shell</li>
+                    <li>VFEC_OuterShell</li>
+                    <li>OnSkin</li>
+                </factionColourApparelLayerList>
+            </li>
+        </modExtensions>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_Alliance_MarineSniper</defName>
+    <label>sniper</label>
+    <combatPower>215</combatPower>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.8~2</gearHealthRange>
+    <apparelTags>
+		<li>RE_AllianceNavyGearLight</li>
+    </apparelTags>
+    <apparelMoney>3500~4500</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <weaponTags>
+      <li>AllianceGunSniper</li>
+    </weaponTags>
+    <weaponMoney>1500~2400</weaponMoney>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>700~1200</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+        <modExtensions>
+            <li Class="VFECore.PawnKindDefExtension">
+                <factionColourApparelPartList>
+					<li>FullHead</li>
+                    <li>Torso</li>
+                    <li>Torso</li>
+                    <li>Torso</li>
+                    <li>Torso</li>
+                    <li>Legs</li>
+                </factionColourApparelPartList>
+                <factionColourApparelLayerList>
+				    <li>Overhead</li>
+                    <li>OnSkin</li>
+                    <li>Middle</li>
+                    <li>Shell</li>
+                    <li>VFEC_OuterShell</li>
+                    <li>OnSkin</li>
+                </factionColourApparelLayerList>
+            </li>
+        </modExtensions>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_Alliance_MarineHeavy</defName>
+    <label>heavy marine</label>
+    <combatPower>275</combatPower>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.8~2</gearHealthRange>
+    <apparelTags>
+		<li>RE_AllianceNavyGearHeavy</li>
+    </apparelTags>
+    <apparelMoney>5000~6500</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <weaponTags>
+      <li>AllianceGunHeavy</li>
+    </weaponTags>
+    <weaponMoney>2050~4900</weaponMoney>
+    <techHediffsChance>0.1</techHediffsChance>
+    <techHediffsMoney>800~1700</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+        <modExtensions>
+            <li Class="VFECore.PawnKindDefExtension">
+                <factionColourApparelPartList>
+					<li>FullHead</li>
+                    <li>Torso</li>
+                    <li>Torso</li>
+                    <li>Torso</li>
+                    <li>Torso</li>
+                    <li>Legs</li>
+                </factionColourApparelPartList>
+                <factionColourApparelLayerList>
+				    <li>Overhead</li>
+                    <li>OnSkin</li>
+                    <li>Middle</li>
+                    <li>Shell</li>
+                    <li>VFEC_OuterShell</li>
+                    <li>OnSkin</li>
+                </factionColourApparelLayerList>
+            </li>
+        </modExtensions>
+  </PawnKindDef>
+
+
+</Defs>
