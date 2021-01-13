@@ -112,10 +112,11 @@
     <graphicData>
       <graphicClass>Graphic_Random</graphicClass>
       <texPath>Things/Building/Art/SculptureModel</texPath>
-	  <drawOffset>(0,0,0.95)</drawOffset>
+	  <drawOffset>(0,0,0.3)</drawOffset>
     </graphicData>
     <fillPercent>0.25</fillPercent>
     <rotatable>false</rotatable>
+	<clearBuildingArea>false</clearBuildingArea>
     <statBases>
       <MaxHitPoints>90</MaxHitPoints>
       <Mass>1</Mass>
@@ -126,6 +127,9 @@
       <li>Metallic</li>
     </stuffCategories>
     <costStuffCount>30</costStuffCount>
+    <building>
+	    <isEdifice>false</isEdifice>    
+	</building>
   </ThingDef>
   
 </Defs>
