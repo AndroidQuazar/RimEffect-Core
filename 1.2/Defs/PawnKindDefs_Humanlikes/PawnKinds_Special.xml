@@ -27,12 +27,16 @@
     </requiredWorkTags>
     <invNutrition>10.0</invNutrition>
     <inventoryOptions>
-      <subOptionsChooseOne>
+      <subOptionsTakeAll>
         <li>
           <thingDef>MedicineUltratech</thingDef>
           <countRange>5~8</countRange>
         </li>
-      </subOptionsChooseOne>
+        <li>
+          <thingDef>RE_MediGel</thingDef>
+          <countRange>2~4</countRange>
+        </li>
+      </subOptionsTakeAll>
     </inventoryOptions>
     <gearHealthRange>1~1</gearHealthRange>
     <techHediffsChance>0.9</techHediffsChance>
