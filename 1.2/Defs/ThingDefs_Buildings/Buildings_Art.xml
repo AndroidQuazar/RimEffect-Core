@@ -11,6 +11,7 @@
     <thingCategories>
       <li>BuildingsArt</li>
     </thingCategories>
+	<techLevel>Ultra</techLevel>
     <thingSetMakerTags><li>RE_Art</li></thingSetMakerTags>
     <statBases>
       <Flammability>1.0</Flammability>
