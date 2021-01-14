@@ -139,5 +139,29 @@
         </modExtensions>
   </PawnKindDef>
 
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_Colonist</defName>
+    <label>colonist</label>
+    <combatPower>45</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>AllianceGunLight</li>
+    </weaponTags>
+    <weaponMoney>740~900</weaponMoney>
+    <apparelTags>
+		<li>RE_SpacerApparelCivilian</li>
+		<li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>200~500</apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>300~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+  </PawnKindDef>
 
 </Defs>
