@@ -5,7 +5,7 @@
    <defName>RE_Apparel_LightAllianceArmor</defName>
     <label>light alliance armor</label>
     <description>A light suit of full body armor, often used by front line alliance infantry.</description>
-    <techLevel>Spacer</techLevel>
+    <techLevel>Ultra</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <researchPrerequisite>RE_AllianceArmoury</researchPrerequisite>
@@ -101,7 +101,7 @@
     <defName>RE_Apparel_AllianceArmor</defName>
     <label>alliance armor</label>
     <description>A suit of full body armor, often used by front line alliance infantry.</description>
-    <techLevel>Spacer</techLevel>
+    <techLevel>Ultra</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <researchPrerequisite>RE_AllianceArmoury</researchPrerequisite>
@@ -202,7 +202,7 @@
     <selectable>True</selectable>
     <pathCost>14</pathCost>
     <useHitPoints>True</useHitPoints>
-    <techLevel>Spacer</techLevel>
+    <techLevel>Ultra</techLevel>
     <graphicData>
       <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
     </graphicData>
@@ -367,7 +367,7 @@
     <defName>RE_Apparel_HeavyAllianceArmor</defName>
     <label>heavy alliance armor</label>
     <description>A suit of full body armor, used by stronger, specialised alliance infantry.</description>
-    <techLevel>Spacer</techLevel>
+    <techLevel>Ultra</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <researchPrerequisite>RE_HeavyAllianceArmor</researchPrerequisite>
@@ -466,7 +466,7 @@
     <defName>RE_Apparel_FormalShirt</defName>
     <description>A nice-looking shirt with hi-tech fasteners, yet easy to button or open.</description>
     <label>formal shirt</label>
-	<techLevel>Spacer</techLevel>
+	<techLevel>Ultra</techLevel>
     <recipeMaker>
       <researchPrerequisite>RE_ComplexSpacerClothing</researchPrerequisite>
     </recipeMaker>
