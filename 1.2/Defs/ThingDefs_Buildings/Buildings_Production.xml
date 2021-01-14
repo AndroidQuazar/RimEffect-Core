@@ -69,6 +69,7 @@
     <researchPrerequisites>
       <li>RE_MassEffectFieldManipulation</li>
     </researchPrerequisites>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
   
   <ThingDef ParentName="BenchBase">
@@ -140,6 +141,7 @@
     <researchPrerequisites>
       <li>RE_BasicPrefabrication</li>
     </researchPrerequisites>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
   
 </Defs>
