@@ -503,7 +503,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>RE_SpacerApparel</li>
+        <li>RE_SpacerApparelCivilian</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -557,7 +557,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>RE_SpacerApparel</li>
+        <li>RE_SpacerApparelCivilian</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
