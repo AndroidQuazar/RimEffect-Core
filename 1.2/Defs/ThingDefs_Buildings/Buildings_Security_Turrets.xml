@@ -86,6 +86,7 @@
     <researchPrerequisites>
       <li>RE_MassAcceleration</li>
     </researchPrerequisites>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -182,6 +183,7 @@
       <li>PlaceWorker_ShowTurretRadius</li>
     </placeWorkers>   
     <uiIconScale>0.95</uiIconScale>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
 
   <ThingDef ParentName="RE_HeavyMassAcceleratorTurret">

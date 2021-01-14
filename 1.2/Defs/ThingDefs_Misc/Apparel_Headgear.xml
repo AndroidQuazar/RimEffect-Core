@@ -5,7 +5,7 @@
     <defName>RE_Apparel_LightAllianceHelmet</defName>
     <label>light alliance helmet</label>
     <description>A high-tech armored helmet, often used by front line alliance infantry.</description>
-    <techLevel>Spacer</techLevel>
+    <techLevel>Ultra</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <researchPrerequisite>RE_AllianceArmoury</researchPrerequisite>
@@ -93,7 +93,7 @@
     <defName>RE_Apparel_AllianceHelmet</defName>
     <label>alliance helmet</label>
     <description>An alliance helmet covering the entirety of the head, with a visor, often used by frontline alliance infantry.</description>
-    <techLevel>Spacer</techLevel>
+    <techLevel>Ultra</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <researchPrerequisite>RE_AllianceArmoury</researchPrerequisite>
@@ -229,7 +229,7 @@
     <defName>RE_Apparel_HeavyAllianceHelmet</defName>
     <label>heavy alliance helmet</label>
     <description>An alliance helmet covering the entirety of the head, with a visor, often used by specialised alliance infantry.</description>
-    <techLevel>Spacer</techLevel>
+    <techLevel>Ultra</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <researchPrerequisite>RE_AllianceArmoury</researchPrerequisite>
@@ -320,7 +320,7 @@
       <texPath>Things/Apparel/SpectreArmor/SpectreVisor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <techLevel>Spacer</techLevel>
+    <techLevel>Ultra</techLevel>
     <generateCommonality>2</generateCommonality>
     <apparel>
       <bodyPartGroups>

@@ -54,6 +54,7 @@
       <li>RE_AllianceKodiak</li>
     </researchPrerequisites>
 	<designationCategory>Misc</designationCategory>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
 
 </Defs>

@@ -163,6 +163,7 @@
       <li>RE_ComplexPrefabrication</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
   
 </Defs>

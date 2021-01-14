@@ -13,7 +13,7 @@
     <canStageAttacks>true</canStageAttacks>
     <leaderTitle>prime minister</leaderTitle>
     <factionIconPath>World/WorldObjects/Expanding/AllianceColony</factionIconPath>
-    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <factionNameMaker>NamerFaction_SystemsAlliance</factionNameMaker>
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
     <techLevel>Ultra</techLevel>
     <backstoryFilters>

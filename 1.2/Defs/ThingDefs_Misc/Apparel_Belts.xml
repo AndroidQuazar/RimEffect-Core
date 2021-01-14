@@ -34,6 +34,7 @@
     <tradeTags>
       <li>RE_AmmoBelts</li>
     </tradeTags>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
   
   <ThingDef ParentName="RE_AmmoBelts">
