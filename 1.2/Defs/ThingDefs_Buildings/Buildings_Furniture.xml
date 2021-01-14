@@ -1022,7 +1022,7 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.4</fillPercent>
     <castEdgeShadows>true</castEdgeShadows>
