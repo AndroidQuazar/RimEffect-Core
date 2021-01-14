@@ -72,7 +72,7 @@
       <li>RE_ComplexPrefabrication</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-	<techLevel>Spacer</techLevel>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
   
   <ThingDef>
@@ -131,7 +131,7 @@
     <researchPrerequisites>
       <li>RE_BasicPrefabrication</li>
     </researchPrerequisites>
-	<techLevel>Spacer</techLevel>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
   
 	<ThingDef ParentName="ArtableFurnitureBase">
@@ -189,7 +189,7 @@
 				<maxDistance>6</maxDistance>
 			</li>
 		</comps>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Ultra</techLevel>
 	</ThingDef>
 	
 	<ThingDef ParentName="ArtableFurnitureBase">
@@ -238,7 +238,7 @@
 		<researchPrerequisites>
 			<li>RE_BasicPrefabrication</li>
 		</researchPrerequisites>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Ultra</techLevel>
 	</ThingDef>
 	
    <ThingDef ParentName="BedWithQualityBase">
@@ -296,7 +296,7 @@
     <pathCost>42</pathCost>
     <staticSunShadowHeight>0.17</staticSunShadowHeight>
     <castEdgeShadows>True</castEdgeShadows>
-    <techLevel>Spacer</techLevel>
+    <techLevel>Ultra</techLevel>
     <researchPrerequisites>
       <li>RE_BasicPrefabrication</li>
     </researchPrerequisites>
@@ -361,7 +361,7 @@
     <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
     <staticSunShadowHeight>0.17</staticSunShadowHeight>
     <castEdgeShadows>True</castEdgeShadows>
-    <techLevel>Spacer</techLevel>
+    <techLevel>Ultra</techLevel>
     <researchPrerequisites>
       <li>RE_BasicPrefabrication</li>
     </researchPrerequisites>
@@ -427,7 +427,7 @@
       <li>RE_ComplexPrefabrication</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
-	<techLevel>Spacer</techLevel>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
   
   <ThingDef ParentName="BuildingBase">
@@ -484,7 +484,7 @@
         <commandDescKey>CommandDesignateOpenCloseVentDesc</commandDescKey>
       </li>
     </comps>
-	<techLevel>Spacer</techLevel>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
   
   <ThingDef ParentName="FurnitureWithQualityBase">
@@ -537,7 +537,7 @@
     <researchPrerequisites>
       <li>RE_BasicPrefabrication</li>
     </researchPrerequisites>
-	<techLevel>Spacer</techLevel>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
   
   <ThingDef ParentName="FurnitureWithQualityBase">
@@ -593,7 +593,7 @@
     </comps>
     <staticSunShadowHeight>0</staticSunShadowHeight>
     <castEdgeShadows>false</castEdgeShadows>
-	<techLevel>Spacer</techLevel>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
   
   <ThingDef ParentName="FurnitureWithQualityBase">
@@ -661,7 +661,7 @@
     </comps>
     <staticSunShadowHeight>0</staticSunShadowHeight>
     <castEdgeShadows>false</castEdgeShadows>
-	<techLevel>Spacer</techLevel>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
   
   <ThingDef ParentName="BedWithQualityBase">
@@ -724,7 +724,7 @@
       <li>RE_ComplexPrefabrication</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
-    <techLevel>Spacer</techLevel>
+    <techLevel>Ultra</techLevel>
     <uiIconScale>0.90</uiIconScale>
   </ThingDef>
   
@@ -776,7 +776,7 @@
       <isSittable>true</isSittable>
       <destroySound>BuildingDestroyed_Soft_Small</destroySound>
     </building>
-	<techLevel>Spacer</techLevel>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
   
   <ThingDef ParentName="FurnitureWithQualityBase">
@@ -832,7 +832,7 @@
     </comps>
     <staticSunShadowHeight>0</staticSunShadowHeight>
     <castEdgeShadows>false</castEdgeShadows>
-	<techLevel>Spacer</techLevel>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
   
   <ThingDef ParentName="FurnitureWithQualityBase">
@@ -900,7 +900,7 @@
     </comps>
     <staticSunShadowHeight>0</staticSunShadowHeight>
     <castEdgeShadows>false</castEdgeShadows>
-	<techLevel>Spacer</techLevel>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
   
   <ThingDef ParentName="FurnitureWithQualityBase">
@@ -952,7 +952,7 @@
         <compClass>CompGatherSpot</compClass>
       </li>
     </comps>
-	<techLevel>Spacer</techLevel>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
   
 	<ThingDef ParentName="ArtableFurnitureBase">
@@ -1004,7 +1004,7 @@
 		<researchPrerequisites>
 			<li>RE_BasicPrefabrication</li>
 		</researchPrerequisites>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Ultra</techLevel>
 	</ThingDef>
 	
   <ThingDef ParentName="FurnitureWithQualityBase">
@@ -1053,7 +1053,7 @@
     <researchPrerequisites>
       <li>RE_BasicPrefabrication</li>
     </researchPrerequisites>
-	<techLevel>Spacer</techLevel>
+	<techLevel>Ultra</techLevel>
     <comps>
       <li Class="CompProperties_Facility">
         <statOffsets>
@@ -1112,7 +1112,7 @@
     <researchPrerequisites>
       <li>RE_BasicPrefabrication</li>
     </researchPrerequisites>
-	<techLevel>Spacer</techLevel>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
   
   <ThingDef ParentName="FurnitureWithQualityBase">
@@ -1164,7 +1164,7 @@
     <researchPrerequisites>
       <li>RE_BasicPrefabrication</li>
     </researchPrerequisites>
-	<techLevel>Spacer</techLevel>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
   
   <ThingDef ParentName="BuildingBase">
