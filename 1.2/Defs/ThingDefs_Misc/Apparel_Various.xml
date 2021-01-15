@@ -24,6 +24,7 @@
     <generateCommonality>2</generateCommonality>
     <tradeTags>
       <li>RE_AllianceArmoury</li>
+	  <li>RE_LightArmour</li>
     </tradeTags>
     <statBases>
       <WorkToMake>48000</WorkToMake>
