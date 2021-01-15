@@ -628,7 +628,7 @@
         <li>Shoulders</li>
 		<li>Legs</li>      
 	  </bodyPartGroups>
-      <wornGraphicPath>Things/Apparel/Fatigues/Fatigues</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/BattleUniform/BattleUniform</wornGraphicPath>
       <layers>
         <li>OnSkin</li>
       </layers>
