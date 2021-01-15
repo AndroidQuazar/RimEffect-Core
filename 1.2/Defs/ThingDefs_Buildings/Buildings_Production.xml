@@ -141,6 +141,7 @@
     <researchPrerequisites>
       <li>RE_BasicPrefabrication</li>
     </researchPrerequisites>
+	<uiIconScale>0.90</uiIconScale>
 	<techLevel>Ultra</techLevel>
   </ThingDef>
   
