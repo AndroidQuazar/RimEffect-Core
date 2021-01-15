@@ -65,6 +65,7 @@
       <tags>
         <li>RE_AllianceArmoury</li>
 		<li>RE_AllianceNavyGearLight</li>
+		<li>RE_Apparel_LightAllianceArmor</li>
       </tags>
 	  <useWornGraphicMask>true</useWornGraphicMask>
     </apparel>
