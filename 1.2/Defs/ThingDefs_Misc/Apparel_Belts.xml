@@ -15,7 +15,6 @@
       <Beauty>-3</Beauty>
       <Flammability>0.5</Flammability>
     </statBases>
-    <techLevel>Spacer</techLevel>
     <tradeability>Sellable</tradeability>
     <soundInteract>Standard_Pickup</soundInteract>
     <tickerType>Normal</tickerType>

@@ -24,6 +24,7 @@
     <generateCommonality>2</generateCommonality>
     <tradeTags>
       <li>RE_AllianceArmoury</li>
+	  <li>RE_LightArmour</li>
     </tradeTags>
     <statBases>
       <WorkToMake>48000</WorkToMake>
@@ -65,6 +66,7 @@
       <tags>
         <li>RE_AllianceArmoury</li>
 		<li>RE_AllianceNavyGearLight</li>
+		<li>RE_Apparel_LightAllianceArmor</li>
       </tags>
 	  <useWornGraphicMask>true</useWornGraphicMask>
     </apparel>
@@ -628,7 +630,7 @@
         <li>Shoulders</li>
 		<li>Legs</li>      
 	  </bodyPartGroups>
-      <wornGraphicPath>Things/Apparel/Fatigues/Fatigues</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/BattleUniform/BattleUniform</wornGraphicPath>
       <layers>
         <li>OnSkin</li>
       </layers>

@@ -848,7 +848,7 @@
     <canOverlapZones>false</canOverlapZones>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <graphicData>
-      <texPath>Things/Building/Furniture/PrefabEndTableLamp/PrefabEndTableLamp</texPath>
+      <texPath>Things/Building/Furniture/PrefabBedsideTableLamp/PrefabBedsideTableLamp</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shadowData>
         <volume>(0.3, 0.6, 0.3)</volume>
@@ -1022,7 +1022,7 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.4</fillPercent>
     <castEdgeShadows>true</castEdgeShadows>

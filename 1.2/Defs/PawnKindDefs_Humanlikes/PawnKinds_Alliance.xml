@@ -139,5 +139,221 @@
         </modExtensions>
   </PawnKindDef>
 
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_Colonist</defName>
+    <label>colonist</label>
+    <combatPower>50</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>AllianceGunLight</li>
+    </weaponTags>
+    <weaponMoney>740~1500</weaponMoney>
+    <apparelTags>
+		<li>RE_SpacerApparelCivilian</li>
+		<li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>200~500</apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>300~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_Farmer</defName>
+    <label>farmer</label>
+    <combatPower>45</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>AllianceGunLight</li>
+    </weaponTags>
+    <weaponMoney>740~800</weaponMoney>
+    <apparelTags>
+		<li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>200~400</apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>100~500</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_AllianceOfficer</defName>
+    <label>alliance officer</label>
+    <combatPower>65</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>AllianceGunLight</li>
+    </weaponTags>
+    <weaponMoney>740~2000</weaponMoney>
+    <apparelRequired>
+	  <li>RE_Apparel_AllianceDressJacket</li>
+	  <li>RE_Apparel_AllianceOfficerHat</li>
+    </apparelRequired>
+    <apparelTags>
+		<li>RE_AllianceSpacerApparel</li>
+		<li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>300~1000</apparelMoney>
+    <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+    <techHediffsChance>0.1</techHediffsChance>
+    <techHediffsMoney>500~1100</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_AllianceRecruit</defName>
+    <label>alliance recruit</label>
+    <combatPower>55</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>AllianceGunLight</li>
+    </weaponTags>
+    <weaponMoney>740~1800</weaponMoney>
+    <apparelRequired>
+	  <li>RE_Apparel_BattleUniform</li>
+    </apparelRequired>
+    <apparelTags>
+		<li>RE_SpacerApparel</li>
+    </apparelTags>
+    <apparelMoney>300~600</apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>400~900</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_AllianceMilitia</defName>
+    <label>militia</label>
+    <combatPower>60</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>AllianceGun</li>
+    </weaponTags>
+    <weaponMoney>1100~3000</weaponMoney>
+    <apparelRequired>
+	  <li>RE_Apparel_Fatigues</li>
+    </apparelRequired>
+    <apparelTags>
+		<li>RE_SpacerApparel</li>
+    </apparelTags>
+    <apparelMoney>300~600</apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>400~1000</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+	  <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_Official</defName>
+    <label>official</label>
+    <combatPower>50</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>AllianceGunLight</li>
+    </weaponTags>
+    <weaponMoney>740~800</weaponMoney>
+    <apparelRequired>
+	  <li>RE_Apparel_FormalJacket</li>
+	  <li>RE_Apparel_FormalShirt</li>
+    </apparelRequired>
+    <apparelTags>
+		<li>RE_SpacerApparelCivilian</li>
+		<li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>200~600</apparelMoney>
+    <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>300~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_Merchant</defName>
+    <label>merchant</label>
+    <combatPower>50</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>AllianceGunLight</li>
+    </weaponTags>
+    <weaponMoney>740~800</weaponMoney>
+    <apparelRequired>
+	  <li>RE_Apparel_FormalJacket</li>
+	  <li>RE_Apparel_FormalShirt</li>
+    </apparelRequired>
+    <apparelTags>
+		<li>RE_SpacerApparelCivilian</li>
+		<li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>200~600</apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>300~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_Ranger</defName>
+    <label>militia</label>
+    <combatPower>60</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>AllianceGunSniper</li>
+    </weaponTags>
+    <weaponMoney>1410~1800</weaponMoney>
+    <apparelTags>
+		<li>RE_SpacerApparel</li>
+		<li>RE_Apparel_LightAllianceArmor</li>
+    </apparelTags>
+    <apparelMoney>500~2500</apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>400~1000</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+  </PawnKindDef>
 
 </Defs>

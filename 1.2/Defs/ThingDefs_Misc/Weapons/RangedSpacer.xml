@@ -26,7 +26,7 @@
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>RE_ManufacturingBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -34,9 +34,12 @@
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
     <thingSetMakerTags>
-      <li>RewardStandardLowFreq</li>
-      <li>RewardStandardQualitySuper</li>
+      <li>RE_AllianceWeaponry</li>
     </thingSetMakerTags>
+    <tradeTags>
+      <li>RE_AllianceWeaponry</li>
+	  <li>RE_AllianceGun</li>
+    </tradeTags>
     <weaponTags Inherit='False'>
       <li>AllianceGun</li>
     </weaponTags>
@@ -115,7 +118,7 @@
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>RE_ManufacturingBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -123,9 +126,12 @@
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
     <thingSetMakerTags>
-      <li>RewardStandardLowFreq</li>
-      <li>RewardStandardQualitySuper</li>
+      <li>RE_AllianceWeaponry</li>
     </thingSetMakerTags>
+    <tradeTags>
+      <li>RE_AllianceWeaponry</li>
+	  <li>RE_AllianceGun</li>
+    </tradeTags>
     <weaponTags Inherit='False'>
       <li>AllianceGun</li>
     </weaponTags>
@@ -208,7 +214,7 @@
         <Crafting>10</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>RE_ManufacturingBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -218,6 +224,13 @@
     <weaponTags Inherit='False'>
       <li>AllianceGun</li>
     </weaponTags>
+    <tradeTags>
+      <li>RE_AllianceWeaponry</li>
+	  <li>RE_AllianceGun</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RE_AllianceWeaponry</li>
+    </thingSetMakerTags>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -292,7 +305,7 @@
         <Crafting>10</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>RE_ManufacturingBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -302,6 +315,10 @@
     <weaponTags Inherit='False'>
       <li>AllianceGunSniper</li>
     </weaponTags>
+    <tradeTags>
+      <li>RE_AllianceWeaponry</li>
+	  <li>RE_AllianceGunSniper</li>
+    </tradeTags>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -315,6 +332,9 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<thingSetMakerTags>
+      <li>RE_AllianceWeaponry</li>
+    </thingSetMakerTags>
     <tools>
       <li>
         <label>stock</label>
@@ -379,7 +399,7 @@
         <Crafting>10</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>RE_ManufacturingBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -389,6 +409,10 @@
     <weaponTags Inherit='False'>
       <li>AllianceGunLight</li>
     </weaponTags>
+    <tradeTags>
+      <li>RE_AllianceWeaponry</li>
+	  <li>RE_AllianceGunLight</li>
+    </tradeTags>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -403,6 +427,9 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<thingSetMakerTags>
+      <li>RE_AllianceWeaponry</li>
+    </thingSetMakerTags>
     <tools>
       <li>
         <label>barrel</label>
@@ -442,7 +469,7 @@
         <Crafting>9</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>RE_ManufacturingBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -452,6 +479,13 @@
     <weaponTags Inherit='False'>
       <li>AllianceGunLight</li>
     </weaponTags>
+    <tradeTags>
+      <li>RE_AllianceWeaponry</li>
+	  <li>RE_AllianceGunLight</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RE_AllianceWeaponry</li>
+    </thingSetMakerTags>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -514,6 +548,7 @@
       <AccuracyLong>0.66</AccuracyLong>
       <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
       <WorkToMake>38000</WorkToMake>
+	  <MarketValue>900</MarketValue>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>ChargedShot</researchPrerequisite>
@@ -521,7 +556,7 @@
         <Crafting>9</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>RE_ManufacturingBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -531,6 +566,13 @@
     <weaponTags Inherit='False'>
       <li>AllianceGunLight</li>
     </weaponTags>
+    <tradeTags>
+      <li>RE_AllianceWeaponry</li>
+	  <li>RE_AllianceGunLight</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RE_AllianceWeaponry</li>
+    </thingSetMakerTags>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -606,9 +648,12 @@
         <Crafting>10</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>RE_ManufacturingBench</li>
       </recipeUsers>
     </recipeMaker>
+    <thingSetMakerTags>
+      <li>RE_AllianceWeaponry</li>
+    </thingSetMakerTags>
     <costList>
       <Plasteel>120</Plasteel>
       <ComponentSpacer>4</ComponentSpacer>
@@ -616,6 +661,10 @@
     <weaponTags Inherit='False'>
       <li>AllianceGunHeavy</li>
     </weaponTags>
+    <tradeTags>
+      <li>RE_AllianceWeaponry</li>
+	  <li>RE_AllianceGunHeavy</li>
+    </tradeTags>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -676,7 +725,7 @@
     </costList>
     <recipeMaker>
       <recipeUsers>
-        <li>FabricationBench</li>
+        <li>RE_ManufacturingBench</li>
       </recipeUsers>
       <researchPrerequisite>ChargedShot</researchPrerequisite>
       <skillRequirements>
@@ -686,6 +735,13 @@
     <weaponTags Inherit='False'>
       <li>AllianceGunHeavy</li>
     </weaponTags>
+    <tradeTags>
+      <li>RE_AllianceWeaponry</li>
+	  <li>RE_AllianceGunHeavy</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RE_AllianceWeaponry</li>
+    </thingSetMakerTags>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -774,7 +830,7 @@
         <Crafting>10</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>RE_ManufacturingBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -784,6 +840,13 @@
     <weaponTags Inherit='False'>
       <li>AllianceGunHeavy</li>
     </weaponTags>
+    <tradeTags>
+      <li>RE_AllianceWeaponry</li>
+	  <li>RE_AllianceGunHeavy</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RE_AllianceWeaponry</li>
+    </thingSetMakerTags>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>

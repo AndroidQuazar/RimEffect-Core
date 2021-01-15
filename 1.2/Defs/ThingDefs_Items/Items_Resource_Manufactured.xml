@@ -13,8 +13,9 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<drawSize>0.85</drawSize>
 		</graphicData>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Ultra</techLevel>
 		<stackLimit>25</stackLimit>
+		<tradeability>Buyable</tradeability>
 		<statBases>
       		<Mass>0.2</Mass>
 			<MarketValue>750</MarketValue>
@@ -58,7 +59,6 @@
 				<Intellectual>6</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
-		<tradeability>Sellable</tradeability>
 		<tradeTags>
 			<li>RE_Medicine</li>
 		</tradeTags>

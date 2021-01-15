@@ -24,6 +24,7 @@
     </graphicData>
     <tradeTags>
       <li>RE_AllianceArmoury</li>
+	  <li>RE_LightArmour</li>
     </tradeTags>
     <generateCommonality>2</generateCommonality>
     <statBases>
