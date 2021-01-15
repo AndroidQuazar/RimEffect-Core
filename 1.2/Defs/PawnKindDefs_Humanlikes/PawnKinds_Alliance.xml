@@ -142,7 +142,7 @@
   <PawnKindDef ParentName="AllianceBase">
     <defName>RE_Colonist</defName>
     <label>colonist</label>
-    <combatPower>55</combatPower>
+    <combatPower>50</combatPower>
     <itemQuality>Normal</itemQuality>
     <isFighter>false</isFighter>
     <gearHealthRange>0.2~2.0</gearHealthRange>
@@ -211,9 +211,64 @@
     <apparelMoney>300~1000</apparelMoney>
     <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     <techHediffsChance>0.1</techHediffsChance>
-    <techHediffsMoney>500~1000</techHediffsMoney>
+    <techHediffsMoney>500~1100</techHediffsMoney>
     <techHediffsTags>
       <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_AllianceRecruit</defName>
+    <label>alliance recruit</label>
+    <combatPower>55</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>AllianceGunLight</li>
+    </weaponTags>
+    <weaponMoney>740~1800</weaponMoney>
+    <apparelRequired>
+	  <li>RE_Apparel_BattleUniform</li>
+    </apparelRequired>
+    <apparelTags>
+		<li>RE_SpacerApparel</li>
+    </apparelTags>
+    <apparelMoney>300~600</apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>400~900</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_AllianceMilitia</defName>
+    <label>militia</label>
+    <combatPower>60</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>AllianceGun</li>
+    </weaponTags>
+    <weaponMoney>1100~3000</weaponMoney>
+    <apparelRequired>
+	  <li>RE_Apparel_Fatigues</li>
+    </apparelRequired>
+    <apparelTags>
+		<li>RE_SpacerApparel</li>
+    </apparelTags>
+    <apparelMoney>300~600</apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>400~1000</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+	  <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
   </PawnKindDef>
