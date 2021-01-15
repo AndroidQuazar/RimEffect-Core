@@ -188,5 +188,34 @@
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
   </PawnKindDef>
+  
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_AllianceOfficer</defName>
+    <label>alliance officer</label>
+    <combatPower>65</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>AllianceGunLight</li>
+    </weaponTags>
+    <weaponMoney>740~2000</weaponMoney>
+    <apparelRequired>
+	  <li>RE_Apparel_AllianceDressJacket</li>
+	  <li>RE_Apparel_AllianceOfficerHat</li>
+    </apparelRequired>
+    <apparelTags>
+		<li>RE_AllianceSpacerApparel</li>
+		<li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>300~1000</apparelMoney>
+    <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+    <techHediffsChance>0.1</techHediffsChance>
+    <techHediffsMoney>500~1000</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+  </PawnKindDef>
 
 </Defs>
