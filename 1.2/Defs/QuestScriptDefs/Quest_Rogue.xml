@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <QuestScriptDef>
+    <defName>RE_Rogue</defName>
+    <rootSelectionWeight>1.0</rootSelectionWeight>
+    <rootMinPoints>350</rootMinPoints>
+    <canGiveRoyalFavor>true</canGiveRoyalFavor>
+    <expireDaysRange>2~3</expireDaysRange>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Rogue [numeral]</li>
+        <li>numeral->I</li>
+        <li>numeral->II</li>
+        <li>numeral->III</li>
+        <li>numeral->IV</li>
+        <li>numeral->V</li>
+        <li>numeral->VI</li>
+        <li>numeral->VII</li>
+        <li>numeral->VIII</li>
+        <li>numeral->IX</li>
+        <li>numeral->X</li>
+        <li>numeral->XI</li>
+        <li>numeral->XII</li>
+        <li>numeral->XIII</li>
+        <li>numeral->XIV</li>
+        <li>numeral->XV</li>
+        <li>numeral->XVI</li>
+        <li>numeral->XVII</li>
+        <li>numeral->XVIII</li>
+        <li>numeral->XIX</li>
+        <li>numeral->XX</li>
+        <li>numeral->XXI</li>
+        <li>numeral->XXII</li>
+        <li>numeral->XXIII</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->[refugee_nameDef] contacts you and requests help. [refugee_pronoun] came across a small installation run by a rogue virtual intelligence. \n[refugee_nameDef] is a [refugee_age]-year-old [refugee_title]. [refugee_pronoun] promises to join you if you rescue [refugee_objective]. \n[refugee_nameDef] says that you should exercise extreme caution. Whilst there are no humans left alive in the area, a large number of turrets and mechs went completely haywire and will attack anyone that comes into range.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+  </QuestScriptDef>
+  
+</Defs>
