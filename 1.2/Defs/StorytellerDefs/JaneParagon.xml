@@ -2,8 +2,8 @@
 <Defs>
 
 	<StorytellerDef ParentName="BaseStoryteller">
-		<defName>RE-JaneParagon</defName>
-		<label>Jane Paragon</label>
+		<defName>RE-JaneRenegade</defName>
+		<label>Jane Renegade</label>
 		<description>Igor Invader holds no regard for boring stories about thriving colonies. The only story worth telling is the one of combat. He will send raids every two or three days, rewarding players for dealing with them swiftly, and punishing player for any losses. This storyteller doubles all damage types.</description>
 		<portraitLarge>HeroArt/JaneRenegade</portraitLarge>
 		<portraitTiny>HeroArt/JaneRenegadeTiny</portraitTiny>
@@ -222,11 +222,13 @@
 						<li>WildManWandersIn</li>
 					</goodIncidents>
 					<negativeIncidents>
-						<!-- We need to collect a list of negative incidents here... -->
+						<li>CropBlight</li>
+						<li>ShortCircuit</li>
+						<li>ColdSnap</li>
+						<li>Flashstorm</li>
+						<li>PsychicDrone</li>
+						<li>WandererJoinAbasia</li>
 					</negativeIncidents>
-					<neutralIncidents>
-						<!-- We need to collect a list of neutral incidents here... -->
-					</neutralIncidents>
 				</incidentSpawnOptions>
 			</li>
 		</modExtensions>

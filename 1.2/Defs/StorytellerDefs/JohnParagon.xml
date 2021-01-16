@@ -222,11 +222,13 @@
 						<li>WildManWandersIn</li>
 					</goodIncidents>
 					<negativeIncidents>
-						<!-- We need to collect a list of negative incidents here... -->
+						<li>CropBlight</li>
+						<li>ShortCircuit</li>
+						<li>ColdSnap</li>
+						<li>Flashstorm</li>
+						<li>PsychicDrone</li>
+						<li>WandererJoinAbasia</li>
 					</negativeIncidents>
-					<neutralIncidents>
-						<!-- We need to collect a list of neutral incidents here... -->
-					</neutralIncidents>
 				</incidentSpawnOptions>
 			</li>
 		</modExtensions>
