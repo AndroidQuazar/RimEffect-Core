@@ -1,129 +1,128 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <TerrainDef  ParentName="FloorBase">
-    <defName>RE_ColonialWoodTile</defName>
-    <label>colonial wood floor</label>
-    <renderPrecedence>250</renderPrecedence>
-    <description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
-    <texturePath>Things/Terrain/ColonialWoodTile</texturePath>
-    <burnedDef>BurnedWoodPlankFloor</burnedDef>
-    <color>(108,78,55)</color>
-    <statBases>
-      <WorkToBuild>100</WorkToBuild>
-      <Flammability>0.22</Flammability>
-    </statBases>
-    <costList>
-      <WoodLog>4</WoodLog>
-    </costList>
-    <constructEffect>ConstructWood</constructEffect>
-	<researchPrerequisites><li>RE_BasicPrefabrication</li></researchPrerequisites>
-  </TerrainDef>
+    <TerrainDef  ParentName="FloorBase">
+        <defName>RE_ColonialWoodTile</defName>
+        <label>colonial wood floor</label>
+        <renderPrecedence>250</renderPrecedence>
+        <description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+        <texturePath>Terrain/Surfaces/ColonialWoodTile</texturePath>
+        <burnedDef>BurnedWoodPlankFloor</burnedDef>
+        <color>(108,78,55)</color>
+        <statBases>
+            <WorkToBuild>100</WorkToBuild>
+            <Flammability>0.22</Flammability>
+        </statBases>
+        <costList>
+            <WoodLog>4</WoodLog>
+        </costList>
+        <constructEffect>ConstructWood</constructEffect>
+        <researchPrerequisites>
+            <li>RE_BasicPrefabrication</li>
+        </researchPrerequisites>
+    </TerrainDef>
 
-  <!-- ================= Metal Tiles ================= -->
+    <!-- ================= Metal Tiles ================= -->
+    <TerrainDef Abstract="True" ParentName="FloorBase" Name="RE_TileMetalBase">
+        <texturePath>Terrain/Surfaces/ColonialFloorTile</texturePath>
+        <designatorDropdown>RE_ColonialFloorTileSteel</designatorDropdown>
+        <constructEffect>ConstructMetal</constructEffect>
+        <researchPrerequisites>
+            <li>RE_BasicPrefabrication</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    </TerrainDef>
+    <TerrainDef ParentName="RE_TileMetalBase">
+        <defName>RE_ColonialFloorTileSteel</defName>
+        <label>steel colonial floor</label>
+        <renderPrecedence>240</renderPrecedence>
+        <description>Steel tiles, for that spaceship look. They are pretty, and the smooth tile surface gets a bonus to cleanliness.</description>
+        <color>(0.369, 0.369, 0.369)</color>
+        <statBases>
+            <WorkToBuild>1000</WorkToBuild>
+            <Beauty>2</Beauty>
+            <Cleanliness>0.2</Cleanliness>
+        </statBases>
+        <costList>
+            <Steel>8</Steel>
+        </costList>
+        <designationHotKey>Misc7</designationHotKey>
+    </TerrainDef>
 
-  <TerrainDef Abstract="True" ParentName="FloorBase" Name="RE_TileMetalBase">
-    <texturePath>Things/Terrain/ColonialFloorTile</texturePath>
-    <designatorDropdown>RE_ColonialFloorTileSteel</designatorDropdown>
-    <constructEffect>ConstructMetal</constructEffect>
-    <researchPrerequisites>
-      <li>RE_BasicPrefabrication</li>
-    </researchPrerequisites>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-  </TerrainDef>
+    <TerrainDef ParentName="RE_TileMetalBase">
+        <defName>RE_ColonialFloorTileSilver</defName>
+        <label>silver colonial floor</label>
+        <renderPrecedence>241</renderPrecedence>
+        <description>For a futuristic but royal look, silver tiles fit perfectly into luxurious rooms. They get a bonus to cleanliness.</description>
+        <color>(0.45, 0.45, 0.45)</color>
+        <statBases>
+            <Beauty>6</Beauty>
+            <WorkToBuild>1000</WorkToBuild>
+            <Cleanliness>0.2</Cleanliness>
+        </statBases>
+        <costList>
+            <Silver>80</Silver>
+        </costList>
+        <tags>
+            <li>FineFloor</li>
+        </tags>
+    </TerrainDef>
 
-  <TerrainDef ParentName="RE_TileMetalBase">
-    <defName>RE_ColonialFloorTileSteel</defName>
-    <label>steel colonial floor</label>
-    <renderPrecedence>240</renderPrecedence>
-    <description>Steel tiles, for that spaceship look. They are pretty, and the smooth tile surface gets a bonus to cleanliness.</description>
-    <color>(0.369, 0.369, 0.369)</color>
-    <statBases>
-      <WorkToBuild>1000</WorkToBuild>
-      <Beauty>2</Beauty>
-      <Cleanliness>0.2</Cleanliness>
-    </statBases>
-    <costList>
-      <Steel>8</Steel>
-    </costList>
-    <designationHotKey>Misc7</designationHotKey>
-  </TerrainDef>
-  
-  <TerrainDef ParentName="RE_TileMetalBase">
-    <defName>RE_ColonialFloorTileSilver</defName>
-    <label>silver colonial floor</label>
-    <renderPrecedence>241</renderPrecedence>
-    <description>For a futuristic but royal look, silver tiles fit perfectly into luxurious rooms. They get a bonus to cleanliness.</description>
-    <color>(0.45, 0.45, 0.45)</color>
-    <statBases>
-      <Beauty>6</Beauty>
-      <WorkToBuild>1000</WorkToBuild>
-      <Cleanliness>0.2</Cleanliness>
-    </statBases>
-    <costList>
-      <Silver>80</Silver>
-	</costList>
-    <tags>
-      <li>FineFloor</li>
-    </tags>
-  </TerrainDef>
-  
-  <TerrainDef ParentName="RE_TileMetalBase">
-    <defName>RE_ColonialFloorTileGold</defName>
-    <label>gold colonial floor</label>
-    <renderPrecedence>242</renderPrecedence>
-    <description>For overbearing extravagance, nothing beats gold tiles. They are exceptionally expensive, and exceptionally beautiful, and people will think you're exceptionally snobbish if you actually live on them.</description>
-    <color>(0.65, 0.65, 0.35)</color>
-    <statBases>
-      <Beauty>14</Beauty>
-      <WorkToBuild>1000</WorkToBuild>
-      <Cleanliness>0.2</Cleanliness>
-    </statBases>
-    <costList>
-      <Gold>80</Gold>
-    </costList>
-    <tags>
-      <li>FineFloor</li>
-    </tags>
-  </TerrainDef>
-  
-  <!-- ================= Misc Tiles ================= -->
+    <TerrainDef ParentName="RE_TileMetalBase">
+        <defName>RE_ColonialFloorTileGold</defName>
+        <label>gold colonial floor</label>
+        <renderPrecedence>242</renderPrecedence>
+        <description>For overbearing extravagance, nothing beats gold tiles. They are exceptionally expensive, and exceptionally beautiful, and people will think you're exceptionally snobbish if you actually live on them.</description>
+        <color>(0.65, 0.65, 0.35)</color>
+        <statBases>
+            <Beauty>14</Beauty>
+            <WorkToBuild>1000</WorkToBuild>
+            <Cleanliness>0.2</Cleanliness>
+        </statBases>
+        <costList>
+            <Gold>80</Gold>
+        </costList>
+        <tags>
+            <li>FineFloor</li>
+        </tags>
+    </TerrainDef>
 
-  <TerrainDef ParentName="FloorBase">
-    <defName>RE_ColonialRubberTile</defName>
-    <label>colonial rubber floor</label>
-    <renderPrecedence>243</renderPrecedence>
-    <description>Colonial rubber floor.</description>
-    <texturePath>Things/Terrain/ColonialRubberTile</texturePath>
-    <color>(0.71, 0.71, 0.71)</color>
-    <statBases>
-      <WorkToBuild>800</WorkToBuild>
-    </statBases>
-    <costList>
-      <Steel>3</Steel>
-    </costList>
-    <constructEffect>ConstructMetal</constructEffect>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-    <researchPrerequisites>
-      <li>RE_BasicPrefabrication</li>
-    </researchPrerequisites>
-  </TerrainDef>
+    <!-- ================= Misc Tiles ================= -->
+    <TerrainDef ParentName="FloorBase">
+        <defName>RE_ColonialRubberTile</defName>
+        <label>colonial rubber floor</label>
+        <renderPrecedence>243</renderPrecedence>
+        <description>Colonial rubber floor.</description>
+        <texturePath>Terrain/Surfaces/ColonialRubberTile</texturePath>
+        <color>(0.71, 0.71, 0.71)</color>
+        <statBases>
+            <WorkToBuild>800</WorkToBuild>
+        </statBases>
+        <costList>
+            <Steel>3</Steel>
+        </costList>
+        <constructEffect>ConstructMetal</constructEffect>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <researchPrerequisites>
+            <li>RE_BasicPrefabrication</li>
+        </researchPrerequisites>
+    </TerrainDef>
 
-  <TerrainDef ParentName="FloorBase">
-    <defName>RE_ColonialPavementTile</defName>
-    <label>colonial pavement tile</label>
-    <renderPrecedence>230</renderPrecedence>
-    <description>Steel tiles. Cheap, but neutral in terms of looks and slow to build.</description>
-    <texturePath>Things/Terrain/ColonialPavementTile</texturePath>
-    <statBases>
-      <WorkToBuild>300</WorkToBuild>
-    </statBases>
-    <costList>
-      <Steel>2</Steel>
-    </costList>
-    <researchPrerequisites>
-      <li>RE_BasicPrefabrication</li>
-    </researchPrerequisites>
-  </TerrainDef>
+    <TerrainDef ParentName="FloorBase">
+        <defName>RE_ColonialPavementTile</defName>
+        <label>colonial pavement tile</label>
+        <renderPrecedence>230</renderPrecedence>
+        <description>Steel tiles. Cheap, but neutral in terms of looks and slow to build.</description>
+        <texturePath>Terrain/Surfaces/ColonialPavementTile</texturePath>
+        <statBases>
+            <WorkToBuild>300</WorkToBuild>
+        </statBases>
+        <costList>
+            <Steel>2</Steel>
+        </costList>
+        <researchPrerequisites>
+            <li>RE_BasicPrefabrication</li>
+        </researchPrerequisites>
+    </TerrainDef>
 
 </Defs>
