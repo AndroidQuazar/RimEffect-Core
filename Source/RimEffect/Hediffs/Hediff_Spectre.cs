@@ -23,7 +23,6 @@ namespace RimEffect
             {
                 if (this.pawn.Map != null)
                 {
-                    Log.Message(Find.TickManager.TicksAbs + " - " + this.pawn.Map.dangerWatcher.DangerRating + " - " + tickShouldLeave + " - " + tickShouldLeaveMax);
                     if (Find.TickManager.TicksAbs > tickShouldLeave && this.pawn.Map.dangerWatcher.DangerRating != StoryDanger.High || Find.TickManager.TicksAbs > tickShouldLeaveMax)
                     {
                         Leave();
