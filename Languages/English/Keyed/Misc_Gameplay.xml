@@ -22,6 +22,9 @@
 	<RE_MeltdownLetterEezo>Due to high temperature in the reactor room, the element zero reactor's containment field has been breached, resulting in the release of psychically active element zero! Until repaired, this reactor will be extremely harmful to colonists' moods in an extended radius.\n\nIgnoring this may very well be the end of your colony in a few hours.</RE_MeltdownLetterEezo>
 	<RE_NoReactorRoomEezo>Element zero reactor room must be a roofed, enclosed space</RE_NoReactorRoomEezo>
 	
+	<RE.SpectreLeaves>Spectre leaves</RE.SpectreLeaves>
+	<RE.SpectreLeavesDesc>Having helped your colony, and finishing their goal, spectre has decided it's time to move on.</RE.SpectreLeavesDesc>
+	
 	
 	
 </LanguageData>

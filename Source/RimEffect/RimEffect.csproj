@@ -50,6 +50,8 @@
     <Compile Include="Comps\CompProperties\CompProperties_VariableHeatPusher.cs" />
     <Compile Include="Comps\CompVariableHeatPusher.cs" />
     <Compile Include="Damages\DamageWorker_BombNoShake.cs" />
+    <Compile Include="Hediffs\Hediff_Spectre.cs" />
+    <Compile Include="Incidents\IncidentWorker_SpectreJoin.cs" />
     <Compile Include="Interactions\InteractionWorker_PyjakNuzzle.cs" />
     <Compile Include="Jobs\JobDriver_PyjakNuzzle.cs" />
     <Compile Include="Jobs\JobGiver_HaulItemsToRandomPlaces.cs" />

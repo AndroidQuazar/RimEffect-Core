@@ -200,7 +200,7 @@
 			</li>
 			<!-- Triggered -->
 			<li Class="StorytellerCompProperties_Triggered">
-				<incident>StrangerInBlackJoin</incident>
+				<incident>RE_SpectreJoins</incident>
 				<delayTicks>180</delayTicks>
 			</li>
 		</comps>
@@ -223,6 +223,7 @@
 					</goodIncidents>
 					<negativeIncidents>
 						<li>CropBlight</li>
+						<li>Eclipse</li>
 						<li>ShortCircuit</li>
 						<li>ColdSnap</li>
 						<li>Flashstorm</li>
