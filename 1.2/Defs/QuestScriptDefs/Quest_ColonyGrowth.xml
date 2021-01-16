@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <QuestScriptDef>
+    <defName>RE_ColonyGrowth</defName>
+    <rootSelectionWeight>1.0</rootSelectionWeight>
+    <rootMinPoints>350</rootMinPoints>
+    <canGiveRoyalFavor>true</canGiveRoyalFavor>
+    <expireDaysRange>5~10</expireDaysRange>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->The [size] [expansion]</li>
+        <li>questName->[size] [expansion]</li>
+        <li>questName->[asker_nameDef] and the [expansion]</li>
+        <li>expansion->Expansion</li>
+        <li>expansion->Extension</li>
+        <li>expansion->Development</li>
+        <li>expansion->Construction Site</li>
+        <li>size->Big</li>
+        <li>size->Large</li>
+        <li>size->Huge</li>
+        <li>size->Small</li>
+        <li>size->Great</li>
+        <li>size->Tremendous</li>
+        <li>size->Grand</li>
+        <li>size->Massive</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->High command of [asker_faction_name] analyzed the situation at [map_definite] and decided to contact you with an expansion opportunity. They would like to relocate [numberPawns] of [pawnKindDef] to your colony, but they need to make sure you can support them. /n/n[asker_faction_name] requests that you construct additional [numberRooms] [roomType] in [map_definite]. /n/nIn return, following personnel will join you: <!--[list of personnel goes here, formatted in that way: John, farmer; Jane, marine;].--></li>
+      </rulesStrings>
+    </questDescriptionRules>
+  </QuestScriptDef>
+  
+</Defs>
