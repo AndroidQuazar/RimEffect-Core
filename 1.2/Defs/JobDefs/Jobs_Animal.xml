@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <JobDef>
-    <defName>RE_PyjakNuzzle</defName>
-    <driverClass>RimEffect.JobDriver_PyjakNuzzle</driverClass>
-    <reportString>nuzzling TargetA.</reportString>
-    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
-  </JobDef>
+    <JobDef>
+        <defName>RE_PyjakNuzzle</defName>
+        <driverClass>RimEffect.JobDriver_PyjakNuzzle</driverClass>
+        <reportString>nuzzling TargetA.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
 
 </Defs>
