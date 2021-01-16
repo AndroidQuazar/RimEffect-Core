@@ -29,5 +29,6 @@ namespace RimEffect
         public static InteractionDef RE_Interaction_PyjakNuzzle;
         public static FactionDef RE_SystemsAlliance;
         public static HediffDef RE_Spectre;
+        public static PawnKindDef RE_Pyjak;
     }
 }

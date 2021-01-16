@@ -18,5 +18,16 @@
     <pawnFixedGender>Male</pawnFixedGender>
     <pawnMustBeCapableOfViolence>true</pawnMustBeCapableOfViolence>
   </IncidentDef>
-
+  
+  <IncidentDef>
+    <defName>RE_PyjaksJoins</defName>
+    <label>pyjaks joins</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>RimEffect.IncidentWorker_PyjakCrate</workerClass>
+    <baseChance>0.3</baseChance>
+    <requireColonistsPresent>true</requireColonistsPresent>
+  </IncidentDef>
 </Defs>
