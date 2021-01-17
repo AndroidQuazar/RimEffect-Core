@@ -31,6 +31,7 @@ namespace RimEffect
         public static HediffDef RE_Spectre;
         public static PawnKindDef RE_Pyjak;
 
-        public static JobDef RE_UseAbility;
+        public static JobDef    RE_UseAbility;
+        public static HediffDef RE_BioticAmpHediff;
     }
 }
