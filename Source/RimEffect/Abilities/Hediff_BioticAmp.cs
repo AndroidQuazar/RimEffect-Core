@@ -1,5 +1,6 @@
 ﻿namespace RimEffect
 {
+    using RimWorld;
     using Verse;
 
     public class Hediff_BioticAmp : Hediff_Abilities
@@ -17,6 +18,8 @@
 
     public class AbilityExtension_Biotic : DefModExtension
     {
+        public float GetEnergyUsedByPawn(Pawn pawn) => this.energyUsed * pawn.GetStatValue(RE_DefOf.RE_BioticAbilityCostMultiplier);
+
         public float energyUsed = 0f;
     }
 }

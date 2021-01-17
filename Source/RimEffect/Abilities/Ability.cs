@@ -35,7 +35,7 @@
 
                 reason = "RE.AbilityDisableReasonBioticEnergyLack".Translate();
                 Log.ResetMessageCount();
-                if (this.Hediff == null || !((Hediff_BioticAmp) this.Hediff).SufficientEnergyPresent(biotic.energyUsed))
+                if (this.Hediff == null || !((Hediff_BioticAmp) this.Hediff).SufficientEnergyPresent(biotic.GetEnergyUsedByPawn(this.pawn)))
                     return false;
             }
 
@@ -128,7 +128,7 @@
             if (biotic != null)
             {
                 Hediff_BioticAmp bioticAmp = (Hediff_BioticAmp) this.pawn.health.hediffSet.GetFirstHediffOfDef(RE_DefOf.RE_BioticAmpHediff);
-                bioticAmp.UseEnergy(biotic.energyUsed);
+                bioticAmp.UseEnergy(biotic.GetEnergyUsedByPawn(this.pawn));
             }
         }
 
