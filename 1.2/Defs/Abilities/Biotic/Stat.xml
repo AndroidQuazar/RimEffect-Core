@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <StatDef>
+    <defName>RE_BioticEnergyMax</defName>
+    <label>neural biotic energy limit</label>
+    <description>The maximum amount of biotic energy the individual can sustain safely.</description>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>30</defaultBaseValue>
+    <minValue>0</minValue>
+    <hideAtValue>0</hideAtValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <showOnAnimals>false</showOnAnimals>
+    <showOnMechanoids>false</showOnMechanoids>
+    <showIfModsLoaded><li>RimEffect.Core</li></showIfModsLoaded>
+    <showIfHediffsPresent><li>RE_BioticAmpHediff</li></showIfHediffsPresent>
+    <displayPriorityInCategory>3500</displayPriorityInCategory>
+    <scenarioRandomizable>true</scenarioRandomizable>
+    <statFactors>
+      <li>PsychicSensitivity</li>
+    </statFactors>
+  </StatDef>
+
+  <StatDef>
+    <defName>RE_BioticEnergyRecoveryRate</defName>
+    <label>neural biotic energy recovery rate</label>
+    <description>The rate at which this person recovers biotic energy.</description>
+    <category>BasicsPawn</category>
+    <minValue>0</minValue>
+    <hideAtValue>0</hideAtValue>
+    <defaultBaseValue>0.54</defaultBaseValue>
+    <toStringStyle>FloatTwo</toStringStyle>
+    <formatString>{0}/s</formatString>
+    <showOnAnimals>false</showOnAnimals>
+    <showOnMechanoids>false</showOnMechanoids>
+    <showIfModsLoaded><li>RimEffect.Core</li></showIfModsLoaded>
+    <showIfHediffsPresent><li>RE_BioticAmpHediff</li></showIfHediffsPresent>
+    <displayPriorityInCategory>4000</displayPriorityInCategory>
+  </StatDef>
+</Defs>

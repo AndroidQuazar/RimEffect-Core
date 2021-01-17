@@ -30,5 +30,7 @@ namespace RimEffect
         public static FactionDef RE_SystemsAlliance;
         public static HediffDef RE_Spectre;
         public static PawnKindDef RE_Pyjak;
+
+        public static JobDef RE_UseAbility;
     }
 }

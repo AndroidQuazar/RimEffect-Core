@@ -23,9 +23,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\1.2\Assemblies\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -41,6 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\Abilities\Ability_GiveHediff.cs" />
+    <Compile Include="Abilities\Ability.cs" />
+    <Compile Include="Abilities\AbilityDef.cs" />
+    <Compile Include="Abilities\Command_Ability.cs" />
+    <Compile Include="Abilities\CompAbilities.cs" />
+    <Compile Include="Abilities\CompAbilitiesApparel.cs" />
+    <Compile Include="Abilities\Hediff_Abilities.cs" />
+    <Compile Include="Abilities\Hediff_BioticAmp.cs" />
+    <Compile Include="Abilities\JobDriver_CastAbilityOnce.cs" />
+    <Compile Include="Abilities\PawnKindAbilityExtension.cs" />
     <Compile Include="Comps\CompPlantHarmRadiusIfBroken.cs" />
     <Compile Include="Comps\CompPowerPlantZero.cs" />
     <Compile Include="Comps\CompPowerPlantNuclear.cs" />
@@ -50,6 +60,7 @@
     <Compile Include="Comps\CompProperties\CompProperties_VariableHeatPusher.cs" />
     <Compile Include="Comps\CompVariableHeatPusher.cs" />
     <Compile Include="Damages\DamageWorker_BombNoShake.cs" />
+    <Compile Include="HarmonyPatches\PawnGen_Patch.cs" />
     <Compile Include="Hediffs\Hediff_Spectre.cs" />
     <Compile Include="Incidents\IncidentWorker_PyjakCrate.cs" />
     <Compile Include="Incidents\IncidentWorker_SpectreJoin.cs" />
@@ -71,5 +82,6 @@
       <Version>2.0.4</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
