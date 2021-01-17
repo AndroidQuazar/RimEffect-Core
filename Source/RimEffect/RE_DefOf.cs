@@ -33,5 +33,7 @@ namespace RimEffect
 
         public static JobDef RE_UseAbility;
         public static JobDef RE_UseCommsConsole;
+		
+        public static HediffDef RE_BioticAmpHediff;
     }
 }

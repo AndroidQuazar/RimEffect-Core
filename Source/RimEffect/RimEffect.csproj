@@ -61,6 +61,7 @@
     <Compile Include="Comps\CompProperties\CompProperties_VariableHeatPusher.cs" />
     <Compile Include="Comps\CompVariableHeatPusher.cs" />
     <Compile Include="Damages\DamageWorker_BombNoShake.cs" />
+    <Compile Include="HarmonyPatches\CanEquip_Patch.cs" />
     <Compile Include="HarmonyPatches\PawnGen_Patch.cs" />
     <Compile Include="Hediffs\Hediff_Spectre.cs" />
     <Compile Include="Incidents\IncidentWorker_PyjakCrate.cs" />

@@ -5,37 +5,6 @@
 	<RE.AbilityDisableReasonGeneral>{0} doesn't meet the requirements</RE.AbilityDisableReasonGeneral>
 
 	<RE.AbilityStatsPower>Power</RE.AbilityStatsPower>
-
-
-	<RE.CommandDisableAmmoBeltLabel>Disable {0}</RE.CommandDisableAmmoBeltLabel>
-	<RE.CommandEnableAmmoBeltLabel>Enable {0}</RE.CommandEnableAmmoBeltLabel>
-	<RE.CommandToggleAmmoBeltDesc>Enable/disable ammo belt</RE.CommandToggleAmmoBeltDesc>
-	
-	<!-- Fusion Reactor -->
-	<RE_RadiationProduced>Warning: Fusion reactor producing radiation in a {0} meters radius</RE_RadiationProduced>
-	<RE_TempInReactorRoom>Temperature in fusion reactor room: {0}ºC</RE_TempInReactorRoom>
-	<RE_TempInReactorRoomCritical>Warning: Temperature in fusion reactor room: {0}ºC</RE_TempInReactorRoomCritical>
-	<RE_Meltdown>Warning: Breach of containment field releasing tritium due to high temperature. Until repaired, fusion reactor will kill all life in a radius of</RE_Meltdown>
-	<RE_MeltdownLetterLabel>Fusion Reactor Breach</RE_MeltdownLetterLabel>
-	<RE_MeltdownLetter>Due to high temperature in the reactor room, the fusion reactor's containment field has been breached, resulting in the release of radioactive clouds of tritium fuel! Until repaired, this reactor will be extremely harmful to life in an extended radius.\n\nIgnoring this may very well be the end of your colony in a few hours.</RE_MeltdownLetter>
-	<RE_NoReactorRoom>Fusion reactor room must be a roofed, enclosed space</RE_NoReactorRoom>
-	
-	<!-- Eezo Reactor -->
-	<RE_RadiationProducedEezo>Warning: Element zero reactor causing mind drone in a {0} meters radius</RE_RadiationProducedEezo>
-	<RE_TempInReactorRoomEezo>Temperature in element zero reactor room: {0}ºC</RE_TempInReactorRoomEezo>
-	<RE_TempInReactorRoomCriticalEezo>Warning: Temperature in element zero reactor room: {0}ºC</RE_TempInReactorRoomCriticalEezo>
-	<RE_MeltdownEezo>Warning: Breach of containment field releasing psychically active element zero due to high temperature. Until repaired, element zero reactor will affect all psychically active beings.</RE_MeltdownEezo>
-	<RE_MeltdownLetterLabelEezo>Element Zero Reactor Breach</RE_MeltdownLetterLabelEezo>
-	<RE_MeltdownLetterEezo>Due to high temperature in the reactor room, the element zero reactor's containment field has been breached, resulting in the release of psychically active element zero! Until repaired, this reactor will be extremely harmful to colonists' moods in an extended radius.\n\nIgnoring this may very well be the end of your colony in a few hours.</RE_MeltdownLetterEezo>
-	<RE_NoReactorRoomEezo>Element zero reactor room must be a roofed, enclosed space</RE_NoReactorRoomEezo>
-	
-	<RE.SpectreLeaves>Spectre leaves</RE.SpectreLeaves>
-	<RE.SpectreLeavesDesc>Having helped your colony, and finishing their goal, spectre has decided it's time to move on.</RE.SpectreLeavesDesc>
-	<RE.LetterPyjaksCrate>Pyjaks joins</RE.LetterPyjaksCrate>
-	<RE.LetterPyjaksCrateDesc>A few cargo pods with pyjaks, lost or ejected on purpose, drop in the local area. Used to living among people, they seem accustomed to human contact and are joining the colony.
-
-Be careful: pyjaks are known for causing distress in people when nuzzling, and often steal items they find interesting, peculiar or simply annoying.</RE.LetterPyjaksCrateDesc>
-	
-	
+	<RE.BioticAmpCantEquipWeaponWeightReason>This weapon is too heavy for a biotic user</RE.BioticAmpCantEquipWeaponWeightReason>
 	
 </LanguageData>
