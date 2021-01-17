@@ -51,6 +51,7 @@
     <Compile Include="Abilities\Hediff_BioticAmp.cs" />
     <Compile Include="Abilities\JobDriver_CastAbilityOnce.cs" />
     <Compile Include="Abilities\PawnKindAbilityExtension.cs" />
+    <Compile Include="Buildings\Building_GalaxyMap.cs" />
     <Compile Include="Comps\CompPlantHarmRadiusIfBroken.cs" />
     <Compile Include="Comps\CompPowerPlantZero.cs" />
     <Compile Include="Comps\CompPowerPlantNuclear.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Apparels\AmmoBelt.cs" />
     <Compile Include="HarmonyPatches\HarmonyInit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Window_GalaxyMap.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">

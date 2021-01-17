@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>RE_UseCommsConsole</defName>
+    <driverClass>JobDriver_UseCommsConsole</driverClass>
+    <reportString>using galaxy map.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  
+  <JobDef>
+    <defName>RE_UseGalaxyMap</defName>
+    <driverClass>VanillaStorytellersExpanded.JobDriver_UseQuestGiver</driverClass>
+    <reportString>using galaxy map.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  
+</Defs>

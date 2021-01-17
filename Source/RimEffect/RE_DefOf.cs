@@ -32,5 +32,6 @@ namespace RimEffect
         public static PawnKindDef RE_Pyjak;
 
         public static JobDef RE_UseAbility;
+        public static JobDef RE_UseCommsConsole;
     }
 }
