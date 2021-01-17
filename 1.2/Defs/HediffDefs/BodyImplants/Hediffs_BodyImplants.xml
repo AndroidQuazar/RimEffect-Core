@@ -118,5 +118,83 @@
     <jobString>Removing adrenaline module.</jobString>
     <removesHediff>RE_AdrenalineModule</removesHediff>
   </RecipeDef>
+  
+ <HediffDef ParentName="ImplantHediffBase">
+    <defName>RE_StabilizationModule</defName>
+    <label>stabilization module</label>
+    <labelNoun>a stabilization module</labelNoun>
+    <description>An installed stabilization module.</description>
+    <descriptionHyperlinks><ThingDef>RE_StabilizationModule</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>RE_StabilizationModule</spawnThingOnRemoved>
+	<defaultLabelColor>(0,237,248)</defaultLabelColor>
+    <stages>
+        <li>
+            <statOffsets>
+              <ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
+            </statOffsets>
+        </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_ReactOnDamage">
+        <damageDefIncoming>EMP</damageDefIncoming>
+        <createHediff>BrainShock</createHediff>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef ParentName="RE_BodyPartImplantBase">
+    <defName>RE_StabilizationModule</defName>
+    <label>stabilization module</label>
+    <description>An intelligent microcomputer with a fairly powerful processor for its size. Calculates the trajectories of projectiles, displaying them onto a small holographic interface in the retina.</description>
+    <descriptionHyperlinks><RecipeDef>RE_InstallStabilizationModule</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RE_Implant</li></thingSetMakerTags>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+	  <RE_ElementZero>1</RE_ElementZero>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>RE_InstallStabilizationModule</defName>
+    <label>install stabilization module</label>
+    <description>Install a stabilization module.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_StabilizationModule</ThingDef>
+      <HediffDef>RE_StabilizationModule</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing stabilization module.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RE_StabilizationModule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RE_StabilizationModule</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>RE_StabilizationModule</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RE_RemoveStabilizationModule</defName>
+    <label>remove stabilization module</label>
+    <description>Remove stabilization module.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_StabilizationModule</ThingDef>
+      <HediffDef>RE_StabilizationModule</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing stabilization module.</jobString>
+    <removesHediff>RE_StabilizationModule</removesHediff>
+  </RecipeDef>
 	
 </Defs>
