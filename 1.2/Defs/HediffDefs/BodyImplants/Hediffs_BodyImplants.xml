@@ -67,7 +67,7 @@
   <ThingDef ParentName="RE_BodyPartImplantBase">
     <defName>RE_AdrenalineModule</defName>
     <label>adrenaline module</label>
-    <description>Small microcomputer with glass capsule and adrenaline synthesizer. Constantly injects the substance into the blood, increases the speed of movement.</description>
+    <description>A small microcomputer with glass capsule and adrenaline synthesizer. Constantly injects the substance into the blood, increases the speed of movement.</description>
     <descriptionHyperlinks><RecipeDef>RE_InstallAdrenalineModule</RecipeDef></descriptionHyperlinks>
     <thingSetMakerTags><li>RE_Implant</li></thingSetMakerTags>
     <costList>
@@ -195,6 +195,84 @@
     </descriptionHyperlinks>
     <jobString>Removing stabilization module.</jobString>
     <removesHediff>RE_StabilizationModule</removesHediff>
+  </RecipeDef>
+  
+ <HediffDef ParentName="ImplantHediffBase">
+    <defName>RE_StrengthEnhancer</defName>
+    <label>strength enhancer</label>
+    <labelNoun>a strength enhancer</labelNoun>
+    <description>An installed strength enhancer.</description>
+    <descriptionHyperlinks><ThingDef>RE_StrengthEnhancer</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>RE_StrengthEnhancer</spawnThingOnRemoved>
+	<defaultLabelColor>(0,237,248)</defaultLabelColor>
+    <stages>
+        <li>
+            <statOffsets>
+              <MeleeWeapon_DamageMultiplier>0.2</MeleeWeapon_DamageMultiplier>
+            </statOffsets>
+        </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_ReactOnDamage">
+        <damageDefIncoming>EMP</damageDefIncoming>
+        <createHediff>BrainShock</createHediff>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef ParentName="RE_BodyPartImplantBase">
+    <defName>RE_StrengthEnhancer</defName>
+    <label>strength enhancer</label>
+    <description>A microcomputer with large glass capsule and advanced combat stimulant synthesizer. Constantly injects substances into the blood, increasing the user's potential in melee combat.</description>
+    <descriptionHyperlinks><RecipeDef>RE_InstallStrengthEnhancer</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RE_Implant</li></thingSetMakerTags>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+	  <RE_ElementZero>1</RE_ElementZero>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>RE_InstallStrengthEnhancer</defName>
+    <label>install strength enhancer</label>
+    <description>Install a strength enhancer.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_StrengthEnhancer</ThingDef>
+      <HediffDef>RE_StrengthEnhancer</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing strength enhancer.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RE_StrengthEnhancer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RE_StrengthEnhancer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>RE_StrengthEnhancer</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RE_RemoveStrengthEnhancer</defName>
+    <label>remove strength enhancer</label>
+    <description>Remove strength enhancer.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_StrengthEnhancer</ThingDef>
+      <HediffDef>RE_StrengthEnhancer</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing strength enhancer.</jobString>
+    <removesHediff>RE_StrengthEnhancer</removesHediff>
   </RecipeDef>
 	
 </Defs>
