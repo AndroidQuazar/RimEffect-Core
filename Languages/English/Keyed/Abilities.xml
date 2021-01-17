@@ -6,5 +6,5 @@
 
 	<RE.AbilityStatsPower>Power</RE.AbilityStatsPower>
 	<RE.BioticAmpCantEquipWeaponWeightReason>This weapon is too heavy for a biotic user</RE.BioticAmpCantEquipWeaponWeightReason>
-	
+	<RE.AbilityDisableReasonBioticEnergyLack>The user doesn't have enough biotic energy left</RE.AbilityDisableReasonBioticEnergyLack>
 </LanguageData>

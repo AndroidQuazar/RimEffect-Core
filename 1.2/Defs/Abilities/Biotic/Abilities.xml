@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RimEffect.AbilityDef>
+        <defName>RE_Biotic_Throw</defName>
+        <label>biotic throw</label>
+        <description>Uses Mass Effect field to deal blunt trauma to the enemy</description>
+        <abilityClass>RimEffect.Ability_ShootProjectile</abilityClass>
+        <targetMode>Pawn</targetMode>
+        <castTime>60</castTime>
+        <range>24</range>
+        <iconPath>UI/Abilities/Biotic_Throw</iconPath>
+        <power>6</power>
+        <requiredHediff>
+            <hediffDef>RE_BioticAmpHediff</hediffDef>
+            <minimumLevel>1</minimumLevel>
+        </requiredHediff>
+        <modExtensions>
+            <li Class="RimEffect.AbilityExtension_Projectile">
+                <projectile>RE_Biotic_ThrowProjectile</projectile>
+            </li>
+            <li Class="RimEffect.AbilityExtension_Biotic">
+                <energyUsed>5</energyUsed>
+            </li>
+        </modExtensions>
+    </RimEffect.AbilityDef>
+
+    <ThingDef ParentName="BaseBullet">
+    <defName>RE_Biotic_ThrowProjectile</defName>
+    <label>biotic throw</label>
+    <thingClass>RimEffect.AbilityProjectile</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Charge_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Blunt</damageDef>
+      <armorPenetrationBase>1</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+</Defs>

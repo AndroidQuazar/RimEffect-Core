@@ -42,8 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abilities\Abilities\Ability_GiveHediff.cs" />
+    <Compile Include="Abilities\Abilities\Ability_ShootProjectile.cs" />
     <Compile Include="Abilities\Ability.cs" />
     <Compile Include="Abilities\AbilityDef.cs" />
+    <Compile Include="Abilities\AbilityProjectile.cs" />
     <Compile Include="Abilities\Command_Ability.cs" />
     <Compile Include="Abilities\CompAbilities.cs" />
     <Compile Include="Abilities\CompAbilitiesApparel.cs" />

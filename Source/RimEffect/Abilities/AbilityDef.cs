@@ -56,7 +56,7 @@
     public class HediffWithLevelCombination
     {
         public HediffDef hediffDef;
-        public int       minimumLevel = 0;
+        public int       minimumLevel;
     }
 
     public enum AbilityTargetingMode : byte

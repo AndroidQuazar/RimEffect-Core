@@ -15,7 +15,6 @@
             base.GizmoUpdateOnMouseover();
 
             float radius;
-
             switch (this.ability.def.targetMode)
             {
                 case AbilityTargetingMode.Self:

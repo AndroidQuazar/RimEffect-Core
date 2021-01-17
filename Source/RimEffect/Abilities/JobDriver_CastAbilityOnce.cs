@@ -12,7 +12,11 @@
         protected override IEnumerable<Toil> MakeNewToils()
         {
             this.FailOnDespawnedOrNull(TargetIndex.A);
-            yield return Toils_Combat.GotoCastPosition(TargetIndex.A);
+
+
+
+            //yield return Toils_Combat.GotoCastPosition(TargetIndex.A);
+
             Toil          toil = new Toil();
             CompAbilities comp = this.pawn.GetComp<CompAbilities>();
             toil.defaultDuration     = comp.currentlyCasting.GetCastTimeForPawn();
