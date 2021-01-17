@@ -658,7 +658,7 @@
     <description>Elite Armor reserved for the best of the best, the Council’s chosen agents. .</description>
     <techLevel>Spacer</techLevel>
     <graphicData>
-      <texPath>Things/Apparel/HeavyAllianceArmor/HeavyAllianceArmor</texPath>
+      <texPath>Things/Apparel/SpectreArmor/SpectreArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
     </graphicData>
