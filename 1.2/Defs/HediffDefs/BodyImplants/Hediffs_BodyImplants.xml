@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Base -->
+
+  <ThingDef Name="RE_BodyPartImplantBase" ParentName="BodyPartBase" Abstract="True">
+    <techLevel>Ultra</techLevel>
+    <thingCategories>
+      <li>RE_Implants</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItemMassEffect</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <tradeTags>
+      <li>RE_Implant</li>
+    </tradeTags>
+    <techHediffsTags>
+      <li>RE_Implant</li>
+    </techHediffsTags>
+    <statBases>
+      <WorkToMake>30000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>RE_HighTechBodyImplants</researchPrerequisite>
+      <recipeUsers>
+        <li>RE_ManufacturingBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+ <HediffDef ParentName="ImplantHediffBase">
+    <defName>RE_AdrenalineModule</defName>
+    <label>adrenaline module</label>
+    <labelNoun>an adrenaline module</labelNoun>
+    <description>An installed adrenaline module.</description>
+    <descriptionHyperlinks><ThingDef>RE_AdrenalineModule</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>RE_AdrenalineModule</spawnThingOnRemoved>
+	<defaultLabelColor>(0,237,248)</defaultLabelColor>
+    <stages>
+      <li>
+        <capMods>
+        <li>
+            <capacity>Moving</capacity>
+            <offset>0.10</offset>
+        </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_ReactOnDamage">
+        <damageDefIncoming>EMP</damageDefIncoming>
+        <createHediff>BrainShock</createHediff>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef ParentName="RE_BodyPartImplantBase">
+    <defName>RE_AdrenalineModule</defName>
+    <label>adrenaline module</label>
+    <description>Small microcomputer with glass capsule and adrenaline synthesizer. Constantly injects the substance into the blood, increases the speed of movement.</description>
+    <descriptionHyperlinks><RecipeDef>RE_InstallAdrenalineModule</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RE_Implant</li></thingSetMakerTags>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+	  <RE_ElementZero>1</RE_ElementZero>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>RE_InstallAdrenalineModule</defName>
+    <label>install adrenaline module</label>
+    <description>Install an adrenaline module.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_AdrenalineModule</ThingDef>
+      <HediffDef>RE_AdrenalineModule</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing adrenaline module.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RE_AdrenalineModule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RE_AdrenalineModule</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>RE_AdrenalineModule</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RE_RemoveAdrenalineModule</defName>
+    <label>remove adrenaline module</label>
+    <description>Remove adrenaline module.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_AdrenalineModule</ThingDef>
+      <HediffDef>RE_AdrenalineModule</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing adrenaline module.</jobString>
+    <removesHediff>RE_AdrenalineModule</removesHediff>
+  </RecipeDef>
+	
+</Defs>
