@@ -12,6 +12,14 @@
 
         public Ability currentlyCasting;
 
+        public override void PostSpawnSetup(bool respawningAfterLoad)
+        {
+            base.PostSpawnSetup(respawningAfterLoad);
+
+            if(this.learnedAbilities == null)
+                this.learnedAbilities = new List<Ability>();
+        }
+
         public void GiveAbility(AbilityDef abilityDef)
         {
             Ability ability = (Ability) Activator.CreateInstance(abilityDef.abilityClass);
@@ -36,6 +44,9 @@
             base.PostExposeData();
             Scribe_Collections.Look(ref this.learnedAbilities, nameof(this.learnedAbilities), LookMode.Deep);
             Scribe_References.Look(ref this.currentlyCasting, nameof(this.currentlyCasting));
+
+            if (this.learnedAbilities == null)
+                this.learnedAbilities = new List<Ability>();
         }
     }
 }
