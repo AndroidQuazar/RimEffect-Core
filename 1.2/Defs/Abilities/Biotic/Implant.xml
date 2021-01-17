@@ -36,7 +36,7 @@
       <li Class="CompProperties_Usable">
         <compClass>CompUsableImplant</compClass>
         <useJob>UseItem</useJob>
-        <useLabel>Use neuroformer to form psylink</useLabel>
+        <useLabel>Use biotic amp to form biotic link</useLabel>
       </li>
       <li Class="CompProperties_UseEffectInstallImplant">
         <hediffDef>RE_BioticAmpHediff</hediffDef>
