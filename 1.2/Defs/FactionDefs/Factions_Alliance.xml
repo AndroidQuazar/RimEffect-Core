@@ -103,6 +103,7 @@
                     <RE_Colonist>20</RE_Colonist>
                     <RE_Farmer>10</RE_Farmer>
                     <RE_AllianceOfficer>1.5</RE_AllianceOfficer>
+					<RE_PrimeMinister>1</RE_PrimeMinister>
                     <RE_Ranger>5</RE_Ranger>
                     <RE_AllianceMilitia>7</RE_AllianceMilitia>
                     <RE_AllianceRecruit>7</RE_AllianceRecruit>
