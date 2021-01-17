@@ -274,5 +274,83 @@
     <jobString>Removing strength enhancer.</jobString>
     <removesHediff>RE_StrengthEnhancer</removesHediff>
   </RecipeDef>
+  
+ <HediffDef ParentName="ImplantHediffBase">
+    <defName>RE_PowerAmplifier</defName>
+    <label>power amplifier</label>
+    <labelNoun>a power amplifier</labelNoun>
+    <description>An installed power amplifier.</description>
+    <descriptionHyperlinks><ThingDef>RE_PowerAmplifier</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>RE_PowerAmplifier</spawnThingOnRemoved>
+	<defaultLabelColor>(0,237,248)</defaultLabelColor>
+    <stages>
+        <li>
+            <statOffsets>
+              <RE_BioticEnergyRecoveryRate>0.05</RE_BioticEnergyRecoveryRate>
+            </statOffsets>
+        </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_ReactOnDamage">
+        <damageDefIncoming>EMP</damageDefIncoming>
+        <createHediff>BrainShock</createHediff>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef ParentName="RE_BodyPartImplantBase">
+    <defName>RE_PowerAmplifier</defName>
+    <label>power amplifier</label>
+    <description>A module with additional zero element, accelerates biotic energy recovery rate.</description>
+    <descriptionHyperlinks><RecipeDef>RE_InstallPowerAmplifier</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RE_Implant</li></thingSetMakerTags>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+	  <RE_ElementZero>2</RE_ElementZero>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>RE_InstallPowerAmplifier</defName>
+    <label>install power amplifier</label>
+    <description>Install a power amplifier.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_PowerAmplifier</ThingDef>
+      <HediffDef>RE_PowerAmplifier</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing power amplifier.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RE_PowerAmplifier</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RE_PowerAmplifier</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>RE_PowerAmplifier</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RE_RemovePowerAmplifier</defName>
+    <label>remove power amplifier</label>
+    <description>Remove strength enhancer.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_PowerAmplifier</ThingDef>
+      <HediffDef>RE_PowerAmplifier</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing power amplifier.</jobString>
+    <removesHediff>RE_PowerAmplifier</removesHediff>
+  </RecipeDef>
 	
 </Defs>
