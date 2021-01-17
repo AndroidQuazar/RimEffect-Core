@@ -355,5 +355,35 @@
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
   </PawnKindDef>
+  
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_PrimeMinister</defName>
+    <label>prime minister</label>
+    <combatPower>40</combatPower>
+    <itemQuality>Excellent</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+	<factionLeader>true</factionLeader>
+    <weaponTags>
+      <li>AllianceGunLight</li>
+    </weaponTags>
+    <weaponMoney>740~800</weaponMoney>
+    <apparelRequired>
+	  <li>RE_Apparel_FormalJacket</li>
+	  <li>RE_Apparel_FormalShirt</li>
+    </apparelRequired>
+    <apparelTags>
+		<li>RE_SpacerApparelCivilian</li>
+		<li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>200~800</apparelMoney>
+    <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>800~1800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+  </PawnKindDef>
 
 </Defs>
