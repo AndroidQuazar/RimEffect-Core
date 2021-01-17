@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <QuestScriptDef>
+    <defName>RE_RescueHostages</defName>
+    <rootSelectionWeight>1.0</rootSelectionWeight>
+    <rootMinPoints>350</rootMinPoints>
+    <canGiveRoyalFavor>true</canGiveRoyalFavor>
+    <expireDaysRange>2~3</expireDaysRange>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->[hostages] in need</li>
+		<li>questName->[adjective] [hostages]</li>
+		<li>questName->{hostages] in trouble</li>
+        <li>hostages->Hostages</li>
+        <li>hostages->Captives</li>
+        <li>adjective->Poor</li>
+        <li>adjective->Desperate</li>
+        <li>adjective->Scared</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], says [asker_possessive] people are being held hostage near [map_definite]. \n[asker_nameDef] has nobody to spare to rescue them, but says that if you can make it to their position and rescue them, as well as kill the captors, you will be rewarded. \n[asker_nameDef] says that hostages are being held by [enemyFaction_pawnsPlural] from [enemyFaction_name].</li>
+      </rulesStrings>
+    </questDescriptionRules>
+  </QuestScriptDef>
+  
+</Defs>
