@@ -39,6 +39,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="VanillaStorytellersExpanded">
+      <HintPath>..\..\..\VanillaExpandedFramework\1.2\Assemblies\VanillaStorytellersExpanded.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abilities\Abilities\Ability_GiveHediff.cs" />

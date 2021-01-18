@@ -30,6 +30,7 @@
 Be careful: pyjaks are known for causing distress in people when nuzzling, and often steal items they find interesting, peculiar or simply annoying.</RE.LetterPyjaksCrateDesc>
 	
 	<RE.ViewContracts>View contracts</RE.ViewContracts>
+	<RE.AvailableContracts>Available contracts: {0}</RE.AvailableContracts>
 
 	
 </LanguageData>
