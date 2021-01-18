@@ -196,11 +196,11 @@ namespace RimEffect
 			rect2.width -= 200f;
 
 			Rect rect4 = rect;
-			rect4.x = rect2.xMax + 2;
+			rect4.x = rect2.xMax - 4;
 			rect4.xMax = rect.xMax;
 
 			Rect selectedRect = rect;
-			selectedRect.width += 20;
+			selectedRect.width += 14;
 			if (selected == questInfo)
 			{
 				Widgets.DrawHighlightSelected(selectedRect);
