@@ -344,12 +344,90 @@
   <RecipeDef ParentName="SurgeryRemoveImplantBase">
     <defName>RE_RemovePowerAmplifier</defName>
     <label>remove power amplifier</label>
-    <description>Remove strength enhancer.</description>
+    <description>Remove power amplifier.</description>
     <descriptionHyperlinks>
       <ThingDef>RE_PowerAmplifier</ThingDef>
       <HediffDef>RE_PowerAmplifier</HediffDef>
     </descriptionHyperlinks>
     <jobString>Removing power amplifier.</jobString>
+    <removesHediff>RE_PowerAmplifier</removesHediff>
+  </RecipeDef>
+  
+ <HediffDef ParentName="ImplantHediffBase">
+    <defName>RE_PowerEfficiencyModule</defName>
+    <label>power efficiency module</label>
+    <labelNoun>a power efficiency module</labelNoun>
+    <description>An installed power efficiency module.</description>
+    <descriptionHyperlinks><ThingDef>RE_PowerEfficiencyModule</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>RE_PowerEfficiencyModule</spawnThingOnRemoved>
+	<defaultLabelColor>(0,237,248)</defaultLabelColor>
+    <stages>
+        <li>
+            <statOffsets>
+              <RE_BioticAbilityCostMultiplier>-0.5</RE_BioticAbilityCostMultiplier>
+            </statOffsets>
+        </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_ReactOnDamage">
+        <damageDefIncoming>EMP</damageDefIncoming>
+        <createHediff>BrainShock</createHediff>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef ParentName="RE_BodyPartImplantBase">
+    <defName>RE_PowerEfficiencyModule</defName>
+    <label>power efficiency module</label>
+    <description>A module with additional zero element, decreases biotic abilities cost.</description>
+    <descriptionHyperlinks><RecipeDef>RE_InstallPowerEfficiencyModule</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RE_Implant</li></thingSetMakerTags>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+	  <RE_ElementZero>2</RE_ElementZero>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>RE_InstallPowerEfficiencyModule</defName>
+    <label>install power efficiency module</label>
+    <description>Install a power efficiency module.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_PowerEfficiencyModule</ThingDef>
+      <HediffDef>RE_PowerEfficiencyModule</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing power efficiency module.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RE_PowerEfficiencyModule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RE_PowerEfficiencyModule</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>RE_PowerEfficiencyModule</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RE_RemovePowerEfficiencyModule</defName>
+    <label>remove power efficiency module</label>
+    <description>Remove power efficiency module.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_PowerAmplifier</ThingDef>
+      <HediffDef>RE_PowerAmplifier</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing power efficiency module.</jobString>
     <removesHediff>RE_PowerAmplifier</removesHediff>
   </RecipeDef>
 	
