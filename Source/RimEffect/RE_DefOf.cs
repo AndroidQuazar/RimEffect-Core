@@ -38,3 +38,4 @@ namespace RimEffect
         public static StatDef   RE_BioticAbilityCostMultiplier;
     }
 }
+ 
