@@ -79,8 +79,6 @@
       <Plasteel>200</Plasteel>
       <ComponentSpacer>6</ComponentSpacer>
     </costList>
-    <comps>
-    </comps>
     <altitudeLayer>Building</altitudeLayer>
     <building>
       <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
@@ -99,6 +97,12 @@
     <rotatable>false</rotatable>
     <canOverlapZones>false</canOverlapZones>
     <tickerType>Never</tickerType>
+	<comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(152,167,250,0)</glowColor>
+      </li>
+    </comps>
   </ThingDef>
 
 </Defs>
