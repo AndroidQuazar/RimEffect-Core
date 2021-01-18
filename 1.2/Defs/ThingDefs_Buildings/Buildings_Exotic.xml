@@ -56,5 +56,49 @@
 	<designationCategory>Misc</designationCategory>
 	<techLevel>Ultra</techLevel>
   </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>RE_ProtheanBeacon</defName>
+    <label>prothean beacon</label>
+    <description>An ancient piece of Prothean technology. It is exceptionally rare, as very few pieces of Prothean 'paleo-technology' have survived intact in the millennia since the Protheans vanished.</description>
+    <graphicData>
+      <texPath>Things/Building/Special/ProtheanBeacon/ProtheanBeaconA</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(6, 5)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0.0, 0.0, -0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.75,1.0,0.5)</rect>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.85</uiIconScale>
+	<size>(3, 3)</size>
+    <costList>
+      <Plasteel>200</Plasteel>
+      <ComponentSpacer>6</ComponentSpacer>
+    </costList>
+    <comps>
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <statBases>
+      <MarketValue>1300</MarketValue>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+      <Mass>15</Mass>
+      <WorkToBuild>2000</WorkToBuild>
+    </statBases>
+    <fillPercent>0.8</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <passability>Impassable</passability>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Never</tickerType>
+  </ThingDef>
 
 </Defs>
