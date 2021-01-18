@@ -1,5 +1,6 @@
 ﻿namespace RimEffect
 {
+    using System.Collections.Generic;
     using System.Linq;
     using Verse;
 
@@ -29,6 +30,11 @@
                 return;
             forLevel = forLevel ?? this.level;
             this.pawn.GetComp<CompAbilities>().GiveAbility(DefDatabase<AbilityDef>.AllDefsListForReading.Where(def => def.requiredHediff != null && def.requiredHediff.hediffDef == this.def && def.requiredHediff.minimumLevel == forLevel).RandomElement());
+        }
+
+        public virtual IEnumerable<Gizmo> DrawGizmos()
+        {
+            yield break;
         }
     }
 }

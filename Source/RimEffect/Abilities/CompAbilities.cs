@@ -37,6 +37,12 @@
 
             foreach (Ability ability in this.learnedAbilities) 
                 yield return ability.GetGizmo();
+
+            foreach (Hediff_Abilities hediff in this.Pawn.health.hediffSet.GetHediffs<Hediff_Abilities>())
+            {
+                foreach (Gizmo gizmo in hediff.DrawGizmos()) 
+                    yield return gizmo;
+            }
         }
 
         public override void PostExposeData()

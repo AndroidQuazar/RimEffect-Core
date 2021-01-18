@@ -36,6 +36,8 @@ namespace RimEffect
 		
         public static HediffDef RE_BioticAmpHediff;
         public static StatDef   RE_BioticAbilityCostMultiplier;
+        public static StatDef   RE_BioticEnergyMax;
+        public static StatDef   RE_BioticEnergyRecoveryRate;
     }
 }
  

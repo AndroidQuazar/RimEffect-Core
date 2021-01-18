@@ -85,4 +85,23 @@
       </li>
     </stages>
   </HediffDef>
+
+    <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Focus</defName>
+    <label>biotic focus</label>
+    <description>Decreases biotic heat after a short combat meditation time.</description>
+    <abilityClass>RimEffect.Ability_Blank</abilityClass>
+    <targetMode>Self</targetMode>
+    <castTime>600</castTime>
+    <iconPath>UI/Abilities/Biotic_Focus</iconPath>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>2</minimumLevel>
+    </requiredHediff>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>-25</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
 </Defs>

@@ -68,29 +68,29 @@
       <li>
         <minSeverity>1</minSeverity>
         <statFactors>
-          <RE_BioticEnergyMax>1.0</RE_BioticEnergyMax>
-          <RE_BioticEnergyRecoveryRate>1</RE_BioticEnergyRecoveryRate>
+          <RE_BioticEnergyMax>100.0</RE_BioticEnergyMax>
+          <RE_BioticEnergyRecoveryRate>5</RE_BioticEnergyRecoveryRate>
         </statFactors>
       </li>
       <li>
         <minSeverity>2</minSeverity>
         <statFactors>
-          <RE_BioticEnergyMax>1.3334</RE_BioticEnergyMax>
-          <RE_BioticEnergyRecoveryRate>1.125</RE_BioticEnergyRecoveryRate>
+          <RE_BioticEnergyMax>160.34</RE_BioticEnergyMax>
+          <RE_BioticEnergyRecoveryRate>8</RE_BioticEnergyRecoveryRate>
         </statFactors>
       </li>
       <li>
         <minSeverity>3</minSeverity>
         <statFactors>
-          <RE_BioticEnergyMax>1.6667</RE_BioticEnergyMax>
-          <RE_BioticEnergyRecoveryRate>1.25</RE_BioticEnergyRecoveryRate>
+          <RE_BioticEnergyMax>230.67</RE_BioticEnergyMax>
+          <RE_BioticEnergyRecoveryRate>10</RE_BioticEnergyRecoveryRate>
         </statFactors>
       </li>
       <li>
         <minSeverity>4</minSeverity>
         <statFactors>
-          <RE_BioticEnergyMax>2.6667</RE_BioticEnergyMax>
-          <RE_BioticEnergyRecoveryRate>1.625</RE_BioticEnergyRecoveryRate>
+          <RE_BioticEnergyMax>300</RE_BioticEnergyMax>
+          <RE_BioticEnergyRecoveryRate>12</RE_BioticEnergyRecoveryRate>
         </statFactors>
       </li>
     </stages>

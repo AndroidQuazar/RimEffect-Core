@@ -212,4 +212,9 @@
 
         public ITargetingSource DestinationSelector { get; }
     }
+
+    public class Ability_Blank : Ability
+    {
+
+    }
 }

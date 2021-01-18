@@ -2,54 +2,48 @@
 <Defs>
   <StatDef>
     <defName>RE_BioticEnergyMax</defName>
-    <label>neural biotic energy limit</label>
+    <label>biotic energy limit</label>
     <description>The maximum amount of biotic energy the individual can sustain safely.</description>
-    <category>BasicsPawn</category>
-    <defaultBaseValue>30</defaultBaseValue>
+    <category>PawnMisc</category>
+    <defaultBaseValue>1</defaultBaseValue>
     <minValue>0</minValue>
     <hideAtValue>0</hideAtValue>
-    <toStringStyle>FloatOne</toStringStyle>
+    <toStringStyle>Integer</toStringStyle>
     <showOnAnimals>false</showOnAnimals>
     <showOnMechanoids>false</showOnMechanoids>
-    <showIfModsLoaded><li>RimEffect.Core</li></showIfModsLoaded>
     <showIfHediffsPresent><li>RE_BioticAmpHediff</li></showIfHediffsPresent>
     <displayPriorityInCategory>3500</displayPriorityInCategory>
     <scenarioRandomizable>true</scenarioRandomizable>
-    <statFactors>
-      <li>PsychicSensitivity</li>
-    </statFactors>
   </StatDef>
 
   <StatDef>
     <defName>RE_BioticEnergyRecoveryRate</defName>
-    <label>neural biotic energy recovery rate</label>
+    <label>biotic energy recovery rate</label>
     <description>The rate at which this person recovers biotic energy.</description>
-    <category>BasicsPawn</category>
+    <category>PawnMisc</category>
     <minValue>0</minValue>
     <hideAtValue>0</hideAtValue>
-    <defaultBaseValue>0.54</defaultBaseValue>
-    <toStringStyle>FloatTwo</toStringStyle>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>Integer</toStringStyle>
     <formatString>{0}/s</formatString>
     <showOnAnimals>false</showOnAnimals>
     <showOnMechanoids>false</showOnMechanoids>
-    <showIfModsLoaded><li>RimEffect.Core</li></showIfModsLoaded>
     <showIfHediffsPresent><li>RE_BioticAmpHediff</li></showIfHediffsPresent>
-    <displayPriorityInCategory>4000</displayPriorityInCategory>
+    <displayPriorityInCategory>6000</displayPriorityInCategory>
   </StatDef>
 
   <StatDef>
     <defName>RE_BioticAbilityCostMultiplier</defName>
     <label>biotic ability cost multiplier</label>
     <description>How much effort it costs to use biotic energy.</description>
-    <category>BasicsPawn</category>
+    <category>PawnMisc</category>
     <minValue>0</minValue>
     <hideAtValue>0</hideAtValue>
     <defaultBaseValue>1</defaultBaseValue>
-    <toStringStyle>FloatTwo</toStringStyle>
+    <toStringStyle>Integer</toStringStyle>
     <formatString>{0}/s</formatString>
     <showOnAnimals>false</showOnAnimals>
     <showOnMechanoids>false</showOnMechanoids>
-    <showIfModsLoaded><li>RimEffect.Core</li></showIfModsLoaded>
     <showIfHediffsPresent><li>RE_BioticAmpHediff</li></showIfHediffsPresent>
     <displayPriorityInCategory>4000</displayPriorityInCategory>
   </StatDef>
