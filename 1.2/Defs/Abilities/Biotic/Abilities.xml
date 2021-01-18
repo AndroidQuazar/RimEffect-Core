@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <RimEffect.AbilityDef>
-        <defName>RE_Biotic_Throw</defName>
-        <label>biotic throw</label>
-        <description>Uses Mass Effect field to deal blunt trauma to the enemy</description>
-        <abilityClass>RimEffect.Ability_ShootProjectile</abilityClass>
-        <targetMode>Pawn</targetMode>
-        <castTime>60</castTime>
-        <range>24</range>
-        <iconPath>UI/Abilities/Biotic_Throw</iconPath>
-        <power>6</power>
-        <requiredHediff>
-            <hediffDef>RE_BioticAmpHediff</hediffDef>
-            <minimumLevel>1</minimumLevel>
-        </requiredHediff>
-        <modExtensions>
-            <li Class="RimEffect.AbilityExtension_Projectile">
-                <projectile>RE_Biotic_ThrowProjectile</projectile>
-            </li>
-            <li Class="RimEffect.AbilityExtension_Biotic">
-                <energyUsed>5</energyUsed>
-            </li>
-        </modExtensions>
-    </RimEffect.AbilityDef>
+  <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Throw</defName>
+    <label>biotic throw</label>
+    <description>Uses Mass Effect field to deal blunt trauma to the enemy</description>
+    <abilityClass>RimEffect.Ability_ShootProjectile</abilityClass>
+    <targetMode>Pawn</targetMode>
+    <castTime>60</castTime>
+    <range>24</range>
+    <iconPath>UI/Abilities/Biotic_Throw</iconPath>
+    <power>6</power>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>1</minimumLevel>
+    </requiredHediff>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Projectile">
+        <projectile>RE_Biotic_ThrowProjectile</projectile>
+      </li>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>5</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
 
-    <ThingDef ParentName="BaseBullet">
+  <ThingDef ParentName="BaseBullet">
     <defName>RE_Biotic_ThrowProjectile</defName>
     <label>biotic throw</label>
     <thingClass>RimEffect.AbilityProjectile</thingClass>
@@ -35,7 +35,54 @@
     <projectile>
       <damageDef>Blunt</damageDef>
       <armorPenetrationBase>1</armorPenetrationBase>
+      <damageAmountBase>1</damageAmountBase>
       <speed>70</speed>
     </projectile>
   </ThingDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Pull</defName>
+    <label>biotic pull</label>
+    <description>Generates a mass-lowering field which lifts the enemy in the air and quickly drops them, temporarily disabling them from a fight.
+    Effect: Enemy gets fulled towards the caster and gets temporarily knocked on the ground.</description>
+    <abilityClass>RimEffect.Ability_GiveHediffAndPull</abilityClass>
+    <targetMode>Pawn</targetMode>
+    <castTime>60</castTime>
+    <range>24</range>
+    <iconPath>UI/Abilities/Biotic_Pull</iconPath>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>1</minimumLevel>
+    </requiredHediff>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Hediff">
+        <hediff>RE_Prone</hediff>
+      </li>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>10</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
+
+  <HediffDef ParentName="DiseaseBase">
+    <defName>RE_Prone</defName>
+    <label>knocked prone</label>
+    <labelNoun>knocked prone</labelNoun>
+    <description>You were knocked prone</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>600~600</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
 </Defs>
