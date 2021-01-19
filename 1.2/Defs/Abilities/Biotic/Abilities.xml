@@ -86,7 +86,7 @@
     </stages>
   </HediffDef>
 
-    <RimEffect.AbilityDef>
+  <RimEffect.AbilityDef>
     <defName>RE_Biotic_Focus</defName>
     <label>biotic focus</label>
     <description>Decreases biotic heat after a short combat meditation time.</description>
@@ -101,6 +101,27 @@
     <modExtensions>
       <li Class="RimEffect.AbilityExtension_Biotic">
         <energyUsed>-25</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Charge</defName>
+    <label>biotic charge</label>
+    <description>Uses biotics to alter the speed and strength, leading to a devastating charge towards the target.</description>
+    <abilityClass>RimEffect.Ability_Charge</abilityClass>
+    <targetMode>Pawn</targetMode>
+    <castTime>60</castTime>
+    <range>30</range>
+    <power>14</power>
+    <iconPath>UI/Abilities/Biotic_Charge</iconPath>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>2</minimumLevel>
+    </requiredHediff>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>25</energyUsed>
       </li>
     </modExtensions>
   </RimEffect.AbilityDef>
