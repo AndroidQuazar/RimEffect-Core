@@ -2,7 +2,7 @@
 <Defs>
 
   <RulePackDef>
-    <defName>NamerFaction_SystemsAlliance</defName>
+    <defName>NamerFactionBases_SystemsAlliance</defName>
     <rulePack>
       <rulesStrings>
 		<li>name->[nameB] farm</li>
