@@ -18,7 +18,7 @@
         public override void Tick()
         {
             base.Tick();
-            this.bioticEnergy += this.pawn.GetStatValue(RE_DefOf.RE_BioticEnergyRecoveryRate);
+            this.bioticEnergy += this.pawn.GetStatValue(RE_DefOf.RE_BioticEnergyRecoveryRate) / GenTicks.TicksPerRealSecond;
             this.bioticEnergy =  Mathf.Min(this.bioticEnergy, this.pawn.GetStatValue(RE_DefOf.RE_BioticEnergyMax));
         }
 
