@@ -84,6 +84,11 @@
             if (cooldownForPawn > 0)
                 sb.AppendLine($"{"CooldownTime".Translate()}: {cooldownForPawn.ToStringTicksToPeriod(shortForm: true)}".Colorize(Color.cyan));
 
+            AbilityExtension_Biotic biotic = this.def.GetModExtension<AbilityExtension_Biotic>();
+            if (biotic != null) 
+                sb.AppendLine($"{"RE.AbilityStatsBioticEnergy".Translate()}: {biotic.GetEnergyUsedByPawn(this.pawn)}".Colorize(Color.cyan));
+
+
             return sb.ToString();
         }
 
