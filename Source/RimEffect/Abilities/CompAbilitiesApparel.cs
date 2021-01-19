@@ -51,6 +51,16 @@
         {
             base.PostExposeData();
             Scribe_Collections.Look(ref this.givenAbilities, nameof(this.givenAbilities), LookMode.Deep);
+
+            if (this.givenAbilities == null)
+                this.givenAbilities = new List<Ability>();
+            else if(Scribe.mode == LoadSaveMode.LoadingVars)
+            {
+                foreach (Ability ability in this.givenAbilities)
+                {
+                    ability.holder = this.parent;
+                }
+            }
         }
     }
 

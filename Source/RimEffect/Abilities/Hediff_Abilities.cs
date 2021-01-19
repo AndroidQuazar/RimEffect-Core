@@ -18,9 +18,8 @@
         {
             int prevLevel = this.level;
             base.ChangeLevel(levelOffset);
-
             if (prevLevel != this.level && levelOffset > 0)
-                for(; prevLevel <= this.level; )
+                for(; prevLevel < this.level; )
                     this.GiveRandomAbilityAtLevel(++prevLevel);
         }
 
@@ -28,7 +27,9 @@
         {
             if (!this.giveRandomAbilities) 
                 return;
+
             forLevel = forLevel ?? this.level;
+
             this.pawn.GetComp<CompAbilities>().GiveAbility(DefDatabase<AbilityDef>.AllDefsListForReading.Where(def => def.requiredHediff != null && def.requiredHediff.hediffDef == this.def && def.requiredHediff.minimumLevel == forLevel).RandomElement());
         }
 

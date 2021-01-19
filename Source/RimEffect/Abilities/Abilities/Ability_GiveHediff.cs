@@ -2,7 +2,6 @@
 
 namespace RimEffect
 {
-    using HarmonyLib;
     using RimWorld;
     using Verse;
 

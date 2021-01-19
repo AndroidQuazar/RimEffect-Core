@@ -1,7 +1,6 @@
 ﻿namespace RimEffect
 {
     using System.Collections.Generic;
-    using System.Runtime.Remoting.Messaging;
     using Verse;
     using Verse.AI;
 

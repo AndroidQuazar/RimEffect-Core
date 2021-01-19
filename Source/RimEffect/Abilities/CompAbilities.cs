@@ -53,6 +53,13 @@
 
             if (this.learnedAbilities == null)
                 this.learnedAbilities = new List<Ability>();
+            else if (Scribe.mode == LoadSaveMode.LoadingVars)
+            {
+                foreach (Ability ability in this.learnedAbilities)
+                {
+                    ability.holder = this.parent;
+                }
+            }
         }
     }
 }

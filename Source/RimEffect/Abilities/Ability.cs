@@ -114,6 +114,8 @@
 
         public virtual void CreateCastJob(LocalTargetInfo target)
         {
+            this.pawn.jobs.EndCurrentJob(JobCondition.InterruptForced, false);
+
             Job job = JobMaker.MakeJob(RE_DefOf.RE_UseAbility, target);
             this.pawn.GetComp<CompAbilities>().currentlyCasting = this;
             this.pawn.jobs.StartJob(job, JobCondition.InterruptForced);
@@ -135,12 +137,11 @@
         public void ExposeData()
         {
             Scribe_References.Look(ref this.pawn,   nameof(this.pawn));
-            Scribe_References.Look(ref this.holder, nameof(this.holder));
             Scribe_Values.Look(ref this.cooldown, nameof(this.cooldown));
             Scribe_Defs.Look(ref this.def, nameof(this.def));
         }
 
-        public string GetUniqueLoadID() =>
+        public string GetUniqueLoadID() => 
             $"Ability_{this.def.defName}_{this.holder.GetUniqueLoadID()}";
 
         public bool CanHitTarget(LocalTargetInfo target) => 
