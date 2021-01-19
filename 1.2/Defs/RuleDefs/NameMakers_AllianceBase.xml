@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerFaction_SystemsAlliance</defName>
+    <rulePack>
+      <rulesStrings>
+		<li>name->[nameB] farm</li>
+		<li>name->[nameB] city</li>
+		<li>name->[nameB] town</li>
+		<li>nameB->Anhur</li>
+		<li>nameB->Arvuna</li>
+		<li>nameB->Bekenstein</li>
+		<li>nameB->Benning</li>
+		<li>nameB->Chasca</li>
+		<li>nameB->Cuervo</li>
+		<li>nameB->Cyrene</li>
+		<li>nameB->Demeter</li>
+		<li>nameB->Dobrovalski</li>
+		<li>nameB->Drasta</li>
+		<li>nameB->Eden</li>
+		<li>nameB->Prime</li>
+		<li>nameB->Elysium</li>
+		<li>nameB->Ferris</li>
+		<li>nameB->Horizon</li>
+		<li>nameB->Luna</li>
+		<li>nameB->Mindoir</li>
+		<li>nameB->Canton</li>
+		<li>nameB->New Canton</li>
+		<li>nameB->Noveria</li>
+		<li>nameB->Olor</li>
+		<li>nameB->Proteus</li>
+		<li>nameB->Sanctum</li>
+		<li>nameB->Sathur</li>
+		<li>nameB->Shanxi</li>
+		<li>nameB->Sirona</li>
+		<li>nameB->Terra</li>
+		<li>nameB->Nova</li>
+		<li>nameB->Yamm</li>
+		<li>nameB->Yandoa</li>
+		<li>nameB->Nort</li>
+		<li>nameB->Heli</li>
+		<li>nameB->Astera</li>
+		<li>nameB->Koru</li>
+		<li>nameB->Lumina</li>
+		<li>nameB->Aurora</li>
+		<li>nameB->Aegis</li>
+		<li>nameB->Azure</li>
+		<li>nameB->Spectrum</li>
+		<li>nameB->Reverie</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+
+</Defs>
