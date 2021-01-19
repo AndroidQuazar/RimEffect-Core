@@ -16,11 +16,9 @@
 
             //yield return Toils_Combat.GotoCastPosition(TargetIndex.A);
 
-            Toil          toil = new Toil();
             CompAbilities comp = this.pawn.GetComp<CompAbilities>();
-            toil.defaultDuration     = comp.currentlyCasting.GetCastTimeForPawn();
-            toil.WithProgressBarToilDelay(TargetIndex.A);
-            toil.defaultCompleteMode = ToilCompleteMode.Delay;
+            Toil          toil = Toils_General.Wait(comp.currentlyCasting.GetCastTimeForPawn(), TargetIndex.A);
+            toil.WithProgressBarToilDelay(TargetIndex.C);
             toil.AddFinishAction(newAct: () =>
                                          {
                                              LocalTargetInfo target        = this.pawn.jobs.curJob.GetTarget(TargetIndex.A);
