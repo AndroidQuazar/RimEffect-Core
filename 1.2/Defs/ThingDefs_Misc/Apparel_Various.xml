@@ -657,6 +657,8 @@
     <label>spectre armor</label>
     <description>Elite Armor reserved for the best of the best, the Council’s chosen agents. .</description>
     <techLevel>Spacer</techLevel>
+	<thingClass>RimEffect.SpectreArmor</thingClass>
+	<tickerType>Normal</tickerType>
     <graphicData>
       <texPath>Things/Apparel/SpectreArmor/SpectreArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -706,7 +708,6 @@
         <li>RE_SpectreArmoury</li>
       </tags>
     </apparel>
-    <thingClass>Apparel</thingClass>
     <category>Item</category>
     <selectable>True</selectable>
     <pathCost>14</pathCost>
@@ -714,7 +715,6 @@
     <drawGUIOverlay>true</drawGUIOverlay>
     <altitudeLayer>Item</altitudeLayer>
     <alwaysHaulable>True</alwaysHaulable>
-    <tickerType>Never</tickerType>
     <burnableByRecipe>true</burnableByRecipe>
     <smeltable>true</smeltable>
     <colorGenerator Class="ColorGenerator_Options">
@@ -779,6 +779,18 @@
     <comps>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_BiocodableApparel"/>
+	  <li Class="VFEMech.CompProperties_ShieldMechBubble">
+		<blockRangedAttack>true</blockRangedAttack>
+		<blockMeleeAttack>false</blockMeleeAttack>
+		<showWhenDrafted>true</showWhenDrafted>
+		<showOnHostiles>true</showOnHostiles>
+		<showOnNeutralInCombat>true</showOnNeutralInCombat>
+		<shieldTexPath>Other/ShieldBubble</shieldTexPath>
+		<EnergyShieldRechargeRate>0.03</EnergyShieldRechargeRate>
+		<EnergyShieldEnergyMax>50</EnergyShieldEnergyMax>
+		<minShieldSize>1</minShieldSize>
+		<maxShieldSize>1.5</maxShieldSize>
+	  </li>
       <li>
         <compClass>CompQuality</compClass>
       </li>

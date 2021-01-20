@@ -58,6 +58,7 @@
     <Compile Include="Abilities\Hediff_BioticAmp.cs" />
     <Compile Include="Abilities\JobDriver_CastAbilityOnce.cs" />
     <Compile Include="Abilities\PawnKindAbilityExtension.cs" />
+    <Compile Include="Apparels\SpectreArmor.cs" />
     <Compile Include="Buildings\Building_GalaxyMap.cs" />
     <Compile Include="Comps\CompPlantHarmRadiusIfBroken.cs" />
     <Compile Include="Comps\CompPowerPlantZero.cs" />

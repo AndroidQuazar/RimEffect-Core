@@ -57,7 +57,6 @@ namespace RimEffect
             if (!friendlyFactions.Where(x => hostileFactions.Where(y => x.HostileTo(y)).Any()).Any())
             {
                 Log.Message("No hostile and friendly factions");
-
                 return false;
             }
             return true;
