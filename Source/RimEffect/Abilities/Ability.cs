@@ -149,12 +149,12 @@
         public string GetUniqueLoadID() => 
             $"Ability_{this.def.defName}_{this.holder.GetUniqueLoadID()}";
 
-        public bool CanHitTarget(LocalTargetInfo target) => 
+        public virtual bool CanHitTarget(LocalTargetInfo target) => 
             target.Cell.DistanceTo(this.pawn.Position) < this.GetRangeForPawn() && GenSight.LineOfSight(this.pawn.Position, target.Cell, this.pawn.Map);
 
-        public bool ValidateTarget(LocalTargetInfo target) => this.targetParams.CanTarget(target.ToTargetInfo(this.pawn.Map));
+        public virtual bool ValidateTarget(LocalTargetInfo target) => this.targetParams.CanTarget(target.ToTargetInfo(this.pawn.Map));
 
-        public void DrawHighlight(LocalTargetInfo target)
+        public virtual void DrawHighlight(LocalTargetInfo target)
         {
             float range = this.GetRangeForPawn();
             if (GenRadial.MaxRadialPatternRadius > range && range >= 1)
@@ -170,7 +170,7 @@
             }
         }
 
-        public void OrderForceTarget(LocalTargetInfo target) => 
+        public virtual void OrderForceTarget(LocalTargetInfo target) => 
             this.CreateCastJob(target);
 
         public virtual void OnGUI(LocalTargetInfo target)
@@ -188,7 +188,7 @@
         public Verb      GetVerb       { get; }
         public Texture2D UIIcon        => this.def.icon;
 
-        public TargetingParameters targetParams
+        public virtual TargetingParameters targetParams
         {
             get
             {

@@ -126,7 +126,7 @@
     </modExtensions>
   </RimEffect.AbilityDef>
 
-    <RimEffect.AbilityDef>
+  <RimEffect.AbilityDef>
     <defName>RE_Biotic_Barrier</defName>
     <label>biotic barrier</label>
     <description>Utilizes Mass Effect fields to generate a barrier that protects the user from most kinetic damage.</description>
@@ -142,6 +142,26 @@
     <modExtensions>
       <li Class="RimEffect.AbilityExtension_Biotic">
         <energyUsed>20</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Dominate</defName>
+    <label>biotic dominate</label>
+    <description>Disrupt the synaptic harmonics of an organic brain so it can't differentiate between friend and foe.</description>
+    <abilityClass>RimEffect.Ability_Dominate</abilityClass>
+    <targetMode>Pawn</targetMode>
+    <range>30</range>
+    <castTime>60</castTime>
+    <iconPath>UI/Abilities/Biotic_Dominate</iconPath>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>3</minimumLevel>
+    </requiredHediff>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>50</energyUsed>
       </li>
     </modExtensions>
   </RimEffect.AbilityDef>
