@@ -62,7 +62,7 @@
         public virtual int GetCooldownForPawn() =>
             Mathf.RoundToInt(this.def.cooldownTimeStatFactors.Aggregate((float) this.def.cooldownTime, (current, statFactor) => current * (pawn.GetStatValue(statFactor.stat) * statFactor.value)));
 
-        public string GetDescriptionForPawn()
+        public virtual string GetDescriptionForPawn()
         {
             StringBuilder sb = new StringBuilder(this.def.description);
 

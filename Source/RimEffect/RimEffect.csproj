@@ -43,8 +43,13 @@
       <HintPath>..\..\..\VanillaExpandedFramework\1.2\Assemblies\VanillaStorytellersExpanded.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="VFECore">
+      <HintPath>..\..\..\VanillaExpandedFramework\1.2\Assemblies\VFECore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\Abilities\Ability_Barrier.cs" />
     <Compile Include="Abilities\Abilities\Ability_Charge.cs" />
     <Compile Include="Abilities\Abilities\Ability_GiveHediff.cs" />
     <Compile Include="Abilities\Abilities\Ability_ShootProjectile.cs" />

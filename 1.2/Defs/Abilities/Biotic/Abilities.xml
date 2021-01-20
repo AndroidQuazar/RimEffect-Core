@@ -125,4 +125,24 @@
       </li>
     </modExtensions>
   </RimEffect.AbilityDef>
+
+    <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Barrier</defName>
+    <label>biotic barrier</label>
+    <description>Utilizes Mass Effect fields to generate a barrier that protects the user from most kinetic damage.</description>
+    <abilityClass>RimEffect.Ability_Barrier</abilityClass>
+    <targetMode>Self</targetMode>
+    <castTime>60</castTime>
+    <power>50</power>
+    <iconPath>UI/Abilities/Biotic_Barrier</iconPath>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>2</minimumLevel>
+    </requiredHediff>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>20</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
 </Defs>
