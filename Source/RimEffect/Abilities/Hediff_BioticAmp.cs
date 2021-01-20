@@ -43,13 +43,14 @@
         public float energyUsed = 0f;
     }
 
+    [StaticConstructorOnStartup]
     public class Gizmo_BioticEnergyStatus : Gizmo
     {
         public Hediff_BioticAmp bioticHediff;
 
-        private static readonly Texture2D FullShieldBarTex = SolidColorMaterials.NewSolidColorTexture(new Color(0.2f, 0.2f, 0.24f));
+        private static readonly Texture2D FullBarTex = SolidColorMaterials.NewSolidColorTexture(new Color(0.2f, 0.2f, 0.24f));
 
-        private static readonly Texture2D EmptyShieldBarTex = SolidColorMaterials.NewSolidColorTexture(Color.clear);
+        private static readonly Texture2D EmptyBarTex = SolidColorMaterials.NewSolidColorTexture(Color.clear);
 
         public Gizmo_BioticEnergyStatus() => 
             order = -1500f;
@@ -69,7 +70,7 @@
             Rect rect4 = rect2;
             rect4.yMin = rect2.y + rect2.height / 2f;
             float fillPercent = this.bioticHediff.bioticEnergy / this.bioticHediff.pawn.GetStatValue(RE_DefOf.RE_BioticEnergyMax);
-            Widgets.FillableBar(rect4, fillPercent, FullShieldBarTex, EmptyShieldBarTex, doBorder: false);
+            Widgets.FillableBar(rect4, fillPercent, FullBarTex, EmptyBarTex, doBorder: false);
             Text.Font   = GameFont.Small;
             Text.Anchor = TextAnchor.MiddleCenter;
             Widgets.Label(rect4, (this.bioticHediff.bioticEnergy).ToString("F0") + " / " + this.bioticHediff.pawn.GetStatValue(RE_DefOf.RE_BioticEnergyMax).ToString("F0"));

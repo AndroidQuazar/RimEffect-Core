@@ -2,22 +2,31 @@
 {
     using System;
     using System.Collections.Generic;
+    using RimWorld;
     using Verse;
+    using Verse.Sound;
 
-    public class CompAbilities : ThingComp
+    public class CompAbilities : VFEMech.ShieldMechBubble
     {
-        private Pawn Pawn => (Pawn) this.parent;
+
+        private new Pawn Pawn => (Pawn) this.parent;
 
         private List<Ability> learnedAbilities = new List<Ability>();
 
-        public Ability currentlyCasting;
+        public           Ability currentlyCasting;
+
+        private float energyMax;
+        protected override float EnergyMax => this.energyMax;
+
+        protected override float EnergyGainPerTick => 0f;
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
-
             if(this.learnedAbilities == null)
                 this.learnedAbilities = new List<Ability>();
+
+            this.ticksToReset = Int32.MaxValue;
         }
 
         public void GiveAbility(AbilityDef abilityDef)
@@ -60,6 +69,32 @@
                     ability.holder = this.parent;
                 }
             }
+        }
+
+        protected override void Break()
+        {
+            base.Break();
+            this.energyMax = 0f;
+        }
+
+        protected override void Reset() => 
+            this.ticksToReset = Int32.MaxValue;
+
+        public bool ReinitShield(float newEnergy)
+        {
+            if (newEnergy < this.energy)
+                return false;
+
+            if (this.Pawn.Spawned)
+            {
+                SoundDefOf.EnergyShield_Reset.PlayOneShot(new TargetInfo(this.Pawn.Position, this.Pawn.Map));
+                MoteMaker.ThrowLightningGlow(this.Pawn.TrueCenter(), this.Pawn.Map, 3f);
+            }
+
+            this.ticksToReset = -1;
+            this.energyMax    = newEnergy;
+            this.energy       = newEnergy;
+            return true;
         }
     }
 }

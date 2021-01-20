@@ -8,4 +8,6 @@
 	<RE.AbilityStatsBioticEnergy>Biotic Energy</RE.AbilityStatsBioticEnergy>
 	<RE.BioticAmpCantEquipWeaponWeightReason>This weapon is too heavy for a biotic user</RE.BioticAmpCantEquipWeaponWeightReason>
 	<RE.AbilityDisableReasonBioticEnergyLack>The user doesn't have enough biotic energy left</RE.AbilityDisableReasonBioticEnergyLack>
+
+	<RE.AbilityDominateBerserkReason>Mentally dominated by {0}</RE.AbilityDominateBerserkReason>
 </LanguageData>
