@@ -834,7 +834,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Things/Apparel/ScienceUniform/ScienceUniform</wornGraphicPath>
       <layers>
-        <li>OnSkin</li>
+        <li>Shell</li>
       </layers>
       <tags>
         <li>RE_SpacerApparel</li>
