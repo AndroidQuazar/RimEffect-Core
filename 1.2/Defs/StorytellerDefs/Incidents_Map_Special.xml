@@ -30,4 +30,17 @@
     <baseChance>0.3</baseChance>
     <requireColonistsPresent>true</requireColonistsPresent>
   </IncidentDef>
+  
+  <IncidentDef>
+    <defName>RE_LocalBattlefield</defName>
+    <label>local battlefield</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>RimEffect.IncidentWorker_LocalBattlefield</workerClass>
+    <baseChance>0.3</baseChance>
+    <requireColonistsPresent>true</requireColonistsPresent>
+  </IncidentDef>
+  
 </Defs>

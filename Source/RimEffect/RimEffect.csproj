@@ -72,10 +72,12 @@
     <Compile Include="HarmonyPatches\PawnGen_Patch.cs" />
     <Compile Include="Hediffs\Hediff_Spectre.cs" />
     <Compile Include="Incidents\IncidentWorker_PyjakCrate.cs" />
+    <Compile Include="Incidents\IncidentWorker_LocalBattlefield.cs" />
     <Compile Include="Incidents\IncidentWorker_SpectreJoin.cs" />
     <Compile Include="Interactions\InteractionWorker_PyjakNuzzle.cs" />
     <Compile Include="Jobs\JobDriver_PyjakNuzzle.cs" />
     <Compile Include="Jobs\JobGiver_HaulItemsToRandomPlaces.cs" />
+    <Compile Include="Jobs\JobGiver_AttackOtherHostiles.cs" />
     <Compile Include="Jobs\JobGiver_PyjakNuzzle.cs" />
     <Compile Include="Textures.cs" />
     <Compile Include="RE_DefOf.cs" />

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
+using Verse.AI;
 
 namespace RimEffect
 {
@@ -33,7 +34,8 @@ namespace RimEffect
 
         public static JobDef RE_UseAbility;
         public static JobDef RE_UseCommsConsole;
-		
+        public static DutyDef RE_AssaultEnemies;
+
         public static HediffDef RE_BioticAmpHediff;
         public static StatDef   RE_BioticAbilityCostMultiplier;
         public static StatDef   RE_BioticEnergyMax;
