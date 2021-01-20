@@ -804,5 +804,86 @@
       </li>
     </comps>
   </ThingDef>
+ 
+  <ThingDef ParentName="RE_SpacerApparelMakeableBase">
+    <defName>RE_Apparel_ScienceUniform</defName>
+    <label>science uniform</label>
+    <description>A stylish lab coat.</description>
+    <recipeMaker>
+      <researchPrerequisite>RE_ComplexSpacerClothing</researchPrerequisite>
+    </recipeMaker>
+	<costList>
+	  <Cloth>65</Cloth>
+	</costList>
+    <graphicData>
+      <texPath>Things/Apparel/ScienceUniform/ScienceUniform</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>3600</WorkToMake>
+      <Mass>0.25</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<equippedStatOffsets>
+		<ResearchSpeed>0.15</ResearchSpeed>
+		<MedicalTendSpeed>0.10</MedicalTendSpeed>
+		<MedicalTendQuality>0.05</MedicalTendQuality>
+		<MedicalSurgerySuccessChance>0.1</MedicalSurgerySuccessChance>
+	</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/ScienceUniform/ScienceUniform</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>RE_SpacerApparel</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+	  <useWornGraphicMask>true</useWornGraphicMask>
+    </apparel>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>RE_SpacerApparel</li>
+    </tradeTags>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>30</weight>
+          <only>(51,61,48)</only>
+        </li>
+        <li>
+          <weight>30</weight>
+          <only>(145,128,16)</only>
+        </li>
+        <li>
+          <weight>30</weight>
+          <only>(52,52,52)</only>
+        </li>
+        <li>
+          <weight>30</weight>
+          <only>(19,37,76)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
 
 </Defs>

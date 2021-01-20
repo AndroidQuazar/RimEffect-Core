@@ -80,6 +80,7 @@
                     <RE_Farmer>10</RE_Farmer>
                     <RE_Official>5</RE_Official>
                     <RE_Ranger>8</RE_Ranger>
+					<RE_Scientist>6</RE_Scientist>
                 </options>
             </li>
             <li>
@@ -107,6 +108,8 @@
                     <RE_Farmer>10</RE_Farmer>
                     <RE_AllianceOfficer>1.5</RE_AllianceOfficer>
 					<RE_PrimeMinister>1</RE_PrimeMinister>
+					<RE_Scientist>4</RE_Scientist>
+					<RE_Medic>4</RE_Medic>
                     <RE_Ranger>5</RE_Ranger>
                     <RE_AllianceMilitia>7</RE_AllianceMilitia>
                     <RE_AllianceRecruit>7</RE_AllianceRecruit>
