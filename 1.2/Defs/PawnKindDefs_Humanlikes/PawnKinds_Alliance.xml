@@ -435,7 +435,7 @@
 		<li>RE_SpacerApparelCivilian</li>
 		<li>IndustrialBasic</li>
     </apparelTags>
-	<apparelColor>(98,13,0)</apparelColor>
+	<apparelColor>(136,0,0)</apparelColor>
     <apparelMoney>200~800</apparelMoney>
     <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
     <techHediffsChance>0.08</techHediffsChance>
