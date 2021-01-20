@@ -104,5 +104,61 @@
       </li>
     </comps>
   </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>RE_MakoTank</defName>
+    <label>mako tank</label>
+    <description>A spacer-tech shuttle designed for transit between surface and orbit, or between moons of a planetary system.</description>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <passability>Impassable</passability>
+    <fillPercent>1.0</fillPercent>
+    <size>(3,5)</size>
+    <graphicData>
+      <texPath>Things/Building/Misc/Mako/PropMako</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,6)</drawSize>
+      <shadowData>
+        <volume>(1.8, 1.0, 4.1)</volume>
+        <offset>(0, 0, -0.1)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Flammability>1</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <killedLeavings>
+      <Plasteel>80</Plasteel>
+      <ChunkSlagSteel>4</ChunkSlagSteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </killedLeavings>
+    <rotatable>true</rotatable>
+	<defaultPlacingRot>West</defaultPlacingRot>
+    <selectable>true</selectable>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <drawerType>MapMeshOnly</drawerType>
+    <repairEffect>ConstructMetal</repairEffect>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+    <uiIconScale>1.0</uiIconScale>
+    <building>
+      <claimable>false</claimable>
+      <soundAmbient>ShuttleIdle_Ambience</soundAmbient>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+    </comps>
+	<costList>
+	  <Plasteel>350</Plasteel>
+      <ComponentSpacer>18</ComponentSpacer>
+	</costList>
+	<researchPrerequisites>
+      <li>RE_AllianceKodiak</li>
+    </researchPrerequisites>
+	<designationCategory>Misc</designationCategory>
+	<techLevel>Ultra</techLevel>
+  </ThingDef>
 
 </Defs>
