@@ -165,4 +165,25 @@
       </li>
     </modExtensions>
   </RimEffect.AbilityDef>
+
+    <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Singularity</defName>
+    <label>biotic singularity</label>
+    <description>The gravitational power sucks multiple enemies within a radius to a single area, leaving them helpless and vulnerable to attack.</description>
+    <abilityClass>RimEffect.Ability_Singularity</abilityClass>
+    <targetMode>Location</targetMode>
+    <range>30</range>
+    <castTime>60</castTime>
+    <radius>5</radius>
+    <iconPath>UI/Abilities/Biotic_Singularity</iconPath>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>3</minimumLevel>
+    </requiredHediff>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>25</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
 </Defs>

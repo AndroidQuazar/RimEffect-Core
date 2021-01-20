@@ -54,6 +54,7 @@
     <Compile Include="Abilities\Abilities\Ability_Dominate.cs" />
     <Compile Include="Abilities\Abilities\Ability_GiveHediff.cs" />
     <Compile Include="Abilities\Abilities\Ability_ShootProjectile.cs" />
+    <Compile Include="Abilities\Abilities\Ability_Singularity.cs" />
     <Compile Include="Abilities\Ability.cs" />
     <Compile Include="Abilities\AbilityDef.cs" />
     <Compile Include="Abilities\AbilityProjectile.cs" />
