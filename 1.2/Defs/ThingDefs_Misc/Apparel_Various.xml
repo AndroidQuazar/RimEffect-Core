@@ -820,6 +820,12 @@
       <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
     </statBases>
+	<equippedStatOffsets>
+		<ResearchSpeed>0.15</ResearchSpeed>
+		<MedicalTendSpeed>0.10</MedicalTendSpeed>
+		<MedicalTendQuality>0.05</MedicalTendQuality>
+		<MedicalSurgerySuccessChance>0.1</MedicalSurgerySuccessChance>
+	</equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
