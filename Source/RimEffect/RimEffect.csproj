@@ -76,6 +76,7 @@
     <Compile Include="Comps\CompProperties\CompProperties_VariableHeatPusher.cs" />
     <Compile Include="Comps\CompVariableHeatPusher.cs" />
     <Compile Include="Damages\DamageWorker_BombNoShake.cs" />
+    <Compile Include="HarmonyPatches\Building_SpawnSetup_Patch.cs" />
     <Compile Include="HarmonyPatches\CanEquip_Patch.cs" />
     <Compile Include="HarmonyPatches\PawnGen_Patch.cs" />
     <Compile Include="Hediffs\Hediff_Spectre.cs" />
@@ -87,6 +88,11 @@
     <Compile Include="Jobs\JobGiver_HaulItemsToRandomPlaces.cs" />
     <Compile Include="Jobs\JobGiver_AttackOtherHostiles.cs" />
     <Compile Include="Jobs\JobGiver_PyjakNuzzle.cs" />
+    <Compile Include="QuestNodes\QuestNode_GeneratePawns.cs" />
+    <Compile Include="QuestNodes\QuestNode_GetPawn.cs" />
+    <Compile Include="QuestNodes\QuestNode_GetRandomPawnKinds.cs" />
+    <Compile Include="QuestParts\QuestPart_RoomRequirement.cs" />
+    <Compile Include="QuestNodes\QuestNode_GetRoomsToBuild.cs" />
     <Compile Include="Textures.cs" />
     <Compile Include="RE_DefOf.cs" />
     <Compile Include="Apparels\AmmoBelt.cs" />

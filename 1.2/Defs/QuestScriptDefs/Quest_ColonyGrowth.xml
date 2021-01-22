@@ -1,36 +1,156 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <QuestScriptDef>
-    <defName>RE_ColonyGrowth</defName>
-    <rootSelectionWeight>1.0</rootSelectionWeight>
-    <rootMinPoints>350</rootMinPoints>
-    <canGiveRoyalFavor>true</canGiveRoyalFavor>
-    <expireDaysRange>5~10</expireDaysRange>
-    <questNameRules>
-      <rulesStrings>
-        <li>questName->The [size] [expansion]</li>
-        <li>questName->[size] [expansion]</li>
-        <li>questName->[asker_nameDef] and the [expansion]</li>
-        <li>expansion->Expansion</li>
-        <li>expansion->Extension</li>
-        <li>expansion->Development</li>
-        <li>expansion->Construction Site</li>
-        <li>size->Big</li>
-        <li>size->Large</li>
-        <li>size->Huge</li>
-        <li>size->Small</li>
-        <li>size->Great</li>
-        <li>size->Tremendous</li>
-        <li>size->Grand</li>
-        <li>size->Massive</li>
-      </rulesStrings>
-    </questNameRules>
-    <questDescriptionRules>
-      <rulesStrings>
-        <li>questDescription->High command of [asker_faction_name] analyzed the situation at [map_definite] and decided to contact you with an expansion opportunity. They would like to relocate [numberPawns] of [pawnKindDef] to your colony, but they need to make sure you can support them. /n[asker_faction_name] requests that you construct additional [numberRooms] [roomType] in [map_definite]. /nIn return, following personnel will join you: <!--[list of personnel goes here, formatted in that way: John, farmer; Jane, marine;].--></li>
-      </rulesStrings>
-    </questDescriptionRules>
-  </QuestScriptDef>
-  
+	<QuestScriptDef>
+		<defName>RE_ColonyGrowth</defName>
+		<rootSelectionWeight>1.0</rootSelectionWeight>
+		<rootMinPoints>350</rootMinPoints>
+		<canGiveRoyalFavor>true</canGiveRoyalFavor>
+		<autoAccept>true</autoAccept>
+		<questNameRules>
+			<rulesStrings>
+				<li>questName->The [size] [expansion]</li>
+				<li>questName->[size] [expansion]</li>
+				<li>questName->[asker_nameDef] and the [expansion]</li>
+				<li>expansion->Expansion</li>
+				<li>expansion->Extension</li>
+				<li>expansion->Development</li>
+				<li>expansion->Construction Site</li>
+				<li>size->Big</li>
+				<li>size->Large</li>
+				<li>size->Huge</li>
+				<li>size->Small</li>
+				<li>size->Great</li>
+				<li>size->Tremendous</li>
+				<li>size->Grand</li>
+				<li>size->Massive</li>
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription->High command of [asker_faction_name] analyzed the situation at [map_definite] and decided to contact you with an expansion opportunity. They would like to relocate [numberPawns] of personnel to your colony, but they need to make sure you can support them.\n\n[asker_faction_name] requests that you construct additional rooms in [map_definite]. \nIn return, following personnel will join you:\n\n[personnelData]\n\nRooms needs to be built:\n[roomsToBeBuild]\nThe rooms must be built at least [minRoomSizeInfo] in size. You have only [questTimeOut_duration] to complete this order.</li>
+			</rulesStrings>
+		</questDescriptionRules>
+		<root Class="QuestNode_Sequence">
+			<nodes>
+				<li Class="QuestNode_SubScript">
+					<def>Util_RandomizePointsChallengeRating</def>
+				</li>
+
+				<li Class="QuestNode_GetMap" />
+
+				<li Class="RimEffect.QuestNode_GetPawn">
+					<selectionWeight>0.25</selectionWeight>
+					<storeAs>asker</storeAs>
+					<mustBeFactionLeader>true</mustBeFactionLeader>
+					<mustBeNonHostileToPlayer>$askerMustBeNonHostileToPlayer</mustBeNonHostileToPlayer>
+					<ifWorldPawnThenMustBeFreeOrLeader>$ifWorldPawnThenMustBeFreeOrLeader</ifWorldPawnThenMustBeFreeOrLeader>
+					<excludeFactionDefs>$excludeFactionDefs</excludeFactionDefs>
+					<hostileWeight>0.15</hostileWeight>
+					<factionDef>RE_SystemsAlliance</factionDef>
+				</li>
+
+				<li Class="RimEffect.QuestNode_GetRandomPawnKinds">
+					<storeAs>pawnKindDefs</storeAs>
+					<count>$(randInt(1, 3))</count>
+					<pawnKinds>
+						<li>RE_Colonist</li>
+						<li>RE_Farmer</li>
+						<li>RE_Scientist</li>
+						<li>RE_Medic</li>
+						<li>RE_Official</li>
+					</pawnKinds>
+				</li>
+
+				<li Class="QuestNode_Set">
+					<name>numberPawns</name>
+					<value>$(randInt(2, 6))</value>
+				</li>
+
+				<li Class="RimEffect.QuestNode_GeneratePawns">
+					<storeAs>personnels</storeAs>
+					<pawnKindDefs>$pawnKindDefs</pawnKindDefs>
+					<count>$numberPawns</count>
+				</li>
+
+
+				<li Class="QuestNode_Set">
+					<name>numberRooms</name>
+					<value>$(randInt(2, 3) * $challengeRating)</value>
+				</li>
+
+				<li Class="QuestNode_Set">
+					<name>minRoomSizeRequirement</name>
+					<value>$(randInt(3, 6) * $challengeRating)</value>
+				</li>
+				
+				<li Class="RimEffect.QuestNode_GetRoomsToBuild">
+					<count>$numberRooms</count>
+					<minRoomSize>$minRoomSizeRequirement</minRoomSize>
+					<roomRoleDefs>
+						<li>Bedroom</li>
+						<li>DiningRoom</li>
+						<li>RecRoom</li>
+						<li>Hospital</li>
+						<li>Laboratory</li>
+						<li>Workshop</li>
+						<li>Kitchen</li>
+					</roomRoleDefs>
+					<storeAs>roomsToBuild</storeAs>
+				</li>
+
+				<li Class="QuestNode_Set">
+					<name>questTimeOut</name>
+					<value>$((randInt(10, 20) * 60000) / $challengeRating)</value>
+				</li>
+
+				<li Class="QuestNode_Delay">
+					<delayTicks>$questTimeOut</delayTicks>
+					<outSignalComplete>ColonyGrowthQuestIsFailed</outSignalComplete>
+				</li>
+
+				<li Class="QuestNode_Signal">
+					<inSignal>AllRoomsAreBuilt</inSignal>
+					<node Class="QuestNode_Sequence">
+						<nodes>
+							<li Class="QuestNode_PawnsArrive">
+								<pawns>$personnels</pawns>
+								<joinPlayer>true</joinPlayer>
+								<customLetterLabel>$customLetterLabel</customLetterLabel>
+								<customLetterText>$customLetterText</customLetterText>
+								<customLetterLabelRules>$customLetterLabelRules</customLetterLabelRules>
+								<customLetterTextRules>$customLetterTextRules</customLetterTextRules>
+								<isSingleReward>true</isSingleReward>
+								<rewardDetailsHidden>true</rewardDetailsHidden>
+							</li>
+							<li Class="QuestNode_Letter">
+								<label TKey="RE.ColonyGrowthLetterLabelSuccess">Quest is done: [resolvedQuestName]</label>
+								<text TKey="RE.ColonyGrowthLetterTextSuccess">Quest is done.</text>
+							</li>
+							<li Class="QuestNode_End">
+								<outcome>Success</outcome>
+							</li>
+						</nodes>
+					</node>
+				</li>
+
+				<li Class="QuestNode_Signal">
+					<inSignal>ColonyGrowthQuestIsFailed</inSignal>
+					<node Class="QuestNode_Sequence">
+						<nodes>
+							<li Class="QuestNode_Letter">
+								<label TKey="LetterLabelQuestExpired">Quest expired: [resolvedQuestName]</label>
+								<text TKey="LetterTextQuestExpired">The Colony Growth quest has expired. You have failed the quest [resolvedQuestName].</text>
+							</li>
+							<li Class="QuestNode_End">
+								<outcome>Fail</outcome>
+							</li>
+						</nodes>
+					</node>
+				</li>
+
+			</nodes>
+		</root>
+	</QuestScriptDef>
+
 </Defs>
