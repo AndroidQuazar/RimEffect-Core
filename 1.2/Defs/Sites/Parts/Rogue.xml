@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <SitePartDef>
+    <defName>RE_RogueSite</defName>
+    <label>incapacitated refugee</label>
+    <description>A stranded, incapacitated refugee begging for help.</description>
+    <workerClass>RimEffect.SitePartWorker_RogueSite</workerClass>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>World/WorldObjects/RogueVI</expandingIconTexture>
+    <forceExitAndRemoveMapCountdownDurationDays>16</forceExitAndRemoveMapCountdownDurationDays>
+    <increasesPopulation>true</increasesPopulation>
+    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+    <tags>
+      <li>RE_RogueSite</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>RE_RogueSite</defName>
+    <linkWithSite>RE_RogueSite</linkWithSite>
+    <order>480</order>
+    <genStep Class="RimEffect.GenStep_RogueSite">
+    </genStep>
+  </GenStepDef>
+
+</Defs>

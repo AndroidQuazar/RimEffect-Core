@@ -76,6 +76,8 @@
     <Compile Include="Comps\CompProperties\CompProperties_VariableHeatPusher.cs" />
     <Compile Include="Comps\CompVariableHeatPusher.cs" />
     <Compile Include="Damages\DamageWorker_BombNoShake.cs" />
+    <Compile Include="GenSteps\GenStep_RogueSite.cs" />
+    <Compile Include="HarmonyPatches\Notify_DamageApplied_Patch.cs" />
     <Compile Include="HarmonyPatches\Building_SpawnSetup_Patch.cs" />
     <Compile Include="HarmonyPatches\CanEquip_Patch.cs" />
     <Compile Include="HarmonyPatches\PawnGen_Patch.cs" />
@@ -93,6 +95,7 @@
     <Compile Include="QuestNodes\QuestNode_GetRandomPawnKinds.cs" />
     <Compile Include="QuestParts\QuestPart_RoomRequirement.cs" />
     <Compile Include="QuestNodes\QuestNode_GetRoomsToBuild.cs" />
+    <Compile Include="Sites\SitePartWorker_RogueSite.cs" />
     <Compile Include="Textures.cs" />
     <Compile Include="RE_DefOf.cs" />
     <Compile Include="Apparels\AmmoBelt.cs" />

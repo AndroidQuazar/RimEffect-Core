@@ -31,11 +31,21 @@ namespace RimEffect
         public static FactionDef RE_SystemsAlliance;
         public static HediffDef RE_Spectre;
         public static PawnKindDef RE_Pyjak;
+        public static ThingDef RE_PrefabWall;
+        public static ThingDef RE_Turret_MassAccelerator;
+        public static ThingDef RE_PrefabBarricade;
+
+        public static PawnKindDef RE_Mechanoids_LOKI;
+        public static PawnKindDef RE_Mechanoids_YMIR;
+
+        public static ThingDef RE_Mechanoids_LOKIBase;
+        public static ThingDef RE_Mechanoids_YMIRBase;
+
 
         public static JobDef RE_UseAbility;
         public static JobDef RE_UseCommsConsole;
         public static DutyDef RE_AssaultEnemies;
-
+        public static PawnKindDef RE_Colonist;
         public static HediffDef RE_BioticAmpHediff;
         public static StatDef   RE_BioticAbilityCostMultiplier;
         public static StatDef   RE_BioticEnergyMax;
