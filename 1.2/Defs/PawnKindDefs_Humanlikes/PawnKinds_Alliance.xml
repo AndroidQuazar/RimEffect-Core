@@ -30,6 +30,7 @@
       <li>Simple</li>
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
+	  <li>RE_Implant</li>
     </techHediffsTags>
         <modExtensions>
             <li Class="VFECore.PawnKindDefExtension">
@@ -116,6 +117,7 @@
     <techHediffsTags>
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
+	  <li>RE_Implant</li>
     </techHediffsTags>
         <modExtensions>
             <li Class="VFECore.PawnKindDefExtension">
@@ -215,7 +217,9 @@
     <techHediffsTags>
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
+	  <li>RE_Implant</li>
     </techHediffsTags>
+	<techHediffsMaxAmount>2</techHediffsMaxAmount>
   </PawnKindDef>
   
   <PawnKindDef ParentName="AllianceBase">
@@ -299,6 +303,7 @@
     <techHediffsTags>
       <li>Simple</li>
       <li>ImplantEmpireCommon</li>
+	  <li>RE_Implant</li>
     </techHediffsTags>
   </PawnKindDef>
   
@@ -353,6 +358,7 @@
     <techHediffsTags>
       <li>Simple</li>
       <li>ImplantEmpireCommon</li>
+	  <li>RE_Implant</li>
     </techHediffsTags>
   </PawnKindDef>
   
@@ -383,6 +389,7 @@
     <techHediffsTags>
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
+	  <li>RE_Implant</li>
     </techHediffsTags>
   </PawnKindDef>
   
@@ -413,6 +420,7 @@
 	  <li>Simple</li>
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
+	  <li>RE_Implant</li>
     </techHediffsTags>
   </PawnKindDef>
   
