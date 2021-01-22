@@ -37,6 +37,7 @@ namespace RimEffect
 
         public static PawnKindDef RE_Mechanoids_LOKI;
         public static PawnKindDef RE_Mechanoids_YMIR;
+        public static HediffDef RE_TargetingVI;
 
         public static ThingDef RE_Mechanoids_LOKIBase;
         public static ThingDef RE_Mechanoids_YMIRBase;

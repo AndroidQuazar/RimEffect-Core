@@ -431,4 +431,76 @@
     <removesHediff>RE_PowerAmplifier</removesHediff>
   </RecipeDef>
 	
+ <HediffDef ParentName="ImplantHediffBase">
+    <defName>RE_TargetingVI</defName>
+    <label>targeting VI</label>
+    <labelNoun>a targeting VI</labelNoun>
+    <description>An installed targeting VI.</description>
+    <descriptionHyperlinks><ThingDef>RE_TargetingVI</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>RE_TargetingVI</spawnThingOnRemoved>
+	<defaultLabelColor>(0,237,248)</defaultLabelColor>
+	<hediffClass>RimEffect.Hediff_TargetingVI</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_ReactOnDamage">
+        <damageDefIncoming>EMP</damageDefIncoming>
+        <createHediff>BrainShock</createHediff>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef ParentName="RE_BodyPartImplantBase">
+    <defName>RE_TargetingVI</defName>
+    <label>targeting VI</label>
+    <description>A microcomputer with large glass capsule and advanced combat stimulant synthesizer. Constantly injects substances into the blood, increasing the user's potential in melee combat.</description>
+    <descriptionHyperlinks><RecipeDef>RE_InstallTargetingVI</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RE_Implant</li></thingSetMakerTags>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+	  <RE_ElementZero>1</RE_ElementZero>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>RE_InstallTargetingVI</defName>
+    <label>install targeting VI</label>
+    <description>Install a targeting VI.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_TargetingVI</ThingDef>
+      <HediffDef>RE_TargetingVI</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing targeting VI.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RE_TargetingVI</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RE_TargetingVI</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>RE_TargetingVI</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RE_RemoveTargetingVI</defName>
+    <label>remove targeting VI</label>
+    <description>Remove targeting VI.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_TargetingVI</ThingDef>
+      <HediffDef>RE_TargetingVI</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing targeting VI.</jobString>
+    <removesHediff>RE_TargetingVI</removesHediff>
+  </RecipeDef>
+  
 </Defs>
