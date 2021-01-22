@@ -785,7 +785,7 @@
 		<showWhenDrafted>true</showWhenDrafted>
 		<showOnHostiles>true</showOnHostiles>
 		<showOnNeutralInCombat>true</showOnNeutralInCombat>
-		<shieldTexPath>Other/ShieldBubble</shieldTexPath>
+		<shieldTexPath>UI\ShieldBubble\ShieldTech</shieldTexPath>
 		<EnergyShieldRechargeRate>0.03</EnergyShieldRechargeRate>
 		<EnergyShieldEnergyMax>50</EnergyShieldEnergyMax>
 		<minShieldSize>1</minShieldSize>
