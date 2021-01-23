@@ -122,5 +122,46 @@
     </graphicData>
 	<uiIconScale>0.65</uiIconScale>
   </ThingDef>
+  
+  <!--============================== Door ==============================-->
+  <ThingDef ParentName="DoorBase">
+    <defName>RE_PrefabAutodoor</defName>
+    <label>prefab autodoor</label>
+    <description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+    <statBases>
+      <WorkToBuild>350</WorkToBuild>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Door/PrefabDoorSimple_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+      <!--  no damage marks because they don't move with the door
+        <rect>(0,0.12,1,0.76)</rect>-->
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/PrefabDoorSimple_MenuIcon</uiIconPath>
+    <costList>
+      <Steel>10</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <costStuffCount>15</costStuffCount>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>25</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Door/PrefabDoorSimple_Blueprint</texPath>
+      </blueprintGraphicData>
+    </building>
+    <researchPrerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
 
 </Defs>
