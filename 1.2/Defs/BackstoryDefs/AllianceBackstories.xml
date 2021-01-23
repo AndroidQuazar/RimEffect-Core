@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_BlastoObsessive</defName>
+    <title>Blasto obsessive</title>
+    <titleShort>Blasto fan</titleShort>
+    <baseDescription>[PAWN_nameDef] grew up on a border colony world, where [PAWN_pronoun] worked the farmland for their family. Their only entertainment came in the form of Blasto movies and videos over the net. [PAWN_nameDef] came to define their entire youth in the continuity of Blasto movies, and from their Blasto Bedsheets to their Blasto jackets, they patterned their entire life after the Hanhar Spectre. This lead to some social outcasting, but they didn't care-- they were busy on Blasto chatrooms with their Extranet friends.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+        <li>Social</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_BotanicalProdigy</defName>
+    <title>Botanical prodigy</title>
+    <titleShort>Prodigy</titleShort>
+    <baseDescription>[PAWN_nameDef] came up out of the Terminus System colonies, where [PAWN_pronoun] served alongside their large family as farmers. They became a specialist with unique and alien flora species and came to be heralded as a prodigy in the colony hydroponics labs.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+        <li>Intellectual</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_GenemoddedSoldier</defName>
+    <title>Genemodded soldier</title>
+    <titleShort>Soldier</titleShort>
+    <baseDescription>[PAWN_nameDef] is a Systems Alliance operator. [PAWN_pronoun] was chosen as the elite team of genetically modified soldiers. Now, [PAWN_pronoun] travels the galaxy, bringing justice and liberty to anyone in need.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_MarineCadet</defName>
+    <title>Marine cadet</title>
+    <titleShort>Cadet</titleShort>
+    <baseDescription>Born on the colony world, [PAWN_nameDef] comes from a large family that includes a long line of Alliance soldiers. Following [PAWN_possessive] family's tradition, [PAWN_pronoun] enlisted in the Alliance Navy as a marine after high school and was assigned to the Recruit Training Depot.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_SquadLeader</defName>
+    <title>Squad leader</title>
+    <titleShort>Leader</titleShort>
+    <baseDescription>Being noticed by the drill instructors early on, [PAWN_nameDef] was quickly promoted to squad leader, and then to platoon guide not long after. [PAWN_possessive] platoon had logged unanimous positive feedback on [PAWN_possessive] leadership in a fitness review cycle, and achieved praise from commanders and other soldiers alike. Despite glowing performance reviews, [PAWN_nameDef] has been denied further opportunities for advancement. Having served on numerous groundside garrisons [PAWN_pronoun] has repeatedly requested a transfer to a shipboard posting, but each request has been denied, without explicit reason.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_CSecDetective</defName>
+    <title>C-sec detective</title>
+    <titleShort>Detective</titleShort>
+    <baseDescription>Following [PAWN_possessive] father footsteps, [PAWN_nameDef] signed up for the Citadel Security Investigation division. [PAWN_possessive] main duties included gathering evidence, solving crimes and bringing perpetrators to justice.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>Turian</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_CSecEnforcer</defName>
+    <title>C-sec enforcer</title>
+    <titleShort>Enforcer</titleShort>
+    <baseDescription>[PAWN_nameDef] signed up to C-Sec Enforcement division as soon as the slot became available. Wearing the C-Sec colours with pride, [PAWN_possessive] main duties on shift included dispensing discipline for minor infractions, resolving disputes, and responding to various emergencies.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>Turian</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+        <li>Intellectual</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_CSecCustomsOfficer</defName>
+    <title>C-sec customs officer</title>
+    <titleShort>Customs officer</titleShort>
+    <baseDescription>[PAWN_nameDef] spent most of [PAWN_possessive] career as a simple customs officer working in the Citadel ports. All day every day, [PAWN_pronoun] screened the passengers and cargo that passed through the docks, confiscated contraband, and arrested a smuggler or two.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>Turian</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+		<li>Intellectual</li>
+		<li>ManualSkilled</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_CSecNetworkOfficer</defName>
+    <title>C-sec network officer</title>
+    <titleShort>Network officer</titleShort>
+    <baseDescription>Citadel crime is not only limited to physical violence. [PAWN_nameDef] worked at the Citadel Security Network services, fighting against cybercrimes, copyright theft, hacking, viral attacks, and illegal AI. This branch of C-Sec is also called E-Security, and [PAWN_nameDef] is a prime example of the best programmer C-Sec has to offer.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>Turian</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_CSecSpecialResponse</defName>
+    <title>C-sec special response</title>
+    <titleShort>C-sec SWAT</titleShort>
+    <baseDescription>Officers who deal with hostage situations, bombs, and heavily armed criminals are the Citadel's finest. In the event the Citadel is attacked, they are the front line of interior defense, armed with military-grade weaponry. [PAWN_nameDef] trained all [PAWN_possessive] life for that very purpose, not being afraid of anything and ready to sacrifice everything for the safety of other Citadel species.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>Turian</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+        <li>Intellectual</li>
+		<li>Artistic</li>
+		<li>Hauling</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+</Defs>
