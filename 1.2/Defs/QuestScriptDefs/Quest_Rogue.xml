@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<QuestScriptDef>
+		<defName>RE_Rogue</defName>
+		<rootSelectionWeight>1.0</rootSelectionWeight>
+		<rootMinPoints>350</rootMinPoints>
+		<canGiveRoyalFavor>true</canGiveRoyalFavor>
+		<expireDaysRange>2~3</expireDaysRange>
+		<questNameRules>
+			<rulesStrings>
+				<li>questName->Rogue [numeral]</li>
+				<li>numeral->I</li>
+				<li>numeral->II</li>
+				<li>numeral->III</li>
+				<li>numeral->IV</li>
+				<li>numeral->V</li>
+				<li>numeral->VI</li>
+				<li>numeral->VII</li>
+				<li>numeral->VIII</li>
+				<li>numeral->IX</li>
+				<li>numeral->X</li>
+				<li>numeral->XI</li>
+				<li>numeral->XII</li>
+				<li>numeral->XIII</li>
+				<li>numeral->XIV</li>
+				<li>numeral->XV</li>
+				<li>numeral->XVI</li>
+				<li>numeral->XVII</li>
+				<li>numeral->XVIII</li>
+				<li>numeral->XIX</li>
+				<li>numeral->XX</li>
+				<li>numeral->XXI</li>
+				<li>numeral->XXII</li>
+				<li>numeral->XXIII</li>
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription->[refugee_nameDef] contacts you and requests help. [refugee_pronoun] came across a small installation run by a rogue virtual intelligence. \n[refugee_nameDef] is a [refugee_age]-year-old [refugee_title]. [refugee_pronoun] promises to join you if you rescue [refugee_objective]. \n[refugee_nameDef] says that you should exercise extreme caution. Whilst there are no humans left alive in the area, a large number of turrets and mechs went completely haywire and will attack anyone that comes into range.</li>
+			</rulesStrings>
+		</questDescriptionRules>
+		<root Class="QuestNode_Sequence">
+			<nodes>
+				<li Class="QuestNode_SubScript">
+					<def>Util_RandomizePointsChallengeRating</def>
+					<parms>
+						<pointsFactorTwoStar>1.5</pointsFactorTwoStar>
+						<pointsFactorThreeStar>2</pointsFactorThreeStar>
+					</parms>
+				</li>
+				<li Class="QuestNode_SubScript">
+					<def>Util_GetDefaultRewardValueFromPoints</def>
+				</li>
+				<li Class="QuestNode_SubScript">
+					<def>Util_AdjustPointsForDistantFight</def>
+				</li>
+				<li Class="QuestNode_GetMap" />
+
+				<li Class="QuestNode_RandomNode">
+					<nodes>
+						<li Class="QuestNode_Set">
+							<name>askerIsNull</name>
+							<value>true</value>
+							<selectionWeight>0.2</selectionWeight>
+						</li>
+						<li Class="QuestNode_GetPawn">
+							<storeAs>asker</storeAs>
+							<mustBeFactionLeader>true</mustBeFactionLeader>
+							<mustBeNonHostileToPlayer>true</mustBeNonHostileToPlayer>
+							<hostileWeight>0.15</hostileWeight>
+							<selectionWeight>0.3</selectionWeight>
+						</li>
+					</nodes>
+				</li>
+
+				<li Class="QuestNode_GetSiteTile">
+					<storeAs>siteTile</storeAs>
+					<preferCloserTiles>true</preferCloserTiles>
+				</li>
+
+				<li Class="QuestNode_ViolentQuestsAllowed">
+					<node Class="QuestNode_Set">
+						<name>siteThreatChance</name>
+						<value>0.7</value>
+					</node>
+					<elseNode Class="QuestNode_Set">
+						<name>siteThreatChance</name>
+						<value>0</value>
+					</elseNode>
+				</li>
+
+				<li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
+					<storeAs>sitePartDefs</storeAs>
+					<storeFactionAs>siteFaction</storeFactionAs>
+					<sitePartsTags>
+						<li>
+							<tag>RE_RogueSite</tag>
+						</li>
+					</sitePartsTags>
+				</li>
+
+				<li Class="QuestNode_GetDefaultSitePartsParams">
+					<tile>$siteTile</tile>
+					<faction>$siteFaction</faction>
+					<sitePartDefs>$sitePartDefs</sitePartDefs>
+					<storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+				</li>
+
+				<li Class="QuestNode_SubScript">
+					<def>Util_GenerateSite</def>
+					<parms>
+						<hiddenSitePartsPossible>true</hiddenSitePartsPossible>
+					</parms>
+				</li>
+
+				<li Class="QuestNode_SpawnWorldObjects">
+					<worldObjects>$site</worldObjects>
+				</li>
+
+				<li Class="QuestNode_WorldObjectTimeout">
+					<worldObject>$site</worldObject>
+					<isQuestTimeout>true</isQuestTimeout>
+					<delayTicks>$(randInt(7,15)*60000)</delayTicks>
+					<inSignalDisable>site.MapGenerated</inSignalDisable>
+					<node Class="QuestNode_Sequence">
+						<nodes>
+							<li Class="QuestNode_Letter">
+								<label TKey="LetterLabelQuestExpired">Quest expired: [resolvedQuestName]</label>
+								<text TKey="LetterTextQuestExpired">[refugee_nameDef]'s signal has been lost, and [refugee_pronoun] can no longer be rescued. The quest [resolvedQuestName] has expired.</text>
+							</li>
+							<li Class="QuestNode_End">
+								<outcome>Fail</outcome>
+							</li>
+						</nodes>
+					</node>
+				</li>
+
+				<li Class="QuestNode_AddPawnReward">
+					<pawn>$refugee</pawn>
+					<inSignalChoiceUsed>site.MapGenerated</inSignalChoiceUsed>
+					<rewardDetailsHidden>true</rewardDetailsHidden>
+				</li>
+
+				<li Class="QuestNode_NoWorldObject">
+					<worldObject>$site</worldObject>
+					<node Class="QuestNode_End" />
+				</li>
+			</nodes>
+		</root>
+	</QuestScriptDef>
+
+</Defs>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[thingClass = "Pawn"]/comps</xpath>
+		<value>
+			<li Class="VFEMech.CompProperties_ShieldMechBubble">
+				<compClass>RimEffect.CompAbilities</compClass>
+				<blockRangedAttack>true</blockRangedAttack>
+				<blockMeleeAttack>false</blockMeleeAttack>
+				<showWhenDrafted>true</showWhenDrafted>
+				<showOnHostiles>true</showOnHostiles>
+				<showOnNeutralInCombat>true</showOnNeutralInCombat>
+				<shieldTexPath>Other/ShieldBubble</shieldTexPath>
+				<minShieldSize>1</minShieldSize>
+				<maxShieldSize>1.5</maxShieldSize>
+				<shieldColor>RGBA(0,1,1,1)</shieldColor>
+				<EnergyLossPerDamage>1</EnergyLossPerDamage>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

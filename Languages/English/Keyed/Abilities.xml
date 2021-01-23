@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<RE.AbilityDisableReasonCooldown>{0} is on cooldown for {1}</RE.AbilityDisableReasonCooldown>
+	<RE.AbilityDisableReasonGeneral>{0} doesn't meet the requirements</RE.AbilityDisableReasonGeneral>
+
+	<RE.AbilityStatsPower>Power</RE.AbilityStatsPower>
+	<RE.AbilityStatsBioticEnergy>Biotic Energy</RE.AbilityStatsBioticEnergy>
+	<RE.BioticAmpCantEquipWeaponWeightReason>This weapon is too heavy for a biotic user</RE.BioticAmpCantEquipWeaponWeightReason>
+	<RE.AbilityDisableReasonBioticEnergyLack>The user doesn't have enough biotic energy left</RE.AbilityDisableReasonBioticEnergyLack>
+
+	<RE.AbilityDominateBerserkReason>Mentally dominated by {0}</RE.AbilityDominateBerserkReason>
+</LanguageData>

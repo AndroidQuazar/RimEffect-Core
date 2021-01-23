@@ -85,6 +85,7 @@
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <selectable>true</selectable>
+	<uiIconScale>0.8</uiIconScale>
     <fillPercent>0.20</fillPercent>
     <pathCost>14</pathCost>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -952,6 +953,9 @@
         <compClass>CompGatherSpot</compClass>
       </li>
     </comps>
+    <researchPrerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </researchPrerequisites>
 	<techLevel>Ultra</techLevel>
   </ThingDef>
   

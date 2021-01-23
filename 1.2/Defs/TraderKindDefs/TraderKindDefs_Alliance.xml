@@ -191,7 +191,10 @@
       </li>
       
       <!-- Implants -->
-      <!-- none -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>RE_StrengthEnhancer</thingDef>
+        <countRange>1~1</countRange>
+      </li>
       
       <!-- Buildings -->
       <!-- none -->
@@ -275,8 +278,13 @@
       <!-- Implants -->
       <li Class="StockGenerator_Tag">
         <tradeTag>TechHediff</tradeTag>
-        <thingDefCountRange>3</thingDefCountRange>
+        <thingDefCountRange>2</thingDefCountRange>
         <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>RE_Implant</tradeTag>
+        <thingDefCountRange>3~5</thingDefCountRange>
+        <countRange>1~1</countRange>
       </li>
       
       <!-- Buildings -->

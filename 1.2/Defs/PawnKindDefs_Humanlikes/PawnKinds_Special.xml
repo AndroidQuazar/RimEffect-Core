@@ -40,12 +40,14 @@
     </inventoryOptions>
     <gearHealthRange>1~1</gearHealthRange>
     <techHediffsChance>0.9</techHediffsChance>
-    <techHediffsMoney>2500~7500</techHediffsMoney>
+    <techHediffsMoney>2500~8500</techHediffsMoney>
 	<techHediffsTags>
 	  <li>Archotech</li>
       <li>Advanced</li>
+	  <li>RE_Implant</li>
     </techHediffsTags>
-    <itemQuality>Good</itemQuality>
+	<techHediffsMaxAmount>6</techHediffsMaxAmount>
+    <itemQuality>Excellent</itemQuality>
     <weaponMoney>1100~5000</weaponMoney>
     <weaponTags>
       <li>AllianceGun</li>

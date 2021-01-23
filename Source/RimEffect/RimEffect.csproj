@@ -23,9 +23,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\1.2\Assemblies\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -39,8 +39,34 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="VanillaStorytellersExpanded">
+      <HintPath>..\..\..\VanillaExpandedFramework\1.2\Assemblies\VanillaStorytellersExpanded.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VFECore">
+      <HintPath>..\..\..\VanillaExpandedFramework\1.2\Assemblies\VFECore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\Abilities\Ability_Barrier.cs" />
+    <Compile Include="Abilities\Abilities\Ability_Charge.cs" />
+    <Compile Include="Abilities\Abilities\Ability_Dominate.cs" />
+    <Compile Include="Abilities\Abilities\Ability_GiveHediff.cs" />
+    <Compile Include="Abilities\Abilities\Ability_ShootProjectile.cs" />
+    <Compile Include="Abilities\Abilities\Ability_Singularity.cs" />
+    <Compile Include="Abilities\Ability.cs" />
+    <Compile Include="Abilities\AbilityDef.cs" />
+    <Compile Include="Abilities\AbilityProjectile.cs" />
+    <Compile Include="Abilities\Command_Ability.cs" />
+    <Compile Include="Abilities\CompAbilities.cs" />
+    <Compile Include="Abilities\CompAbilitiesApparel.cs" />
+    <Compile Include="Abilities\Hediff_Abilities.cs" />
+    <Compile Include="Abilities\Hediff_BioticAmp.cs" />
+    <Compile Include="Abilities\JobDriver_CastAbilityOnce.cs" />
+    <Compile Include="Abilities\PawnKindAbilityExtension.cs" />
+    <Compile Include="Apparels\SpectreArmor.cs" />
+    <Compile Include="Buildings\Building_GalaxyMap.cs" />
     <Compile Include="Comps\CompPlantHarmRadiusIfBroken.cs" />
     <Compile Include="Comps\CompPowerPlantZero.cs" />
     <Compile Include="Comps\CompPowerPlantNuclear.cs" />
@@ -50,17 +76,34 @@
     <Compile Include="Comps\CompProperties\CompProperties_VariableHeatPusher.cs" />
     <Compile Include="Comps\CompVariableHeatPusher.cs" />
     <Compile Include="Damages\DamageWorker_BombNoShake.cs" />
+    <Compile Include="GenSteps\GenStep_RogueSite.cs" />
+    <Compile Include="HarmonyPatches\Verb_Patches.cs" />
+    <Compile Include="HarmonyPatches\Notify_DamageApplied_Patch.cs" />
+    <Compile Include="HarmonyPatches\Building_SpawnSetup_Patch.cs" />
+    <Compile Include="HarmonyPatches\CanEquip_Patch.cs" />
+    <Compile Include="HarmonyPatches\PawnGen_Patch.cs" />
+    <Compile Include="Hediffs\Hediff_TargetingVI.cs" />
     <Compile Include="Hediffs\Hediff_Spectre.cs" />
+    <Compile Include="Incidents\IncidentWorker_PyjakCrate.cs" />
+    <Compile Include="Incidents\IncidentWorker_LocalBattlefield.cs" />
     <Compile Include="Incidents\IncidentWorker_SpectreJoin.cs" />
     <Compile Include="Interactions\InteractionWorker_PyjakNuzzle.cs" />
     <Compile Include="Jobs\JobDriver_PyjakNuzzle.cs" />
     <Compile Include="Jobs\JobGiver_HaulItemsToRandomPlaces.cs" />
+    <Compile Include="Jobs\JobGiver_AttackOtherHostiles.cs" />
     <Compile Include="Jobs\JobGiver_PyjakNuzzle.cs" />
+    <Compile Include="QuestNodes\QuestNode_GeneratePawns.cs" />
+    <Compile Include="QuestNodes\QuestNode_GetPawn.cs" />
+    <Compile Include="QuestNodes\QuestNode_GetRandomPawnKinds.cs" />
+    <Compile Include="QuestParts\QuestPart_RoomRequirement.cs" />
+    <Compile Include="QuestNodes\QuestNode_GetRoomsToBuild.cs" />
+    <Compile Include="Sites\SitePartWorker_RogueSite.cs" />
     <Compile Include="Textures.cs" />
     <Compile Include="RE_DefOf.cs" />
     <Compile Include="Apparels\AmmoBelt.cs" />
     <Compile Include="HarmonyPatches\HarmonyInit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Window_GalaxyMap.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">
@@ -70,5 +113,6 @@
       <Version>2.0.4</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

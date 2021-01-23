@@ -380,6 +380,11 @@
       <li>
         <compClass>CompQuality</compClass>
       </li>
+      <li Class="RimEffect.CompProperties_AbilitiesApparel">
+        <abilities>
+          <li>RE_SpectreArmor_CombatMastery</li>
+        </abilities>
+      </li>
     </comps>
   </ThingDef>
   

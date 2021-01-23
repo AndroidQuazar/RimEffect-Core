@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <QuestScriptDef>
+    <defName>RE_ProtheanBeacon</defName>
+    <rootSelectionWeight>1.0</rootSelectionWeight>
+    <rootMinPoints>350</rootMinPoints>
+    <canGiveRoyalFavor>true</canGiveRoyalFavor>
+    <expireDaysRange>15~20</expireDaysRange>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->The [adjective] [noun]</li>
+        <li>questName->[adjective] [noun]</li>
+        <li>questName->[asker_nameDef] and the [noun]</li>
+        <li>adjective->Mysterious</li>
+        <li>adjective->Enigmatic</li>
+        <li>adjective->Cryptic</li>
+        <li>noun->Beacon</li>
+        <li>noun->Building</li>
+        <li>noun->Device</li>
+        <li>noun->Mechanism</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->Description: [asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], says [asker_possessive] people found an old Prothean beacon near [map_definite]. \n[asker_nameDef] has no people to spare to launch an excavation, but if you make it to the location specified, you can gain a significant boost to your research capabilities. \n[asker_nameDef] says that the beacon is guarded by [enemyFaction_pawnsPlural] from [enemyFaction_name].
+        </li>
+      </rulesStrings>
+    </questDescriptionRules>
+  </QuestScriptDef>
+  
+</Defs>

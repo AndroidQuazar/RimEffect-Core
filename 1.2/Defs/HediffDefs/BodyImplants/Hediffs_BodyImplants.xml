@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Base -->
+
+  <ThingDef Name="RE_BodyPartImplantBase" ParentName="BodyPartBase" Abstract="True">
+    <techLevel>Ultra</techLevel>
+    <thingCategories>
+      <li>RE_Implants</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItemMassEffect</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <tradeTags>
+      <li>RE_Implant</li>
+    </tradeTags>
+    <techHediffsTags>
+      <li>RE_Implant</li>
+    </techHediffsTags>
+    <statBases>
+      <WorkToMake>30000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>RE_HighTechBodyImplants</researchPrerequisite>
+      <recipeUsers>
+        <li>RE_ManufacturingBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+ <HediffDef ParentName="ImplantHediffBase">
+    <defName>RE_AdrenalineModule</defName>
+    <label>adrenaline module</label>
+    <labelNoun>an adrenaline module</labelNoun>
+    <description>An installed adrenaline module.</description>
+    <descriptionHyperlinks><ThingDef>RE_AdrenalineModule</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>RE_AdrenalineModule</spawnThingOnRemoved>
+	<defaultLabelColor>(0,237,248)</defaultLabelColor>
+    <stages>
+      <li>
+        <capMods>
+        <li>
+            <capacity>Moving</capacity>
+            <offset>0.10</offset>
+        </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_ReactOnDamage">
+        <damageDefIncoming>EMP</damageDefIncoming>
+        <createHediff>BrainShock</createHediff>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef ParentName="RE_BodyPartImplantBase">
+    <defName>RE_AdrenalineModule</defName>
+    <label>adrenaline module</label>
+    <description>A small microcomputer with glass capsule and adrenaline synthesizer. Constantly injects the substance into the blood, increases the speed of movement.</description>
+    <descriptionHyperlinks><RecipeDef>RE_InstallAdrenalineModule</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RE_Implant</li></thingSetMakerTags>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+	  <RE_ElementZero>1</RE_ElementZero>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>RE_InstallAdrenalineModule</defName>
+    <label>install adrenaline module</label>
+    <description>Install an adrenaline module.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_AdrenalineModule</ThingDef>
+      <HediffDef>RE_AdrenalineModule</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing adrenaline module.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RE_AdrenalineModule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RE_AdrenalineModule</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>RE_AdrenalineModule</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RE_RemoveAdrenalineModule</defName>
+    <label>remove adrenaline module</label>
+    <description>Remove adrenaline module.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_AdrenalineModule</ThingDef>
+      <HediffDef>RE_AdrenalineModule</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing adrenaline module.</jobString>
+    <removesHediff>RE_AdrenalineModule</removesHediff>
+  </RecipeDef>
+  
+ <HediffDef ParentName="ImplantHediffBase">
+    <defName>RE_StabilizationModule</defName>
+    <label>stabilization module</label>
+    <labelNoun>a stabilization module</labelNoun>
+    <description>An installed stabilization module.</description>
+    <descriptionHyperlinks><ThingDef>RE_StabilizationModule</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>RE_StabilizationModule</spawnThingOnRemoved>
+	<defaultLabelColor>(0,237,248)</defaultLabelColor>
+    <stages>
+        <li>
+            <statOffsets>
+              <ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
+            </statOffsets>
+        </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_ReactOnDamage">
+        <damageDefIncoming>EMP</damageDefIncoming>
+        <createHediff>BrainShock</createHediff>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef ParentName="RE_BodyPartImplantBase">
+    <defName>RE_StabilizationModule</defName>
+    <label>stabilization module</label>
+    <description>An intelligent microcomputer with a fairly powerful processor for its size. Calculates the trajectories of projectiles, displaying them onto a small holographic interface in the retina.</description>
+    <descriptionHyperlinks><RecipeDef>RE_InstallStabilizationModule</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RE_Implant</li></thingSetMakerTags>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+	  <RE_ElementZero>1</RE_ElementZero>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>RE_InstallStabilizationModule</defName>
+    <label>install stabilization module</label>
+    <description>Install a stabilization module.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_StabilizationModule</ThingDef>
+      <HediffDef>RE_StabilizationModule</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing stabilization module.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RE_StabilizationModule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RE_StabilizationModule</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>RE_StabilizationModule</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RE_RemoveStabilizationModule</defName>
+    <label>remove stabilization module</label>
+    <description>Remove stabilization module.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_StabilizationModule</ThingDef>
+      <HediffDef>RE_StabilizationModule</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing stabilization module.</jobString>
+    <removesHediff>RE_StabilizationModule</removesHediff>
+  </RecipeDef>
+  
+ <HediffDef ParentName="ImplantHediffBase">
+    <defName>RE_StrengthEnhancer</defName>
+    <label>strength enhancer</label>
+    <labelNoun>a strength enhancer</labelNoun>
+    <description>An installed strength enhancer.</description>
+    <descriptionHyperlinks><ThingDef>RE_StrengthEnhancer</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>RE_StrengthEnhancer</spawnThingOnRemoved>
+	<defaultLabelColor>(0,237,248)</defaultLabelColor>
+    <stages>
+        <li>
+            <statOffsets>
+              <MeleeWeapon_DamageMultiplier>0.2</MeleeWeapon_DamageMultiplier>
+            </statOffsets>
+        </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_ReactOnDamage">
+        <damageDefIncoming>EMP</damageDefIncoming>
+        <createHediff>BrainShock</createHediff>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef ParentName="RE_BodyPartImplantBase">
+    <defName>RE_StrengthEnhancer</defName>
+    <label>strength enhancer</label>
+    <description>A microcomputer with large glass capsule and advanced combat stimulant synthesizer. Constantly injects substances into the blood, increasing the user's potential in melee combat.</description>
+    <descriptionHyperlinks><RecipeDef>RE_InstallStrengthEnhancer</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RE_Implant</li></thingSetMakerTags>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+	  <RE_ElementZero>1</RE_ElementZero>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>RE_InstallStrengthEnhancer</defName>
+    <label>install strength enhancer</label>
+    <description>Install a strength enhancer.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_StrengthEnhancer</ThingDef>
+      <HediffDef>RE_StrengthEnhancer</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing strength enhancer.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RE_StrengthEnhancer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RE_StrengthEnhancer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>RE_StrengthEnhancer</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RE_RemoveStrengthEnhancer</defName>
+    <label>remove strength enhancer</label>
+    <description>Remove strength enhancer.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_StrengthEnhancer</ThingDef>
+      <HediffDef>RE_StrengthEnhancer</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing strength enhancer.</jobString>
+    <removesHediff>RE_StrengthEnhancer</removesHediff>
+  </RecipeDef>
+  
+ <HediffDef ParentName="ImplantHediffBase">
+    <defName>RE_PowerAmplifier</defName>
+    <label>power amplifier</label>
+    <labelNoun>a power amplifier</labelNoun>
+    <description>An installed power amplifier.</description>
+    <descriptionHyperlinks><ThingDef>RE_PowerAmplifier</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>RE_PowerAmplifier</spawnThingOnRemoved>
+	<defaultLabelColor>(0,237,248)</defaultLabelColor>
+    <stages>
+        <li>
+            <statOffsets>
+              <RE_BioticEnergyRecoveryRate>0.05</RE_BioticEnergyRecoveryRate>
+            </statOffsets>
+        </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_ReactOnDamage">
+        <damageDefIncoming>EMP</damageDefIncoming>
+        <createHediff>BrainShock</createHediff>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef ParentName="RE_BodyPartImplantBase">
+    <defName>RE_PowerAmplifier</defName>
+    <label>power amplifier</label>
+    <description>A module with additional zero element, accelerates biotic energy recovery rate.</description>
+    <descriptionHyperlinks><RecipeDef>RE_InstallPowerAmplifier</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RE_Implant</li></thingSetMakerTags>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+	  <RE_ElementZero>2</RE_ElementZero>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>RE_InstallPowerAmplifier</defName>
+    <label>install power amplifier</label>
+    <description>Install a power amplifier.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_PowerAmplifier</ThingDef>
+      <HediffDef>RE_PowerAmplifier</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing power amplifier.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RE_PowerAmplifier</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RE_PowerAmplifier</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>RE_PowerAmplifier</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RE_RemovePowerAmplifier</defName>
+    <label>remove power amplifier</label>
+    <description>Remove power amplifier.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_PowerAmplifier</ThingDef>
+      <HediffDef>RE_PowerAmplifier</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing power amplifier.</jobString>
+    <removesHediff>RE_PowerAmplifier</removesHediff>
+  </RecipeDef>
+  
+ <HediffDef ParentName="ImplantHediffBase">
+    <defName>RE_PowerEfficiencyModule</defName>
+    <label>power efficiency module</label>
+    <labelNoun>a power efficiency module</labelNoun>
+    <description>An installed power efficiency module.</description>
+    <descriptionHyperlinks><ThingDef>RE_PowerEfficiencyModule</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>RE_PowerEfficiencyModule</spawnThingOnRemoved>
+	<defaultLabelColor>(0,237,248)</defaultLabelColor>
+    <stages>
+        <li>
+            <statOffsets>
+              <RE_BioticAbilityCostMultiplier>-0.5</RE_BioticAbilityCostMultiplier>
+            </statOffsets>
+        </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_ReactOnDamage">
+        <damageDefIncoming>EMP</damageDefIncoming>
+        <createHediff>BrainShock</createHediff>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef ParentName="RE_BodyPartImplantBase">
+    <defName>RE_PowerEfficiencyModule</defName>
+    <label>power efficiency module</label>
+    <description>A module with additional zero element, decreases biotic abilities cost.</description>
+    <descriptionHyperlinks><RecipeDef>RE_InstallPowerEfficiencyModule</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RE_Implant</li></thingSetMakerTags>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+	  <RE_ElementZero>2</RE_ElementZero>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>RE_InstallPowerEfficiencyModule</defName>
+    <label>install power efficiency module</label>
+    <description>Install a power efficiency module.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_PowerEfficiencyModule</ThingDef>
+      <HediffDef>RE_PowerEfficiencyModule</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing power efficiency module.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RE_PowerEfficiencyModule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RE_PowerEfficiencyModule</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>RE_PowerEfficiencyModule</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RE_RemovePowerEfficiencyModule</defName>
+    <label>remove power efficiency module</label>
+    <description>Remove power efficiency module.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_PowerAmplifier</ThingDef>
+      <HediffDef>RE_PowerAmplifier</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing power efficiency module.</jobString>
+    <removesHediff>RE_PowerAmplifier</removesHediff>
+  </RecipeDef>
+	
+ <HediffDef ParentName="ImplantHediffBase">
+    <defName>RE_TargetingVI</defName>
+    <label>targeting VI</label>
+    <labelNoun>a targeting VI</labelNoun>
+    <description>An installed targeting VI.</description>
+    <descriptionHyperlinks><ThingDef>RE_TargetingVI</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>RE_TargetingVI</spawnThingOnRemoved>
+	<defaultLabelColor>(0,237,248)</defaultLabelColor>
+	<hediffClass>RimEffect.Hediff_TargetingVI</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_ReactOnDamage">
+        <damageDefIncoming>EMP</damageDefIncoming>
+        <createHediff>BrainShock</createHediff>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef ParentName="RE_BodyPartImplantBase">
+    <defName>RE_TargetingVI</defName>
+    <label>targeting VI</label>
+    <description>A microcomputer with large glass capsule and advanced combat stimulant synthesizer. Constantly injects substances into the blood, increasing the user's potential in melee combat.</description>
+    <descriptionHyperlinks><RecipeDef>RE_InstallTargetingVI</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RE_Implant</li></thingSetMakerTags>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+	  <RE_ElementZero>1</RE_ElementZero>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>RE_InstallTargetingVI</defName>
+    <label>install targeting VI</label>
+    <description>Install a targeting VI.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_TargetingVI</ThingDef>
+      <HediffDef>RE_TargetingVI</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing targeting VI.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RE_TargetingVI</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RE_TargetingVI</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>RE_TargetingVI</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RE_RemoveTargetingVI</defName>
+    <label>remove targeting VI</label>
+    <description>Remove targeting VI.</description>
+    <descriptionHyperlinks>
+      <ThingDef>RE_TargetingVI</ThingDef>
+      <HediffDef>RE_TargetingVI</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing targeting VI.</jobString>
+    <removesHediff>RE_TargetingVI</removesHediff>
+  </RecipeDef>
+  
+</Defs>

@@ -104,7 +104,7 @@
     <defName>RE_GalaxyMap</defName>
     <label>galaxy map</label>
     <description>Advanced console with holographic interface.</description>
-    <thingClass>Building_CommsConsole</thingClass>
+    <thingClass>RimEffect.Building_GalaxyMap</thingClass>
     <graphicData>
       <texPath>Things/Building/Misc/GalaxyMap/GalaxyMap</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -155,6 +155,13 @@
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
+      <li Class="VanillaStorytellersExpanded.CompProperties_QuestGiver">
+		<floatOptionLabel>View contracts</floatOptionLabel>
+		<jobToGive>RE_UseGalaxyMap</jobToGive>
+		<questGiver>RE_GalaxyMap_QuestGiver</questGiver>
+		<questManagerID>1</questManagerID>
+	  </li>
+	  
     </comps>
     <placeWorkers>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>

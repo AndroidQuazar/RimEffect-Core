@@ -150,6 +150,11 @@
         <thingDefCountRange>2~4</thingDefCountRange>
         <countRange>1~1</countRange>
       </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>RE_Implant</tradeTag>
+        <thingDefCountRange>2~5</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
 
       <!-- Buildings -->
       <li Class="StockGenerator_Category">

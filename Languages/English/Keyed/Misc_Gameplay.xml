@@ -24,7 +24,16 @@
 	
 	<RE.SpectreLeaves>Spectre leaves</RE.SpectreLeaves>
 	<RE.SpectreLeavesDesc>Having helped your colony, and finishing their goal, spectre has decided it's time to move on.</RE.SpectreLeavesDesc>
+	<RE.LetterPyjaksCrate>Pyjaks joins</RE.LetterPyjaksCrate>
+	<RE.LetterPyjaksCrateDesc>A few cargo pods with pyjaks, lost or ejected on purpose, drop in the local area. Used to living among people, they seem accustomed to human contact and are joining the colony.
+
+Be careful: pyjaks are known for causing distress in people when nuzzling, and often steal items they find interesting, peculiar or simply annoying.</RE.LetterPyjaksCrateDesc>
 	
+	<RE.ViewContracts>View contracts</RE.ViewContracts>
+	<RE.AvailableContracts>Available contracts: {0}</RE.AvailableContracts>
 	
+	<RE.LocalBattlefield>Battlefield</RE.LocalBattlefield>
+	<RE.LocalBattlefieldDesc>Your local area has become a battlefield for two factions hostile to each other - {friendlyFACTION_name} and {enemyFACTION_name}. You can wait them out, or engage them, but you should be prepared for a long fight.</RE.LocalBattlefieldDesc>
+
 	
 </LanguageData>

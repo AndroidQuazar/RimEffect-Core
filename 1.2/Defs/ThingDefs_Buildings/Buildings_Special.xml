@@ -64,4 +64,67 @@
 	<techLevel>Ultra</techLevel>
   </ThingDef>
   
+  <ThingDef ParentName="BuildingBase">
+    <defName>RE_ElementZeroExtractor</defName>
+    <label>element zero extractor</label>
+    <description>Slowly generates element zero by a complex series of chemical reactions, using atoms extracted from the air.</description>
+    <graphicData>
+      <texPath>Things/Building/Power/ElementZeroExtractor/ElementZeroExtractor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3, 3)</drawSize>
+      <shadowData>
+        <volume>(1.8, 1.0, 0.2)</volume>
+        <offset>(0.0, 0.0, -0.4)</offset>
+      </shadowData>
+    </graphicData>
+    <costList>
+      <Plasteel>200</Plasteel>
+      <ComponentSpacer>6</ComponentSpacer>
+    </costList>
+    <researchPrerequisites>
+      <li>RE_AllianceCooperation</li>
+    </researchPrerequisites>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>true</requiresPower>
+        <thingToSpawn>RE_ElementZero</thingToSpawn>
+        <spawnCount>30</spawnCount>
+        <spawnIntervalRange><min>900000</min><max>900000</max></spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>true</showMessageIfOwned>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>8</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>-10</Beauty>
+      <Mass>200</Mass>
+      <WorkToBuild>14000</WorkToBuild>
+    </statBases>
+	<designationCategory>Misc</designationCategory>
+    <tickerType>Normal</tickerType>
+    <size>(3, 3)</size>
+    <fillPercent>1.0</fillPercent>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <passability>Impassable</passability>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+	<techLevel>Ultra</techLevel>
+  </ThingDef>
+  
 </Defs>

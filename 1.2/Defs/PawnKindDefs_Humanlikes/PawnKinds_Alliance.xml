@@ -30,6 +30,7 @@
       <li>Simple</li>
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
+	  <li>RE_Implant</li>
     </techHediffsTags>
         <modExtensions>
             <li Class="VFECore.PawnKindDefExtension">
@@ -116,6 +117,7 @@
     <techHediffsTags>
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
+	  <li>RE_Implant</li>
     </techHediffsTags>
         <modExtensions>
             <li Class="VFECore.PawnKindDefExtension">
@@ -215,7 +217,9 @@
     <techHediffsTags>
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
+	  <li>RE_Implant</li>
     </techHediffsTags>
+	<techHediffsMaxAmount>2</techHediffsMaxAmount>
   </PawnKindDef>
   
   <PawnKindDef ParentName="AllianceBase">
@@ -299,6 +303,7 @@
     <techHediffsTags>
       <li>Simple</li>
       <li>ImplantEmpireCommon</li>
+	  <li>RE_Implant</li>
     </techHediffsTags>
   </PawnKindDef>
   
@@ -352,6 +357,100 @@
     <techHediffsMoney>400~1000</techHediffsMoney>
     <techHediffsTags>
       <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+	  <li>RE_Implant</li>
+    </techHediffsTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_PrimeMinister</defName>
+    <label>prime minister</label>
+    <combatPower>40</combatPower>
+    <itemQuality>Excellent</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+	<factionLeader>true</factionLeader>
+    <weaponTags>
+      <li>AllianceGunLight</li>
+    </weaponTags>
+    <weaponMoney>740~800</weaponMoney>
+    <apparelRequired>
+	  <li>RE_Apparel_FormalJacket</li>
+	  <li>RE_Apparel_FormalShirt</li>
+    </apparelRequired>
+    <apparelTags>
+		<li>RE_SpacerApparelCivilian</li>
+		<li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>200~800</apparelMoney>
+    <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>800~1800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+	  <li>RE_Implant</li>
+    </techHediffsTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_Scientist</defName>
+    <label>scientist</label>
+    <combatPower>40</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+	<factionLeader>true</factionLeader>
+    <weaponTags>
+      <li>AllianceGunLight</li>
+    </weaponTags>
+    <weaponMoney>740~800</weaponMoney>
+    <apparelRequired>
+	  <li>RE_Apparel_ScienceUniform</li>
+    </apparelRequired>
+    <apparelTags>
+		<li>RE_SpacerApparelCivilian</li>
+		<li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>200~800</apparelMoney>
+    <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>400~1000</techHediffsMoney>
+    <techHediffsTags>
+	  <li>Simple</li>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+	  <li>RE_Implant</li>
+    </techHediffsTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_Medic</defName>
+    <label>medic</label>
+    <combatPower>40</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+	<factionLeader>true</factionLeader>
+    <weaponTags>
+      <li>AllianceGunLight</li>
+    </weaponTags>
+    <weaponMoney>740~800</weaponMoney>
+    <apparelRequired>
+	  <li>RE_Apparel_ScienceUniform</li>
+    </apparelRequired>
+    <apparelTags>
+		<li>RE_SpacerApparelCivilian</li>
+		<li>IndustrialBasic</li>
+    </apparelTags>
+	<apparelColor>(136,0,0)</apparelColor>
+    <apparelMoney>200~800</apparelMoney>
+    <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>400~1000</techHediffsMoney>
+    <techHediffsTags>
+	  <li>Simple</li>
+      <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
   </PawnKindDef>

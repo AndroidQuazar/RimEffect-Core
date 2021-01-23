@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="ArmorMachineableBase">
-   <defName>RE_Apparel_LightAllianceArmor</defName>
+    <defName>RE_Apparel_LightAllianceArmor</defName>
     <label>light alliance armor</label>
     <description>A light suit of full body armor, often used by front line alliance infantry.</description>
     <techLevel>Ultra</techLevel>
@@ -19,12 +19,12 @@
     <graphicData>
       <texPath>Things/Apparel/LightAllianceArmor/LightAllianceArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <generateCommonality>2</generateCommonality>
     <tradeTags>
       <li>RE_AllianceArmoury</li>
-	  <li>RE_LightArmour</li>
+      <li>RE_LightArmour</li>
     </tradeTags>
     <statBases>
       <WorkToMake>48000</WorkToMake>
@@ -65,10 +65,10 @@
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <tags>
         <li>RE_AllianceArmoury</li>
-		<li>RE_AllianceNavyGearLight</li>
-		<li>RE_Apparel_LightAllianceArmor</li>
+        <li>RE_AllianceNavyGearLight</li>
+        <li>RE_Apparel_LightAllianceArmor</li>
       </tags>
-	  <useWornGraphicMask>true</useWornGraphicMask>
+      <useWornGraphicMask>true</useWornGraphicMask>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
@@ -98,7 +98,7 @@
       <li Class="CompProperties_BiocodableApparel"/>
     </comps>
   </ThingDef>
-  
+
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>RE_Apparel_AllianceArmor</defName>
     <label>alliance armor</label>
@@ -117,7 +117,7 @@
     <graphicData>
       <texPath>Things/Apparel/MediumAllianceArmor/MediumAllianceArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <generateCommonality>2</generateCommonality>
     <statBases>
@@ -165,9 +165,9 @@
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <tags>
         <li>RE_AllianceArmoury</li>
-		<li>RE_AllianceNavyGearMedium</li>
+        <li>RE_AllianceNavyGearMedium</li>
       </tags>
-	  <useWornGraphicMask>true</useWornGraphicMask>
+      <useWornGraphicMask>true</useWornGraphicMask>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
@@ -197,8 +197,8 @@
       <li Class="CompProperties_BiocodableApparel"/>
     </comps>
   </ThingDef>
-  
-   <ThingDef Name="RE_SpacerApparelNoQualityBase" Abstract="True">
+
+  <ThingDef Name="RE_SpacerApparelNoQualityBase" Abstract="True">
     <thingClass>Apparel</thingClass>
     <category>Item</category>
     <selectable>True</selectable>
@@ -224,7 +224,7 @@
       <li Class="CompProperties_Forbiddable"/>
     </comps>
   </ThingDef>
-  
+
   <ThingDef Name="RE_SpacerApparelBase" ParentName="RE_SpacerApparelNoQualityBase" Abstract="True">
     <comps>
       <li>
@@ -232,7 +232,7 @@
       </li>
     </comps>
   </ThingDef>
-  
+
   <ThingDef Name="RE_SpacerApparelMakeableBase" ParentName="RE_SpacerApparelBase" Abstract="True">
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -257,12 +257,12 @@
       </defaultIngredientFilter>
     </recipeMaker>
   </ThingDef>
-  
-   <ThingDef ParentName="RE_SpacerApparelMakeableBase">
+
+  <ThingDef ParentName="RE_SpacerApparelMakeableBase">
     <defName>RE_Apparel_Fatigues</defName>
     <label>fatigues</label>
     <description>General fatigues.</description>
-	<recipeMaker>
+    <recipeMaker>
       <researchPrerequisite>RE_ComplexSpacerClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
@@ -290,8 +290,8 @@
       <bodyPartGroups>
         <li>Torso</li>
         <li>Shoulders</li>
-		<li>Legs</li>      
-	  </bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
       <wornGraphicPath>Things/Apparel/Fatigues/Fatigues</wornGraphicPath>
       <layers>
         <li>OnSkin</li>
@@ -309,23 +309,23 @@
         <compClass>CompColorable</compClass>
       </li>
     </comps>
-	<tradeTags>
+    <tradeTags>
       <li>RE_SpacerApparel</li>
     </tradeTags>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
-  
+
   <ThingDef ParentName="RE_SpacerApparelMakeableBase">
     <defName>RE_Apparel_AllianceDressJacket</defName>
-	<label>alliance dress jacket</label>
+    <label>alliance dress jacket</label>
     <description>An elegant uniform of the alliance forces, often worn by officers and strategists, as well as the navy.</description>
     <recipeMaker>
       <researchPrerequisite>RE_AllianceArmoury</researchPrerequisite>
     </recipeMaker>
     <costList>
-	    <Cloth>60</Cloth>
-		<Gold>2</Gold>
-	</costList>
+      <Cloth>60</Cloth>
+      <Gold>2</Gold>
+    </costList>
     <graphicData>
       <texPath>Things/Apparel/AllianceDressJacket/AllianceDressJacket</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -360,11 +360,11 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-	<tradeTags>
+    <tradeTags>
       <li>RE_AllianceSpacerApparel</li>
     </tradeTags>
   </ThingDef>
-  
+
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>RE_Apparel_HeavyAllianceArmor</defName>
     <label>heavy alliance armor</label>
@@ -383,7 +383,7 @@
     <graphicData>
       <texPath>Things/Apparel/HeavyAllianceArmor/HeavyAllianceArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <generateCommonality>2</generateCommonality>
     <statBases>
@@ -431,9 +431,9 @@
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <tags>
         <li>RE_HeavyAllianceArmoury</li>
-		<li>RE_AllianceNavyGearHeavy</li>
+        <li>RE_AllianceNavyGearHeavy</li>
       </tags>
-	  <useWornGraphicMask>true</useWornGraphicMask>
+      <useWornGraphicMask>true</useWornGraphicMask>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
@@ -463,12 +463,12 @@
       <li Class="CompProperties_BiocodableApparel"/>
     </comps>
   </ThingDef>
-  
+
   <ThingDef ParentName="RE_SpacerApparelMakeableBase">
     <defName>RE_Apparel_FormalShirt</defName>
     <description>A nice-looking shirt with hi-tech fasteners, yet easy to button or open.</description>
     <label>formal shirt</label>
-	<techLevel>Ultra</techLevel>
+    <techLevel>Ultra</techLevel>
     <recipeMaker>
       <researchPrerequisite>RE_ComplexSpacerClothing</researchPrerequisite>
     </recipeMaker>
@@ -513,11 +513,11 @@
       </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
-	<tradeTags>
-	    <li>RE_SpacerApparel</li>
-	</tradeTags>
+    <tradeTags>
+      <li>RE_SpacerApparel</li>
+    </tradeTags>
   </ThingDef>
-  
+
   <ThingDef ParentName="RE_SpacerApparelMakeableBase">
     <defName>RE_Apparel_FormalJacket</defName>
     <label>formal jacket</label>
@@ -591,16 +591,16 @@
         </li>
       </options>
     </colorGenerator>
-	<tradeTags>
-	    <li>RE_SpacerApparel</li>
-	</tradeTags>
+    <tradeTags>
+      <li>RE_SpacerApparel</li>
+    </tradeTags>
   </ThingDef>
- 
-   <ThingDef ParentName="RE_SpacerApparelMakeableBase">
+
+  <ThingDef ParentName="RE_SpacerApparelMakeableBase">
     <defName>RE_Apparel_BattleUniform</defName>
     <label>battle uniform</label>
     <description>A cloth-based suit of light armor often worn as an undergarment of soldiers..</description>
-	<recipeMaker>
+    <recipeMaker>
       <researchPrerequisite>RE_ComplexSpacerClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
@@ -628,8 +628,8 @@
       <bodyPartGroups>
         <li>Torso</li>
         <li>Shoulders</li>
-		<li>Legs</li>      
-	  </bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
       <wornGraphicPath>Things/Apparel/BattleUniform/BattleUniform</wornGraphicPath>
       <layers>
         <li>OnSkin</li>
@@ -646,21 +646,23 @@
         <compClass>CompColorable</compClass>
       </li>
     </comps>
-	<tradeTags>
+    <tradeTags>
       <li>RE_SpacerApparel</li>
     </tradeTags>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
-  
+
   <ThingDef>
     <defName>RE_Apparel_SpectreArmor</defName>
     <label>spectre armor</label>
     <description>Elite Armor reserved for the best of the best, the Council’s chosen agents. .</description>
     <techLevel>Spacer</techLevel>
+	<thingClass>RimEffect.SpectreArmor</thingClass>
+	<tickerType>Normal</tickerType>
     <graphicData>
-      <texPath>Things/Apparel/HeavyAllianceArmor/HeavyAllianceArmor</texPath>
+      <texPath>Things/Apparel/SpectreArmor/SpectreArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
     </graphicData>
     <generateCommonality>2</generateCommonality>
     <statBases>
@@ -706,7 +708,6 @@
         <li>RE_SpectreArmoury</li>
       </tags>
     </apparel>
-    <thingClass>Apparel</thingClass>
     <category>Item</category>
     <selectable>True</selectable>
     <pathCost>14</pathCost>
@@ -714,7 +715,6 @@
     <drawGUIOverlay>true</drawGUIOverlay>
     <altitudeLayer>Item</altitudeLayer>
     <alwaysHaulable>True</alwaysHaulable>
-    <tickerType>Never</tickerType>
     <burnableByRecipe>true</burnableByRecipe>
     <smeltable>true</smeltable>
     <colorGenerator Class="ColorGenerator_Options">
@@ -751,23 +751,23 @@
           <weight>10</weight>
           <only>(133,97,67)</only>
         </li>
-                <li>
+        <li>
           <weight>3</weight>
           <only>(85,118,69)</only>
         </li>
-                <li>
+        <li>
           <weight>3</weight>
           <only>(180,60,60)</only>
         </li>
-                <li>
+        <li>
           <weight>3</weight>
           <only>(0,106,126)</only>
         </li>
-                <li>
+        <li>
           <weight>3</weight>
           <only>(146,164,81)</only>
         </li>
-                <li>
+        <li>
           <weight>3</weight>
           <only>(156,142,132)</only>
         </li>
@@ -779,13 +779,111 @@
     <comps>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_BiocodableApparel"/>
+	  <li Class="VFEMech.CompProperties_ShieldMechBubble">
+		<blockRangedAttack>true</blockRangedAttack>
+		<blockMeleeAttack>false</blockMeleeAttack>
+		<showWhenDrafted>true</showWhenDrafted>
+		<showOnHostiles>true</showOnHostiles>
+		<showOnNeutralInCombat>true</showOnNeutralInCombat>
+		<shieldTexPath>UI/AbilityShields/ShieldTech</shieldTexPath>
+		<EnergyShieldRechargeRate>0.03</EnergyShieldRechargeRate>
+		<EnergyShieldEnergyMax>50</EnergyShieldEnergyMax>
+		<minShieldSize>1</minShieldSize>
+		<maxShieldSize>1.5</maxShieldSize>
+	  </li>
       <li>
         <compClass>CompQuality</compClass>
       </li>
       <li>
         <compClass>CompColorable</compClass>
       </li>
+      <li Class="RimEffect.CompProperties_AbilitiesApparel">
+        <abilities>
+          <li>RE_SpectreArmor_AdrenalineRush</li>
+        </abilities>
+      </li>
     </comps>
+  </ThingDef>
+ 
+  <ThingDef ParentName="RE_SpacerApparelMakeableBase">
+    <defName>RE_Apparel_ScienceUniform</defName>
+    <label>science uniform</label>
+    <description>A stylish lab coat.</description>
+    <recipeMaker>
+      <researchPrerequisite>RE_ComplexSpacerClothing</researchPrerequisite>
+    </recipeMaker>
+	<costList>
+	  <Cloth>65</Cloth>
+	</costList>
+    <graphicData>
+      <texPath>Things/Apparel/ScienceUniform/ScienceUniform</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>3600</WorkToMake>
+      <Mass>0.25</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<equippedStatOffsets>
+		<ResearchSpeed>0.15</ResearchSpeed>
+		<MedicalTendSpeed>0.10</MedicalTendSpeed>
+		<MedicalTendQuality>0.05</MedicalTendQuality>
+		<MedicalSurgerySuccessChance>0.1</MedicalSurgerySuccessChance>
+	</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/ScienceUniform/ScienceUniform</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>RE_SpacerApparel</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+	  <useWornGraphicMask>true</useWornGraphicMask>
+    </apparel>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>RE_SpacerApparel</li>
+    </tradeTags>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>30</weight>
+          <only>(51,61,48)</only>
+        </li>
+        <li>
+          <weight>30</weight>
+          <only>(145,128,16)</only>
+        </li>
+        <li>
+          <weight>30</weight>
+          <only>(52,52,52)</only>
+        </li>
+        <li>
+          <weight>30</weight>
+          <only>(19,37,76)</only>
+        </li>
+      </options>
+    </colorGenerator>
   </ThingDef>
 
 </Defs>

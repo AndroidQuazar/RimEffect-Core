@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RimEffect.AbilityDef>
+        <defName>RE_SpectreArmor_AdrenalineRush</defName>
+        <label>Adrenaline Rush</label>
+        <description>Gives the wearer an adrenaline rush</description>
+        <abilityClass>RimEffect.Ability_GiveHediff</abilityClass>
+        <targetMode>Self</targetMode>
+        <castTime>30</castTime>
+        <cooldownTime>3600</cooldownTime>
+        <iconPath>UI/Abilities/Ability_AdrenalineRush</iconPath>
+        <modExtensions>
+            <li Class="RimEffect.AbilityExtension_Hediff">
+                <hediff>RE_SpectreArmor_AdrenalineRushHediff</hediff>
+            </li>
+        </modExtensions>
+    </RimEffect.AbilityDef>
+
+    <HediffDef ParentName="DiseaseBase">
+        <defName>RE_SpectreArmor_AdrenalineRushHediff</defName>
+        <label>adrenaline rush</label>
+        <labelNoun>an adrenaline rush</labelNoun>
+        <description>Gives the wearer an adrenaline rush</description>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>600~600</disappearsAfterTicks>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <postFactor>1.5</postFactor>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <RimEffect.AbilityDef>
+        <defName>RE_SpectreArmor_CombatMastery</defName>
+        <label>Combat mastery</label>
+        <description>Gives the wearer increased ranged accuracy</description>
+        <abilityClass>RimEffect.Ability_GiveHediff</abilityClass>
+        <targetMode>Self</targetMode>
+        <castTime>30</castTime>
+        <cooldownTime>3600</cooldownTime>
+        <iconPath>UI/Abilities/Ability_CombatMastery</iconPath>
+        <modExtensions>
+            <li Class="RimEffect.AbilityExtension_Hediff">
+                <hediff>RE_SpectreArmor_CombatMasteryHediff</hediff>
+            </li>
+        </modExtensions>
+    </RimEffect.AbilityDef>
+
+    <HediffDef ParentName="DiseaseBase">
+        <defName>RE_SpectreArmor_CombatMasteryHediff</defName>
+        <label>combat mastery</label>
+        <labelNoun>an increased accuracy</labelNoun>
+        <description>Gives the wearer increased accuracy</description>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>600~600</disappearsAfterTicks>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statFactors>
+                    <AccuracyShort>2</AccuracyShort>
+                    <AccuracyMedium>2</AccuracyMedium>
+                    <AccuracyLong>2</AccuracyLong>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>
