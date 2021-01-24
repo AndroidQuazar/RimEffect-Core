@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TraitDef>
+    <defName>RE_BioticRecoveryOffset</defName>
+    <commonality>2</commonality>
+    <degreeDatas>
+      <li>
+        <label>biotically deaf</label>
+        <description>[PAWN_nameDef]’s biotic capabilities are significantly dampened by past trauma, or simply the lack of predisposition.</description>
+        <degree>-2</degree>
+        <statOffsets>
+          <RE_BioticEnergyRecoveryRate>-0.8</RE_BioticEnergyRecoveryRate>
+        </statOffsets>
+      </li>
+      <li>
+        <label>biotically dull</label>
+        <description>[PAWN_nameDef] has not yet unlocked their full biotic potential, and most likely never will.</description>
+        <degree>-1</degree>
+        <statOffsets>
+          <RE_BioticEnergyRecoveryRate>-0.5</RE_BioticEnergyRecoveryRate>
+        </statOffsets>
+      </li>
+      <li>
+        <label>biotically skilled</label>
+        <description>[PAWN_nameDef]’s biotic skills are greatly above average, allowing them to use the power without any fear of migraines or discomfort.</description>
+        <degree>1</degree>
+        <statOffsets>
+          <RE_BioticEnergyRecoveryRate>0.5</RE_BioticEnergyRecoveryRate>
+        </statOffsets>
+      </li>
+      <li>
+        <label>biotically talented</label>
+        <description>[PAWN_nameDef]’s biotic skills are known far and wide across the galaxy due to their talent and rare predisposition.</description>
+        <degree>2</degree>
+        <statOffsets>
+          <RE_BioticEnergyRecoveryRate>2.0</RE_BioticEnergyRecoveryRate>
+        </statOffsets>
+      </li> 
+    </degreeDatas>
+  </TraitDef>
+  
+</Defs>
