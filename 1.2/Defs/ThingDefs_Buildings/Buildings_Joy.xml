@@ -34,7 +34,7 @@
       <JoyGainFactor>1</JoyGainFactor>
     </statBases>
     <building>
-      <joyKind>Gaming_Cerebral</joyKind>
+      <joyKind>RE_Interact_VIInterface</joyKind>
       <watchBuildingStandDistanceRange>-1~1</watchBuildingStandDistanceRange>
       <watchBuildingStandRectWidth>3</watchBuildingStandRectWidth>
       <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
