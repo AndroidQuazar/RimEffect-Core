@@ -163,7 +163,7 @@
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
     <spawnCategories>
-      <li>Turian</li>
+      <li>SystemsAlliance</li>
     </spawnCategories>
     <skillGains>
       <li>
@@ -190,7 +190,7 @@
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
     <spawnCategories>
-      <li>Turian</li>
+      <li>SystemsAlliance</li>
     </spawnCategories>
     <skillGains>
       <li>
@@ -220,7 +220,7 @@
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
     <spawnCategories>
-      <li>Turian</li>
+      <li>SystemsAlliance</li>
     </spawnCategories>
     <skillGains>
       <li>
@@ -251,7 +251,7 @@
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
     <spawnCategories>
-      <li>Turian</li>
+      <li>SystemsAlliance</li>
     </spawnCategories>
     <skillGains>
       <li>
@@ -270,7 +270,7 @@
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
     <spawnCategories>
-      <li>Turian</li>
+      <li>SystemsAlliance</li>
     </spawnCategories>
     <skillGains>
       <li>
