@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JoyGiverDef>
+    <defName>RE_Interact_VIInterface</defName>
+    <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+    <baseChance>2</baseChance>
+    <requireChair>false</requireChair>
+    <thingDefs>
+      <li>RE_VIInterface</li>
+    </thingDefs>
+    <jobDef>RE_Interact_VIInterface</jobDef>
+    <joyKind>RE_Interaction_VIInterface</joyKind>
+    <requiredCapacities>
+      <li>Talking</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+  
+</Defs>
