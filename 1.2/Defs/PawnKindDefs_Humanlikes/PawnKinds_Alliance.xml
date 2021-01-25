@@ -410,6 +410,7 @@
     </apparelRequired>
     <apparelTags>
 		<li>RE_SpacerApparelCivilian</li>
+		<li>RE_SpacerApparelScience</li>
 		<li>IndustrialBasic</li>
     </apparelTags>
     <apparelMoney>200~800</apparelMoney>
@@ -441,6 +442,7 @@
     </apparelRequired>
     <apparelTags>
 		<li>RE_SpacerApparelCivilian</li>
+		<li>RE_SpacerApparelScience</li>
 		<li>IndustrialBasic</li>
     </apparelTags>
 	<apparelColor>(136,0,0)</apparelColor>
