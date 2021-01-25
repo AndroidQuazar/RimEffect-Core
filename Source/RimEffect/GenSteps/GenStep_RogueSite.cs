@@ -111,6 +111,11 @@ namespace RimEffect
 				mechs.Add(mech);
 			}
 			LordMaker.MakeNewLord(Faction.OfMechanoids, new LordJob_AssaultColony(Faction.OfMechanoids, false, false, false, false, false), map, mechs);
+
+			foreach (var building in map.listerThings.AllThings.Where(x => x.Faction == pawn.Faction && x is Building))
+            {
+				building.SetFaction(null);
+			}
 		}
 
 		public bool canSpawnBatteries = true;
