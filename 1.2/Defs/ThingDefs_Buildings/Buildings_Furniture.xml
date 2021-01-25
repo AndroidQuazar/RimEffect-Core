@@ -32,7 +32,7 @@
       <li>BuildingsTemperature</li>
     </thingCategories>
     <statBases>
-      <WorkToBuild>2000</WorkToBuild>
+      <WorkToBuild>500</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
       <Mass>8</Mass>
       <Flammability>0.5</Flammability>
@@ -121,7 +121,7 @@
     </comps>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
-      <WorkToBuild>400</WorkToBuild>
+      <WorkToBuild>100</WorkToBuild>
       <Flammability>1.0</Flammability>
 	  <Mass>3</Mass>
     </statBases>
@@ -167,7 +167,7 @@
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Mass>15</Mass>
-			<WorkToBuild>4000</WorkToBuild>
+			<WorkToBuild>400</WorkToBuild>
 			<Flammability>1.0</Flammability>
 			<Beauty>6</Beauty>
 		</statBases>
@@ -215,7 +215,7 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToBuild>10000</WorkToBuild>
+			<WorkToBuild>450</WorkToBuild>
 			<Mass>5</Mass>
 			<Flammability>1.0</Flammability>
 			<Beauty>10</Beauty>
@@ -273,7 +273,7 @@
       <MaxHitPoints>140</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <Beauty>1</Beauty>
-      <WorkToBuild>800</WorkToBuild>
+      <WorkToBuild>150</WorkToBuild>
       <Mass>30</Mass>
       <BedRestEffectiveness>1.1</BedRestEffectiveness>
       <Comfort>0.8</Comfort>
@@ -335,7 +335,7 @@
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
       <Flammability>1.0</Flammability>
-      <WorkToBuild>3000</WorkToBuild>
+      <WorkToBuild>350</WorkToBuild>
       <Mass>50</Mass>
       <Comfort>0.8</Comfort>
       <Beauty>2</Beauty>
@@ -394,7 +394,7 @@
     <castEdgeShadows>true</castEdgeShadows>
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
     <statBases>
-      <WorkToBuild>800</WorkToBuild>
+      <WorkToBuild>400</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0.7</Flammability>
     </statBases>
@@ -456,7 +456,7 @@
     <canOverlapZones>false</canOverlapZones>
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
     <statBases>
-      <WorkToBuild>400</WorkToBuild>
+      <WorkToBuild>50</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -509,7 +509,7 @@
       <RE_PrefabComponent>1</RE_PrefabComponent>
     </costList>
     <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
+      <MaxHitPoints>60</MaxHitPoints>
       <Mass>8</Mass>
       <WorkToBuild>400</WorkToBuild>
       <Flammability>1.0</Flammability>
@@ -562,7 +562,7 @@
     </graphicData>
     <statBases>
       <MaxHitPoints>75</MaxHitPoints>
-      <WorkToBuild>600</WorkToBuild>
+      <WorkToBuild>200</WorkToBuild>
       <Mass>5</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>3</Beauty>
@@ -621,7 +621,7 @@
 	<uiIconScale>0.65</uiIconScale>
     <statBases>
       <MaxHitPoints>75</MaxHitPoints>
-      <WorkToBuild>600</WorkToBuild>
+      <WorkToBuild>220</WorkToBuild>
       <Mass>5</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>3</Beauty>
@@ -678,7 +678,7 @@
     <castEdgeShadows>True</castEdgeShadows>
     <statBases>
       <MaxHitPoints>150</MaxHitPoints>
-      <WorkToBuild>800</WorkToBuild>
+      <WorkToBuild>1200</WorkToBuild>
       <Mass>35</Mass>
       <Flammability>1.0</Flammability>
       <BedRestEffectiveness>1</BedRestEffectiveness>
@@ -751,7 +751,7 @@
     <altitudeLayer>Building</altitudeLayer>
     <statBases>
       <MaxHitPoints>120</MaxHitPoints>
-      <WorkToBuild>14000</WorkToBuild>
+      <WorkToBuild>1400</WorkToBuild>
       <Mass>18</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>4</Beauty>
@@ -801,7 +801,7 @@
     </graphicData>
     <statBases>
       <MaxHitPoints>75</MaxHitPoints>
-      <WorkToBuild>800</WorkToBuild>
+      <WorkToBuild>300</WorkToBuild>
       <Mass>5</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>3</Beauty>
@@ -860,7 +860,7 @@
 	<uiIconScale>0.65</uiIconScale>
     <statBases>
       <MaxHitPoints>75</MaxHitPoints>
-      <WorkToBuild>800</WorkToBuild>
+      <WorkToBuild>320</WorkToBuild>
       <Mass>5</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>3</Beauty>
@@ -937,7 +937,7 @@
     <uiIconScale>0.9</uiIconScale>
     <statBases>
       <MaxHitPoints>175</MaxHitPoints>
-      <WorkToBuild>5400</WorkToBuild>
+      <WorkToBuild>1000</WorkToBuild>
       <Mass>22</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>2</Beauty>
@@ -984,7 +984,7 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
             <MaxHitPoints>75</MaxHitPoints>
-            <WorkToBuild>800</WorkToBuild>
+            <WorkToBuild>40</WorkToBuild>
             <Mass>3</Mass>
             <Flammability>1.0</Flammability>
             <Beauty>0</Beauty>
@@ -1043,7 +1043,7 @@
     <statBases>
       <MaxHitPoints>120</MaxHitPoints>
       <Mass>25</Mass>
-      <WorkToBuild>5000</WorkToBuild>
+      <WorkToBuild>900</WorkToBuild>
       <Flammability>1.0</Flammability>
       <Beauty>8</Beauty>
     </statBases>
@@ -1090,7 +1090,7 @@
     <fillPercent>0.20</fillPercent>
     <statBases>
       <MaxHitPoints>75</MaxHitPoints>
-      <WorkToBuild>100</WorkToBuild>
+      <WorkToBuild>25</WorkToBuild>
       <Mass>2</Mass>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -1142,7 +1142,7 @@
     <fillPercent>0.25</fillPercent>
     <statBases>
       <MaxHitPoints>75</MaxHitPoints>
-      <WorkToBuild>100</WorkToBuild>
+      <WorkToBuild>50</WorkToBuild>
       <Mass>2</Mass>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -1198,7 +1198,7 @@
       <RE_PrefabComponent>16</RE_PrefabComponent>
     </costList>
     <statBases>
-      <WorkToBuild>50000</WorkToBuild>
+      <WorkToBuild>6000</WorkToBuild>
       <MaxHitPoints>80</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <Mass>8</Mass>
@@ -1208,7 +1208,7 @@
     <passability>PassThroughOnly</passability>
     <size>(3,1)</size>
     <defaultPlacingRot>South</defaultPlacingRot>
-    <researchPrerequisites><li>FlatscreenTelevision</li></researchPrerequisites>
+    <researchPrerequisites><li>RE_ComplexPrefabrication</li></researchPrerequisites>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <building>
       <joyKind>Television</joyKind>
@@ -1234,6 +1234,156 @@
     <tradeTags>
       <li>RE_PrefabTV</li>
     </tradeTags>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
   
+<!--Table base -->
+  <ThingDef Abstract="True" ParentName="FurnitureWithQualityBase" Name="RE_PrefabTableBase">
+    <description>People eat off tables when chairs are placed facing them.</description>
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+	<techLevel>Ultra</techLevel>
+    <pathCost>42</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <canOverlapZones>false</canOverlapZones>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <surfaceType>Eat</surfaceType>
+    <comps>
+      <li>
+        <compClass>CompGatherSpot</compClass>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+<!-- Tables -->
+  <ThingDef ParentName="RE_PrefabTableBase">
+    <defName>RE_PrefabTable1x1c</defName>
+    <label>prefab table (1x1)</label>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabTables/PrefabTable1x1_north</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.8</uiIconScale>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>0.5</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <costStuffCount>15</costStuffCount>
+	<costList>
+	<RE_PrefabComponent>1</RE_PrefabComponent>
+	</costList>
+	<rotatable>false</rotatable>
+  </ThingDef>
+
+  <ThingDef ParentName="RE_PrefabTableBase">
+    <defName>RE_PrefabTable1x2c</defName>
+    <label>prefab table (1x2)</label>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabTables/PrefabTable1x2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.8</uiIconScale>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>125</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>0.5</Beauty>
+    </statBases>
+    <size>(1,2)</size>
+    <costStuffCount>20</costStuffCount>
+	<costList>
+	<RE_PrefabComponent>1</RE_PrefabComponent>
+	</costList>
+  </ThingDef>
+
+  <ThingDef ParentName="RE_PrefabTableBase">
+    <defName>RE_PrefabTable2x2c</defName>
+    <label>prefab table (2x2)</label>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabTables/PrefabTable2x2_north</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.8</uiIconScale>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>0.5</Beauty>
+    </statBases>
+    <size>(2,2)</size>
+    <costStuffCount>25</costStuffCount>
+	<costList>
+	<RE_PrefabComponent>1</RE_PrefabComponent>
+	</costList>
+	<rotatable>false</rotatable>
+  </ThingDef>
+
+  <ThingDef ParentName="RE_PrefabTableBase">
+    <defName>RE_PrefabTable2x4c</defName>
+    <label>prefab table (2x4)</label>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabTables/PrefabTable2x4</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,6)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <size>(2,4)</size>
+    <costStuffCount>40</costStuffCount>
+    <building>
+      <buildingSizeCategory>Medium</buildingSizeCategory>
+    </building>
+	<costList>
+	<RE_PrefabComponent>2</RE_PrefabComponent>
+	</costList>
+  </ThingDef>
 </Defs>

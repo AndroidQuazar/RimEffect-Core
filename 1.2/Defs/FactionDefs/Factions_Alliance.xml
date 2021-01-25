@@ -22,15 +22,15 @@
         <backstoryFilters>
             <li>
                 <categories>
-                    <li>Outlander</li>
+                    <li>Offworld</li>
                 </categories>
-                <commonality>0.05</commonality>
+                <commonality>0.25</commonality>
             </li>
             <li>
                 <categories>
-                    <li>Offworld</li>
+                    <li>SystemsAlliance</li>
                 </categories>
-                <commonality>0.95</commonality>
+                <commonality>0.75</commonality>
             </li>
         </backstoryFilters>
         <geneticVariance>0.8</geneticVariance>
