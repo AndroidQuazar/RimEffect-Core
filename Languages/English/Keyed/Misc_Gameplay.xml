@@ -34,6 +34,14 @@ Be careful: pyjaks are known for causing distress in people when nuzzling, and o
 	
 	<RE.LocalBattlefield>Battlefield</RE.LocalBattlefield>
 	<RE.LocalBattlefieldDesc>Your local area has become a battlefield for two factions hostile to each other - {friendlyFACTION_name} and {enemyFACTION_name}. You can wait them out, or engage them, but you should be prepared for a long fight.</RE.LocalBattlefieldDesc>
-
 	
+	<RE.DoorLockDefault>Default</RE.DoorLockDefault>
+    <RE.DoorLockEveryone>Everyone</RE.DoorLockEveryone>
+    <RE.DoorLockOnlyColonistsAndAnimals>Only colonists and animals</RE.DoorLockOnlyColonistsAndAnimals>
+    <RE.DoorLockOnlyColonistsAndAnimalsAndFriendlies>Only colonists, animals and friendlies</RE.DoorLockOnlyColonistsAndAnimalsAndFriendlies>
+    <RE.DoorLockOnlyDrafted>Only drafted</RE.DoorLockOnlyDrafted>
+
+	<RE.DoorLockState>Current door lock policy "{0}"</RE.DoorLockState>
+	<RE.DoorLockStateDesc>Click to change current door lock policy.</RE.DoorLockStateDesc>
+	<RE.DoorLockStatePowerOff>Power is off. Impossible to change door lock policy.</RE.DoorLockStatePowerOff>
 </LanguageData>

@@ -128,7 +128,8 @@
     <defName>RE_PrefabAutodoor</defName>
     <label>prefab autodoor</label>
     <description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
-    <statBases>
+    <thingClass>RimEffect.Building_AutoDoorLockable</thingClass>
+	<statBases>
       <WorkToBuild>350</WorkToBuild>
     </statBases>
     <graphicData>

@@ -13,6 +13,6 @@ namespace RimEffect
     [StaticConstructorOnStartup]
     public static class Textures
     {
-
+        public static readonly Texture2D DoorStateButton = ContentFinder<Texture2D>.Get("UI/Overlays/DoorStateButton");
     }
 }
