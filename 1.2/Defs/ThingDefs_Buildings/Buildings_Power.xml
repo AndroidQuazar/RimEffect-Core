@@ -276,6 +276,7 @@
 				<drawFuelGaugeInMap>true</drawFuelGaugeInMap>
 				<autoRefuelPercent>100</autoRefuelPercent>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<fuelIconPath>Things/Item/Resource/ElementZero/ElementZero_a</fuelIconPath>
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>6</glowRadius>

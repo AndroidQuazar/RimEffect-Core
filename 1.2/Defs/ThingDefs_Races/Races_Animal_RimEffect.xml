@@ -3,7 +3,7 @@
 
   <ThingDef ParentName="AnimalThingBase">
     <defName>RE_Pyjak</defName>
-    <label>squirrel</label>
+    <label>pyjak</label>
     <description>A social monkey-like creature with extreme adaptability. These small clever creatures considered in most places to be an invasive nuisance, out-competing native life. Their curiosity often makes them an annoyance to colonies, as they will often steal various technological parts because they find them interesting.</description>
     <statBases>
       <MoveSpeed>5.1</MoveSpeed>
