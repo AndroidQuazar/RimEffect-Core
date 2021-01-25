@@ -62,11 +62,14 @@ namespace RimEffect
             base.Draw();
             if (!this.Open)
             {
-                Vector3 drawPos = DrawPos;
-                drawPos.y = AltitudeLayer.DoorMoveable.AltitudeFor() + 1;
-                Graphics.DrawMesh(MeshPool.plane10, drawPos, base.Rotation.AsQuat, DoorStateMaterial, 0);
+                var num = Mathf.Clamp01((float)ticksSinceOpen / (float)TicksToOpenNow);
+                if (num == 0)
+                {
+                    Vector3 drawPos = DrawPos;
+                    drawPos.y = AltitudeLayer.DoorMoveable.AltitudeFor() + 1;
+                    Graphics.DrawMesh(MeshPool.plane10, drawPos, base.Rotation.AsQuat, DoorStateMaterial, 0);
+                }
             }
-
         }
         public override IEnumerable<Gizmo> GetGizmos()
         {
