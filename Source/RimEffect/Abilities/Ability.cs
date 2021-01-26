@@ -62,6 +62,9 @@
         public virtual int GetCooldownForPawn() =>
             Mathf.RoundToInt(this.def.cooldownTimeStatFactors.Aggregate((float) this.def.cooldownTime, (current, statFactor) => current * (pawn.GetStatValue(statFactor.stat) * statFactor.value)));
 
+        public virtual int GetDurationForPawn() =>
+            Mathf.RoundToInt(this.def.durationTimeStatFactors.Aggregate((float)this.def.durationTime, (current, statFactor) => current * (pawn.GetStatValue(statFactor.stat) * statFactor.value)));
+
         public virtual string GetDescriptionForPawn()
         {
             StringBuilder sb = new StringBuilder(this.def.description);
@@ -83,6 +86,9 @@
             int cooldownForPawn = this.GetCooldownForPawn();
             if (cooldownForPawn > 0)
                 sb.AppendLine($"{"CooldownTime".Translate()}: {cooldownForPawn.ToStringTicksToPeriod(shortForm: true)}".Colorize(Color.cyan));
+            int durationForPawn = this.GetDurationForPawn();
+            if (durationForPawn > 0)
+                sb.AppendLine($"{"RE.AbilityStatsDuration".Translate()}: {durationForPawn.ToStringTicksToPeriod(shortForm: true)}".Colorize(Color.cyan));
 
             AbilityExtension_Biotic biotic = this.def.GetModExtension<AbilityExtension_Biotic>();
             if (biotic != null) 

@@ -29,6 +29,9 @@
         public int              cooldownTime         = 0;
         public List<StatModifier> cooldownTimeStatFactors = new List<StatModifier>();
 
+        public int                durationTime            = 0;
+        public List<StatModifier> durationTimeStatFactors = new List<StatModifier>();
+
         [Unsaved(false)]
         public Texture2D icon = BaseContent.BadTex;
         public string iconPath;
