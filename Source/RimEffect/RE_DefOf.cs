@@ -51,6 +51,7 @@ namespace RimEffect
         public static StatDef   RE_BioticAbilityCostMultiplier;
         public static StatDef   RE_BioticEnergyMax;
         public static StatDef   RE_BioticEnergyRecoveryRate;
+        public static ThingDef  RE_Biotic_SingularityThing;
     }
 }
  

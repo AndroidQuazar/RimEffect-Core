@@ -166,7 +166,7 @@
     </modExtensions>
   </RimEffect.AbilityDef>
 
-    <RimEffect.AbilityDef>
+  <RimEffect.AbilityDef>
     <defName>RE_Biotic_Singularity</defName>
     <label>biotic singularity</label>
     <description>The gravitational power sucks multiple enemies within a radius to a single area, leaving them helpless and vulnerable to attack.</description>
@@ -175,6 +175,7 @@
     <range>30</range>
     <castTime>60</castTime>
     <radius>5</radius>
+    <durationTime>600</durationTime>
     <iconPath>UI/Abilities/Biotic_Singularity</iconPath>
     <requiredHediff>
       <hediffDef>RE_BioticAmpHediff</hediffDef>
@@ -186,4 +187,21 @@
       </li>
     </modExtensions>
   </RimEffect.AbilityDef>
+
+  <ThingDef ParentName="EtherealThingBase">
+    <defName>RE_Biotic_SingularityThing</defName>
+    <label>biotic singularity</label>
+    <thingClass>RimEffect.Singularity</thingClass>
+    <graphicData>
+      <texPath>Things/AbilityEffects/Singularity</texPath>
+      <color>(255,255,255,255)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <seeThroughFog>true</seeThroughFog>
+    <alwaysFlee>true</alwaysFlee>
+  </ThingDef>
 </Defs>

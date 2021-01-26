@@ -6,6 +6,7 @@
 
 	<RE.AbilityStatsPower>Power</RE.AbilityStatsPower>
 	<RE.AbilityStatsBioticEnergy>Biotic Energy</RE.AbilityStatsBioticEnergy>
+	<RE.AbilityStatsDuration>Duration</RE.AbilityStatsDuration>
 	<RE.BioticAmpCantEquipWeaponWeightReason>This weapon is too heavy for a biotic user</RE.BioticAmpCantEquipWeaponWeightReason>
 	<RE.AbilityDisableReasonBioticEnergyLack>The user doesn't have enough biotic energy left</RE.AbilityDisableReasonBioticEnergyLack>
 
