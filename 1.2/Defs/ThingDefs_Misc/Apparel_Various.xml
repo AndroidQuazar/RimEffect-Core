@@ -790,6 +790,7 @@
 		<EnergyShieldEnergyMax>50</EnergyShieldEnergyMax>
 		<minShieldSize>1</minShieldSize>
 		<maxShieldSize>1.5</maxShieldSize>
+		<disableRotation>true</disableRotation>
 	  </li>
       <li>
         <compClass>CompQuality</compClass>
