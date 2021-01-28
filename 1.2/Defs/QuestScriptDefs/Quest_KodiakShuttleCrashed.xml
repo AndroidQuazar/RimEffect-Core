@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <QuestScriptDef>
+    <defName>RE_LodiakShuttleCrash1</defName>
+    <rootSelectionWeight>1.0</rootSelectionWeight>
+    <rootMinPoints>350</rootMinPoints>
+    <canGiveRoyalFavor>true</canGiveRoyalFavor>
+    <expireDaysRange>2~3</expireDaysRange>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->[adjective] shuttle</li>
+        <li>adjective->Crashed</li>
+        <li>adjective->Broken</li>
+        <li>adjective->Collapsed</li>
+        <li>adjective->Fallen</li>
+        <li>adjective->Defective</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->High command of [asker_faction_name] lost contact with one of their Kodiak shuttles performing a routine scouting mission near [map_definite]. They are particularly interested in the data from the shuttle black box, which will be automatically uploaded once you get in range. /n[asker_faction_name] has no personnel they can spare to launch a rescue operation. As such, if there are any survivors, they can choose freely to return with you to [map_definite]. /nCrash might have attracted the attention of hostiles.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+  </QuestScriptDef>
+  
+  <QuestScriptDef>
+    <defName>RE_LodiakShuttleCrash2</defName>
+    <rootSelectionWeight>1.0</rootSelectionWeight>
+    <rootMinPoints>350</rootMinPoints>
+    <canGiveRoyalFavor>true</canGiveRoyalFavor>
+    <expireDaysRange>2~3</expireDaysRange>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->[adjective] shuttle</li>
+        <li>adjective->Crashed</li>
+        <li>adjective->Broken</li>
+        <li>adjective->Collapsed</li>
+        <li>adjective->Fallen</li>
+        <li>adjective->Defective</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->High command of [asker_faction_name] lost contact with one of their Kodiak shuttles performing a routine scouting mission near [map_definite]. They are particularly interested in the data from the shuttle black box, which will be automatically uploaded once you get in range. /n[asker_faction_name] has no personnel they can spare to launch a rescue operation. As such, if there are any survivors, they can choose freely to return with you to [map_definite]. /nCrash might have attracted the attention of hostiles.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+  </QuestScriptDef>
+  
+  <QuestScriptDef>
+    <defName>RE_LodiakShuttleCrash3</defName>
+    <rootSelectionWeight>1.0</rootSelectionWeight>
+    <rootMinPoints>350</rootMinPoints>
+    <canGiveRoyalFavor>true</canGiveRoyalFavor>
+    <expireDaysRange>2~3</expireDaysRange>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->[adjective] shuttle</li>
+        <li>adjective->Crashed</li>
+        <li>adjective->Broken</li>
+        <li>adjective->Collapsed</li>
+        <li>adjective->Fallen</li>
+        <li>adjective->Defective</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->High command of [asker_faction_name] lost contact with one of their Kodiak shuttles performing a routine scouting mission near [map_definite]. They are particularly interested in the data from the shuttle black box, which will be automatically uploaded once you get in range. /n[asker_faction_name] has no personnel they can spare to launch a rescue operation. As such, if there are any survivors, they can choose freely to return with you to [map_definite]. /nCrash might have attracted the attention of hostiles.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+  </QuestScriptDef>
+  
+</Defs>
