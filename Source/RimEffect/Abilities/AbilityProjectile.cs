@@ -23,9 +23,21 @@
             {
                 DamageInfo dinfo = new DamageInfo(this.def.projectile.damageDef, this.power, this.ArmorPenetration, this.ExactRotation.eulerAngles.y, this.launcher, null, this.equipmentDef, DamageInfo.SourceCategory.ThingOrUnknown, this.intendedTarget.Thing);
                 hitThing.TakeDamage(dinfo).AssociateWithLog(battleLogEntryRangedImpact);
-                if (hitThing is Pawn pawn && pawn.stances != null && pawn.BodySize <= this.def.projectile.StoppingPower + 0.001f)
+
+                if (hitThing is Pawn pawn)
                 {
-                    pawn.stances.StaggerFor(95);
+                    AbilityExtension_Hediff extensionHediff = this.abilityDef.GetModExtension<AbilityExtension_Hediff>();
+                    if (extensionHediff != null)
+                    {
+                        Hediff hediff = HediffMaker.MakeHediff(extensionHediff.hediff, pawn);
+                        hediff.Severity = extensionHediff.severity;
+                        pawn.health.AddHediff(hediff);
+                    }
+
+                    if (pawn.stances != null && pawn.BodySize <= this.def.projectile.StoppingPower + 0.001f)
+                    {
+                        pawn.stances.StaggerFor(95);
+                    }
                 }
                 if (this.def.projectile.extraDamages == null)
                 {

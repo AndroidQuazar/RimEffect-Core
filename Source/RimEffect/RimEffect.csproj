@@ -57,6 +57,7 @@
     <Compile Include="Abilities\Abilities\Ability_GiveHediff.cs" />
     <Compile Include="Abilities\Abilities\Ability_ShootProjectile.cs" />
     <Compile Include="Abilities\Abilities\Ability_Singularity.cs" />
+    <Compile Include="Abilities\Abilities\Ability_SpawnBuilding.cs" />
     <Compile Include="Abilities\Ability.cs" />
     <Compile Include="Abilities\AbilityDef.cs" />
     <Compile Include="Abilities\AbilityProjectile.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="Abilities\CompAbilitiesApparel.cs" />
     <Compile Include="Abilities\Hediff_Abilities.cs" />
     <Compile Include="Abilities\Hediff_BioticAmp.cs" />
+    <Compile Include="Abilities\Hediff_OmniTool.cs" />
     <Compile Include="Abilities\JobDriver_CastAbilityOnce.cs" />
     <Compile Include="Abilities\PawnKindAbilityExtension.cs" />
     <Compile Include="Apparels\SpectreArmor.cs" />

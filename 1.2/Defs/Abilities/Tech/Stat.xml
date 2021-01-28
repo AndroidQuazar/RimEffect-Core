@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <StatDef>
+    <defName>RE_AbilityCooldownFactor</defName>
+    <label>ability cooldown factor</label>
+    <description>ability cooldown factor.</description>
+    <category>PawnMisc</category>
+    <minValue>0</minValue>
+    <hideAtValue>0</hideAtValue>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>Integer</toStringStyle>
+    <formatString>{0}/s</formatString>
+    <showOnAnimals>false</showOnAnimals>
+    <showOnMechanoids>false</showOnMechanoids>
+    <showIfHediffsPresent><li>RE_OmniToolHediff</li></showIfHediffsPresent>
+    <displayPriorityInCategory>6000</displayPriorityInCategory>
+  </StatDef>
+</Defs>
