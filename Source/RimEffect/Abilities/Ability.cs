@@ -42,7 +42,7 @@
             reason = "RE.AbilityDisableReasonGeneral".Translate(this.pawn?.NameShortColored ?? this.holder.LabelCap);
 
             HediffWithLevelCombination requirement = this.def.requiredHediff;
-            return requirement == null || this.hediff != null && hediff.level >= requirement.minimumLevel;
+            return requirement == null || this.Hediff != null && this.Hediff.level >= requirement.minimumLevel;
         }
 
         public virtual float GetRangeForPawn() =>
