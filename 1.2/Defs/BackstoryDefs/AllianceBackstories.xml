@@ -293,4 +293,603 @@
     </workDisables>
 </AlienRace.BackstoryDef>
 
+<AlienRace.BackstoryDef>
+    <defName>RE_AllianceSentinel</defName>
+    <title>Alliance sentinel</title>
+    <titleShort>Sentinel</titleShort>
+    <baseDescription>[PAWN_nameDef] serves in the Systems Alliance Military as a sentinel, possessing both the ability to use technology to [PAWN_possessive] advantage, and to alter the battlefield using the power of bionics. After numerous campaigns, [PAWN_pronoun] became indifferent to the sight of blood and death, which severely affects [PAWN_possessive] ability for social interactions and caring.
+</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+		<li>Social</li>
+		<li>Hauling</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_Spacer</defName>
+    <title>Spacer</title>
+    <titleShort>Spacer</titleShort>
+    <baseDescription>Both of [PAWN_nameDef]'s parents were in the Alliance military. [PAWN_possessive] childhood was spent on ships and stations as they transferred from posting to posting, never staying in one location for more than a few years. Following in [PAWN_possessive] parents' footsteps, [PAWN_pronoun] enlisted at the age of eighteen.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_EarhBorn</defName>
+    <title>Earthborn</title>
+    <titleShort>Earthborn</titleShort>
+    <baseDescription>[PAWN_nameDef] was an orphan raised on the streets of the great megatropolises covering Earth. [PAWN_pronoun] escaped the life of petty crime and underworld gangs by enlisting with the Alliance military when [PAWN_pronoun] turned eighteen.
+</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_Colonist</defName>
+    <title>Colonist</title>
+    <titleShort>Colonist</titleShort>
+    <baseDescription>[PAWN_nameDef] was born and raised on a small border colony. When [PAWN_pronoun] was sixteen slavers raided [PAWN_possessive] settlement, slaughtering [PAWN_possessive] family and friends. [PAWN_pronoun] was saved by a passing Alliance patrol, and [PAWN_pronoun] enlisted with the military a few years later.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+	<li>Medicine</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_SoleSurvivor</defName>
+    <title>Sole survivor</title>
+    <titleShort>Survivor</titleShort>
+    <baseDescription>During [PAWN_nameDef]'s service, a mission [PAWN_pronoun] was on went horribly wrong. Trapped in an extreme survival situation, [PAWN_pronoun] had to overcome physical torments and psychological stresses that would have broken most people. [PAWN_pronoun] survived while all those around [PAWN_pronoun] fell, and now [PAWN_pronoun] alone is left to tell the tale.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>1</amount>
+      </li>	 
+    </skillGains>
+    <workDisables>
+	<li>Social</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_WarHero</defName>
+    <title>War hero</title>
+    <titleShort>Hero</titleShort>
+    <baseDescription>Early in [PAWN_nameDef]'s military career [PAWN_pronoun] found [PAWN_possessive]self facing an overwhelming enemy force. [PAWN_pronoun] risked [PAWN_possessive] own life to save [PAWN_possessive] fellow soldiers and defeat the enemy despite the impossible odds. [PAWN_possessive] bravery and heroism have earned [PAWN_pronoun] medals and recognition from the Alliance fleet. [PAWN_pronoun] almost single-handedly repelled an attack by enemies, earning the Star of Terra, the Alliance's highest honor.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li> 
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_RuthlessOfficer</defName>
+    <title>Ruthless officer</title>
+    <titleShort>Officer</titleShort>
+    <baseDescription>Throughout [PAWN_nameDef]'s military career, [PAWN_pronoun] have held fast to one basic rule: get the job done. [PAWN_pronoun] has been called cold, calculating, and brutal. [PAWN_possessive] reputation for ruthless efficiency makes [PAWN_possessive] fellow soldiers wary of [PAWN_pronoun]. But when failure is not an option, the military always goes to [PAWN_nameDef] first.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>3</amount>
+      </li> 
+      <li>
+        <defName>Intellectual</defName>
+        <amount>1</amount>
+      </li> 
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_ChildServant</defName>
+    <title>Child servant</title>
+    <titleShort>Servant</titleShort>
+    <baseDescription>[PAWN_nameDef] was a child servant for rich criminal for most of [PAWN_possessive] childhood. Stripped of fun, happines and even [PAWN_possessive] parents. Trained to obey every command without question. [PAWN_possessive] job was to care about simple jobs or entertain. [PAWN_pronoun] was freed from this suffering when boss was killed and [PAWN_nameDef] sended elsewhere.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Cooking</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>2</amount>
+      </li> 
+    </skillGains>
+    <workDisables>
+	<li>Social</li>
+	<li>Artistic</li>
+	<li>Intellectual</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_MilitaryUtility</defName>
+    <title>Military utility</title>
+    <titleShort>Repairer</titleShort>
+    <baseDescription>[PAWN_nameDef] repaired malfunctioned turrets and defence androids on Alliance stations. [PAWN_pronoun] learned about the insides of military weaponry and got pretty good at using [PAWN_possessive] tools the Alliance provided.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>3</amount>
+      </li> 
+      <li>
+        <defName>Intellectual</defName>
+        <amount>1</amount>
+      </li> 
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_AllianceAmbassador</defName>
+    <title>Alliance ambassador</title>
+    <titleShort>Ambassador</titleShort>
+    <baseDescription>[PAWN_nameDef] had been promised a career as a diplomat since childhood. [PAWN_pronoun] was trained in the best educational institutions of the Alliance to represent the interests of his state on the world stage. [PAWN_pronoun] doesn't know anything about combat due to the time spent in luxurious suites of space stations and planets.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>5</amount>
+      </li> 
+    </skillGains>
+    <workDisables>
+	<li>Combat</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_SecurityGuard</defName>
+    <title>Security guard</title>
+    <titleShort>Guard</titleShort>
+    <baseDescription>[PAWN_nameDef] spent a lot of time in a distant space station as a security guard. The station was not famous for its well-being, so [PAWN_pronoun] had to suppress constant riots. It hardened [PAWN_possessive] body and mind and taught [PAWN_objective] how to fight.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li> 
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_AgriculturalApprentice</defName>
+    <title>Agricultural apprentice</title>
+    <titleShort>Farm kid</titleShort>
+    <baseDescription>[PAWN_nameDef] didn't spend much time on capitol planets or in space as a child, [PAWN_possessive] home was always some colony at the edge of known space, learning to feed [PAWN_possessive] colony and keep the equipment running.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_AgriculturalExpert</defName>
+    <title>Agricultural expert</title>
+    <titleShort>Agriculturalist</titleShort>
+    <baseDescription>[PAWN_nameDef] has spent [PAWN_possessive] adulthood working in various farming communes, with a dedication to growing anything a colony may need in the worst environments. Making the best of few resources, [PAWN_nameDef] had to be familiar with maintaining [PAWN_possessive] equipment.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_JuniorOfficer</defName>
+    <title>Junior officer</title>
+    <titleShort>Officer</titleShort>
+    <baseDescription>[PAWN_nameDef] was raised in a politically minded family on Earth and came to believe that humans that should be first and foremost in galactic politics. In preparation for [PAWN_possessive] military or political career, [PAWN_pronoun] participated in a junior officer's program throughout school.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_DischargedPilot</defName>
+    <title>Discharged pilot</title>
+    <titleShort>Pilot</titleShort>
+    <baseDescription>After a hot shot career with the Systems Alliance, [PAWN_nameDef] was honorably discharged. Unhappy with the sedentary retired life, [PAWN_nameDef] has sought out a life in the rimward colonies as a second career. [PAWN_pronoun] retains some skills with a pistol, maintaining [PAWN_possessive] craft and formulating plans.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_BatarianChildSoldier</defName>
+    <title>Batarian child soldier</title>
+    <titleShort>Pirate</titleShort>
+    <baseDescription>With [PAWN_possessive] parents captured or killed by Batarian slavers out of the Terminus systems, [PAWN_nameDef] was strong enough and at the right age to be kept by the pirate crew as cannon fodder. Luckily for [PAWN_nameDef], [PAWN_pronoun] excelled at it.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+	<li>Animals</li>
+	<li>Artistic</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_AllianceMarine</defName>
+    <title>Alliance marine</title>
+    <titleShort>Marine</titleShort>
+    <baseDescription>[PAWN_nameDef] enlisted into the Systems Alliance Marines as soon as [PAWN_pronoun] was able, performing well throughout [PAWN_possessive] training and enlistment period. Now discharged, [PAWN_pronoun] takes [PAWN_possessive] combat skills and first aid training with [PAWN_objective].</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+	<li>Hauling</li>
+	<li>Artistic</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_AsteroidMiner</defName>
+    <title>Asteroid miner</title>
+    <titleShort>Miner</titleShort>
+    <baseDescription>[PAWN_nameDef] spent a number of years sweating in the cramped tunnels and hot machinery rooms of a remote asteroid mine, attempting to avoid the crime and drug use rampant on these types of stations. The work was hard, but [PAWN_pronoun] developed valuable skills working with raw materials, fabrication and heavy machinery.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+	<li>Hauling</li>
+	<li>Artistic</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_MilitiaCombatant</defName>
+    <title>Militia combatant</title>
+    <titleShort>Militia</titleShort>
+    <baseDescription>As a child, [PAWN_nameDef] became a militia combatant on [PAWN_possesive] home planet, invaded by an alien race. After going through the horrors of war, [PAWN_pronoun] acquired combat skills along with the nightmares that haunt [PAWN_objective] to this day.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+	<li>Social</li>
+	<li>Artistic</li>
+	<li>Caring</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_Bully</defName>
+    <title>Bully</title>
+    <titleShort>Bully</titleShort>
+    <baseDescription>[PAWN_nameDef] was born to a marine father who was stationed on the fringes of Citadel Space, and a mother who was a lawyer. During  [PAWN_possessive] childhood [PAWN_nameDef] frequently bullied other children because [PAWN_pronoun] was bigger and stronger at the time and as [PAWN_pronoun] got older began to participate in small petty crimes.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+	<li>Caring</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_Convict</defName>
+    <title>Convict</title>
+    <titleShort>Convict</titleShort>
+    <baseDescription>At age seventeen was [PAWN_possessive] first time organizing a crime. [PAWN_nameDef] and four of [PAWN_possessive] friends planned on robbing a shoe store, all armed with loaded pistols. However the robbery went awry and two of [PAWN_possessive] friends were killed in a shootout with police authorities. [PAWN_pronoun] and the others were taken into custody and charged with robbery and armed possesion.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
 </Defs>
