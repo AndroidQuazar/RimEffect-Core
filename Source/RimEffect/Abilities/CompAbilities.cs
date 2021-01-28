@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using RimWorld;
+    using UnityEngine;
     using Verse;
     using Verse.Sound;
 
@@ -38,7 +39,15 @@
 
             this.learnedAbilities.Add(ability);
         }
-        
+
+        public bool HasAbility(AbilityDef abilityDef)
+        {
+            foreach (Ability learnedAbility in this.learnedAbilities)
+                if (learnedAbility.def == abilityDef)
+                    return true;
+            return false;
+        }
+
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
             foreach (Gizmo gizmo in base.CompGetGizmosExtra()) 
@@ -59,6 +68,8 @@
             base.PostExposeData();
             Scribe_Collections.Look(ref this.learnedAbilities, nameof(this.learnedAbilities), LookMode.Deep);
             Scribe_References.Look(ref this.currentlyCasting, nameof(this.currentlyCasting));
+            Scribe_Values.Look(ref this.energyMax, nameof(this.energyMax));
+            Scribe_Values.Look(ref this.shieldPath, nameof(this.shieldPath));
 
             if (this.learnedAbilities == null)
                 this.learnedAbilities = new List<Ability>();
@@ -80,7 +91,7 @@
         protected override void Reset() => 
             this.ticksToReset = Int32.MaxValue;
 
-        public bool ReinitShield(float newEnergy)
+        public bool ReinitShield(float newEnergy, string shieldTexturePath)
         {
             if (newEnergy < this.energy)
                 return false;
@@ -91,10 +102,33 @@
                 MoteMaker.ThrowLightningGlow(this.Pawn.TrueCenter(), this.Pawn.Map, 3f);
             }
 
+
+
             this.ticksToReset = -1;
             this.energyMax    = newEnergy;
             this.energy       = newEnergy;
+            this.shieldPath   = shieldTexturePath;
+
             return true;
+        }
+
+        private string currentShieldPath;
+        private string shieldPath;
+
+        protected override Material BubbleMat
+        {
+            get
+            {
+                if (bubbleMat is null || this.currentShieldPath != this.shieldPath)
+                {
+                    if (this.shieldPath.NullOrEmpty())
+                        return base.BubbleMat;
+                    this.bubbleMat         = MaterialPool.MatFrom(this.shieldPath, ShaderDatabase.Transparent, this.Props.shieldColor);
+                    this.currentShieldPath = this.shieldPath;
+                }
+
+                return this.bubbleMat;
+            }
         }
     }
 }

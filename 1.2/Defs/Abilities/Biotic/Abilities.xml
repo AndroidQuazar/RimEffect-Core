@@ -143,6 +143,9 @@
       <li Class="RimEffect.AbilityExtension_Biotic">
         <energyUsed>20</energyUsed>
       </li>
+      <li Class="RimEffect.AbilityExtension_Shield">
+        <shieldTexPath>UI/AbilityShields/ShieldBiotic</shieldTexPath>
+      </li>
     </modExtensions>
   </RimEffect.AbilityDef>
 

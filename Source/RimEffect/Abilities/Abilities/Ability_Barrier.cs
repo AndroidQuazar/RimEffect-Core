@@ -6,8 +6,13 @@
     {
         public override void Cast(LocalTargetInfo target)
         {
-            if(this.pawn.GetComp<CompAbilities>().ReinitShield(this.GetPowerForPawn()))
+            if(this.pawn.GetComp<CompAbilities>().ReinitShield(this.GetPowerForPawn(), this.def.GetModExtension<AbilityExtension_Shield>()?.shieldTexPath))
                 base.Cast(target);
         }
+    }
+
+    public class AbilityExtension_Shield : DefModExtension
+    {
+        public string shieldTexPath;
     }
 }
