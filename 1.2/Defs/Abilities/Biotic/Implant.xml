@@ -61,7 +61,7 @@
     <description>An organic connection to a larger psychic field. This allows a person to use specific psychic powers that they have learned to influence reality in ways that seem impossible.</description>
     <initialSeverity>1</initialSeverity> 
     <minSeverity>0</minSeverity>
-    <maxSeverity>6</maxSeverity>
+    <maxSeverity>4</maxSeverity>
     <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
     <countsAsAddedPartOrImplant>False</countsAsAddedPartOrImplant>
     <stages>

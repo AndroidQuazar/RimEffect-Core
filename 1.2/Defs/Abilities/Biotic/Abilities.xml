@@ -204,4 +204,66 @@
     <seeThroughFog>true</seeThroughFog>
     <alwaysFlee>true</alwaysFlee>
   </ThingDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Flare</defName>
+    <label>biotic flare</label>
+    <description>Focus and expend most of the biotic energy to unleash a huge flare that throws enemies within its range, causing massive damage.</description>
+    <abilityClass>RimEffect.Ability_Flare</abilityClass>
+    <targetMode>Location</targetMode>
+    <castTime>60</castTime>
+    <range>30</range>
+    <radius>10</radius>
+    <power>80</power>
+    <iconPath>UI/Abilities/Biotic_Flare</iconPath>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>4</minimumLevel>
+    </requiredHediff>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>50</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Annihilation</defName>
+    <label>biotic annihilation field</label>
+    <description>Spin up a large field of Mass Effect particles, dealing substantial damage to anyone in the area.</description>
+    <abilityClass>RimEffect.Ability_Annihilation</abilityClass>
+    <targetMode>Location</targetMode>
+    <castTime>60</castTime>
+    <range>30</range>
+    <radius>6</radius>
+    <power>5</power>
+    <durationTime>900</durationTime>
+    <iconPath>UI/Abilities/Biotic_AnnihilationField</iconPath>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>4</minimumLevel>
+    </requiredHediff>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>50</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
+
+  <ThingDef ParentName="EtherealThingBase">
+    <defName>RE_Biotic_AnnihilationField</defName>
+    <label>biotic annihilation field</label>
+    <thingClass>RimEffect.AnnihilationField</thingClass>
+    <graphicData>
+      <texPath>Things/AbilityEffects/AnnihilationField</texPath>
+      <color>(255,255,255,255)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <seeThroughFog>true</seeThroughFog>
+    <alwaysFlee>true</alwaysFlee>
+  </ThingDef>
 </Defs>

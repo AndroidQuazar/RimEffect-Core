@@ -49,9 +49,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\Abilities\Ability_Annihilation.cs" />
     <Compile Include="Abilities\Abilities\Ability_Barrier.cs" />
     <Compile Include="Abilities\Abilities\Ability_Charge.cs" />
     <Compile Include="Abilities\Abilities\Ability_Dominate.cs" />
+    <Compile Include="Abilities\Abilities\Ability_Flare.cs" />
     <Compile Include="Abilities\Abilities\Ability_GiveHediff.cs" />
     <Compile Include="Abilities\Abilities\Ability_ShootProjectile.cs" />
     <Compile Include="Abilities\Abilities\Ability_Singularity.cs" />
