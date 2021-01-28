@@ -892,4 +892,291 @@
     </workDisables>
 </AlienRace.BackstoryDef>
 
+<AlienRace.BackstoryDef>
+    <defName>RE_Survivor</defName>
+    <title>Survivor</title>
+    <titleShort>Survivor</titleShort>
+    <baseDescription>During an encounter with batarian raiders, many Batarian ships surrounded the ship [PAWN_nameDef] was on and consumed it with a hail of missiles. After taking on a huge amount of damage the crew evacuated, despite numerous efforts to call for help to nearby ships. [PAWN_nameDef] was devastated by the loss of [PAWN_possessive] friends and the mental toll it took on him.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_FirstContactWarHero</defName>
+    <title>First Contact War hero</title>
+    <titleShort>Hero</titleShort>
+    <baseDescription>[PAWN_nameDef] fought the turian groundforces during the First Contact War. During the ruthless and gruesome fighting, [PAWN_pronoun] was wounded, promoted, and given command of a squad. During the peak of the fighting [PAWN_nameDef] lead a few men around a turian stronghold and ambushed a large turian force and wiped them out.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_BrokenSoldier</defName>
+    <title>Broken soldier</title>
+    <titleShort>Broken soldier</titleShort>
+    <baseDescription>Lieutenant [PAWN_nameDef] was the Executive Officer of one of the Alliance frigates. When the ship responded to a distress signal at a remote research station, [PAWN_nameDef] led the ground team to victory. Returning to the Citadel to recuperate after the mission, [PAWN_pronoun] received the final decree of [PAWN_possessive] divorce, a separation caused by the long absences of [PAWN_possessive] military career. [PAWN_pronoun] then followed the human tradition after getting divorced: [PAWN_pronoun] went to Chora's Den, near [PAWN_possessive] apartment on the Citadel, to drown [PAWN_possessive] sorrows.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+	<li>Caring</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_Retiree</defName>
+    <title>Retiree</title>
+    <titleShort>Retiree</titleShort>
+    <baseDescription>[PAWN_nameDef] was a lieutenant in the Systems Alliance Navy who served aboard one of the frigates patrolling Terminus space. After [PAWN_possessive] commanding officer quit the Alliance, [PAWN_pronoun] accepted an early retirement and left the military life behind.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+	<li>Hauling</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_PromissingStudent</defName>
+    <title>Promissing student</title>
+    <titleShort>Student</titleShort>
+    <baseDescription>[PAWN_nameDef] enlisted at a very early age, seeking a better life. [PAWN_pronoun] trained for two years on one of the Alliance battle cruisers. [PAWN_pronoun] served aboard eight vessels and received two purple hearts before the Skyllian Blitz, where [PAWN_possessive] ship was deployed to help defend the colony.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_AllianceStudent</defName>
+    <title>Alliance student</title>
+    <titleShort>Student</titleShort>
+    <baseDescription>[PAWN_nameDef] comes originally from London, but [PAWN_possessive] parents preferred the freedom of colony life. [PAWN_possessive] parents didn't have money for sending [PAWN_pronoun to a university, but [PAWN_nameDef] was able to pursue [PAWN_possessive] studies as the Alliance offered [PAWN_pronoun] full scholarship after seeing [PAWN_possessive] aptitude scores.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_SquadLeader</defName>
+    <title>Squad leader</title>
+    <titleShort>Leader</titleShort>
+    <baseDescription>Early in [PAWN_possessive] career, [PAWN_nameDef] was stationed on the remote colony, an Alliance special forces unit. When the Collectors attack, determined to capture the population, [PAWN_nameDef] and [PAWN_possessive] squad were tasked with protecting the civilians. The events mark a turning point for [PAWN_objective] regarding [PAWN_possessive] confidence as a leader.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Medical</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_Cadet</defName>
+    <title>Cadet</title>
+    <titleShort>Cadet</titleShort>
+    <baseDescription>[PAWN_nameDef] spent [PAWN_possessive] early life on space station because of [PAWN_possessive] mother's job there as a civilian contractor, and grew up around ships. When [PAWN_pronoun] was old enough to enlist, [PAWN_pronoun] joined the Alliance Navy.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_AlliancePilot</defName>
+    <title>Alliance pilot</title>
+    <titleShort>Pilot</titleShort>
+    <baseDescription>Early in [PAWN_possessive] career, [PAWN_nameDef] was stationed on the remote colony, an Alliance special forces unit. When the Collectors attack, determined to capture the population, [PAWN_nameDef] and [PAWN_possessive] squad were tasked with protecting the civilians. The events mark a turning point for [PAWN_objective] regarding [PAWN_possessive] confidence as a leader.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>SystemsAlliance</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
 </Defs>
