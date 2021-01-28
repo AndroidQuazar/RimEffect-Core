@@ -30,7 +30,14 @@
 
             forLevel = forLevel ?? this.level;
 
-            this.pawn.GetComp<CompAbilities>().GiveAbility(DefDatabase<AbilityDef>.AllDefsListForReading.Where(def => def.requiredHediff != null && def.requiredHediff.hediffDef == this.def && def.requiredHediff.minimumLevel == forLevel).RandomElement());
+            CompAbilities comp = this.pawn.GetComp<CompAbilities>();
+            List<AbilityDef> abilityDefs        = DefDatabase<AbilityDef>.AllDefsListForReading.Where(def => !comp.HasAbility(def) && def.requiredHediff != null && def.requiredHediff.hediffDef == this.def && def.requiredHediff.minimumLevel <= forLevel).ToList();
+            IEnumerable<AbilityDef> abilityDefsAtLevel = abilityDefs.Where(def => def.requiredHediff.minimumLevel == forLevel);
+
+            if (!abilityDefsAtLevel.TryRandomElement(out AbilityDef abilityDef))
+                abilityDef = abilityDefs.RandomElement();
+
+            comp.GiveAbility(abilityDef);
         }
 
         public virtual IEnumerable<Gizmo> DrawGizmos()
