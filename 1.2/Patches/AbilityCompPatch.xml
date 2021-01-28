@@ -13,7 +13,7 @@
 				<shieldTexPath>Other/ShieldBubble</shieldTexPath>
 				<minShieldSize>1</minShieldSize>
 				<maxShieldSize>1.5</maxShieldSize>
-				<shieldColor>RGBA(0,1,1,1)</shieldColor>
+				<shieldColor>RGBA(1,1,1,1)</shieldColor>
 				<EnergyLossPerDamage>1</EnergyLossPerDamage>
 			</li>
 		</value>
