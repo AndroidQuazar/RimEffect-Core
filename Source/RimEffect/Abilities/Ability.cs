@@ -158,7 +158,8 @@
         public virtual bool CanHitTarget(LocalTargetInfo target) => 
             target.Cell.DistanceTo(this.pawn.Position) < this.GetRangeForPawn() && GenSight.LineOfSight(this.pawn.Position, target.Cell, this.pawn.Map);
 
-        public virtual bool ValidateTarget(LocalTargetInfo target) => this.targetParams.CanTarget(target.ToTargetInfo(this.pawn.Map));
+        public virtual bool ValidateTarget(LocalTargetInfo target) => 
+            this.targetParams.CanTarget(target.ToTargetInfo(this.pawn.Map)) && this.CanHitTarget(target);
 
         public virtual void DrawHighlight(LocalTargetInfo target)
         {
