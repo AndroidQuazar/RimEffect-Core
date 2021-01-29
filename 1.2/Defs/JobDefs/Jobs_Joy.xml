@@ -3,14 +3,13 @@
 
   <JobDef>
     <defName>RE_Interact_VIInterface</defName>
-    <driverClass>JobDriver_PlayHoopstone</driverClass>
+    <driverClass>RimEffect.JobDriver_UseVIITerminal</driverClass>
     <reportString>interacting with VI interface.</reportString>
     <joyDuration>4000</joyDuration>
     <joyMaxParticipants>1</joyMaxParticipants>
     <joySkill>Social</joySkill>
     <joyXpPerTick>0.003</joyXpPerTick>
     <joyKind>RE_Interaction_VIInterface</joyKind>
-    <taleOnCompletion>PlayedGame</taleOnCompletion>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
   

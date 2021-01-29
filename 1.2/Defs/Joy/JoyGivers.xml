@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
   <JoyGiverDef>
     <defName>RE_Interact_VIInterface</defName>
-    <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+    <giverClass>RimEffect.JoyGiver_UseVITerminal</giverClass>
     <baseChance>2</baseChance>
     <requireChair>false</requireChair>
     <thingDefs>

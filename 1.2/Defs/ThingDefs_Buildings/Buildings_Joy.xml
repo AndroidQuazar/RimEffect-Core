@@ -5,6 +5,7 @@
     <defName>RE_VIInterface</defName>
     <label>VI interface</label>
     <description>A hologram immiter connected to VI interface.</description>
+	<thingClass>RimEffect.Building_VIInterface</thingClass>
     <graphicData>
       <texPath>Things/Building/Joy/VITerminal/VITerminal</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -33,6 +34,17 @@
       <Flammability>1.0</Flammability>
       <JoyGainFactor>1</JoyGainFactor>
     </statBases>
+    <placeWorkers>
+      <li>PlaceWorker_NeverAdjacentUnstandable</li>
+    </placeWorkers>
+	<comps>
+		<li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+	</comps>
     <building>
       <joyKind>RE_Interaction_VIInterface</joyKind>
       <watchBuildingStandDistanceRange>-1~1</watchBuildingStandDistanceRange>
