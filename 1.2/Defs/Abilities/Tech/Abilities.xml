@@ -155,187 +155,107 @@
     </comps>
   </ThingDef>
 
-
-  <!--
   <RimEffect.AbilityDef>
-    <defName>RE_Biotic_Focus</defName>
-    <label>biotic focus</label>
-    <description>Decreases biotic heat after a short combat meditation time.</description>
-    <abilityClass>RimEffect.Ability_Blank</abilityClass>
-    <targetMode>Self</targetMode>
-    <castTime>600</castTime>
-    <iconPath>UI/Abilities/Biotic_Focus</iconPath>
-    <requiredHediff>
-      <hediffDef>RE_BioticAmpHediff</hediffDef>
-      <minimumLevel>2</minimumLevel>
-    </requiredHediff>
-    <modExtensions>
-      <li Class="RimEffect.AbilityExtension_Biotic">
-        <energyUsed>-25</energyUsed>
-      </li>
-    </modExtensions>
-  </RimEffect.AbilityDef>
-
-  <RimEffect.AbilityDef>
-    <defName>RE_Biotic_Charge</defName>
-    <label>biotic charge</label>
-    <description>Uses biotics to alter the speed and strength, leading to a devastating charge towards the target.</description>
-    <abilityClass>RimEffect.Ability_Charge</abilityClass>
-    <targetMode>Pawn</targetMode>
-    <castTime>60</castTime>
-    <range>30</range>
-    <power>14</power>
-    <iconPath>UI/Abilities/Biotic_Charge</iconPath>
-    <requiredHediff>
-      <hediffDef>RE_BioticAmpHediff</hediffDef>
-      <minimumLevel>2</minimumLevel>
-    </requiredHediff>
-    <modExtensions>
-      <li Class="RimEffect.AbilityExtension_Biotic">
-        <energyUsed>25</energyUsed>
-      </li>
-    </modExtensions>
-  </RimEffect.AbilityDef>
-
-  <RimEffect.AbilityDef>
-    <defName>RE_Biotic_Barrier</defName>
-    <label>biotic barrier</label>
-    <description>Utilizes Mass Effect fields to generate a barrier that protects the user from most kinetic damage.</description>
-    <abilityClass>RimEffect.Ability_Barrier</abilityClass>
-    <targetMode>Self</targetMode>
-    <castTime>60</castTime>
-    <power>50</power>
-    <iconPath>UI/Abilities/Biotic_Barrier</iconPath>
-    <requiredHediff>
-      <hediffDef>RE_BioticAmpHediff</hediffDef>
-      <minimumLevel>2</minimumLevel>
-    </requiredHediff>
-    <modExtensions>
-      <li Class="RimEffect.AbilityExtension_Biotic">
-        <energyUsed>20</energyUsed>
-      </li>
-    </modExtensions>
-  </RimEffect.AbilityDef>
-
-  <RimEffect.AbilityDef>
-    <defName>RE_Biotic_Dominate</defName>
-    <label>biotic dominate</label>
-    <description>Disrupt the synaptic harmonics of an organic brain so it can't differentiate between friend and foe.</description>
-    <abilityClass>RimEffect.Ability_Dominate</abilityClass>
-    <targetMode>Pawn</targetMode>
-    <range>30</range>
-    <castTime>60</castTime>
-    <iconPath>UI/Abilities/Biotic_Dominate</iconPath>
-    <requiredHediff>
-      <hediffDef>RE_BioticAmpHediff</hediffDef>
-      <minimumLevel>3</minimumLevel>
-    </requiredHediff>
-    <modExtensions>
-      <li Class="RimEffect.AbilityExtension_Biotic">
-        <energyUsed>50</energyUsed>
-      </li>
-    </modExtensions>
-  </RimEffect.AbilityDef>
-
-  <RimEffect.AbilityDef>
-    <defName>RE_Biotic_Singularity</defName>
-    <label>biotic singularity</label>
-    <description>The gravitational power sucks multiple enemies within a radius to a single area, leaving them helpless and vulnerable to attack.</description>
-    <abilityClass>RimEffect.Ability_Singularity</abilityClass>
+    <defName>RE_Tech_Incinerate</defName>
+    <label>incinerate</label>
+    <description>High-explosive plasma round fired from the user's omni-tool that inflicts damage over time to all nearby enemies.</description>
+    <abilityClass>RimEffect.Ability_ShootProjectile</abilityClass>
     <targetMode>Location</targetMode>
-    <range>30</range>
-    <castTime>60</castTime>
-    <radius>5</radius>
-    <durationTime>600</durationTime>
-    <iconPath>UI/Abilities/Biotic_Singularity</iconPath>
+    <range>26</range>
+    <radius>4</radius>
+    <cooldownTime>1800</cooldownTime>
+    <cooldownTimeStatFactors>
+      <RE_AbilityCooldownFactor>1</RE_AbilityCooldownFactor>
+    </cooldownTimeStatFactors>
+    <power>30</power>
+    <iconPath>UI/Abilities/Tech_Incinerate</iconPath>
     <requiredHediff>
-      <hediffDef>RE_BioticAmpHediff</hediffDef>
-      <minimumLevel>3</minimumLevel>
+      <hediffDef>RE_OmniToolHediff</hediffDef>
+      <minimumLevel>1</minimumLevel>
     </requiredHediff>
     <modExtensions>
-      <li Class="RimEffect.AbilityExtension_Biotic">
-        <energyUsed>25</energyUsed>
+      <li Class="RimEffect.AbilityExtension_Projectile">
+        <projectile>RE_Tech_IncinerateProjectile</projectile>
       </li>
     </modExtensions>
   </RimEffect.AbilityDef>
 
-  <ThingDef ParentName="EtherealThingBase">
-    <defName>RE_Biotic_SingularityThing</defName>
-    <label>biotic singularity</label>
-    <thingClass>RimEffect.Singularity</thingClass>
+  <ThingDef ParentName="BaseBullet">
+    <defName>RE_Tech_IncinerateProjectile</defName>
+    <label>high plasma projectile</label>
     <graphicData>
-      <texPath>Things/AbilityEffects/Singularity</texPath>
-      <color>(255,255,255,255)</color>
+      <texPath>Things/Projectile/LauncherShot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <color>(254,189,58)</color>
     </graphicData>
-    <tickerType>Normal</tickerType>
-    <drawerType>RealtimeOnly</drawerType>
-    <altitudeLayer>Projectile</altitudeLayer>
-    <drawOffscreen>true</drawOffscreen>
-    <seeThroughFog>true</seeThroughFog>
-    <alwaysFlee>true</alwaysFlee>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Flame</damageDef>
+      <speed>45</speed>
+      <explosionRadius>4</explosionRadius >
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+    </projectile>
   </ThingDef>
 
   <RimEffect.AbilityDef>
-    <defName>RE_Biotic_Flare</defName>
-    <label>biotic flare</label>
-    <description>Focus and expend most of the biotic energy to unleash a huge flare that throws enemies within its range, causing massive damage.</description>
-    <abilityClass>RimEffect.Ability_Flare</abilityClass>
+    <defName>RE_Tech_Overload</defName>
+    <label>overload</label>
+    <description>This power surge overloads electronics, causing shields to burst and mechanical enemies to be stunned.</description>
+    <abilityClass>RimEffect.Ability_ShootProjectile</abilityClass>
     <targetMode>Location</targetMode>
-    <castTime>60</castTime>
-    <range>30</range>
-    <radius>10</radius>
-    <power>80</power>
-    <iconPath>UI/Abilities/Biotic_Flare</iconPath>
-    <requiredHediff>
-      <hediffDef>RE_BioticAmpHediff</hediffDef>
-      <minimumLevel>4</minimumLevel>
-    </requiredHediff>
-    <modExtensions>
-      <li Class="RimEffect.AbilityExtension_Biotic">
-        <energyUsed>50</energyUsed>
-      </li>
-    </modExtensions>
-  </RimEffect.AbilityDef>
-
-  <RimEffect.AbilityDef>
-    <defName>RE_Biotic_Annihilation</defName>
-    <label>biotic annihilation field</label>
-    <description>Spin up a large field of Mass Effect particles, dealing substantial damage to anyone in the area.</description>
-    <abilityClass>RimEffect.Ability_Annihilation</abilityClass>
-    <targetMode>Location</targetMode>
-    <castTime>60</castTime>
-    <range>30</range>
+    <range>19</range>
     <radius>6</radius>
-    <power>5</power>
-    <durationTime>900</durationTime>
-    <iconPath>UI/Abilities/Biotic_AnnihilationField</iconPath>
+    <cooldownTime>1800</cooldownTime>
+    <cooldownTimeStatFactors>
+      <RE_AbilityCooldownFactor>1</RE_AbilityCooldownFactor>
+    </cooldownTimeStatFactors>
+    <iconPath>UI/Abilities/Tech_Overload</iconPath>
     <requiredHediff>
-      <hediffDef>RE_BioticAmpHediff</hediffDef>
-      <minimumLevel>4</minimumLevel>
+      <hediffDef>RE_OmniToolHediff</hediffDef>
+      <minimumLevel>1</minimumLevel>
     </requiredHediff>
     <modExtensions>
-      <li Class="RimEffect.AbilityExtension_Biotic">
-        <energyUsed>50</energyUsed>
+      <li Class="RimEffect.AbilityExtension_Projectile">
+        <projectile>RE_Tech_OverloadProjectile</projectile>
       </li>
     </modExtensions>
   </RimEffect.AbilityDef>
 
-  <ThingDef ParentName="EtherealThingBase">
-    <defName>RE_Biotic_AnnihilationField</defName>
-    <label>biotic annihilation field</label>
-    <thingClass>RimEffect.AnnihilationField</thingClass>
+  <ThingDef ParentName="BaseBullet">
+    <defName>RE_Tech_OverloadProjectile</defName>
+    <label>overload projectile</label>
     <graphicData>
-      <texPath>Things/AbilityEffects/AnnihilationField</texPath>
-      <color>(255,255,255,255)</color>
+      <texPath>Things/Projectile/LauncherShot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <color>(208,228,255)</color>
     </graphicData>
-    <tickerType>Normal</tickerType>
-    <drawerType>RealtimeOnly</drawerType>
-    <altitudeLayer>Projectile</altitudeLayer>
-    <drawOffscreen>true</drawOffscreen>
-    <seeThroughFog>true</seeThroughFog>
-    <alwaysFlee>true</alwaysFlee>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>EMP</damageDef>
+      <speed>45</speed>
+      <explosionRadius>4</explosionRadius >
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+    </projectile>
   </ThingDef>
- -->
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Tech_Sabotage</defName>
+    <label>sabotage</label>
+    <description>Sabotage weapons and hack synthetics. Compromised synthetics fight on your side.</description>
+    <abilityClass>RimEffect.Ability_Sabotage</abilityClass>
+    <targetMode>Pawn</targetMode>
+    <range>19</range>
+    <cooldownTime>7200</cooldownTime>
+    <cooldownTimeStatFactors>
+      <RE_AbilityCooldownFactor>1</RE_AbilityCooldownFactor>
+    </cooldownTimeStatFactors>
+    <power>15</power>
+    <iconPath>UI/Abilities/Tech_Sabotage</iconPath>
+    <requiredHediff>
+      <hediffDef>RE_OmniToolHediff</hediffDef>
+      <minimumLevel>1</minimumLevel>
+    </requiredHediff>
+  </RimEffect.AbilityDef>
 </Defs>
