@@ -124,7 +124,7 @@
 </AlienRace.BackstoryDef>
 
 <AlienRace.BackstoryDef>
-    <defName>RE_SquadLeader</defName>
+    <defName>RE_SquadLeader1</defName>
     <title>Squad leader</title>
     <titleShort>Leader</titleShort>
     <baseDescription>Being noticed by the drill instructors early on, [PAWN_nameDef] was quickly promoted to squad leader, and then to platoon guide not long after. [PAWN_possessive] platoon had logged unanimous positive feedback on [PAWN_possessive] leadership in a fitness review cycle, and achieved praise from commanders and other soldiers alike. Despite glowing performance reviews, [PAWN_nameDef] has been denied further opportunities for advancement. Having served on numerous groundside garrisons [PAWN_pronoun] has repeatedly requested a transfer to a shipboard posting, but each request has been denied, without explicit reason.</baseDescription>
@@ -412,7 +412,7 @@
       </li>
     </skillGains>
     <workDisables>
-	<li>Medicine</li>
+	<li>Caring</li>
     </workDisables>
 </AlienRace.BackstoryDef>
 
@@ -583,7 +583,7 @@
       </li> 
     </skillGains>
     <workDisables>
-	<li>Combat</li>
+	<li>Violent</li>
     </workDisables>
 </AlienRace.BackstoryDef>
 
@@ -1097,12 +1097,12 @@
         <amount>2</amount>
       </li>
       <li>
-        <defName>Medical</defName>
+        <defName>Medicine</defName>
         <amount>1</amount>
       </li>
       <li>
         <defName>Social</defName>
-        <amount>-1</amount>
+        <amount>1</amount>
       </li>
     </skillGains>
     <workDisables>
