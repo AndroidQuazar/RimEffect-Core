@@ -37,12 +37,17 @@
         <fillPercent>0.4</fillPercent>
         <hasTooltip>true</hasTooltip>
         <building>
-            <combatPower>45</combatPower>            <!-- same as a scavenger -->
+            <combatPower>45</combatPower>
             <ai_combatDangerous>true</ai_combatDangerous>
             <turretGunDef>RE_Tech_CombatDroneGun</turretGunDef>
             <turretBurstCooldownTime>4.8</turretBurstCooldownTime>
             <deconstructible>false</deconstructible>
         </building>
+        <comps>
+            <li>
+                <compClass>RimEffect.CompSpawnedBuilding</compClass>
+            </li>
+        </comps>
     </ThingDef>
 
     <ThingDef ParentName="BaseBullet">

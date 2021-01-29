@@ -8,7 +8,6 @@
     <targetMode>Location</targetMode>
     <range>24</range>
     <durationTime>1800</durationTime>
-    <power>6</power>
     <cooldownTime>7200</cooldownTime>
     <cooldownTimeStatFactors>
       <RE_AbilityCooldownFactor>1</RE_AbilityCooldownFactor>
@@ -92,6 +91,69 @@
       </li>
     </modExtensions>
   </RimEffect.AbilityDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Tech_HexShield</defName>
+    <label>hex shield</label>
+    <description>Spawn an energy barrier that blocks all fast-moving projectiles, including bullets.</description>
+    <abilityClass>RimEffect.Ability_SpawnBuilding</abilityClass>
+    <targetMode>Location</targetMode>
+    <range>20</range>
+    <power>1</power>
+    <cooldownTime>3600</cooldownTime>
+    <cooldownTimeStatFactors>
+      <RE_AbilityCooldownFactor>1</RE_AbilityCooldownFactor>
+    </cooldownTimeStatFactors>
+    <iconPath>UI/Abilities/Tech_HexShield</iconPath>
+    <requiredHediff>
+      <hediffDef>RE_OmniToolHediff</hediffDef>
+      <minimumLevel>1</minimumLevel>
+    </requiredHediff>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Building">
+        <building>RE_Tech_EnergyBarrier</building>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RE_Tech_EnergyBarrier</defName>
+    <label>energy barrier</label>
+    <description>Energy barrier that blocks all fast-moving projectiles, including bullets.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Linked/Sandbags_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <tickerType>Normal</tickerType>
+    <pathCost>10</pathCost>
+    <pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>1</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Beauty>10</Beauty>
+      <Flammability>0</Flammability>
+    </statBases>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <repairable>false</repairable>
+      <deconstructible>false</deconstructible>
+    </building>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <staticSunShadowHeight>1</staticSunShadowHeight>
+    <designationHotKey>Misc1</designationHotKey>
+    <comps>
+      <li>
+        <compClass>RimEffect.CompSpawnedBuilding</compClass>
+      </li>
+    </comps>
+  </ThingDef>
 
 
   <!--
