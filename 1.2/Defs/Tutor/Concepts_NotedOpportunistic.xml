@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ConceptDef ParentName="NotedOpportunisticBase">
+		<defName>RE_PrefabDoorStates</defName>
+		<label>Prefab Door States</label>
+		<helpText>PreFab Doors can use different lock states to only open for certain pawns.</helpText>
+	</ConceptDef>
+
+</Defs>

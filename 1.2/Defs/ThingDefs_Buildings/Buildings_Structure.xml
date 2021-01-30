@@ -1,168 +1,174 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!--========================= Wall =============================-->
+	<ThingDef ParentName="Wall">
+		<defName>RE_PrefabWall</defName>
+		<label>prefab wall</label>
+		<description>An impassable, prefabricated wall. Capable of holding up a roof.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/Linked/PrefabWall/WallPrefab_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/PrefabWall/WallPrefab_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>20</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+		</statBases>
+		<costStuffCount>3</costStuffCount>
+		<costList>
+			<RE_PrefabComponent>1</RE_PrefabComponent>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<!-- Best affordance needed for stone -->
+		<holdsRoof>true</holdsRoof>
+		<designationCategory>Structure</designationCategory>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+		<stuffCategories Inherit='False'>
+			<li>Metallic</li>
+		</stuffCategories>
+		<building>
+			<isInert>true</isInert>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+	</ThingDef>
 
+	<!--============================== Column ==============================-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RE_PrefabColumn</defName>
+		<label>prefab column</label>
+		<description>A prefabricated column capable of holding a roof. Does not block sight or movement and looks quite nice.</description>
+		<designationCategory>Structure</designationCategory>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.25</fillPercent>
+		<pathCost>0</pathCost>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>75</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+		<costList>
+			<RE_PrefabComponent>1</RE_PrefabComponent>
+		</costList>
+		<holdsRoof>true</holdsRoof>
+		<canOverlapZones>false</canOverlapZones>
+		<rotatable>false</rotatable>
+		<fertility>0</fertility>
+		<specialDisplayRadius>6.9</specialDisplayRadius>
+		<!-- must be kept in sync with roof hold-up radius -->
+		<building>
+			<isInert>true</isInert>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<graphicData>
+			<drawSize>(1.5,1.5)</drawSize>
+			<drawOffset>(0,0,0.2)</drawOffset>
+			<texPath>Things/Building/Furniture/PrefabColumn</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.5, 0.3)</volume>
+				<offset>(0,0,-0.23)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.65</uiIconScale>
+	</ThingDef>
 
-  <!--========================= Wall =============================-->
-
-  <ThingDef ParentName="Wall">
-    <defName>RE_PrefabWall</defName>
-    <label>prefab wall</label>
-    <description>An impassable, prefabricated wall. Capable of holding up a roof.</description>
-    <thingClass>Building</thingClass>
-    <category>Building</category>
-    <graphicData>
-      <texPath>Things/Building/Linked/PrefabWall/WallPrefab_Atlas</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <linkType>CornerFiller</linkType>
-      <linkFlags>
-        <li>Wall</li>
-        <li>Rock</li>
-      </linkFlags>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-        <edgeTop>Damage/Edge</edgeTop>
-        <edgeBot>Damage/Edge</edgeBot>
-        <edgeLeft>Damage/Edge</edgeLeft>
-        <edgeRight>Damage/Edge</edgeRight>
-      </damageData>
-    </graphicData>
-    <uiIconPath>Things/Building/Linked/PrefabWall/WallPrefab_MenuIcon</uiIconPath>
-    <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
-      <WorkToBuild>20</WorkToBuild>
-      <Flammability>1.0</Flammability>
-      <MeditationFocusStrength>0.22</MeditationFocusStrength>
-    </statBases>
-    <costStuffCount>3</costStuffCount>
-	<costList>
-		<RE_PrefabComponent>1</RE_PrefabComponent>
-	</costList>
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>Impassable</passability>
-    <blockWind>true</blockWind>
-    <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>1</fillPercent>
-    <coversFloor>true</coversFloor>
-    <placingDraggableDimensions>1</placingDraggableDimensions>
-    <tickerType>Never</tickerType>
-    <rotatable>false</rotatable>
-    <selectable>true</selectable>
-    <neverMultiSelect>true</neverMultiSelect>
-    <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Best affordance needed for stone -->
-    <holdsRoof>true</holdsRoof>
-    <designationCategory>Structure</designationCategory>
-    <staticSunShadowHeight>1.0</staticSunShadowHeight>
-    <blockLight>true</blockLight>
-    <canOverlapZones>false</canOverlapZones>
-    <fertility>0</fertility>
-    <stuffCategories Inherit='False'>
-      <li>Metallic</li>
-    </stuffCategories>
-    <building>
-      <isInert>true</isInert>
-      <ai_chillDestination>false</ai_chillDestination>
-      <blueprintGraphicData>
-        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
-      </blueprintGraphicData>
-    </building>
-  </ThingDef>
-
-  <!--============================== Column ==============================-->
-
-  <ThingDef ParentName="BuildingBase">
-    <defName>RE_PrefabColumn</defName>
-    <label>prefab column</label>
-    <description>A prefabricated column capable of holding a roof. Does not block sight or movement and looks quite nice.</description>
-    <designationCategory>Structure</designationCategory>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <fillPercent>0.25</fillPercent>
-    <pathCost>0</pathCost>
-    <statBases>
-      <MaxHitPoints>120</MaxHitPoints>
-      <WorkToBuild>75</WorkToBuild>
-      <Mass>10</Mass>
-      <Flammability>1.0</Flammability>
-      <Beauty>5</Beauty>
-    </statBases>
-    <stuffCategories>
-      <li>Metallic</li>
-    </stuffCategories>
-    <costStuffCount>10</costStuffCount>
-	<costList>
-		<RE_PrefabComponent>1</RE_PrefabComponent>
-	</costList>
-    <holdsRoof>true</holdsRoof>
-    <canOverlapZones>false</canOverlapZones>
-    <rotatable>false</rotatable>
-    <fertility>0</fertility>
-    <specialDisplayRadius>6.9</specialDisplayRadius> <!-- must be kept in sync with roof hold-up radius -->
-    <building>
-      <isInert>true</isInert>
-      <ai_chillDestination>false</ai_chillDestination>
-    </building>
-    <graphicData>
-      <drawSize>(1.5,1.5)</drawSize>
-      <drawOffset>(0,0,0.2)</drawOffset>
-      <texPath>Things/Building/Furniture/PrefabColumn</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <shadowData>
-        <volume>(0.3, 0.5, 0.3)</volume>
-        <offset>(0,0,-0.23)</offset>
-      </shadowData>
-      <damageData>
-        <rect>(0.2,0.2,0.6,0.6)</rect>
-      </damageData>
-    </graphicData>
-	<uiIconScale>0.65</uiIconScale>
-  </ThingDef>
-  
-  <!--============================== Door ==============================-->
-  <ThingDef ParentName="DoorBase">
-    <defName>RE_PrefabAutodoor</defName>
-    <label>prefab autodoor</label>
-    <description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
-    <thingClass>RimEffect.Building_AutoDoorLockable</thingClass>
-	<statBases>
-      <WorkToBuild>350</WorkToBuild>
-    </statBases>
-    <graphicData>
-      <texPath>Things/Building/Door/PrefabDoorSimple_Mover</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <damageData>
-      <!--  no damage marks because they don't move with the door
-        <rect>(0,0.12,1,0.76)</rect>-->
-        <enabled>false</enabled>
-      </damageData>
-    </graphicData>
-    <uiIconPath>Things/Building/Door/PrefabDoorSimple_MenuIcon</uiIconPath>
-    <costList>
-      <Steel>10</Steel>
-      <ComponentIndustrial>2</ComponentIndustrial>
-    </costList>
-    <costStuffCount>15</costStuffCount>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>25</basePowerConsumption>
-      </li>
-      <li Class="CompProperties_Breakdownable"/>
-    </comps>
-    <building>
-      <blueprintGraphicData>
-        <texPath>Things/Building/Door/PrefabDoorSimple_Blueprint</texPath>
-      </blueprintGraphicData>
-    </building>
-    <researchPrerequisites>
-      <li>RE_BasicPrefabrication</li>
-    </researchPrerequisites>
-    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-  </ThingDef>
+	<!--============================== Door ==============================-->
+	<ThingDef ParentName="DoorBase" Name="RE_DoorBase" Abstract="True">
+		<building>
+			<spawnedConceptLearnOpportunity>RE_PrefabDoorStates</spawnedConceptLearnOpportunity>
+			<boughtConceptLearnOpportunity>RE_PrefabDoorStates</boughtConceptLearnOpportunity>
+		</building>
+	</ThingDef>
+	
+	<ThingDef ParentName="RE_DoorBase">
+		<defName>RE_PrefabAutodoor</defName>
+		<label>prefab autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<thingClass>RimEffect.Building_AutoDoorLockable</thingClass>
+		<statBases>
+			<WorkToBuild>350</WorkToBuild>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Building/Door/PrefabDoorSimple_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Door/PrefabDoorSimple_MenuIcon</uiIconPath>
+		<costList>
+			<Steel>10</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<costStuffCount>15</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>25</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Door/PrefabDoorSimple_Blueprint</texPath>
+			</blueprintGraphicData>
+		</building>
+		<researchPrerequisites>
+			<li>RE_BasicPrefabrication</li>
+		</researchPrerequisites>
+		<stuffCategories Inherit='False'>
+			<li>Metallic</li>
+		</stuffCategories>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
 
 </Defs>
