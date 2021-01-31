@@ -99,7 +99,8 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <defaultProjectile>RE_Tech_CombatDroneBullet</defaultProjectile>
                 <warmupTime>0</warmupTime>
-                <range>28.9</range>
+                <range>24.9</range>
+				<forcedMissRadius>0.2</forcedMissRadius>
                 <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
                 <burstShotCount>2</burstShotCount>
                 <soundCast>GunShotA</soundCast>
