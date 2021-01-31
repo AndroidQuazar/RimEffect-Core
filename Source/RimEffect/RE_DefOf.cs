@@ -55,6 +55,7 @@ namespace RimEffect
         public static ThingDef    RE_Biotic_AnnihilationField;
 
         public static ThingDef RE_ProtheanBeacon;
+        public static JobDef RE_OpenBeacon;
     }
 }
  

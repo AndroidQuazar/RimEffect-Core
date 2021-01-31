@@ -23,35 +23,18 @@ namespace RimEffect
         {
             this.FailOnDestroyedOrNull(TargetIndex.A);
             this.FailOnBurningImmobile(TargetIndex.A);
-            this.AddEndCondition(delegate
-            {
-                if (this.GetActor().jobs.curJob.GetTarget(TargetIndex.A).Thing.Faction != this.GetActor().Faction)
-                {
-                    return JobCondition.Incompletable;
-                }
-                return JobCondition.Ongoing;
-            });
-            this.AddEndCondition(delegate
-            {
-                if (this.Openable.TryGetComp<CompSpawnOnInteract>().alreadyUsed == true)
-                {
-                    return JobCondition.Incompletable;
-                }
-                return JobCondition.Ongoing;
-            });
-
-            yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.ClosestTouch).FailOnDespawnedNullOrForbidden(TargetIndex.A);
-            yield return Toils_General.Wait(15, TargetIndex.None).FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
-            Toil finalize = new Toil();
-            finalize.initAction = delegate ()
+            this.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
+            
+            base.AddFinishAction(delegate
             {
                 if (this.Openable.TryGetComp<CompSpawnOnInteract>() is CompSpawnOnInteract comp && comp != null)
                 {
                     comp.ShouldSpawn = true;
                 }
-            };
-            finalize.defaultCompleteMode = ToilCompleteMode.Instant;
-            yield return finalize;
+            });
+
+            yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.ClosestTouch).FailOnDespawnedNullOrForbidden(TargetIndex.A);
+            yield return Toils_General.Wait(15, TargetIndex.None).FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
             yield break;
         }
     }

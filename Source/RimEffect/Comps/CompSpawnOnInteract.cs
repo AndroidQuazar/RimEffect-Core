@@ -1,5 +1,8 @@
 ﻿using Verse;
 using RimWorld;
+using System.Collections.Generic;
+using Verse.AI;
+using System.Text;
 
 namespace RimEffect
 {
@@ -25,15 +28,46 @@ namespace RimEffect
             }
         }
 
+        public bool ShouldSpawn = false;
+        public bool alreadyUsed = false;
+
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Values.Look<bool>(ref this.ShouldSpawn, "shouldSpawn");
+            // Scribe_Values.Look<bool>(ref this.ShouldSpawn, "shouldSpawn");
             Scribe_Values.Look<bool>(ref this.alreadyUsed, "alreadyUsed");
         }
 
-        public bool ShouldSpawn = false;
-        public bool alreadyUsed = false;
+        public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn selPawn)
+        {
+            if (this.alreadyUsed)
+            {
+                yield return new FloatMenuOption("RE.OpenBeacon".Translate() + " (" + "RE.AlreadyOpened".Translate() + ")", null);
+            }
+            else if (selPawn.Faction != this.parent.Faction)
+            {
+                yield return new FloatMenuOption("RE.OpenBeacon".Translate() + " (" + "RE.WrongFaction".Translate() + ")", null);
+            }
+            else if (!selPawn.CanReach(this.parent, PathEndMode.Touch, Danger.Deadly, false, TraverseMode.ByPawn))
+            {
+                yield return new FloatMenuOption("RE.OpenBeacon".Translate() + " (" + "NoPath".Translate() + ")", null);
+            }
+            else if (!selPawn.CanReserve(this.parent, 1, -1, null, false))
+            {
+                yield return new FloatMenuOption("RE.OpenBeacon".Translate() + " (" + "Reserved".Translate() + ")", null);
+            }
+            else
+            {
+                FloatMenuOption floatMenuOption = new FloatMenuOption("RE.OpenBeacon".Translate(), delegate ()
+                {
+                    if (selPawn.CanReserveAndReach(this.parent, PathEndMode.Touch, Danger.Deadly, 1, -1, null, false))
+                    {
+                        selPawn.jobs.TryTakeOrderedJob(new Job(RE_DefOf.RE_OpenBeacon, this.parent));
+                    }
+                }, MenuOptionPriority.Default, null, null, 0f, null, null);
+                yield return floatMenuOption;
+            }
+        }
 
         public override void CompTickLong()
         {
@@ -43,7 +77,7 @@ namespace RimEffect
 
         public void SpawnItems()
         {
-            MoteMaker.MakeStaticMote(this.parent.TrueCenter(), this.parent.Map, ThingDefOf.Mote_PsycastAreaEffect, 20);
+            MoteMaker.MakeStaticMote(this.parent.TrueCenter(), this.parent.Map, ThingDefOf.Mote_PsycastAreaEffect, 8);
             for (int i = 0; i <= this.Props.numToSpawnRange.RandomInRange; i++)
             {
                 IntVec3 pos;
@@ -51,6 +85,7 @@ namespace RimEffect
                 GenSpawn.Spawn(this.Props.thingToSpawn, pos, this.parent.Map, WipeMode.VanishOrMoveAside);
             }
             this.alreadyUsed = true;
+            this.ShouldSpawn = false;
         }
     }
 }

@@ -44,4 +44,10 @@ Be careful: pyjaks are known for causing distress in people when nuzzling, and o
 	<RE.DoorLockState>Current door lock policy "{0}"</RE.DoorLockState>
 	<RE.DoorLockStateDesc>Click to change current door lock policy.</RE.DoorLockStateDesc>
 	<RE.DoorLockStatePowerOff>Power is off. Impossible to change door lock policy.</RE.DoorLockStatePowerOff>
+
+	<!-- Beacon -->
+	<RE.OpenBeacon>Open the beacon</RE.OpenBeacon>
+	<RE.WrongFaction>Not claimed</RE.WrongFaction>
+	<RE.AlreadyOpened>Already opened</RE.AlreadyOpened>
+
 </LanguageData>

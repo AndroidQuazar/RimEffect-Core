@@ -102,11 +102,6 @@
         <glowRadius>6</glowRadius>
         <glowColor>(152,167,250,0)</glowColor>
       </li>
-      <li Class="CompProperties_Usable">
-        <useJob>RE_OpenBeacon</useJob>
-        <useLabel>Open Prothean beacon</useLabel>
-        <useDuration>5</useDuration>
-      </li>
       <li Class="RimEffect.CompProperties_SpawnOnInteract">
         <thingToSpawn>TechprofSubpersonaCore</thingToSpawn>
         <numToSpawnRange>2~10</numToSpawnRange>
