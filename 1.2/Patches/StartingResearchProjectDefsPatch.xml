@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+	
+        <xpath>Defs/ResearchProjectDef[defName="ComplexFurniture" or defName="PassiveCooler" or defName="Stonecutting" or defName="ComplexClothing" or defName="Electricity" or defName="NutrientPaste" or defName="AirConditioning" or defName="Smithing" or defName="Machining" or defName="Gunsmithing" or defName="Batteries" or defName="Hydroponics" or defName="Autodoors" or defName="MicroelectronicsBasics" or defName="TransportPod" or defName="MultiAnalyzer" or defName="Fabrication" or defName="AdvancedFabrication" or defName="ShipBasics"]/tags</xpath>
+        <value><li>AllianceColonyStart</li></value>
+		
+    </Operation>
+	
+</Patch>
