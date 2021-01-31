@@ -14,5 +14,12 @@
     <reportString>using galaxy map.</reportString>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
+
+  <JobDef>
+    <defName>RE_OpenBeacon</defName>
+    <driverClass>RimEffect.JobDriver_OpenSpawnOnInteract</driverClass>
+    <reportString>opening TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
   
 </Defs>

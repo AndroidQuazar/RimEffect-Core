@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <SitePartDef>
+    <defName>RE_BeaconSite</defName>
+    <label>guarded prothean beacon</label>
+    <description>A guarded prothean beacon.</description>
+    <workerClass>RimEffect.SitePartWorker_PBeacon</workerClass>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>World/WorldObjects/ProtheanBeacon</expandingIconTexture>
+    <forceExitAndRemoveMapCountdownDurationDays>16</forceExitAndRemoveMapCountdownDurationDays>
+    <increasesPopulation>false</increasesPopulation>
+    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+    <tags>
+      <li>RE_BeaconSite</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>RE_BeaconSite</defName>
+    <linkWithSite>RE_BeaconSite</linkWithSite>
+    <order>480</order>
+    <genStep Class="RimEffect.GenStep_Beacon">
+    </genStep>
+  </GenStepDef>
+
+</Defs>

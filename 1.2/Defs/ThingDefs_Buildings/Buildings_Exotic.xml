@@ -31,7 +31,7 @@
       <ComponentSpacer>4</ComponentSpacer>
     </killedLeavings>
     <rotatable>true</rotatable>
-	<defaultPlacingRot>West</defaultPlacingRot>
+    <defaultPlacingRot>West</defaultPlacingRot>
     <selectable>true</selectable>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
@@ -46,17 +46,17 @@
     </building>
     <comps>
     </comps>
-	<costList>
-	  <Plasteel>450</Plasteel>
+    <costList>
+      <Plasteel>450</Plasteel>
       <ComponentSpacer>24</ComponentSpacer>
-	</costList>
-	<researchPrerequisites>
+    </costList>
+    <researchPrerequisites>
       <li>RE_AllianceKodiak</li>
     </researchPrerequisites>
-	<designationCategory>Misc</designationCategory>
-	<techLevel>Ultra</techLevel>
+    <designationCategory>Misc</designationCategory>
+    <techLevel>Ultra</techLevel>
   </ThingDef>
-  
+
   <ThingDef ParentName="BuildingBase">
     <defName>RE_ProtheanBeacon</defName>
     <label>prothean beacon</label>
@@ -74,7 +74,7 @@
       </damageData>
     </graphicData>
     <uiIconScale>0.85</uiIconScale>
-	<size>(3, 3)</size>
+    <size>(3, 3)</size>
     <costList>
       <Plasteel>200</Plasteel>
       <ComponentSpacer>6</ComponentSpacer>
@@ -96,15 +96,24 @@
     <passability>Impassable</passability>
     <rotatable>false</rotatable>
     <canOverlapZones>false</canOverlapZones>
-    <tickerType>Never</tickerType>
-	<comps>
+    <tickerType>Long</tickerType>
+    <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>6</glowRadius>
         <glowColor>(152,167,250,0)</glowColor>
       </li>
+      <li Class="CompProperties_Usable">
+        <useJob>RE_OpenBeacon</useJob>
+        <useLabel>Open Prothean beacon</useLabel>
+        <useDuration>5</useDuration>
+      </li>
+      <li Class="RimEffect.CompProperties_SpawnOnInteract">
+        <thingToSpawn>TechprofSubpersonaCore</thingToSpawn>
+        <numToSpawnRange>2~10</numToSpawnRange>
+      </li>
     </comps>
   </ThingDef>
-  
+
   <ThingDef ParentName="BuildingBase">
     <defName>RE_MakoTank</defName>
     <label>mako tank</label>
@@ -135,7 +144,7 @@
       <ComponentSpacer>3</ComponentSpacer>
     </killedLeavings>
     <rotatable>true</rotatable>
-	<defaultPlacingRot>West</defaultPlacingRot>
+    <defaultPlacingRot>West</defaultPlacingRot>
     <selectable>true</selectable>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
@@ -150,15 +159,15 @@
     </building>
     <comps>
     </comps>
-	<costList>
-	  <Plasteel>350</Plasteel>
+    <costList>
+      <Plasteel>350</Plasteel>
       <ComponentSpacer>18</ComponentSpacer>
-	</costList>
-	<researchPrerequisites>
+    </costList>
+    <researchPrerequisites>
       <li>RE_AllianceKodiak</li>
     </researchPrerequisites>
-	<designationCategory>Misc</designationCategory>
-	<techLevel>Ultra</techLevel>
+    <designationCategory>Misc</designationCategory>
+    <techLevel>Ultra</techLevel>
   </ThingDef>
 
 </Defs>

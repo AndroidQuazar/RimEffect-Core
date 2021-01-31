@@ -53,6 +53,8 @@ namespace RimEffect
         public static StatDef     RE_BioticEnergyRecoveryRate;
         public static ThingDef    RE_Biotic_SingularityThing;
         public static ThingDef    RE_Biotic_AnnihilationField;
+
+        public static ThingDef RE_ProtheanBeacon;
     }
 }
  
