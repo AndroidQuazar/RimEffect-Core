@@ -123,7 +123,7 @@
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
-      <texPath>Things/Building/Linked/Sandbags_Atlas</texPath>
+      <texPath>Things/AbilityEffects/HexShield/HexShield</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
@@ -135,7 +135,7 @@
     <canOverlapZones>false</canOverlapZones>
     <statBases>
       <MaxHitPoints>400</MaxHitPoints>
-      <Beauty>10</Beauty>
+      <Beauty>0</Beauty>
       <Flammability>0</Flammability>
     </statBases>
     <building>
@@ -151,6 +151,10 @@
     <comps>
       <li>
         <compClass>RimEffect.CompSpawnedBuilding</compClass>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>4</glowRadius>
+        <glowColor>(219,140,98)</glowColor>
       </li>
     </comps>
   </ThingDef>
