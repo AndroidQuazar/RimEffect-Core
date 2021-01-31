@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="PlayerFactionBase">
+    <defName>RE_AlliancePlayerColony</defName>
+    <label>Alliance Colony</label>
+    <description>A colony of recently-arrived Alliance colonists.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>RE_PlayerColonist</basicMemberKind>
+    <pawnSingular>colonist</pawnSingular>
+    <pawnsPlural>colonists</pawnsPlural>
+    <techLevel>Ultra</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+		  <li>SystemsAlliance</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>World/WorldObjects/Expanding/AllianceColony</factionIconPath>
+	<settlementTexturePath>World/WorldObjects/Expanding/AllianceColony</settlementTexturePath>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <geneticVariance>1</geneticVariance>
+    <startingResearchTags>
+      <li>AllianceColonyStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>AllianceColonyStart</li>
+      <li>AllianceColonyStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <hairTags>
+      <li>Urban</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+  
+</Defs>
