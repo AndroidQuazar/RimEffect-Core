@@ -107,22 +107,69 @@
             <li>RE_BasicPrefabrication</li>
         </researchPrerequisites>
     </TerrainDef>
-
-    <TerrainDef ParentName="FloorBase">
-        <defName>RE_ColonialPavementTile</defName>
-        <label>colonial pavement tile</label>
-        <renderPrecedence>230</renderPrecedence>
-        <description>Steel tiles. Cheap, but neutral in terms of looks and slow to build.</description>
+	
+    <TerrainDef Abstract="True" ParentName="FloorBase" Name="RE_PavTileMetalBase">
         <texturePath>Terrain/Surfaces/ColonialPavementTile</texturePath>
+        <designatorDropdown>RE_ColonialPavementTile</designatorDropdown>
+        <constructEffect>ConstructMetal</constructEffect>
+        <researchPrerequisites>
+            <li>RE_BasicPrefabrication</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    </TerrainDef>
+	
+    <TerrainDef ParentName="RE_PavTileMetalBase">
+        <defName>RE_ColonialPavementTileSteel</defName>
+        <label>steel colonial pavement tile</label>
+        <renderPrecedence>230</renderPrecedence>
+        <description>Steel tiles. Cheap, but neutral in terms of looks and fast to build.</description>
+		<color>(0.369, 0.369, 0.369)</color>
         <statBases>
-            <WorkToBuild>300</WorkToBuild>
+            <WorkToBuild>200</WorkToBuild>
+            <Beauty>2</Beauty>
+            <Cleanliness>0.2</Cleanliness>
         </statBases>
         <costList>
             <Steel>2</Steel>
         </costList>
-        <researchPrerequisites>
-            <li>RE_BasicPrefabrication</li>
-        </researchPrerequisites>
+    </TerrainDef>
+
+    <TerrainDef ParentName="RE_PavTileMetalBase">
+        <defName>RE_ColonialPavementTileSilver</defName>
+        <label>silver colonial pavement tile</label>
+        <renderPrecedence>230</renderPrecedence>
+        <description>Silver tiles. Cheap, quite beautiful in terms of looks and fast to build.</description>
+        <color>(0.45, 0.45, 0.45)</color>
+        <statBases>
+            <Beauty>4</Beauty>
+            <WorkToBuild>200</WorkToBuild>
+            <Cleanliness>0.4</Cleanliness>
+        </statBases>
+        <costList>
+            <Silver>20</Silver>
+        </costList>
+        <tags>
+            <li>FineFloor</li>
+        </tags>
+    </TerrainDef>
+
+    <TerrainDef ParentName="RE_PavTileMetalBase">
+        <defName>RE_ColonialPavementTileGold</defName>
+        <label>gold colonial pavement tile</label>
+        <renderPrecedence>230</renderPrecedence>
+        <description>Gold tiles. Cheap, beautiful in terms of looks and fast to build.</description>
+		<color>(0.65, 0.65, 0.35)</color>
+        <statBases>
+            <Beauty>6</Beauty>
+            <WorkToBuild>200</WorkToBuild>
+            <Cleanliness>0.2</Cleanliness>
+        </statBases>
+        <costList>
+            <Gold>20</Gold>
+        </costList>
+        <tags>
+            <li>FineFloor</li>
+        </tags>
     </TerrainDef>
 
 </Defs>
