@@ -8,7 +8,7 @@
         <graphicData>
             <texPath>Things/AbilityEffects/Drone/TechDrone_Base</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(1,1)</drawSize>
+            <drawSize>(1.5,1.5)</drawSize>
             <damageData>
                 <rect>(0.2,0.2,0.6,0.6)</rect>
             </damageData>
