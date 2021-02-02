@@ -87,6 +87,7 @@
     <Compile Include="GenSteps\GenStep_Beacon.cs" />
     <Compile Include="GenSteps\GenStep_RogueSite.cs" />
     <Compile Include="HarmonyPatches\CanInteractNowWith_Patch.cs" />
+    <Compile Include="HarmonyPatches\MeleeAttack_Patch.cs" />
     <Compile Include="HarmonyPatches\Verb_Patches.cs" />
     <Compile Include="HarmonyPatches\Notify_DamageApplied_Patch.cs" />
     <Compile Include="HarmonyPatches\Building_SpawnSetup_Patch.cs" />
