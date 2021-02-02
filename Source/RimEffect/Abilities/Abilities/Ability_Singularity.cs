@@ -111,7 +111,7 @@
             
             Material mat = this.Graphic.MatAt(this.Rotation, this);
 
-            Graphics.DrawMesh(mesh, this.Position.ToVector3(), quat, mat, 0);
+            Graphics.DrawMesh(mesh, drawLoc, quat, mat, 0);
         }
 
         public override void ExposeData()

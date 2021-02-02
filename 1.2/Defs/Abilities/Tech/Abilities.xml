@@ -57,7 +57,7 @@
     <label>cryo blast</label>
     <thingClass>RimEffect.AbilityProjectile</thingClass>
     <graphicData>
-      <texPath>Things/Projectile/Charge_Small</texPath>
+      <texPath>Things/AbilityEffects/Shot_CryoBlast</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -189,7 +189,7 @@
     <defName>RE_Tech_IncinerateProjectile</defName>
     <label>high plasma projectile</label>
     <graphicData>
-      <texPath>Things/Projectile/LauncherShot</texPath>
+      <texPath>Things/AbilityEffects/Shot_Incinerate</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
       <color>(254,189,58)</color>
@@ -231,7 +231,7 @@
     <defName>RE_Tech_OverloadProjectile</defName>
     <label>overload projectile</label>
     <graphicData>
-      <texPath>Things/Projectile/LauncherShot</texPath>
+      <texPath>Things/AbilityEffects/Shot_Overload</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
       <color>(208,228,255)</color>

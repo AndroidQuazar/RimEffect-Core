@@ -55,7 +55,7 @@
 
         public override void Tick()
         {
-            this.curRotation += Singularity.rotSpeed % 360f;
+            this.curRotation += AnnihilationField.rotSpeed % 360f;
             foreach (Pawn pawn in this.tmpPawns)
                 if (!pawn.DestroyedOrNull() && pawn.Spawned)
                 {
@@ -101,7 +101,7 @@
 
             Material mat = this.Graphic.MatAt(this.Rotation, this);
 
-            Graphics.DrawMesh(mesh, this.Position.ToVector3(), quat, mat, 0);
+            Graphics.DrawMesh(mesh, drawLoc, quat, mat, 0);
         }
 
         public override void ExposeData()

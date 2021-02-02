@@ -29,7 +29,7 @@
     <label>biotic throw</label>
     <thingClass>RimEffect.AbilityProjectile</thingClass>
     <graphicData>
-      <texPath>Things/Projectile/Charge_Small</texPath>
+      <texPath>Things/AbilityEffects/BioticThrow_Shot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -177,7 +177,7 @@
     <targetMode>Location</targetMode>
     <range>30</range>
     <castTime>60</castTime>
-    <radius>5</radius>
+    <radius>3</radius>
     <durationTime>600</durationTime>
     <iconPath>UI/Abilities/Biotic_Singularity</iconPath>
     <requiredHediff>
@@ -229,6 +229,23 @@
       </li>
     </modExtensions>
   </RimEffect.AbilityDef>
+
+    <ThingDef ParentName="EtherealThingBase">
+    <defName>RE_Biotic_FlareThing</defName>
+    <label>biotic flare</label>
+    <thingClass>RimEffect.Flare</thingClass>
+    <graphicData>
+      <texPath>Things/AbilityEffects/BioticFlare/BioticFlare</texPath>
+      <color>(255,255,255,255)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <seeThroughFog>true</seeThroughFog>
+    <alwaysFlee>true</alwaysFlee>
+  </ThingDef>
 
   <RimEffect.AbilityDef>
     <defName>RE_Biotic_Annihilation</defName>
