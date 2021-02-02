@@ -6,4 +6,9 @@
         <label>colonial floor</label>
     </DesignatorDropdownGroupDef>
 
+    <DesignatorDropdownGroupDef>
+        <defName>RE_ColonialPavementTile</defName>
+        <label>colonial pavement tile</label>
+    </DesignatorDropdownGroupDef>
+
 </Defs>
