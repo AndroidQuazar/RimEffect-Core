@@ -55,7 +55,7 @@
 
         public override void Tick()
         {
-            this.curRotation += AnnihilationField.rotSpeed % 360f;
+            this.curRotation += rotSpeed % 360f;
             foreach (Pawn pawn in this.tmpPawns)
                 if (!pawn.DestroyedOrNull() && pawn.Spawned)
                 {
@@ -107,7 +107,7 @@
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_References.Look(ref this.caster, nameof(caster));
+            Scribe_References.Look(ref this.caster,        nameof(this.caster));
             Scribe_References.Look(ref this.casterFaction, nameof(this.casterFaction));
             Scribe_Values.Look(ref this.radius, nameof(this.radius));
             Scribe_Values.Look(ref this.damage, nameof(this.damage));

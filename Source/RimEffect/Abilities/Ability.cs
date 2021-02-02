@@ -46,24 +46,24 @@
         }
 
         public virtual float GetRangeForPawn() =>
-            this.def.rangeStatFactors.Aggregate(this.def.range, (current, statFactor) => current * (pawn.GetStatValue(statFactor.stat) * statFactor.value));
+            this.def.rangeStatFactors.Aggregate(this.def.range, (current, statFactor) => current * (this.pawn.GetStatValue(statFactor.stat) * statFactor.value));
 
         public virtual float GetRadiusForPawn() =>
             this.def.targetMode == AbilityTargetingMode.Self
                 ? 0f
-                : this.def.radiusStatFactors.Aggregate(this.def.radius, (current, statFactor) => current * (pawn.GetStatValue(statFactor.stat) * statFactor.value));
+                : this.def.radiusStatFactors.Aggregate(this.def.radius, (current, statFactor) => current * (this.pawn.GetStatValue(statFactor.stat) * statFactor.value));
 
         public virtual float GetPowerForPawn() =>
-            this.def.powerStatFactors.Aggregate(this.def.power, (current, statFactor) => current * (pawn.GetStatValue(statFactor.stat) * statFactor.value));
+            this.def.powerStatFactors.Aggregate(this.def.power, (current, statFactor) => current * (this.pawn.GetStatValue(statFactor.stat) * statFactor.value));
 
         public virtual int GetCastTimeForPawn() =>
-            Mathf.RoundToInt(this.def.castTimeStatFactors.Aggregate((float) this.def.castTime, (current, statFactor) => current * (pawn.GetStatValue(statFactor.stat) * statFactor.value)));
+            Mathf.RoundToInt(this.def.castTimeStatFactors.Aggregate((float) this.def.castTime, (current, statFactor) => current * (this.pawn.GetStatValue(statFactor.stat) * statFactor.value)));
 
         public virtual int GetCooldownForPawn() =>
-            Mathf.RoundToInt(this.def.cooldownTimeStatFactors.Aggregate((float) this.def.cooldownTime, (current, statFactor) => current * (pawn.GetStatValue(statFactor.stat) * statFactor.value)));
+            Mathf.RoundToInt(this.def.cooldownTimeStatFactors.Aggregate((float) this.def.cooldownTime, (current, statFactor) => current * (this.pawn.GetStatValue(statFactor.stat) * statFactor.value)));
 
         public virtual int GetDurationForPawn() =>
-            Mathf.RoundToInt(this.def.durationTimeStatFactors.Aggregate((float)this.def.durationTime, (current, statFactor) => current * (pawn.GetStatValue(statFactor.stat) * statFactor.value)));
+            Mathf.RoundToInt(this.def.durationTimeStatFactors.Aggregate((float)this.def.durationTime, (current, statFactor) => current * (this.pawn.GetStatValue(statFactor.stat) * statFactor.value)));
 
         public virtual string GetDescriptionForPawn()
         {
@@ -182,11 +182,11 @@
 
         public virtual void OnGUI(LocalTargetInfo target)
         {
-            Texture2D icon = (!target.IsValid) ? TexCommand.CannotShoot : ((!(UIIcon != BaseContent.BadTex)) ? TexCommand.Attack : UIIcon);
+            Texture2D icon = (!target.IsValid) ? TexCommand.CannotShoot : ((!(this.UIIcon != BaseContent.BadTex)) ? TexCommand.Attack : this.UIIcon);
             GenUI.DrawMouseAttachment(icon);
         }
 
-        public bool      CasterIsPawn  => CasterPawn != null;
+        public bool      CasterIsPawn  => this.CasterPawn           != null;
         public bool      IsMeleeAttack => this.GetRangeForPawn() < 6;
         public bool      Targetable    => this.def.targetMode    != AbilityTargetingMode.Self;
         public bool      MultiSelect   { get; }

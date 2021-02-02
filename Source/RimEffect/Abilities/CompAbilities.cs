@@ -119,7 +119,7 @@
         {
             get
             {
-                if (bubbleMat is null || this.currentShieldPath != this.shieldPath)
+                if (this.bubbleMat is null || this.currentShieldPath != this.shieldPath)
                 {
                     if (this.shieldPath.NullOrEmpty())
                         return base.BubbleMat;

@@ -52,15 +52,14 @@
 
         private static readonly Texture2D EmptyBarTex = SolidColorMaterials.NewSolidColorTexture(Color.clear);
 
-        public Gizmo_BioticEnergyStatus() => 
-            order = -1500f;
+        public Gizmo_BioticEnergyStatus() => this.order = -1500f;
 
         public override float GetWidth(float maxWidth) => 
             140f;
 
         public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth)
         {
-            Rect rect  = new Rect(topLeft.x, topLeft.y, GetWidth(maxWidth), 75f);
+            Rect rect  = new Rect(topLeft.x, topLeft.y, this.GetWidth(maxWidth), 75f);
             Rect rect2 = rect.ContractedBy(6f);
             Widgets.DrawWindowBackground(rect);
             Rect rect3 = rect2;
