@@ -434,7 +434,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>RE_PrefabVent</defName>
     <label>prefab vent</label>
-    <description>A prefab vent for equalizing the temperature between two rooms without allowing people to walk between them.</description>
+    <description>A way of conducting temperature from one room to another. Originally designed for starship airlocks, this vent is powered allowing for much faster temperature equalization.\n\nPrefabricated equipment is vital for getting a new settlement up and running quickly and safely out on the dangerous frontier.</description>
     <thingClass>Building_Vent</thingClass>
     <graphicData>
       <texPath>Things/Building/Furniture/PrefabVent/PrefabVent</texPath>
@@ -491,7 +491,7 @@
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>RE_PrefabShelf</defName>
     <label>prefab shelf</label>
-    <description>A prefab shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+    <description>A shelf to keep items from deteriorating.\n\nPrefabricated equipment is vital for getting a new settlement up and running quickly and safely out on the dangerous frontier.</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
       <texPath>Things/Building/Furniture/PrefabShelf/PrefabShelf</texPath>
@@ -544,7 +544,7 @@
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>RE_PrefabEndTable</defName>
     <label>prefab end table</label>
-    <description>A small prefab bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect.</description>
+    <description>A handy little table to keep your drink on when you're watching a holo, it doesn't take up too much space.\n\nPrefabricated equipment is vital for getting a new settlement up and running quickly and safely out on the dangerous frontier.</description>
     <surfaceType>Item</surfaceType>
 	<thingClass>Building</thingClass>
     <altitudeLayer>Building</altitudeLayer>

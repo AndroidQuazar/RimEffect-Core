@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_PrefabGenerator</defName>
 		<label>prefab generator</label>
-		<description>A safer, cleaner way of producing energy for your base, this device efficiently converts uranium into electrical power. /n/nPrefabricated equipment is vital for getting a new settlement up and running quickly and safely out on the dangerous frontier.</description>
+		<description>A safer, cleaner way of producing energy for your base, this device efficiently converts uranium into electrical power. \n\nPrefabricated equipment is vital for getting a new settlement up and running quickly and safely out on the dangerous frontier.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Power/PrefabGenerator/PrefabGenerator</texPath>
@@ -135,7 +135,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_FusionCell</defName>
 		<label>fusion cell</label>
-		<description>An advanced prefabricated battery that allows for more efficient storage of larger amounts of power. /n/nPrefabricated equipment is vital for getting a new settlement up and running quickly and safely out on the dangerous frontier.</description>
+		<description>An advanced prefabricated battery that allows for more efficient storage of larger amounts of power. \n\nPrefabricated equipment is vital for getting a new settlement up and running quickly and safely out on the dangerous frontier.</description>
 		<thingClass>Building_Battery</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Power/FusionCell/FusionCell</texPath>
