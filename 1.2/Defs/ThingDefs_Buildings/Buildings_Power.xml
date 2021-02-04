@@ -79,7 +79,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>PrefabSolarCollectors</defName>
 		<label>prefab solar collector</label>
-		<description>Produces electricity from sunlight. Does not work in the dark or under artificial light.</description>
+		<description>A device that generates electricity from contact with sunlight, it provides clean power for numerous other activities. \n\nPrefabricated equipment is vital for getting a new settlement up and running quickly and safely out on the dangerous frontier.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Power/PrefabSolarCollector/PrefabSolarCollector</texPath>

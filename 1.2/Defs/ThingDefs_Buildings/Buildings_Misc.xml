@@ -4,7 +4,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>RE_GraveBodyBag</defName>
     <label>body bag</label>
-    <description>Not a very good final resting place. Colonists will visit full graves to gain meditative joy.</description>
+    <description>A plasti-bag used for containing the remains of a deceased individual, it offers basic filters and protection against exposure to potential diseases the subjects body might have.</description>
     <thingClass>Building_Grave</thingClass>
     <graphicData>
       <texPath>Things/Building/Misc/GraveBodyBag/GraveBodyBagEmpty</texPath>
@@ -103,7 +103,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>RE_GalaxyMap</defName>
     <label>galaxy map</label>
-    <description>Advanced console with holographic interface.</description>
+    <description>An interactive holographic map used for navigation and tactical decision-making, trade with passing interstellar vessels, and for communication purposes. Can also be used to receive distress calls from nearby settlements.</description>
     <thingClass>RimEffect.Building_GalaxyMap</thingClass>
     <graphicData>
       <texPath>Things/Building/Misc/GalaxyMap/GalaxyMap</texPath>

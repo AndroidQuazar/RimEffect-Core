@@ -600,7 +600,7 @@
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>RE_PrefabEndTableWithLamp</defName>
     <label>prefab end table with lamp</label>
-    <description>A small prefab bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect. Lights a small area in mild blue.</description>
+    <description>A small table to keep your drink on when you're watching reading files by the light of the included lamp. \n\nPrefabricated equipment is vital for getting a new settlement up and running quickly and safely out on the dangerous frontier.</description>
     <surfaceType>Item</surfaceType>
 	<thingClass>Building</thingClass>
     <altitudeLayer>Building</altitudeLayer>
@@ -668,7 +668,7 @@
   <ThingDef ParentName="BedWithQualityBase">
     <defName>RE_PrefabMedicalBed</defName>
     <label>prefab medical bed</label>
-    <description>A bed specially designed for use in hospitals. Adjustable for a patient and festooned with built-in equipment, it improves medical outcomes over normal beds.</description>
+    <description>An advanced medical bed used for patients, either combat wounded or otherwise sick, with a multitude of functions that provides state-of-the-art  constant medical care. From medi-gel administrations, to complete and thorough scans of a patients vital functions. \n\nPrefabricated equipment is vital for getting a new settlement up and running quickly and safely out on the dangerous frontier.</description>
     <graphicData>
       <texPath>Things/Building/Furniture/PrefabMedicalBed/PrefabMedicalBed</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -732,7 +732,7 @@
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>RE_PrefabArmchair</defName>
     <label>prefab armchair</label>
-    <description>A large, soft, comfy seat. Great for relaxation. Can be used at tables, work stations, and elsewhere.</description>
+    <description>A stylish prefabricated armchair, it's well stuffed and comfortable to sit in for most races. \n\nPrefabricated equipment is vital for getting a new settlement up and running quickly and safely out on the dangerous frontier.</description>
     <graphicData>
       <texPath>Things/Building/Furniture/PrefabArmchair/PrefabArmchair</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -783,7 +783,7 @@
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>RE_PrefabBedsideTable</defName>
     <label>prefab bedside table</label>
-    <description>A small prefab bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect.</description>
+    <description>A handy little table to keep your beer on when you're watching a holo, it doesn't take up too much space. \n\nPrefabricated equipment is vital for getting a new settlement up and running quickly and safely out on the dangerous frontier.</description>
     <surfaceType>Item</surfaceType>
 	<thingClass>Building</thingClass>
     <altitudeLayer>Building</altitudeLayer>
@@ -839,7 +839,7 @@
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>RE_PrefabBedsideTableLamp</defName>
     <label>prefab bedside table with lamp</label>
-    <description>A small prefab bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect. Lights a small area in mild blue.</description>
+    <description>A small table to keep your drink on when you're watching reading files by the light of the included lamp. \n\nPrefabricated equipment is vital for getting a new settlement up and running quickly and safely out on the dangerous frontier.</description>
     <surfaceType>Item</surfaceType>
 	<thingClass>Building</thingClass>
     <altitudeLayer>Building</altitudeLayer>
@@ -907,7 +907,7 @@
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>RE_BriefingTable</defName>
     <label>briefing table</label>
-    <description>A table that serves as a gathering spot.</description>
+    <description>A large table with a glass center designed for the purpose of discussing strategical and tactical decisions, or for other necessary functions, such as eating or crew entertainment, which requires chairs to be placed facing the table. Big enough to get an entire colony around for important meetings and social gatherings.</description>
     <thingClass>Building</thingClass>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
@@ -962,7 +962,7 @@
 	<ThingDef ParentName="ArtableFurnitureBase">
 		<defName>RE_PrefabStool</defName>
 		<label>prefab stool</label>
-		<description>A stool in spacer style. Can be used at tables, work stations, and elsewhere.</description>
+		<description>A simple seat. Can be placed at tables to allow your colonists to eat there, in front of TVs so they can watch, or in front of production benches to provide a comfort boost while they work. \n\nPrefabricated equipment is vital for getting a new settlement up and running quickly and safely out on the dangerous frontier.</description>
 		<graphicData>
 			<texPath>Things/Building/Furniture/PrefabStool/PrefabStool</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -1014,7 +1014,7 @@
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>RE_PrefabWardrobe</defName>
     <label>prefab wardrobe</label>
-    <description>A tall spacer wardrobe for storing clothing and other items. Gives a sleep effectiveness bonus to all nearby beds. Placing more than one wardrobe near the same bed has no effect.</description>
+    <description>A wardrobe that offers an increase comfort bonus to all nearby beds, it can hold almost any kind of clothing, from bomber-jackets to officially Alliance licensed N7 hoodies. \n\nPrefabricated equipment is vital for getting a new settlement up and running quickly and safely out on the dangerous frontier.</description>
     <graphicData>
       <texPath>Things/Building/Furniture/PrefabWardrobe/PrefabWardrobe</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -1072,7 +1072,7 @@
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>RE_PrefabPlantPot</defName>
     <label>prefab plant pot</label>
-    <description>Plant decorative flowers here to improve the mood of people nearby.</description>
+    <description>A simple plant pot for housing decorative flowers, which improves the mood of people nearby.</description>
     <thingClass>Building_PlantGrower</thingClass>
     <graphicData>
       <texPath>Things/Building/Furniture/PrefabPlantPot/PrefabPlantPot</texPath>
@@ -1122,7 +1122,7 @@
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>RE_PrefabLargePlantPot</defName>
     <label>prefab large plant pot</label>
-    <description>Plant decorative flowers here to improve the mood of people nearby.</description>
+    <description>An aesthetically pleasing plant pot for housing decorative flowers, which improves the mood of people nearby.</description>
     <thingClass>Building_PlantGrower</thingClass>
     <graphicData>
       <texPath>Things/Building/Furniture/PrefabLargePlantPot/PrefabLargePlantPot</texPath>

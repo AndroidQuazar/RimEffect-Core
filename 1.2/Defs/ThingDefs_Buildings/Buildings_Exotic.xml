@@ -4,7 +4,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>RE_KodiakShuttle</defName>
     <label>kodiak shuttle</label>
-    <description>A spacer-tech shuttle designed for transit between surface and orbit, or between moons of a planetary system.</description>
+    <description>An advanced shuttle propelled using small directional thrusters and a mass effect based repulsion system, the Kodiak Drop Shuttle is a common sight throughout the galaxy thanks to it's robust design and ability to make limited FTL jumps.</description>
     <altitudeLayer>Building</altitudeLayer>
     <pathCost>50</pathCost>
     <blockWind>true</blockWind>
@@ -31,7 +31,7 @@
       <ComponentSpacer>4</ComponentSpacer>
     </killedLeavings>
     <rotatable>true</rotatable>
-    <defaultPlacingRot>West</defaultPlacingRot>
+	<defaultPlacingRot>West</defaultPlacingRot>
     <selectable>true</selectable>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
@@ -46,21 +46,21 @@
     </building>
     <comps>
     </comps>
-    <costList>
-      <Plasteel>450</Plasteel>
+	<costList>
+	  <Plasteel>450</Plasteel>
       <ComponentSpacer>24</ComponentSpacer>
-    </costList>
-    <researchPrerequisites>
+	</costList>
+	<researchPrerequisites>
       <li>RE_AllianceKodiak</li>
     </researchPrerequisites>
-    <designationCategory>Misc</designationCategory>
-    <techLevel>Ultra</techLevel>
+	<designationCategory>Misc</designationCategory>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
-
+  
   <ThingDef ParentName="BuildingBase">
     <defName>RE_ProtheanBeacon</defName>
     <label>prothean beacon</label>
-    <description>An ancient piece of Prothean technology. It is exceptionally rare, as very few pieces of Prothean 'paleo-technology' have survived intact in the millennia since the Protheans vanished.</description>
+    <description>Once the primary civilized species in the galaxy, all the Protheans have left behind are in their ruins. These beacons have been the source of most advanced technology in the galaxy, and share their history and lore. Those who have prepared to interact with them may gain knowledge, while others may go insane.</description>
     <graphicData>
       <texPath>Things/Building/Special/ProtheanBeacon/ProtheanBeaconA</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -74,7 +74,7 @@
       </damageData>
     </graphicData>
     <uiIconScale>0.85</uiIconScale>
-    <size>(3, 3)</size>
+	<size>(3, 3)</size>
     <costList>
       <Plasteel>200</Plasteel>
       <ComponentSpacer>6</ComponentSpacer>
@@ -96,19 +96,15 @@
     <passability>Impassable</passability>
     <rotatable>false</rotatable>
     <canOverlapZones>false</canOverlapZones>
-    <tickerType>Long</tickerType>
-    <comps>
+    <tickerType>Never</tickerType>
+	<comps>
       <li Class="CompProperties_Glower">
         <glowRadius>6</glowRadius>
         <glowColor>(152,167,250,0)</glowColor>
       </li>
-      <li Class="RimEffect.CompProperties_SpawnOnInteract">
-        <thingToSpawn>TechprofSubpersonaCore</thingToSpawn>
-        <numToSpawnRange>2~10</numToSpawnRange>
-      </li>
     </comps>
   </ThingDef>
-
+  
   <ThingDef ParentName="BuildingBase">
     <defName>RE_MakoTank</defName>
     <label>mako tank</label>
@@ -139,7 +135,7 @@
       <ComponentSpacer>3</ComponentSpacer>
     </killedLeavings>
     <rotatable>true</rotatable>
-    <defaultPlacingRot>West</defaultPlacingRot>
+	<defaultPlacingRot>West</defaultPlacingRot>
     <selectable>true</selectable>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
@@ -154,15 +150,15 @@
     </building>
     <comps>
     </comps>
-    <costList>
-      <Plasteel>350</Plasteel>
+	<costList>
+	  <Plasteel>350</Plasteel>
       <ComponentSpacer>18</ComponentSpacer>
-    </costList>
-    <researchPrerequisites>
+	</costList>
+	<researchPrerequisites>
       <li>RE_AllianceKodiak</li>
     </researchPrerequisites>
-    <designationCategory>Misc</designationCategory>
-    <techLevel>Ultra</techLevel>
+	<designationCategory>Misc</designationCategory>
+	<techLevel>Ultra</techLevel>
   </ThingDef>
 
 </Defs>

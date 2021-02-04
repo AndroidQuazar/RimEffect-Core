@@ -4,7 +4,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>RE_PrefabTelevision</defName>
     <label>prefab television</label>
-    <description>A high-tech prefabricated flat-screen television with crystal-clear image and rich color. Picks up transmissions from ancient satellites and ubiquitous data cards.</description>
+    <description>An advanced television set with a larger screen, integrated smart functions, and holonet connection. it serves to act as an entertainment medium for increased recreation. \n\nPrefabricated equipment is vital for getting a new settlement up and running quickly and safely out on the dangerous frontier.</description>
     <graphicData>
       <texPath>Things/Building/Furniture/PrefabTV/PrefabTV</texPath>
       <graphicClass>Graphic_Multi</graphicClass>

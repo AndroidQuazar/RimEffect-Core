@@ -4,7 +4,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>RE_AllianceTerminal</defName>
     <label>alliance terminal</label>
-    <description>A research bench module that unlocks alliance technologies. Can be given as a quest reward by the Alliance faction.</description>
+    <description>A structure which enables nearby research benches to investigate advanced projects, it increases research speed and allows for researching of Alliance technologies.</description>
     <graphicData>
       <texPath>Things/Building/Furniture/Special/TerminalAlliance</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -67,7 +67,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>RE_ElementZeroExtractor</defName>
     <label>element zero extractor</label>
-    <description>Slowly generates element zero by a complex series of chemical reactions, using atoms extracted from the air.</description>
+    <description>This extractor provides a steady stream of Element Zero, also otherwise known as "Eezo" which can release dark energy upon contact with electrical current, a necessary type of power for the functions of a mass effect field.</description>
     <graphicData>
       <texPath>Things/Building/Power/ElementZeroExtractor/ElementZeroExtractor</texPath>
       <graphicClass>Graphic_Single</graphicClass>

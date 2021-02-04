@@ -125,7 +125,7 @@
 	<ThingDef ParentName="RE_Sculptures">
 		<defName>RE_SculptureModel</defName>
 		<label>ship model</label>
-		<description>A piece of material sculpted into an artistic ship model.</description>
+		<description>Since the days of ships in a bottle, captains have loved to see other representations of their beloved ships. The same is true today with this ship model.</description>
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
 			<texPath>Things/Building/Art/SculptureModel</texPath>
