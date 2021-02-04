@@ -1,32 +1,31 @@
 ﻿namespace RimEffect
 {
-    using System;
-    using System.Reflection;
     using HarmonyLib;
     using RimWorld;
     using UnityEngine;
     using Verse;
-    using Object = UnityEngine.Object;
 
     [StaticConstructorOnStartup]
     [HarmonyPatch(typeof(PawnRenderer), "DrawEquipment")]
-    public static class MeleeAttack_Patch
+    public static class EquipmentRender_Patch
     {
         private static readonly Graphic graphic = GraphicDatabase.Get(typeof(Graphic_Single), @"Things/AbilityEffects/Omniblade/Omniblade", ShaderTypeDefOf.Cutout.Shader,
                                                                       new Vector2(1, 1), Color.white, Color.white);
 
         delegate bool CarryWeaponOpenly(PawnRenderer instance);
 
-        static CarryWeaponOpenly carryOpenlyDelegate = AccessTools.MethodDelegate<CarryWeaponOpenly>(AccessTools.Method(typeof(PawnRenderer), "CarryWeaponOpenly"));
+        private static CarryWeaponOpenly carryOpenlyDelegate = AccessTools.MethodDelegate<CarryWeaponOpenly>(AccessTools.Method(typeof(PawnRenderer), "CarryWeaponOpenly"));
+
+        private static AccessTools.FieldRef<Pawn_MeleeVerbs, Verb> meleeVerb = AccessTools.FieldRefAccess<Pawn_MeleeVerbs, Verb>("curMeleeVerb");
 
         [HarmonyPostfix]
         public static void Postfix(PawnRenderer __instance, Pawn ___pawn)
         {
             Pawn pawn = ___pawn;
-
-            if (pawn.equipment?.PrimaryEq is null)
+            if (!pawn.Dead)
             {
-                if ((pawn.stances.curStance is Stance_Busy stanceBusy && !stanceBusy.neverAimWeapon && stanceBusy.focusTarg.IsValid) || carryOpenlyDelegate(__instance))
+                if ((pawn.equipment?.PrimaryEq is null && ((pawn.stances.curStance is Stance_Busy stanceBusy && !stanceBusy.neverAimWeapon && stanceBusy.focusTarg.IsValid) || carryOpenlyDelegate(__instance))) ||
+                    (!(pawn.equipment?.PrimaryEq?.PrimaryVerb.IsMeleeAttack ?? true) && pawn.mindState.MeleeThreatStillThreat))
                 {
                     if (pawn?.health.hediffSet.HasHediff(RE_DefOf.RE_OmniToolHediff) ?? false)
                     {
