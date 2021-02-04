@@ -261,7 +261,7 @@
   <ThingDef ParentName="RE_SpacerApparelMakeableBase">
     <defName>RE_Apparel_Fatigues</defName>
     <label>fatigues</label>
-    <description>General fatigues.</description>
+    <description>The standard uniform for Alliance military personnel in active duty, these fatigues have a light armor weave built into the exterior to help protect their wearers from small arms fire.</description>
     <recipeMaker>
       <researchPrerequisite>RE_ComplexSpacerClothing</researchPrerequisite>
     </recipeMaker>
@@ -318,7 +318,7 @@
   <ThingDef ParentName="RE_SpacerApparelMakeableBase">
     <defName>RE_Apparel_AllianceDressJacket</defName>
     <label>alliance dress jacket</label>
-    <description>An elegant uniform of the alliance forces, often worn by officers and strategists, as well as the navy.</description>
+    <description>Standardized dress uniform worn by members of the Alliance Forces, it is distinctive, pristine and intended for identification and a display of uniformed solidarity among the ones dignified to wear it.</description>
     <recipeMaker>
       <researchPrerequisite>RE_AllianceArmoury</researchPrerequisite>
     </recipeMaker>
@@ -368,7 +368,7 @@
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>RE_Apparel_HeavyAllianceArmor</defName>
     <label>heavy alliance armor</label>
-    <description>A suit of full body armor, used by stronger, specialised alliance infantry.</description>
+    <description>A suit of heavy armor often used by shock troops and heavy weapon operators. \n\nThis armored hardsuit consists of several layers. The base layer is fabric with kinetic padding, with ablative plates over vital areas. The outer layer consists of kinetic barriers that trigger automatically when incoming projectiles are detected, providing a combination of protection and maneuverability that other armor technologies can't match.</description>
     <techLevel>Ultra</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -466,7 +466,7 @@
 
   <ThingDef ParentName="RE_SpacerApparelMakeableBase">
     <defName>RE_Apparel_FormalShirt</defName>
-    <description>A nice-looking shirt with hi-tech fasteners, yet easy to button or open.</description>
+    <description>A ribbed shirt, often worn by ambassadors, diplomats, and other high-ranking civilians.</description>
     <label>formal shirt</label>
     <techLevel>Ultra</techLevel>
     <recipeMaker>
@@ -521,7 +521,7 @@
   <ThingDef ParentName="RE_SpacerApparelMakeableBase">
     <defName>RE_Apparel_FormalJacket</defName>
     <label>formal jacket</label>
-    <description>A sophisticated jacket perfect for business meetings. Despite its purpose, it is able to protect against bruises and cuts, as well as keep warm in cool weather.</description>
+    <description>A stylish jacket found on the backs of many in council space, worn often by the wealthy and powerful. It offers little defense, but it makes you look like you know what you're doing.</description>
     <recipeMaker>
       <researchPrerequisite>RE_ComplexSpacerClothing</researchPrerequisite>
     </recipeMaker>
@@ -599,7 +599,7 @@
   <ThingDef ParentName="RE_SpacerApparelMakeableBase">
     <defName>RE_Apparel_BattleUniform</defName>
     <label>battle uniform</label>
-    <description>A cloth-based suit of light armor often worn as an undergarment of soldiers..</description>
+    <description>The common BDU of Alliance soldiers while in active duty, this armored uniform gives a decent layer defense to the torso and primary organs in the event of an unexpected attack while on light duty.</description>
     <recipeMaker>
       <researchPrerequisite>RE_ComplexSpacerClothing</researchPrerequisite>
     </recipeMaker>
@@ -655,7 +655,7 @@
   <ThingDef>
     <defName>RE_Apparel_SpectreArmor</defName>
     <label>spectre armor</label>
-    <description>Elite Armor reserved for the best of the best, the Council’s chosen agents. .</description>
+    <description>Elite prototype armor only available to the Spectres, granted them advanced combat abilities. \n\nThis armored hardsuit consists of several layers. The base layer is fabric with kinetic padding, with ablative plates over vital areas. The outer layer consists of kinetic barriers that trigger automatically when incoming projectiles are detected, providing a combination of protection and maneuverability that other armor technologies can't match.</description>
     <techLevel>Spacer</techLevel>
 	<thingClass>RimEffect.SpectreArmor</thingClass>
 	<tickerType>Normal</tickerType>
@@ -809,7 +809,7 @@
   <ThingDef ParentName="RE_SpacerApparelMakeableBase">
     <defName>RE_Apparel_ScienceUniform</defName>
     <label>science uniform</label>
-    <description>A stylish lab coat.</description>
+    <description>A uniform worn by scientists the galaxy over, by professionals in a myriad of fields from archeology to research and development to medicine. It well-insulated and suitable for a multitude of hazardous environments, laboratories, and hospitals.</description>
     <recipeMaker>
       <researchPrerequisite>RE_ComplexSpacerClothing</researchPrerequisite>
     </recipeMaker>

@@ -4,7 +4,7 @@
   <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>RE_Apparel_LightAllianceHelmet</defName>
     <label>light alliance helmet</label>
-    <description>A high-tech armored helmet, often used by front line alliance infantry.</description>
+    <description>A light-armored helmet most often used by Biotics who require more flexibility and less encumbrance. This lighter armor is also available to Alliance colonists making their new lives out on the edge of civilization. \n\nThis armored hardsuit consists of several layers. The base layer is fabric with kinetic padding, with ablative plates over vital areas. The outer layer consists of kinetic barriers that trigger automatically when incoming projectiles are detected.</description>
     <techLevel>Ultra</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -93,7 +93,7 @@
   <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>RE_Apparel_AllianceHelmet</defName>
     <label>alliance helmet</label>
-    <description>An alliance helmet covering the entirety of the head, with a visor, often used by frontline alliance infantry.</description>
+    <description>A standard-issue helmet used by Alliance soldiers. \n\nThis armored hardsuit consists of several layers. The base layer is fabric with kinetic padding, with ablative plates over vital areas. The outer layer consists of kinetic barriers that trigger automatically when incoming projectiles are detected.</description>
     <techLevel>Ultra</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -181,7 +181,7 @@
   <ThingDef ParentName="RE_SpacerApparelMakeableBase">
     <defName>RE_Apparel_AllianceOfficerHat</defName>
     <label>alliance officer hat</label>
-    <description>An elegant hat of an Alliance officer.</description>
+    <description>An accessory to the rest of the Alliance Uniform, it's a necessary item in completing the look that represents humanity on a galactic stage.</description>
     <thingCategories>
       <li>Apparel</li>
     </thingCategories>
@@ -229,7 +229,7 @@
   <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>RE_Apparel_HeavyAllianceHelmet</defName>
     <label>heavy alliance helmet</label>
-    <description>An alliance helmet covering the entirety of the head, with a visor, often used by specialised alliance infantry.</description>
+    <description>A heavy-armored helmet often used by shock troops and heavy weapon operators. \n\nThis armored hardsuit consists of several layers. The base layer is fabric with kinetic padding, with ablative plates over vital areas. The outer layer consists of kinetic barriers that trigger automatically when incoming projectiles are detected.</description>
     <techLevel>Ultra</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -316,7 +316,7 @@
   <ThingDef>
     <defName>RE_Apparel_SpectreVisor</defName>
     <label>spectre visor</label>
-    <description>A targeting computer that helps the user aim. It detects and analyzes targets using infrared, visible, and millimeter-wave electromagnetic sensors. An onboard targeting computer displays firing solutions on a retinal projection. It offers no protection at all.</description>
+    <description>Elite prototype headgear only available to the Spectres, granted them advanced combat abilities. \n\nThis combat visor provides advanced targeting data to the user, highlighting enemies and synchronizing with the user's weaponry to increase accuracy. Gives more protection than one might assume due to the presence of kinetic barriers that trigger automatically when incoming projectiles are detected</description>
     <graphicData>
       <texPath>Things/Apparel/SpectreArmor/SpectreVisor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
