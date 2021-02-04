@@ -4,7 +4,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>RE_PrefabBarricade</defName>
     <label>prefab barricade</label>
-    <description>A waist-high barrier for use as cover from incoming shots. Barricades are ugly, but provide better cover than other low objects.</description>
+    <description>A series of chest-high walls designed to give cover to defenders of an area. If you walk into a room filled with them, you know a fight is about to happen.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
