@@ -6,7 +6,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>RE_Turret_MassAccelerator</defName>
     <label>mass accelerator turret</label>
-    <description>A small machine gun turret with internal battery. Needs to be reloaded with components every now and then..</description>
+    <description>An advanced turret utilizing scaled down mass accelerators, providing a highly effective light anti-infantry defense for outposts and colonies of all kinds in unfriendly environments.</description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
       <texPath>Things/Building/Security/Turret_MassAccelerator/TurretMassAccelerator_Base</texPath>
@@ -106,7 +106,7 @@
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>RE_Gun_MassAccelerator</defName>
     <label>mass accelerator turret gun</label>
-    <description>A small machine gun turret with internal battery made to be mounted on a turret.</description>
+    <description>An advanced turret utilizing scaled down mass accelerators, providing a highly effective light anti-infantry defense for outposts and colonies of all kinds in unfriendly environments.</description>
     <graphicData>
       <texPath>Things/Building/Security/Turret_MassAccelerator/TurretMassAccelerator_Top</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -189,7 +189,7 @@
   <ThingDef ParentName="RE_HeavyMassAcceleratorTurret">
     <defName>RE_Turret_HeavyMassAccelerator</defName>
     <label>heavy mass accelerator turret</label>
-    <description>A large turret that drains a lot of power, requires expensive ammo and is very devastating.</description>
+    <description>A stationary heavy artillery cannon often seen guarding remote outposts. Designed for anti-armor, this cannon packs a heavy punch. These scaled up Mass Accelerators were originally designed for mounting on a medium-scale starship.</description>
     <uiIconPath>Things/Building/Security/Turret_MassAcceleratorHeavy/TurretMassAcceleratorHeavy_MenuIcon</uiIconPath>
     <statBases>
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret> <!-- like level 8 human shooter -->
@@ -250,7 +250,7 @@
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>RE_Gun_HeavyMassAcceleratorTurret</defName>
     <label>mass accelerator turret gun</label>
-    <description>A large turret that drains a lot of power, requires expensive ammo and is very devastating.</description>
+    <description>A stationary heavy artillery cannon often seen guarding remote outposts. Designed for anti-armor, this cannon packs a heavy punch. These scaled up Mass Accelerators were originally designed for mounting on a medium-scale starship.</description>
     <graphicData>
       <texPath>Things/Building/Security/Turret_MassAcceleratorHeavy/TurretMassAcceleratorHeavy_Top</texPath>
       <graphicClass>Graphic_Single</graphicClass>
