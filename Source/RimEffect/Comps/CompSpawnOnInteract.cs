@@ -34,7 +34,7 @@ namespace RimEffect
         public override void PostExposeData()
         {
             base.PostExposeData();
-            // Scribe_Values.Look<bool>(ref this.ShouldSpawn, "shouldSpawn");
+            Scribe_Values.Look<bool>(ref this.ShouldSpawn, "shouldSpawn");
             Scribe_Values.Look<bool>(ref this.alreadyUsed, "alreadyUsed");
         }
 
@@ -71,7 +71,7 @@ namespace RimEffect
 
         public override void CompTickLong()
         {
-            if (!alreadyUsed) this.SpawnItems();
+            if (!alreadyUsed && ShouldSpawn) this.SpawnItems();
             base.CompTickLong();
         }
 
@@ -84,6 +84,7 @@ namespace RimEffect
                 CellFinder.TryFindRandomCellNear(this.parent.TrueCenter().ToIntVec3(), this.parent.Map, 4, c => c.Walkable(this.parent.Map) && !this.parent.Map.fogGrid.IsFogged(c), out pos);
                 GenSpawn.Spawn(this.Props.thingToSpawn, pos, this.parent.Map, WipeMode.VanishOrMoveAside);
             }
+            this.parent.TryGetComp<CompGlower>().ReceiveCompSignal();
             this.alreadyUsed = true;
             this.ShouldSpawn = false;
         }
