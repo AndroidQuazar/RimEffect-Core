@@ -49,5 +49,6 @@ Be careful: pyjaks are known for causing distress in people when nuzzling, and o
 	<RE.OpenBeacon>Open the beacon</RE.OpenBeacon>
 	<RE.WrongFaction>Not claimed</RE.WrongFaction>
 	<RE.AlreadyOpened>Already opened</RE.AlreadyOpened>
+	<RE.FreeHostages>Free hostages</RE.FreeHostages>
 
 </LanguageData>

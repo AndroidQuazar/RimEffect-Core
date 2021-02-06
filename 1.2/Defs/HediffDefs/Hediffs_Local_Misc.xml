@@ -1,18 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<HediffDef>
-		<defName>RE_Spectre</defName>
-		<label>Spectre</label>
-		<labelNoun>Spectre</labelNoun>
-		<description>Spectre.</description>
-		<hediffClass>RimEffect.Hediff_Spectre</hediffClass>
-		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-		<stages>
-			<li>
-				<becomeVisible>false</becomeVisible>
-			</li>
-		</stages>
-	</HediffDef>
-	
+  <HediffDef>
+    <defName>RE_Spectre</defName>
+    <label>Spectre</label>
+    <labelNoun>Spectre</labelNoun>
+    <description>Spectre.</description>
+    <hediffClass>RimEffect.Hediff_Spectre</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <stages>
+      <li>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>RE_TurnBackToFormerFaction</defName>
+    <label>slave</label>
+    <labelNoun>slave</labelNoun>
+    <description>Slave.</description>
+    <stages>
+      <li>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+  </HediffDef>
 </Defs>

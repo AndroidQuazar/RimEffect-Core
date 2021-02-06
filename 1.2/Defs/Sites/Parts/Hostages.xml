@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <SitePartDef>
+    <defName>RE_HostagesSite</defName>
+    <label>hostages camp</label>
+    <description>Hostages being held by enemies. Rescue them to claim your rewards.</description>
+    <workerClass>RimEffect.Sites.SitePartWorker_RescueHostages</workerClass>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>World/WorldObjects/RescueHostages</expandingIconTexture>
+    <forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
+    <requiresFaction>true</requiresFaction>
+    <increasesPopulation>false</increasesPopulation>
+    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+    <tags>
+      <li>RE_HostagesSite</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>RE_HostagesSite</defName>
+    <linkWithSite>RE_HostagesSite</linkWithSite>
+    <order>460</order>
+    <genStep Class="RimEffect.GenSteps.GenStep_RE_HostagesSite">
+      <count>1</count>
+      <nearMapCenter>true</nearMapCenter>
+    </genStep>
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>RE_HostagesSitePower</defName>
+    <linkWithSite>RE_HostagesSite</linkWithSite>
+    <order>470</order>
+    <genStep Class="GenStep_Power"/>
+  </GenStepDef>
+
+</Defs>

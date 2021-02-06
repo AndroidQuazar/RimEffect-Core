@@ -58,6 +58,9 @@ namespace RimEffect
 
         public static ThingDef RE_ProtheanBeacon;
         public static JobDef RE_OpenBeacon;
+        public static JobDef RE_SaveHostages;
+        public static JobDef RE_LeaveMap;
+        public static HediffDef RE_TurnBackToFormerFaction;
     }
 }
  

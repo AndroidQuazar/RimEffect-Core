@@ -21,5 +21,19 @@
     <reportString>opening TargetA.</reportString>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
+
+  <JobDef>
+    <defName>RE_SaveHostages</defName>
+    <driverClass>RimEffect.JobDriver_FreeHostages</driverClass>
+    <reportString>helping hostages.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+
+  <JobDef>
+    <defName>RE_LeaveMap</defName>
+    <driverClass>RimEffect.JobDriver_LeaveMap</driverClass>
+    <reportString>leaving the map.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
   
 </Defs>
