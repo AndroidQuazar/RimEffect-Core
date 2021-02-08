@@ -36,6 +36,9 @@
         public Texture2D icon = BaseContent.BadTex;
         public string iconPath;
 
+        public SoundDef castSound;
+        public ThingDef castMote;
+
         public override IEnumerable<string> ConfigErrors()
         {
             foreach (string configError in base.ConfigErrors()) 
@@ -43,6 +46,9 @@
 
             if (!typeof(Ability).IsAssignableFrom(this.abilityClass))
                 yield return $"{this.abilityClass} is not a valid ability type";
+
+            if (this.GetModExtension<AbilityExtension_Projectile>() != null && (this.GetModExtension<AbilityExtension_Hediff>()?.applyAuto ?? false))
+                yield return "Projectile and auto apply hediff present. Please check if that is intended.";
         }
 
         public override void PostLoad()
@@ -60,6 +66,12 @@
     {
         public HediffDef hediffDef;
         public int       minimumLevel;
+
+        public bool Satisfied(Pawn p) => 
+            this.Satisfied(p.health.hediffSet.GetFirstHediffOfDef(this.hediffDef) as Hediff_ImplantWithLevel);
+
+        public bool Satisfied(Hediff_ImplantWithLevel hediff) => 
+            hediff != null && hediff.level >= this.minimumLevel;
     }
 
     public enum AbilityTargetingMode : byte

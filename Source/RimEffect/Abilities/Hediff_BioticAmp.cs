@@ -24,8 +24,7 @@
 
         public override IEnumerable<Gizmo> DrawGizmos()
         {
-            Gizmo_BioticEnergyStatus gizmoBioticEnergy = new Gizmo_BioticEnergyStatus();
-            gizmoBioticEnergy.bioticHediff = this;
+            Gizmo_BioticEnergyStatus gizmoBioticEnergy = new Gizmo_BioticEnergyStatus {bioticHediff = this};
             yield return gizmoBioticEnergy;
         }
 

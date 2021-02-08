@@ -48,6 +48,7 @@
       </li>
       <li Class="RimEffect.AbilityExtension_Hediff">
         <hediff>Hypothermia</hediff>
+        <applyAuto>false</applyAuto>
       </li>
     </modExtensions>
   </RimEffect.AbilityDef>

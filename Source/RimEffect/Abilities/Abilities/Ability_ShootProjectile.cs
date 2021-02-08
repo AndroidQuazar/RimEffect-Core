@@ -1,5 +1,6 @@
 ﻿namespace RimEffect
 {
+    using System.Collections.Generic;
     using Verse;
 
     public class Ability_ShootProjectile : Ability

@@ -10,6 +10,8 @@
     <range>24</range>
     <iconPath>UI/Abilities/Biotic_Throw</iconPath>
     <power>6</power>
+    <castSound>RE_Shot_Avenger</castSound>
+    <castMote>Mote_BlastDry</castMote>
     <requiredHediff>
       <hediffDef>RE_BioticAmpHediff</hediffDef>
       <minimumLevel>1</minimumLevel>
@@ -45,7 +47,7 @@
     <label>biotic pull</label>
     <description>Generates a mass-lowering field which lifts the enemy in the air and quickly drops them, temporarily disabling them from a fight.
     Effect: Enemy gets fulled towards the caster and gets temporarily knocked on the ground.</description>
-    <abilityClass>RimEffect.Ability_GiveHediffAndPull</abilityClass>
+    <abilityClass>RimEffect.Ability_Pull</abilityClass>
     <targetMode>Pawn</targetMode>
     <castTime>60</castTime>
     <range>24</range>
