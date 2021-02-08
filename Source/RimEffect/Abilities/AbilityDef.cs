@@ -38,6 +38,7 @@
 
         public SoundDef castSound;
         public ThingDef castMote;
+        public List<ThingDef> targetMotes;
 
         public override IEnumerable<string> ConfigErrors()
         {

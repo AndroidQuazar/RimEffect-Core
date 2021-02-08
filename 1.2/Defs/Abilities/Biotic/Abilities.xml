@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+  <ThingDef ParentName="MoteGlowDistortBackground">
+    <defName>RE_Mote_BioticDistortion</defName>
+    <thingClass>MoteThrownAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.03</fadeInTime>
+      <fadeOutTime>0.05</fadeOutTime>
+      <solidTime>0.15</solidTime>
+      <growthRate>1.5</growthRate>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Black</texPath>
+      <shaderParameters>
+        <_distortionIntensity>0.05</_distortionIntensity>
+        <_brightnessMultiplier>1.1</_brightnessMultiplier>      
+      </shaderParameters>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+  </ThingDef>
+
   <RimEffect.AbilityDef>
     <defName>RE_Biotic_Throw</defName>
     <label>biotic throw</label>
@@ -12,6 +33,9 @@
     <power>6</power>
     <castSound>RE_Shot_Avenger</castSound>
     <castMote>Mote_BlastDry</castMote>
+    <targetMotes>
+      <li>RE_Mote_BioticDistortion</li>
+    </targetMotes>
     <requiredHediff>
       <hediffDef>RE_BioticAmpHediff</hediffDef>
       <minimumLevel>1</minimumLevel>

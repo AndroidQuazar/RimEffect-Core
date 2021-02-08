@@ -155,12 +155,21 @@
                 }
             }
 
+            this.CheckCastEffects(target, out bool cast, out bool targetMote, out bool sound);
 
-            if (this.def.castMote != null) 
+            if (this.def.castMote != null && cast)
                 MoteMaker.MakeStaticMote(this.pawn.DrawPos, this.pawn.Map, this.def.castMote);
 
-            this.def.castSound?.PlayOneShot(new TargetInfo(this.pawn.Position, this.pawn.Map));
+            if (!this.def.targetMotes.NullOrEmpty() && targetMote)
+                foreach (ThingDef mote in this.def.targetMotes)
+                    MoteMaker.MakeStaticMote(target.Cell, this.pawn.Map, mote);
+
+            if (sound)
+                this.def.castSound?.PlayOneShot(new TargetInfo(this.pawn.Position, this.pawn.Map));
         }
+
+        public virtual void CheckCastEffects(LocalTargetInfo targetInfo, out bool cast, out bool target, out bool sound) => 
+            cast = target = sound = true;
 
         public void ExposeData()
         {
