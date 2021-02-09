@@ -126,7 +126,7 @@
     <graphicData>
       <texPath>Things/AbilityEffects/HexShield/HexShield</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>Transparent</shaderType>
+      <shaderType>Transparent</shaderType>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <tickerType>Normal</tickerType>
@@ -264,4 +264,42 @@
       <minimumLevel>1</minimumLevel>
     </requiredHediff>
   </RimEffect.AbilityDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Tech_TacticalCloak</defName>
+    <label>tactical cloak</label>
+    <description>When activated, it instantly renders the user invisible to all enemies. Users cannot be targeted by any targetable abilities and powers.</description>
+    <abilityClass>RimEffect.Ability_Blank</abilityClass>
+    <targetMode>Self</targetMode>
+    <cooldownTime>7200</cooldownTime>
+    <cooldownTimeStatFactors>
+      <RE_AbilityCooldownFactor>1</RE_AbilityCooldownFactor>
+    </cooldownTimeStatFactors>
+    <iconPath>UI/Abilities/Tech_TacticalCloak</iconPath>
+    <requiredHediff>
+      <hediffDef>RE_OmniToolHediff</hediffDef>
+      <minimumLevel>1</minimumLevel>
+    </requiredHediff>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Hediff">
+        <hediff>RE_Tech_TacticalCloakHediff</hediff>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
+
+  <HediffDef ParentName = "PsycastHediffBase">
+    <defName>RE_Tech_TacticalCloakHediff</defName>
+    <label>tactical cloak</label>
+    <description>Renders the user invisible to all enemies. Users cannot be targeted by any targetable abilities and powers.</description>
+    <isBad>false</isBad>
+    <comps Inherit="False">
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>1800~1800</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties">
+        <compClass>HediffComp_Invisibility</compClass>
+      </li>
+    </comps>
+  </HediffDef>
+
 </Defs>
