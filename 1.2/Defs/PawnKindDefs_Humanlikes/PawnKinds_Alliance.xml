@@ -16,7 +16,7 @@
     <isFighter>true</isFighter>
     <gearHealthRange>0.6~2</gearHealthRange>
     <apparelTags>
-		<li>RE_AllianceNavyGearMedium</li>
+      <li>RE_AllianceNavyGearMedium</li>
     </apparelTags>
     <apparelMoney>4000~4500</apparelMoney>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
@@ -30,30 +30,30 @@
       <li>Simple</li>
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
-	  <li>RE_Implant</li>
+      <li>RE_Implant</li>
     </techHediffsTags>
-        <modExtensions>
-            <li Class="VFECore.PawnKindDefExtension">
-                <factionColourApparelPartList>
-					<li>FullHead</li>
-                    <li>Torso</li>
-                    <li>Torso</li>
-                    <li>Torso</li>
-                    <li>Torso</li>
-                    <li>Legs</li>
-                </factionColourApparelPartList>
-                <factionColourApparelLayerList>
-				    <li>Overhead</li>
-                    <li>OnSkin</li>
-                    <li>Middle</li>
-                    <li>Shell</li>
-                    <li>VFEC_OuterShell</li>
-                    <li>OnSkin</li>
-                </factionColourApparelLayerList>
-            </li>
-        </modExtensions>
+    <modExtensions>
+      <li Class="VFECore.PawnKindDefExtension">
+        <factionColourApparelPartList>
+          <li>FullHead</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Legs</li>
+        </factionColourApparelPartList>
+        <factionColourApparelLayerList>
+          <li>Overhead</li>
+          <li>OnSkin</li>
+          <li>Middle</li>
+          <li>Shell</li>
+          <li>VFEC_OuterShell</li>
+          <li>OnSkin</li>
+        </factionColourApparelLayerList>
+      </li>
+    </modExtensions>
   </PawnKindDef>
-  
+
   <PawnKindDef ParentName="AllianceBase">
     <defName>RE_Alliance_MarineSniper</defName>
     <label>sniper</label>
@@ -61,7 +61,7 @@
     <isFighter>true</isFighter>
     <gearHealthRange>0.8~2</gearHealthRange>
     <apparelTags>
-		<li>RE_AllianceNavyGearLight</li>
+      <li>RE_AllianceNavyGearLight</li>
     </apparelTags>
     <apparelMoney>3500~4500</apparelMoney>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
@@ -75,28 +75,28 @@
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
-        <modExtensions>
-            <li Class="VFECore.PawnKindDefExtension">
-                <factionColourApparelPartList>
-					<li>FullHead</li>
-                    <li>Torso</li>
-                    <li>Torso</li>
-                    <li>Torso</li>
-                    <li>Torso</li>
-                    <li>Legs</li>
-                </factionColourApparelPartList>
-                <factionColourApparelLayerList>
-				    <li>Overhead</li>
-                    <li>OnSkin</li>
-                    <li>Middle</li>
-                    <li>Shell</li>
-                    <li>VFEC_OuterShell</li>
-                    <li>OnSkin</li>
-                </factionColourApparelLayerList>
-            </li>
-        </modExtensions>
+    <modExtensions>
+      <li Class="VFECore.PawnKindDefExtension">
+        <factionColourApparelPartList>
+          <li>FullHead</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Legs</li>
+        </factionColourApparelPartList>
+        <factionColourApparelLayerList>
+          <li>Overhead</li>
+          <li>OnSkin</li>
+          <li>Middle</li>
+          <li>Shell</li>
+          <li>VFEC_OuterShell</li>
+          <li>OnSkin</li>
+        </factionColourApparelLayerList>
+      </li>
+    </modExtensions>
   </PawnKindDef>
-  
+
   <PawnKindDef ParentName="AllianceBase">
     <defName>RE_Alliance_MarineHeavy</defName>
     <label>heavy marine</label>
@@ -104,7 +104,7 @@
     <isFighter>true</isFighter>
     <gearHealthRange>0.8~2</gearHealthRange>
     <apparelTags>
-		<li>RE_AllianceNavyGearHeavy</li>
+      <li>RE_AllianceNavyGearHeavy</li>
     </apparelTags>
     <apparelMoney>5000~6500</apparelMoney>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
@@ -117,28 +117,28 @@
     <techHediffsTags>
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
-	  <li>RE_Implant</li>
+      <li>RE_Implant</li>
     </techHediffsTags>
-        <modExtensions>
-            <li Class="VFECore.PawnKindDefExtension">
-                <factionColourApparelPartList>
-					<li>FullHead</li>
-                    <li>Torso</li>
-                    <li>Torso</li>
-                    <li>Torso</li>
-                    <li>Torso</li>
-                    <li>Legs</li>
-                </factionColourApparelPartList>
-                <factionColourApparelLayerList>
-				    <li>Overhead</li>
-                    <li>OnSkin</li>
-                    <li>Middle</li>
-                    <li>Shell</li>
-                    <li>VFEC_OuterShell</li>
-                    <li>OnSkin</li>
-                </factionColourApparelLayerList>
-            </li>
-        </modExtensions>
+    <modExtensions>
+      <li Class="VFECore.PawnKindDefExtension">
+        <factionColourApparelPartList>
+          <li>FullHead</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Legs</li>
+        </factionColourApparelPartList>
+        <factionColourApparelLayerList>
+          <li>Overhead</li>
+          <li>OnSkin</li>
+          <li>Middle</li>
+          <li>Shell</li>
+          <li>VFEC_OuterShell</li>
+          <li>OnSkin</li>
+        </factionColourApparelLayerList>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef ParentName="AllianceBase">
@@ -153,8 +153,8 @@
     </weaponTags>
     <weaponMoney>740~1500</weaponMoney>
     <apparelTags>
-		<li>RE_SpacerApparelCivilian</li>
-		<li>IndustrialBasic</li>
+      <li>RE_SpacerApparelCivilian</li>
+      <li>IndustrialBasic</li>
     </apparelTags>
     <apparelMoney>200~500</apparelMoney>
     <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
@@ -165,7 +165,7 @@
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
   </PawnKindDef>
-  
+
   <PawnKindDef ParentName="AllianceBase">
     <defName>RE_Farmer</defName>
     <label>farmer</label>
@@ -178,7 +178,7 @@
     </weaponTags>
     <weaponMoney>740~800</weaponMoney>
     <apparelTags>
-		<li>IndustrialBasic</li>
+      <li>IndustrialBasic</li>
     </apparelTags>
     <apparelMoney>200~400</apparelMoney>
     <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
@@ -190,7 +190,7 @@
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
   </PawnKindDef>
-  
+
   <PawnKindDef ParentName="AllianceBase">
     <defName>RE_AllianceOfficer</defName>
     <label>alliance officer</label>
@@ -203,12 +203,12 @@
     </weaponTags>
     <weaponMoney>740~2000</weaponMoney>
     <apparelRequired>
-	  <li>RE_Apparel_AllianceDressJacket</li>
-	  <li>RE_Apparel_AllianceOfficerHat</li>
+      <li>RE_Apparel_AllianceDressJacket</li>
+      <li>RE_Apparel_AllianceOfficerHat</li>
     </apparelRequired>
     <apparelTags>
-		<li>RE_AllianceSpacerApparel</li>
-		<li>IndustrialBasic</li>
+      <li>RE_AllianceSpacerApparel</li>
+      <li>IndustrialBasic</li>
     </apparelTags>
     <apparelMoney>300~1000</apparelMoney>
     <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
@@ -217,11 +217,11 @@
     <techHediffsTags>
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
-	  <li>RE_Implant</li>
+      <li>RE_Implant</li>
     </techHediffsTags>
-	<techHediffsMaxAmount>2</techHediffsMaxAmount>
+    <techHediffsMaxAmount>2</techHediffsMaxAmount>
   </PawnKindDef>
-  
+
   <PawnKindDef ParentName="AllianceBase">
     <defName>RE_AllianceRecruit</defName>
     <label>alliance recruit</label>
@@ -234,10 +234,10 @@
     </weaponTags>
     <weaponMoney>740~1800</weaponMoney>
     <apparelRequired>
-	  <li>RE_Apparel_BattleUniform</li>
+      <li>RE_Apparel_BattleUniform</li>
     </apparelRequired>
     <apparelTags>
-		<li>RE_SpacerApparel</li>
+      <li>RE_SpacerApparel</li>
     </apparelTags>
     <apparelMoney>300~600</apparelMoney>
     <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
@@ -248,7 +248,7 @@
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
   </PawnKindDef>
-  
+
   <PawnKindDef ParentName="AllianceBase">
     <defName>RE_AllianceMilitia</defName>
     <label>militia</label>
@@ -261,10 +261,10 @@
     </weaponTags>
     <weaponMoney>1100~3000</weaponMoney>
     <apparelRequired>
-	  <li>RE_Apparel_Fatigues</li>
+      <li>RE_Apparel_Fatigues</li>
     </apparelRequired>
     <apparelTags>
-		<li>RE_SpacerApparel</li>
+      <li>RE_SpacerApparel</li>
     </apparelTags>
     <apparelMoney>300~600</apparelMoney>
     <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
@@ -272,11 +272,11 @@
     <techHediffsMoney>400~1000</techHediffsMoney>
     <techHediffsTags>
       <li>Simple</li>
-	  <li>Advanced</li>
+      <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
   </PawnKindDef>
-  
+
   <PawnKindDef ParentName="AllianceBase">
     <defName>RE_Official</defName>
     <label>official</label>
@@ -289,12 +289,12 @@
     </weaponTags>
     <weaponMoney>740~800</weaponMoney>
     <apparelRequired>
-	  <li>RE_Apparel_FormalJacket</li>
-	  <li>RE_Apparel_FormalShirt</li>
+      <li>RE_Apparel_FormalJacket</li>
+      <li>RE_Apparel_FormalShirt</li>
     </apparelRequired>
     <apparelTags>
-		<li>RE_SpacerApparelCivilian</li>
-		<li>IndustrialBasic</li>
+      <li>RE_SpacerApparelCivilian</li>
+      <li>IndustrialBasic</li>
     </apparelTags>
     <apparelMoney>200~600</apparelMoney>
     <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
@@ -303,10 +303,10 @@
     <techHediffsTags>
       <li>Simple</li>
       <li>ImplantEmpireCommon</li>
-	  <li>RE_Implant</li>
+      <li>RE_Implant</li>
     </techHediffsTags>
   </PawnKindDef>
-  
+
   <PawnKindDef ParentName="AllianceBase">
     <defName>RE_Merchant</defName>
     <label>merchant</label>
@@ -319,12 +319,12 @@
     </weaponTags>
     <weaponMoney>740~800</weaponMoney>
     <apparelRequired>
-	  <li>RE_Apparel_FormalJacket</li>
-	  <li>RE_Apparel_FormalShirt</li>
+      <li>RE_Apparel_FormalJacket</li>
+      <li>RE_Apparel_FormalShirt</li>
     </apparelRequired>
     <apparelTags>
-		<li>RE_SpacerApparelCivilian</li>
-		<li>IndustrialBasic</li>
+      <li>RE_SpacerApparelCivilian</li>
+      <li>IndustrialBasic</li>
     </apparelTags>
     <apparelMoney>200~600</apparelMoney>
     <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
@@ -335,7 +335,7 @@
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
   </PawnKindDef>
-  
+
   <PawnKindDef ParentName="AllianceBase">
     <defName>RE_Ranger</defName>
     <label>militia</label>
@@ -348,8 +348,8 @@
     </weaponTags>
     <weaponMoney>1410~1800</weaponMoney>
     <apparelTags>
-		<li>RE_SpacerApparel</li>
-		<li>RE_Apparel_LightAllianceArmor</li>
+      <li>RE_SpacerApparel</li>
+      <li>RE_Apparel_LightAllianceArmor</li>
     </apparelTags>
     <apparelMoney>500~2500</apparelMoney>
     <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
@@ -358,10 +358,10 @@
     <techHediffsTags>
       <li>Simple</li>
       <li>ImplantEmpireCommon</li>
-	  <li>RE_Implant</li>
+      <li>RE_Implant</li>
     </techHediffsTags>
   </PawnKindDef>
-  
+
   <PawnKindDef ParentName="AllianceBase">
     <defName>RE_PrimeMinister</defName>
     <label>prime minister</label>
@@ -369,18 +369,18 @@
     <itemQuality>Excellent</itemQuality>
     <isFighter>false</isFighter>
     <gearHealthRange>0.2~2.0</gearHealthRange>
-	<factionLeader>true</factionLeader>
+    <factionLeader>true</factionLeader>
     <weaponTags>
       <li>AllianceGunLight</li>
     </weaponTags>
     <weaponMoney>740~800</weaponMoney>
     <apparelRequired>
-	  <li>RE_Apparel_FormalJacket</li>
-	  <li>RE_Apparel_FormalShirt</li>
+      <li>RE_Apparel_FormalJacket</li>
+      <li>RE_Apparel_FormalShirt</li>
     </apparelRequired>
     <apparelTags>
-		<li>RE_SpacerApparelCivilian</li>
-		<li>IndustrialBasic</li>
+      <li>RE_SpacerApparelCivilian</li>
+      <li>IndustrialBasic</li>
     </apparelTags>
     <apparelMoney>200~800</apparelMoney>
     <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
@@ -389,10 +389,10 @@
     <techHediffsTags>
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
-	  <li>RE_Implant</li>
+      <li>RE_Implant</li>
     </techHediffsTags>
   </PawnKindDef>
-  
+
   <PawnKindDef ParentName="AllianceBase">
     <defName>RE_Scientist</defName>
     <label>scientist</label>
@@ -400,31 +400,31 @@
     <itemQuality>Normal</itemQuality>
     <isFighter>false</isFighter>
     <gearHealthRange>0.2~2.0</gearHealthRange>
-	<factionLeader>true</factionLeader>
+    <factionLeader>true</factionLeader>
     <weaponTags>
       <li>AllianceGunLight</li>
     </weaponTags>
     <weaponMoney>740~800</weaponMoney>
     <apparelRequired>
-	  <li>RE_Apparel_ScienceUniform</li>
+      <li>RE_Apparel_ScienceUniform</li>
     </apparelRequired>
     <apparelTags>
-		<li>RE_SpacerApparelCivilian</li>
-		<li>RE_SpacerApparelScience</li>
-		<li>IndustrialBasic</li>
+      <li>RE_SpacerApparelCivilian</li>
+      <li>RE_SpacerApparelScience</li>
+      <li>IndustrialBasic</li>
     </apparelTags>
     <apparelMoney>200~800</apparelMoney>
     <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
     <techHediffsChance>0.08</techHediffsChance>
     <techHediffsMoney>400~1000</techHediffsMoney>
     <techHediffsTags>
-	  <li>Simple</li>
+      <li>Simple</li>
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
-	  <li>RE_Implant</li>
+      <li>RE_Implant</li>
     </techHediffsTags>
   </PawnKindDef>
-  
+
   <PawnKindDef ParentName="AllianceBase">
     <defName>RE_Medic</defName>
     <label>medic</label>
@@ -432,26 +432,26 @@
     <itemQuality>Normal</itemQuality>
     <isFighter>false</isFighter>
     <gearHealthRange>0.2~2.0</gearHealthRange>
-	<factionLeader>true</factionLeader>
+    <factionLeader>true</factionLeader>
     <weaponTags>
       <li>AllianceGunLight</li>
     </weaponTags>
     <weaponMoney>740~800</weaponMoney>
     <apparelRequired>
-	  <li>RE_Apparel_ScienceUniform</li>
+      <li>RE_Apparel_ScienceUniform</li>
     </apparelRequired>
     <apparelTags>
-		<li>RE_SpacerApparelCivilian</li>
-		<li>RE_SpacerApparelScience</li>
-		<li>IndustrialBasic</li>
+      <li>RE_SpacerApparelCivilian</li>
+      <li>RE_SpacerApparelScience</li>
+      <li>IndustrialBasic</li>
     </apparelTags>
-	<apparelColor>(136,0,0)</apparelColor>
+    <apparelColor>(136,0,0)</apparelColor>
     <apparelMoney>200~800</apparelMoney>
     <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
     <techHediffsChance>0.08</techHediffsChance>
     <techHediffsMoney>400~1000</techHediffsMoney>
     <techHediffsTags>
-	  <li>Simple</li>
+      <li>Simple</li>
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>

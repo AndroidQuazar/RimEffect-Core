@@ -5,7 +5,7 @@
     <defName>RE_HostagesSite</defName>
     <label>hostages camp</label>
     <description>Hostages being held by enemies. Rescue them to claim your rewards.</description>
-    <workerClass>RimEffect.Sites.SitePartWorker_RescueHostages</workerClass>
+    <workerClass>RimEffect.Sites.SitePartWorker_Generic</workerClass>
     <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
     <expandingIconTexture>World/WorldObjects/RescueHostages</expandingIconTexture>
     <forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>

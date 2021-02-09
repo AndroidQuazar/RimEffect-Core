@@ -40,7 +40,7 @@ namespace RimEffect
                     pawn.SetFactionDirect(fac);
                     pawn.ChangeKind(PawnKindDefOf.Villager);
                     pawn.health.RemoveHediff(pawn.health.hediffSet.hediffs.Find(h => h.def == RE_DefOf.RE_TurnBackToFormerFaction));
-                    pawn.jobs.TryTakeOrderedJob(new Job(RE_DefOf.RE_LeaveMap, leavePoint));                  
+                    pawn.jobs.TryTakeOrderedJob(new Job(RE_DefOf.RE_LeaveMap, leavePoint));
                 }
             };
             finalize.defaultCompleteMode = ToilCompleteMode.Instant;

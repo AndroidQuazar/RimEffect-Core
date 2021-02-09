@@ -57,10 +57,12 @@ namespace RimEffect
         public static HediffDef   RE_OmniToolHediff;
 
         public static ThingDef RE_ProtheanBeacon;
+        public static ThingDef RE_CrashedKodiakShuttle;
         public static JobDef RE_OpenBeacon;
         public static JobDef RE_SaveHostages;
         public static JobDef RE_LeaveMap;
         public static HediffDef RE_TurnBackToFormerFaction;
+        public static PawnKindDef RE_Alliance_Marine;
     }
 }
  

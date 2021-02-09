@@ -56,8 +56,8 @@
     </inspectorTabs>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Misc</designationCategory>
-	<costList>
-	    <RE_PrefabComponent>1</RE_PrefabComponent> <!-- placeholder -->
+    <costList>
+      <RE_PrefabComponent>1</RE_PrefabComponent>      <!-- placeholder -->
     </costList>
     <comps>
       <li Class="CompProperties_AssignableToPawn">
@@ -80,7 +80,7 @@
             <defs>
               <li>Grave</li>
               <li>Sarcophagus</li>
-			  <li>RE_GraveBodyBag</li>
+              <li>RE_GraveBodyBag</li>
             </defs>
             <offsetPerBuilding>0.01</offsetPerBuilding>
             <radius>9.9</radius>
@@ -99,7 +99,7 @@
       <li>RE_BasicPrefabrication</li>
     </researchPrerequisites>
   </ThingDef>
-  
+
   <ThingDef ParentName="BuildingBase">
     <defName>RE_GalaxyMap</defName>
     <label>galaxy map</label>
@@ -156,12 +156,11 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
       <li Class="VanillaStorytellersExpanded.CompProperties_QuestGiver">
-		<floatOptionLabel>View contracts</floatOptionLabel>
-		<jobToGive>RE_UseGalaxyMap</jobToGive>
-		<questGiver>RE_GalaxyMap_QuestGiver</questGiver>
-		<questManagerID>1</questManagerID>
-	  </li>
-	  
+        <floatOptionLabel>View contracts</floatOptionLabel>
+        <jobToGive>RE_UseGalaxyMap</jobToGive>
+        <questGiver>RE_GalaxyMap_QuestGiver</questGiver>
+        <questManagerID>1</questManagerID>
+      </li>
     </comps>
     <placeWorkers>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
@@ -170,7 +169,51 @@
       <li>RE_ComplexPrefabrication</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-	<techLevel>Ultra</techLevel>
+    <techLevel>Ultra</techLevel>
   </ThingDef>
-  
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RE_CrashedKodiakShuttle</defName>
+    <label>kodiak shuttle</label>
+    <description>An advanced shuttle propelled using small directional thrusters and a mass effect based repulsion system, the Kodiak Drop Shuttle is a common sight throughout the galaxy thanks to it's robust design and ability to make limited FTL jumps. 
+This one is out of service.</description>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <passability>Impassable</passability>
+    <fillPercent>1.0</fillPercent>
+    <size>(6,3)</size>
+    <graphicData>
+      <texPath>Things/Building/Misc/KodiakShuttleCrashed/KodiakShuttleCrashed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(7,8)</drawSize>
+      <shadowData>
+        <volume>(1.8, 1.0, 4.1)</volume>
+        <offset>(0, 0, -0.1)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Flammability>1</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <killedLeavings>
+      <Plasteel>100</Plasteel>
+      <ChunkSlagSteel>4</ChunkSlagSteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </killedLeavings>
+    <costList>
+      <Plasteel>450</Plasteel>
+      <ComponentSpacer>24</ComponentSpacer>
+    </costList>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <drawerType>MapMeshOnly</drawerType>
+    <repairEffect>ConstructMetal</repairEffect>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+    <techLevel>Ultra</techLevel>
+  </ThingDef>
+
 </Defs>

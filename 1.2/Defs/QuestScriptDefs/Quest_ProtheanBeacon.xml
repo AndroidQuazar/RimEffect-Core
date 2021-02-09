@@ -88,6 +88,11 @@
           <worldObjects>$site</worldObjects>
         </li>
 
+        <li Class="QuestNode_End">
+          <inSignal>site.AllEnemiesDefeated</inSignal>
+          <outcome>Success</outcome>
+        </li>
+
         <li Class="QuestNode_WorldObjectTimeout">
           <worldObject>$site</worldObject>
           <isQuestTimeout>true</isQuestTimeout>
@@ -108,7 +113,9 @@
 
         <li Class="QuestNode_NoWorldObject">
           <worldObject>$site</worldObject>
-          <node Class="QuestNode_End" />
+          <node Class="QuestNode_End">
+            <outcome>Success</outcome>
+          </node>
         </li>
       </nodes>
     </root>

@@ -132,7 +132,6 @@ namespace RimEffect.GenSteps
                         GenSpawn.Spawn(pawn, spwWait, map, WipeMode.VanishOrMoveAside);
                         pawn.health.AddHediff(RE_DefOf.RE_TurnBackToFormerFaction);
                         pawn.guest.SetGuestStatus(map.ParentFaction, true);
-                        map.attackTargetsCache.UpdateTarget(pawn);
                     }
                     foreach (Building_Bed bed in room.ContainedBeds)
                     {

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <SitePartDef>
+    <defName>RE_KodiakShuttleCrash</defName>
+    <label>kodiak shuttle crash</label>
+    <description>A crashed Kodiak suttle.</description>
+    <workerClass>RimEffect.Sites.SitePartWorker_Generic</workerClass>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>World/WorldObjects/KodiakShuttleCrash</expandingIconTexture>
+    <forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
+    <requiresFaction>true</requiresFaction>
+    <increasesPopulation>false</increasesPopulation>
+    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+    <tags>
+      <li>RE_KodiakShuttleCrash</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>RE_KodiakShuttleCrash</defName>
+    <linkWithSite>RE_KodiakShuttleCrash</linkWithSite>
+    <order>460</order>
+    <genStep Class="RimEffect.GenSteps.GenStep_RE_KodiakShuttleCrash" />
+  </GenStepDef>
+
+  <SitePartDef>
+    <defName>RE_WoundedSoldier</defName>
+    <label>wounded alliance soliders</label>
+    <description>Wounded alliance soldiers. Some might join you.</description>
+    <workerClass>RimEffect.Sites.SitePartWorker_Generic</workerClass>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>World/WorldObjects/KodiakShuttleCrash</expandingIconTexture>
+    <forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
+    <requiresFaction>true</requiresFaction>
+    <increasesPopulation>false</increasesPopulation>
+    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+    <tags>
+      <li>RE_WoundedSoldier</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>RE_WoundedSoldier</defName>
+    <linkWithSite>RE_WoundedSoldier</linkWithSite>
+    <order>460</order>
+    <genStep Class="RimEffect.GenSteps.GenStep_RE_WoundedSoldier" />
+  </GenStepDef>
+
+  <SitePartDef>
+    <defName>RE_DeadSoldier</defName>
+    <label>dead soldier.</label>
+    <description>Dead soldiers.</description>
+    <workerClass>RimEffect.Sites.SitePartWorker_Generic</workerClass>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>World/WorldObjects/KodiakShuttleCrash</expandingIconTexture>
+    <forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
+    <requiresFaction>true</requiresFaction>
+    <increasesPopulation>false</increasesPopulation>
+    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+    <tags>
+      <li>RE_DeadSoldier</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>RE_DeadSoldier</defName>
+    <linkWithSite>RE_DeadSoldier</linkWithSite>
+    <order>460</order>
+    <genStep Class="RimEffect.GenSteps.GenStep_RE_DeadSoldier" />
+  </GenStepDef>
+  
+  <SitePartDef>
+    <defName>RE_PirateOrMech</defName>
+    <label>hostiles attacking soldiers.</label>
+    <description>Hostiles attacking soldiers.</description>
+    <workerClass>RimEffect.Sites.SitePartWorker_Generic</workerClass>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>World/WorldObjects/KodiakShuttleCrash</expandingIconTexture>
+    <forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
+    <requiresFaction>true</requiresFaction>
+    <increasesPopulation>false</increasesPopulation>
+    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+    <tags>
+      <li>RE_PirateOrMech</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>RE_PirateOrMech</defName>
+    <linkWithSite>RE_PirateOrMech</linkWithSite>
+    <order>460</order>
+    <genStep Class="RimEffect.GenSteps.GenStep_RE_PirateOrMech" />
+  </GenStepDef>
+</Defs>
