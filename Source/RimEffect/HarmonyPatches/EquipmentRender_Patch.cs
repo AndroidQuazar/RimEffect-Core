@@ -14,9 +14,7 @@
 
         delegate bool CarryWeaponOpenly(PawnRenderer instance);
 
-        private static CarryWeaponOpenly carryOpenlyDelegate = AccessTools.MethodDelegate<CarryWeaponOpenly>(AccessTools.Method(typeof(PawnRenderer), "CarryWeaponOpenly"));
-
-        private static AccessTools.FieldRef<Pawn_MeleeVerbs, Verb> meleeVerb = AccessTools.FieldRefAccess<Pawn_MeleeVerbs, Verb>("curMeleeVerb");
+        private static readonly CarryWeaponOpenly carryOpenlyDelegate = AccessTools.MethodDelegate<CarryWeaponOpenly>(AccessTools.Method(typeof(PawnRenderer), "CarryWeaponOpenly"));
 
         [HarmonyPostfix]
         public static void Postfix(PawnRenderer __instance, Pawn ___pawn)
@@ -27,7 +25,7 @@
                 if ((pawn.equipment?.PrimaryEq is null && ((pawn.stances.curStance is Stance_Busy stanceBusy && !stanceBusy.neverAimWeapon && stanceBusy.focusTarg.IsValid) || carryOpenlyDelegate(__instance))) ||
                     (!(pawn.equipment?.PrimaryEq?.PrimaryVerb.IsMeleeAttack ?? true) && pawn.mindState.MeleeThreatStillThreat))
                 {
-                    if (pawn?.health.hediffSet.HasHediff(RE_DefOf.RE_OmniToolHediff) ?? false)
+                    if (pawn.health.hediffSet.HasHediff(RE_DefOf.RE_OmniToolHediff))
                     {
                         Vector3 drawLoc  = pawn.DrawPos;
                         float   aimAngle = 0f;

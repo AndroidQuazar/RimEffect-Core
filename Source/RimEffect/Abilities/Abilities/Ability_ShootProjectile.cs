@@ -1,6 +1,9 @@
 ﻿namespace RimEffect
 {
+    using System.Collections.Generic;
+    using RimWorld;
     using Verse;
+    using Verse.Sound;
 
     public class Ability_ShootProjectile : Ability
     {
@@ -16,6 +19,12 @@
                 abilityProjectile.abilityDef = this.def;
             }
             projectile.Launch(this.pawn, this.pawn.DrawPos, target, target, ProjectileHitFlags.IntendedTarget);
+        }
+
+        public override void CheckCastEffects(LocalTargetInfo targetInfo, out bool cast, out bool target, out bool sound)
+        {
+            base.CheckCastEffects(targetInfo, out cast, out _, out sound);
+            target = false;
         }
     }
 

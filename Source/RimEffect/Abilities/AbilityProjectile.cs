@@ -19,6 +19,12 @@
             BattleLogEntry_RangedImpact battleLogEntryRangedImpact = new BattleLogEntry_RangedImpact(this.launcher, hitThing, this.intendedTarget.Thing, this.equipmentDef, this.def, this.targetCoverDef);
             Find.BattleLog.Add(battleLogEntryRangedImpact);
             this.NotifyImpact(hitThing, map, position);
+
+
+            if (!this.abilityDef.targetMotes.NullOrEmpty())
+                foreach (ThingDef mote in this.abilityDef.targetMotes)
+                    MoteMaker.MakeStaticMote(this.ExactPosition, map, mote);
+
             if (hitThing != null)
             {
                 DamageInfo dinfo = new DamageInfo(this.def.projectile.damageDef, this.power, this.ArmorPenetration, this.ExactRotation.eulerAngles.y, this.launcher, null, this.equipmentDef, DamageInfo.SourceCategory.ThingOrUnknown, this.intendedTarget.Thing);
@@ -64,7 +70,7 @@
                     MoteMaker.MakeStaticMote(this.ExactPosition, map, ThingDefOf.Mote_ShotHit_Dirt);
                 }
             }
-		}
+        }
 
         private void NotifyImpact(Thing hitThing, Map map, IntVec3 position)
         {

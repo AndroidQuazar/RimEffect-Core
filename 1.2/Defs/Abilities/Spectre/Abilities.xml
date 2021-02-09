@@ -4,7 +4,7 @@
         <defName>RE_SpectreArmor_AdrenalineRush</defName>
         <label>Adrenaline Rush</label>
         <description>Gives the wearer an adrenaline rush</description>
-        <abilityClass>RimEffect.Ability_GiveHediff</abilityClass>
+        <abilityClass>RimEffect.Ability_Blank</abilityClass>
         <targetMode>Self</targetMode>
         <castTime>30</castTime>
         <cooldownTime>3600</cooldownTime>
@@ -42,7 +42,7 @@
         <defName>RE_SpectreArmor_CombatMastery</defName>
         <label>Combat mastery</label>
         <description>Gives the wearer increased ranged accuracy</description>
-        <abilityClass>RimEffect.Ability_GiveHediff</abilityClass>
+        <abilityClass>RimEffect.Ability_Blank</abilityClass>
         <targetMode>Self</targetMode>
         <castTime>30</castTime>
         <cooldownTime>3600</cooldownTime>

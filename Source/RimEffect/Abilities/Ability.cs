@@ -7,6 +7,7 @@
     using UnityEngine;
     using Verse;
     using Verse.AI;
+    using Verse.Sound;
 
     public abstract class Ability : IExposable, ILoadReferenceable, ITargetingSource
     {
@@ -41,8 +42,7 @@
 
             reason = "RE.AbilityDisableReasonGeneral".Translate(this.pawn?.NameShortColored ?? this.holder.LabelCap);
 
-            HediffWithLevelCombination requirement = this.def.requiredHediff;
-            return requirement == null || this.Hediff != null && this.Hediff.level >= requirement.minimumLevel;
+            return this.def.requiredHediff?.Satisfied(this.Hediff) ?? true;
         }
 
         public virtual float GetRangeForPawn() =>
@@ -137,13 +137,39 @@
             this.cooldown = Find.TickManager.TicksGame + this.GetCooldownForPawn();
 
             AbilityExtension_Biotic biotic = this.def.GetModExtension<AbilityExtension_Biotic>();
-
             if (biotic != null)
             {
                 Hediff_BioticAmp bioticAmp = (Hediff_BioticAmp) this.pawn.health.hediffSet.GetFirstHediffOfDef(RE_DefOf.RE_BioticAmpHediff);
                 bioticAmp.UseEnergy(biotic.GetEnergyUsedByPawn(this.pawn));
             }
+
+            if (target.HasThing)
+            {
+                AbilityExtension_Hediff hediffExtension = this.def.GetModExtension<AbilityExtension_Hediff>();
+                if (hediffExtension?.applyAuto ?? false)
+                {
+                    Hediff localHediff = HediffMaker.MakeHediff(hediffExtension.hediff, this.pawn);
+                    if (Math.Abs(hediffExtension.severity - -1f) > float.Epsilon)
+                        localHediff.Severity = hediffExtension.severity;
+                    target.Pawn.health.AddHediff(localHediff);
+                }
+            }
+
+            this.CheckCastEffects(target, out bool cast, out bool targetMote, out bool sound);
+
+            if (this.def.castMote != null && cast)
+                MoteMaker.MakeStaticMote(this.pawn.DrawPos, this.pawn.Map, this.def.castMote);
+
+            if (!this.def.targetMotes.NullOrEmpty() && targetMote)
+                foreach (ThingDef mote in this.def.targetMotes)
+                    MoteMaker.MakeStaticMote(target.Cell, this.pawn.Map, mote);
+
+            if (sound)
+                this.def.castSound?.PlayOneShot(new TargetInfo(this.pawn.Position, this.pawn.Map));
         }
+
+        public virtual void CheckCastEffects(LocalTargetInfo targetInfo, out bool cast, out bool target, out bool sound) => 
+            cast = target = sound = true;
 
         public void ExposeData()
         {
@@ -229,5 +255,12 @@
     public class Ability_Blank : Ability
     {
 
+    }
+
+    public class AbilityExtension_Hediff : DefModExtension
+    {
+        public HediffDef hediff;
+        public float     severity  = -1f;
+        public bool      applyAuto = true;
     }
 }

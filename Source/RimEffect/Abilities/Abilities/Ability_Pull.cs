@@ -1,25 +1,9 @@
-﻿using System;
-
-namespace RimEffect
+﻿namespace RimEffect
 {
     using RimWorld;
     using Verse;
 
-    public class Ability_GiveHediff : Ability
-    {
-        public override void Cast(LocalTargetInfo target)
-        {
-            base.Cast(target);
-
-            AbilityExtension_Hediff extension = this.def.GetModExtension<AbilityExtension_Hediff>();
-            Hediff                  hediff                 = HediffMaker.MakeHediff(extension.hediff, this.pawn);
-            if(Math.Abs(extension.severity - -1f) > 0.01f)
-                hediff.Severity = extension.severity;
-            target.Pawn.health.AddHediff(hediff);
-        }
-    }
-
-    public class Ability_GiveHediffAndPull : Ability_GiveHediff
+    public class Ability_Pull : Ability
     {
         public override void Cast(LocalTargetInfo target)
         {
@@ -36,6 +20,7 @@ namespace RimEffect
                 parent.AddEffecterToMaintain(EffecterDefOf.Skip_Exit.Spawn(target.Cell, pawn.Map), destination, 60);
             }
             */
+
             target.Thing.TryGetComp<CompCanBeDormant>()?.WakeUp();
             target.Thing.Position = destination;
 
@@ -47,11 +32,5 @@ namespace RimEffect
 
             base.Cast(target);
         }
-    }
-
-    public class AbilityExtension_Hediff : DefModExtension
-    {
-        public HediffDef hediff;
-        public float     severity = -1f;
     }
 }
