@@ -83,9 +83,20 @@ Crash might have attracted the attention of hostiles.</li>
           <worldObjects>$site</worldObjects>
         </li>
 
-        <li Class="QuestNode_End">
+        <li Class="QuestNode_Signal">
           <inSignal>site.AllEnemiesDefeated</inSignal>
-          <outcome>Success</outcome>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_Letter">
+                <letterDef>PositiveEvent</letterDef>
+                <label TKey="LetterLabelQuestExpired">Quest completed: [resolvedQuestName]</label>
+                <text TKey="LetterTextQuestExpired">You arrived at the shuttle crash site.</text>
+              </li>
+              <li Class="QuestNode_End">
+                <outcome>Success</outcome>
+              </li>
+            </nodes>
+          </node>
         </li>
 
         <li Class="QuestNode_WorldObjectTimeout">
@@ -198,9 +209,20 @@ Crash might have attracted the attention of hostiles.</li>
           <worldObjects>$site</worldObjects>
         </li>
 
-        <li Class="QuestNode_End">
+        <li Class="QuestNode_Signal">
           <inSignal>site.AllEnemiesDefeated</inSignal>
-          <outcome>Success</outcome>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_Letter">
+                <letterDef>PositiveEvent</letterDef>
+                <label TKey="LetterLabelQuestExpired">Quest completed: [resolvedQuestName]</label>
+                <text TKey="LetterTextQuestExpired">You arrived at the shuttle crash site.</text>
+              </li>
+              <li Class="QuestNode_End">
+                <outcome>Success</outcome>
+              </li>
+            </nodes>
+          </node>
         </li>
 
         <li Class="QuestNode_WorldObjectTimeout">
@@ -313,9 +335,20 @@ Crash might have attracted the attention of hostiles.</li>
           <worldObjects>$site</worldObjects>
         </li>
 
-        <li Class="QuestNode_End">
+        <li Class="QuestNode_Signal">
           <inSignal>ShuttleDefenseOver</inSignal>
-          <outcome>Success</outcome>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_Letter">
+                <letterDef>PositiveEvent</letterDef>
+                <label TKey="LetterLabelQuestExpired">Quest completed: [resolvedQuestName]</label>
+                <text TKey="LetterTextQuestExpired">You arrived at the shuttle crash site and defeated the hostile forces.</text>
+              </li>
+              <li Class="QuestNode_End">
+                <outcome>Success</outcome>
+              </li>
+            </nodes>
+          </node>
         </li>
 
         <li Class="QuestNode_WorldObjectTimeout">
