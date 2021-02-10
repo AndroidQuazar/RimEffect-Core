@@ -103,7 +103,7 @@
 				<forcedMissRadius>0.2</forcedMissRadius>
                 <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
                 <burstShotCount>2</burstShotCount>
-                <soundCast>GunShotA</soundCast>
+                <soundCast>RE_Tech_CombatDrone_Fire</soundCast>
                 <soundCastTail>GunTail_Light</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
                 <consumeFuelPerShot>1</consumeFuelPerShot>
