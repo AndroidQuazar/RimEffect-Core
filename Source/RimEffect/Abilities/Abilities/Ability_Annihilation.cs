@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using RimWorld;
     using UnityEngine;
     using Verse;
@@ -24,6 +25,8 @@
 
     public class AnnihilationField : Thing
     {
+        private const int TickInterval = GenTicks.TickRareInterval / 8;
+
         public Pawn caster;
         public Faction casterFaction;
 
@@ -31,9 +34,9 @@
         public float damage;
         public float endTick;
 
-        [Unsaved]
+        [Unsaved] 
         public List<Pawn> tmpPawns = new List<Pawn>();
-
+        
         [Unsaved]
         public Graphic graphic;
 
@@ -42,7 +45,6 @@
         public static float rotSpeed = 2.5f;
 
         private Sustainer sustainer;
-
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
@@ -67,18 +69,15 @@
         {
             this.sustainer.Maintain();
             this.curRotation += rotSpeed % 360f;
-            foreach (Pawn pawn in this.tmpPawns)
-                if (!pawn.DestroyedOrNull() && pawn.Spawned)
+
+            if (this.tmpPawns.Any() ? this.IsHashIntervalTick(TickInterval) : this.IsHashIntervalTick(GenTicks.TickRareInterval / 32))
+            {
+                foreach (Pawn pawn in this.tmpPawns)
                 {
-                    if (this.damage > 0)
-                    {
-                        DamageInfo dinfo = new DamageInfo(DamageDefOf.Blunt, this.damage / GenTicks.TicksPerRealSecond, 1f, instigator: this.caster);
-                        pawn.TakeDamage(dinfo);
-                    }
+                    DamageInfo dinfo = new DamageInfo(DamageDefOf.Blunt, TickInterval * (this.damage / GenTicks.TicksPerRealSecond), 1f, instigator: this.caster);
+                    pawn.TakeDamage(dinfo);
                 }
 
-            if (this.tmpPawns.Any() ? this.IsHashIntervalTick(GenTicks.TickRareInterval) : this.IsHashIntervalTick(GenTicks.TickRareInterval / 32))
-            {
                 this.tmpPawns.Clear();
                 int rangeForGrabbingPawns = Mathf.RoundToInt(this.radius * 2);
                 IntVec2 rangeIntVec2 = new IntVec2(rangeForGrabbingPawns, rangeForGrabbingPawns);
