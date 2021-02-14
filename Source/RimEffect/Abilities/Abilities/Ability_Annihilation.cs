@@ -5,6 +5,7 @@
     using RimWorld;
     using UnityEngine;
     using Verse;
+    using Verse.Sound;
 
     public class Ability_Annihilation : Ability
     {
@@ -40,6 +41,15 @@
 
         public static float rotSpeed = 2.5f;
 
+        private Sustainer sustainer;
+
+
+        public override void SpawnSetup(Map map, bool respawningAfterLoad)
+        {
+            base.SpawnSetup(map, respawningAfterLoad);
+            this.sustainer = RE_DefOf.RE_Biotic_AnnihilationSphere_Sustainer.TrySpawnSustainer(SoundInfo.InMap(this));
+        }
+
         public override Graphic Graphic
         {
             get
@@ -55,6 +65,7 @@
 
         public override void Tick()
         {
+            this.sustainer.Maintain();
             this.curRotation += rotSpeed % 360f;
             foreach (Pawn pawn in this.tmpPawns)
                 if (!pawn.DestroyedOrNull() && pawn.Spawned)
@@ -102,6 +113,13 @@
             Material mat = this.Graphic.MatAt(this.Rotation, this);
 
             Graphics.DrawMesh(mesh, drawLoc, quat, mat, 0);
+        }
+
+        public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
+        {
+            this.sustainer?.End();
+
+            base.DeSpawn(mode);
         }
 
         public override void ExposeData()

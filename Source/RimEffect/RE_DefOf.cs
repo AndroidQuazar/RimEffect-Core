@@ -55,6 +55,7 @@ namespace RimEffect
         public static ThingDef    RE_Biotic_AnnihilationField;
         public static ThingDef    RE_Biotic_FlareThing;
         public static HediffDef   RE_OmniToolHediff;
+        public static SoundDef    RE_Biotic_AnnihilationSphere_Sustainer;
 
         public static ThingDef RE_ProtheanBeacon;
         public static ThingDef RE_CrashedKodiakShuttle;
