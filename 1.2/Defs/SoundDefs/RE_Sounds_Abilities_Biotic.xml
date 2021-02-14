@@ -18,13 +18,13 @@
   </SoundDef>
   
   <SoundDef>
-    <defName>RE_Biotic_Singulatiry</defName>
+    <defName>RE_Biotic_Singularity</defName>
     <context>MapOnly</context>
     <subSounds>
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>BioticAbilities/Biotic_Singulatiry</clipFolderPath>
+            <clipFolderPath>BioticAbilities/Biotic_Singularity</clipFolderPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -88,7 +88,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>BioticAbilities/Biotic_Singulatiry</clipFolderPath>
+            <clipFolderPath>BioticAbilities/Biotic_Charge</clipFolderPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -104,7 +104,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>BioticAbilities/Biotic_Singulatiry</clipFolderPath>
+            <clipFolderPath>BioticAbilities/Biotic_Barrier</clipFolderPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -142,6 +142,22 @@
         <grains>
           <li Class="AudioGrain_Folder">
             <clipFolderPath>BioticAbilities/Biotic_AnnihilationField</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>30~30</volumeRange>
+        <pitchRange>0.9~1.1</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Biotic_Focus</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>BioticAbilities/Biotic_Focus</clipFolderPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
