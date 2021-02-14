@@ -9,8 +9,11 @@
     {
         public float bioticEnergy;
 
-        public void UseEnergy(float energyUsed) => 
+        public void UseEnergy(float energyUsed)
+        {
             this.bioticEnergy -= energyUsed;
+            this.bioticEnergy =  Mathf.Min(this.bioticEnergy, this.pawn.GetStatValue(RE_DefOf.RE_BioticEnergyMax));
+        }
 
         public bool SufficientEnergyPresent(float energyWanted) => 
             this.bioticEnergy > energyWanted;
