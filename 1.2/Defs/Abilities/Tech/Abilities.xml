@@ -68,6 +68,7 @@
       <armorPenetrationBase>1</armorPenetrationBase>
       <damageAmountBase>1</damageAmountBase>
       <speed>70</speed>
+	  <soundExplode>RE_Tech_CryoBlast_Explode</soundExplode>
     </projectile>
   </ThingDef>
 
@@ -248,7 +249,7 @@
       <damageDef>EMP</damageDef>
       <speed>45</speed>
       <explosionRadius>4</explosionRadius >
-      <ai_IsIncendiary>true</ai_IsIncendiary>
+	  <soundExplode>RE_Tech_Overcharge_Explode</soundExplode>
     </projectile>
   </ThingDef>
 
