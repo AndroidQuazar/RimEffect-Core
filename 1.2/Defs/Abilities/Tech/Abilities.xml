@@ -17,6 +17,7 @@
       <hediffDef>RE_OmniToolHediff</hediffDef>
       <minimumLevel>1</minimumLevel>
     </requiredHediff>
+	<castSound>RE_Tech_CombatDrone_Cast</castSound>
     <modExtensions>
       <li Class="RimEffect.AbilityExtension_Building">
         <building>RE_Tech_CombatDroneTurret</building>
@@ -38,6 +39,7 @@
     </cooldownTimeStatFactors>
     <power>30</power>
     <iconPath>UI/Abilities/Tech_CryoBlast</iconPath>
+	<castSound>RE_Tech_CryoBlast_Fire</castSound>
     <requiredHediff>
       <hediffDef>RE_OmniToolHediff</hediffDef>
       <minimumLevel>1</minimumLevel>
@@ -82,6 +84,7 @@
       <RE_AbilityCooldownFactor>1</RE_AbilityCooldownFactor>
     </cooldownTimeStatFactors>
     <iconPath>UI/Abilities/Tech_DefenseMatrix</iconPath>
+	<castSound>RE_Tech_DefenseMatrix</castSound>
     <requiredHediff>
       <hediffDef>RE_OmniToolHediff</hediffDef>
       <minimumLevel>1</minimumLevel>
@@ -106,6 +109,7 @@
       <RE_AbilityCooldownFactor>1</RE_AbilityCooldownFactor>
     </cooldownTimeStatFactors>
     <iconPath>UI/Abilities/Tech_HexShield</iconPath>
+	<castSound>RE_Tech_HexShield</castSound>
     <requiredHediff>
       <hediffDef>RE_OmniToolHediff</hediffDef>
       <minimumLevel>1</minimumLevel>
@@ -175,6 +179,7 @@
     </cooldownTimeStatFactors>
     <power>30</power>
     <iconPath>UI/Abilities/Tech_Incinerate</iconPath>
+	<castSound>RE_Tech_Incinerate</castSound>
     <requiredHediff>
       <hediffDef>RE_OmniToolHediff</hediffDef>
       <minimumLevel>1</minimumLevel>
@@ -217,6 +222,7 @@
       <RE_AbilityCooldownFactor>1</RE_AbilityCooldownFactor>
     </cooldownTimeStatFactors>
     <iconPath>UI/Abilities/Tech_Overload</iconPath>
+	<castSound>RE_Tech_Overcharge_Shot</castSound>
     <requiredHediff>
       <hediffDef>RE_OmniToolHediff</hediffDef>
       <minimumLevel>1</minimumLevel>
@@ -259,6 +265,7 @@
     </cooldownTimeStatFactors>
     <power>15</power>
     <iconPath>UI/Abilities/Tech_Sabotage</iconPath>
+	<castSound>RE_Tech_Sabotage</castSound>
     <requiredHediff>
       <hediffDef>RE_OmniToolHediff</hediffDef>
       <minimumLevel>1</minimumLevel>
@@ -276,6 +283,7 @@
       <RE_AbilityCooldownFactor>1</RE_AbilityCooldownFactor>
     </cooldownTimeStatFactors>
     <iconPath>UI/Abilities/Tech_TacticalCloak</iconPath>
+	<castSound>RE_Tech_TacticalCloak</castSound>
     <requiredHediff>
       <hediffDef>RE_OmniToolHediff</hediffDef>
       <minimumLevel>1</minimumLevel>
