@@ -43,19 +43,20 @@ namespace RimEffect
         public static ThingDef RE_Mechanoids_YMIRBase;
 
 
-        public static JobDef      RE_UseAbility;
-        public static JobDef      RE_UseCommsConsole;
-        public static DutyDef     RE_AssaultEnemies;
-        public static PawnKindDef RE_Colonist;
-        public static HediffDef   RE_BioticAmpHediff;
-        public static StatDef     RE_BioticAbilityCostMultiplier;
-        public static StatDef     RE_BioticEnergyMax;
-        public static StatDef     RE_BioticEnergyRecoveryRate;
-        public static ThingDef    RE_Biotic_SingularityThing;
-        public static ThingDef    RE_Biotic_AnnihilationField;
-        public static ThingDef    RE_Biotic_FlareThing;
-        public static HediffDef   RE_OmniToolHediff;
-        public static SoundDef    RE_Biotic_AnnihilationSphere_Sustainer;
+        public static JobDef         RE_UseAbility;
+        public static JobDef         RE_UseCommsConsole;
+        public static DutyDef        RE_AssaultEnemies;
+        public static PawnKindDef    RE_Colonist;
+        public static HediffDef      RE_BioticAmpHediff;
+        public static StatDef        RE_BioticAbilityCostMultiplier;
+        public static StatDef        RE_BioticEnergyMax;
+        public static StatDef        RE_BioticEnergyRecoveryRate;
+        public static ThingDef       RE_Biotic_SingularityThing;
+        public static ThingDef       RE_Biotic_AnnihilationField;
+        public static ThingDef       RE_Biotic_FlareThing;
+        public static HediffDef      RE_OmniToolHediff;
+        public static SoundDef       RE_Biotic_AnnihilationSphere_Sustainer;
+        public static MentalStateDef RE_SabotageBerserk;
 
         public static ThingDef RE_ProtheanBeacon;
         public static ThingDef RE_CrashedKodiakShuttle;
