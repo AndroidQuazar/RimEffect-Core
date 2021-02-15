@@ -273,6 +273,7 @@
       <texPath>Things/AbilityEffects/BioticFlare/BioticFlare</texPath>
       <color>(255,255,255,255)</color>
       <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>Transparent</shaderType>
     </graphicData>
     <tickerType>Normal</tickerType>
     <drawerType>RealtimeOnly</drawerType>
