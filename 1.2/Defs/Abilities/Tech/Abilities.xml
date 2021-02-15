@@ -199,7 +199,7 @@
     <projectile>
       <damageDef>Flame</damageDef>
       <speed>45</speed>
-      <explosionRadius>4</explosionRadius >
+      <explosionRadius>2</explosionRadius>
       <ai_IsIncendiary>true</ai_IsIncendiary>
     </projectile>
   </ThingDef>
