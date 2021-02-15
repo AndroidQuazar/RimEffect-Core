@@ -132,6 +132,9 @@
       <texPath>Things/AbilityEffects/HexShield/HexShield</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>Transparent</shaderType>
+	  <damageData>
+		<enabled>false</enabled>
+	  </damageData>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <tickerType>Normal</tickerType>
