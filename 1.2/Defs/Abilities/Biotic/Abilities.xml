@@ -101,6 +101,9 @@
       <li Class="HediffCompProperties_Disappears">
         <disappearsAfterTicks>600~600</disappearsAfterTicks>
       </li>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>RE_Dominate</stateEffecter>
+      </li>
     </comps>
     <stages>
       <li>
