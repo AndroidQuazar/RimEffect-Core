@@ -157,8 +157,13 @@
 
             this.CheckCastEffects(target, out bool cast, out bool targetMote, out bool sound);
 
-            if (this.def.castMote != null && cast)
-                MoteMaker.MakeStaticMote(this.pawn.DrawPos, this.pawn.Map, this.def.castMote);
+            if (cast)
+            {
+                if (this.def.castMote != null)
+                    MoteMaker.MakeStaticMote(this.pawn.DrawPos, this.pawn.Map, this.def.castMote);
+                if (this.def.casterHediff != null)
+                    this.pawn.health.AddHediff(this.def.casterHediff);
+            }
 
             if (!this.def.targetMotes.NullOrEmpty() && targetMote)
                 foreach (ThingDef mote in this.def.targetMotes)
