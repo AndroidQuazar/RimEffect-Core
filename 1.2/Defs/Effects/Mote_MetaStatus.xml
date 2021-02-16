@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_Tech_Sabotage</defName>
+    <graphicData>
+      <texPath>Things/AbilityEffects/Motes/Mote_Sabotage</texPath>
+    </graphicData>
+    <thingClass>MoteThrownAttached</thingClass>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <mote>
+      <fadeInTime>0.50</fadeInTime>
+      <solidTime>1.5</solidTime>
+      <fadeOutTime>2</fadeOutTime>
+      <attachedDrawOffset>(0.2, 0, 0.2)</attachedDrawOffset>
+    </mote>
+  </ThingDef>
+  
+</Defs>
