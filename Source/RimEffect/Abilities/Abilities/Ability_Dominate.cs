@@ -10,7 +10,7 @@
 
         public override void Cast(LocalTargetInfo target)
         {
-            if(target.Pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, "RE.AbilityDominateBerserkReason".Translate(this.pawn.NameShortColored), forceWake: true))
+            if(target.Pawn.mindState.mentalStateHandler.TryStartMentalState(RE_DefOf.RE_DominationBerserk, "RE.AbilityDominateBerserkReason".Translate(this.pawn.NameShortColored), forceWake: true))
                 base.Cast(target);
         }
     }
