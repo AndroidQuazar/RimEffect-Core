@@ -16,4 +16,19 @@
     </mote>
   </ThingDef>
   
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_Dominate</defName>
+    <graphicData>
+      <texPath>Things/AbilityEffects/Motes/Mote_Dominate</texPath>
+    </graphicData>
+    <thingClass>MoteThrownAttached</thingClass>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <mote>
+      <fadeInTime>0.50</fadeInTime>
+      <solidTime>1.5</solidTime>
+      <fadeOutTime>2</fadeOutTime>
+      <attachedDrawOffset>(0.2, 0, 0.2)</attachedDrawOffset>
+    </mote>
+  </ThingDef>
+  
 </Defs>
