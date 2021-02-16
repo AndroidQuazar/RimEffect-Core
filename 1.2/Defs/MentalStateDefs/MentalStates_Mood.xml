@@ -23,7 +23,7 @@
     <recoveryMtbDays>0.166</recoveryMtbDays>
     <recoveryMessage>{0}'s berserk rage has come to an end.</recoveryMessage>
     <baseInspectLine>Mental state: Berserk</baseInspectLine>
-    <stateEffecter>Berserk</stateEffecter>
+    <stateEffecter>RE_SabotageBerserk</stateEffecter>
     <tale>MentalStateBerserk</tale>
     <recoverFromSleep>true</recoverFromSleep>
     <unspawnedCanDo>true</unspawnedCanDo>
