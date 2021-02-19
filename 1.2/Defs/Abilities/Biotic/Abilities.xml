@@ -96,7 +96,7 @@
     <defName>RE_Prone</defName>
     <label>knocked prone</label>
     <labelNoun>knocked prone</labelNoun>
-    <description>You were knocked prone</description>
+    <description>Knocked prone.</description>
     <comps>
       <li Class="HediffCompProperties_Disappears">
         <disappearsAfterTicks>600~600</disappearsAfterTicks>
@@ -130,12 +130,32 @@
       <hediffDef>RE_BioticAmpHediff</hediffDef>
       <minimumLevel>2</minimumLevel>
     </requiredHediff>
+	<casterHediff>RE_Biotic_Focus</casterHediff>
     <modExtensions>
       <li Class="RimEffect.AbilityExtension_Biotic">
         <energyUsed>-25</energyUsed>
       </li>
     </modExtensions>
   </RimEffect.AbilityDef>
+ 
+  <HediffDef ParentName="DiseaseBase">
+    <defName>RE_Biotic_Focus</defName>
+    <label>biotic focus</label>
+    <labelNoun>biotic focus</labelNoun>
+    <description>Biotic focus state.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>300~300</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>RE_Dominate</stateEffecter>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+    </stages>
+  </HediffDef>
 
   <RimEffect.AbilityDef>
     <defName>RE_Biotic_Charge</defName>
