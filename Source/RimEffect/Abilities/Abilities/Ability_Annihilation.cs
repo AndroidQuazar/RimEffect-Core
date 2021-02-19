@@ -42,7 +42,7 @@
 
         public float curRotation = 0f;
 
-        public static float rotSpeed = 2.5f;
+        public static float rotSpeed = 2.0f;
 
         private Sustainer sustainer;
 
