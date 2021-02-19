@@ -25,12 +25,11 @@
     </modExtensions>
   </RimEffect.AbilityDef>
 
-
   <RimEffect.AbilityDef>
     <defName>RE_Tech_CryoBlast</defName>
     <label>cryo blast</label>
     <description>Fire a blast of super-freezed sub-atomic particles towards the enemy.</description>
-    <abilityClass>RimEffect.Ability_ShootProjectile</abilityClass>
+    <abilityClass>RimEffect.Ability_ShootProjectile_Snow</abilityClass>
     <targetMode>Pawn</targetMode>
     <range>24</range>
     <cooldownTime>900</cooldownTime>
@@ -39,7 +38,7 @@
     </cooldownTimeStatFactors>
     <power>30</power>
     <iconPath>UI/Abilities/Tech_CryoBlast</iconPath>
-	<castSound>RE_Tech_CryoBlast_Fire</castSound>
+	  <castSound>RE_Tech_CryoBlast_Fire</castSound>
     <requiredHediff>
       <hediffDef>RE_OmniToolHediff</hediffDef>
       <minimumLevel>1</minimumLevel>
