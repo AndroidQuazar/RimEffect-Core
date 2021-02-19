@@ -175,12 +175,32 @@
       <hediffDef>RE_BioticAmpHediff</hediffDef>
       <minimumLevel>2</minimumLevel>
     </requiredHediff>
+	<casterHediff>RE_Biotic_Charge</casterHediff>
     <modExtensions>
       <li Class="RimEffect.AbilityExtension_Biotic">
         <energyUsed>25</energyUsed>
       </li>
     </modExtensions>
   </RimEffect.AbilityDef>
+  
+  <HediffDef ParentName="DiseaseBase">
+    <defName>RE_Biotic_Charge</defName>
+    <label>biotic charge</label>
+    <labelNoun>biotic charge</labelNoun>
+    <description>Biotic charge state.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>300~300</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>RE_Dominate</stateEffecter>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+    </stages>
+  </HediffDef>
 
   <RimEffect.AbilityDef>
     <defName>RE_Biotic_Barrier</defName>
