@@ -175,6 +175,9 @@
       <hediffDef>RE_BioticAmpHediff</hediffDef>
       <minimumLevel>2</minimumLevel>
     </requiredHediff>
+    <targetMotes>
+      <li>RE_Mote_BioticDistortion</li>
+    </targetMotes>
 	<casterHediff>RE_Biotic_Charge</casterHediff>
     <modExtensions>
       <li Class="RimEffect.AbilityExtension_Biotic">
