@@ -82,6 +82,9 @@
       <hediffDef>RE_BioticAmpHediff</hediffDef>
       <minimumLevel>1</minimumLevel>
     </requiredHediff>
+    <targetMotes>
+      <li>RE_Mote_BioticDistortion</li>
+    </targetMotes>
     <modExtensions>
       <li Class="RimEffect.AbilityExtension_Hediff">
         <hediff>RE_Prone</hediff>
