@@ -155,26 +155,33 @@
                 }
             }
 
-            this.CheckCastEffects(target, out bool cast, out bool targetMote, out bool sound);
+            this.CheckCastEffects(target, out bool cast, out bool targetMote);
 
-            if (cast)
-            {
-                if (this.def.castMote != null)
-                    MoteMaker.MakeStaticMote(this.pawn.DrawPos, this.pawn.Map, this.def.castMote);
-                if (this.def.casterHediff != null)
-                    this.pawn.health.AddHediff(this.def.casterHediff);
-            }
+            if (cast) 
+                this.CastEffects(target);
 
-            if (!this.def.targetMotes.NullOrEmpty() && targetMote)
-                foreach (ThingDef mote in this.def.targetMotes)
-                    MoteMaker.MakeStaticMote(target.Cell, this.pawn.Map, mote);
-
-            if (sound)
-                this.def.castSound?.PlayOneShot(new TargetInfo(this.pawn.Position, this.pawn.Map));
+            if(targetMote) 
+                this.TargetEffects(target);
         }
 
-        public virtual void CheckCastEffects(LocalTargetInfo targetInfo, out bool cast, out bool target, out bool sound) => 
-            cast = target = sound = true;
+        public virtual void CastEffects(LocalTargetInfo targetInfo)
+        {
+            if (this.def.castMote != null)
+                MoteMaker.MakeStaticMote(this.pawn.DrawPos, this.pawn.Map, this.def.castMote);
+            if (this.def.casterHediff != null)
+                this.pawn.health.AddHediff(this.def.casterHediff);
+            this.def.castSound?.PlayOneShot(new TargetInfo(this.pawn.Position, this.pawn.Map));
+        }
+
+        public virtual void TargetEffects(LocalTargetInfo targetInfo)
+        {
+            if (!this.def.targetMotes.NullOrEmpty())
+                foreach (ThingDef mote in this.def.targetMotes)
+                    MoteMaker.MakeStaticMote(targetInfo.Cell, this.pawn.Map, mote);
+        }
+
+        public virtual void CheckCastEffects(LocalTargetInfo targetInfo, out bool cast, out bool target) => 
+            cast = target = true;
 
         public void ExposeData()
         {
