@@ -1,9 +1,6 @@
 ﻿namespace RimEffect
 {
-    using System.Collections.Generic;
-    using RimWorld;
     using Verse;
-    using Verse.Sound;
 
     public class Ability_ShootProjectile : Ability
     {

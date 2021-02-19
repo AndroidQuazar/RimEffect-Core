@@ -1,6 +1,5 @@
 ﻿namespace RimEffect
 {
-    using RimWorld;
     using Verse;
 
     public class Ability_Dominate : Ability
