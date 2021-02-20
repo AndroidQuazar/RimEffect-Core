@@ -5,4 +5,22 @@
     <driverClass>RimEffect.JobDriver_CastAbilityOnce</driverClass>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
+
+  <ThingDef ParentName="PawnFlyerBase">
+    <defName>RE_AbilityFlyer</defName>
+    <thingClass>RimEffect.AbilityPawnFlyer</thingClass>
+    <pawnFlyer>
+      <flightDurationMin>0.1</flightDurationMin>
+      <flightSpeed>30</flightSpeed>
+    </pawnFlyer>
+  </ThingDef>
+
+  <ThingDef ParentName="PawnFlyerBase">
+    <defName>RE_AbilityFlyer_Charge</defName>
+    <thingClass>RimEffect.AbilityPawnFlyer</thingClass>
+    <pawnFlyer>
+      <flightDurationMin>0.1</flightDurationMin>
+      <flightSpeed>60</flightSpeed>
+    </pawnFlyer>
+  </ThingDef>
 </Defs>

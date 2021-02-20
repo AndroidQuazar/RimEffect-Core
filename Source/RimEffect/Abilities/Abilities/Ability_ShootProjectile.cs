@@ -1,9 +1,6 @@
 ﻿namespace RimEffect
 {
-    using System.Collections.Generic;
-    using RimWorld;
     using Verse;
-    using Verse.Sound;
 
     public class Ability_ShootProjectile : Ability
     {
@@ -15,15 +12,14 @@
 
             if (projectile is AbilityProjectile abilityProjectile)
             {
-                abilityProjectile.power      = this.GetPowerForPawn();
-                abilityProjectile.abilityDef = this.def;
+                abilityProjectile.ability = this;
             }
-            projectile.Launch(this.pawn, this.pawn.DrawPos, target, target, ProjectileHitFlags.IntendedTarget);
+            projectile?.Launch(this.pawn, this.pawn.DrawPos, target, target, ProjectileHitFlags.IntendedTarget);
         }
 
-        public override void CheckCastEffects(LocalTargetInfo targetInfo, out bool cast, out bool target, out bool sound)
+        public override void CheckCastEffects(LocalTargetInfo targetInfo, out bool cast, out bool target, out bool hediffApply)
         {
-            base.CheckCastEffects(targetInfo, out cast, out _, out sound);
+            base.CheckCastEffects(targetInfo, out cast, out _, out hediffApply);
             target = false;
         }
     }
@@ -31,5 +27,14 @@
     public class AbilityExtension_Projectile : DefModExtension
     {
         public ThingDef projectile;
+    }
+
+    public class Ability_ShootProjectile_Snow : Ability_ShootProjectile
+    {
+        public override void TargetEffects(LocalTargetInfo targetInfo)
+        {
+            base.TargetEffects(targetInfo);
+            SnowUtility.AddSnowRadial(targetInfo.Cell, this.pawn.Map, 3f, 1f);
+        }
     }
 }

@@ -8,8 +8,7 @@
 
     public class AbilityProjectile : Projectile
     {
-        public AbilityDef abilityDef;
-        public float      power;
+        public Ability ability;
 
         protected override void Impact(Thing hitThing)
         {
@@ -21,25 +20,19 @@
             this.NotifyImpact(hitThing, map, position);
 
 
-            if (!this.abilityDef.targetMotes.NullOrEmpty())
-                foreach (ThingDef mote in this.abilityDef.targetMotes)
-                    MoteMaker.MakeStaticMote(this.ExactPosition, map, mote);
+            this.ability.TargetEffects(new LocalTargetInfo(this.Position));
+
+            float power = this.ability.GetPowerForPawn();
 
             if (hitThing != null)
             {
-                DamageInfo dinfo = new DamageInfo(this.def.projectile.damageDef, this.power, this.ArmorPenetration, this.ExactRotation.eulerAngles.y, this.launcher, null, this.equipmentDef, DamageInfo.SourceCategory.ThingOrUnknown, this.intendedTarget.Thing);
+                DamageInfo dinfo = new DamageInfo(this.def.projectile.damageDef, power, this.ArmorPenetration, this.ExactRotation.eulerAngles.y, this.launcher, null, this.equipmentDef, DamageInfo.SourceCategory.ThingOrUnknown, this.intendedTarget.Thing);
                 hitThing.TakeDamage(dinfo).AssociateWithLog(battleLogEntryRangedImpact);
 
                 if (hitThing is Pawn pawn)
                 {
-                    AbilityExtension_Hediff extensionHediff = this.abilityDef.GetModExtension<AbilityExtension_Hediff>();
-                    if (extensionHediff != null)
-                    {
-                        Hediff hediff = HediffMaker.MakeHediff(extensionHediff.hediff, pawn);
-                        hediff.Severity = extensionHediff.severity;
-                        pawn.health.AddHediff(hediff);
-                    }
-
+                    this.ability.ApplyHediffs(pawn);
+                    
                     if (pawn.stances != null && pawn.BodySize <= this.def.projectile.StoppingPower + 0.001f)
                     {
                         pawn.stances.StaggerFor(95);
@@ -63,7 +56,7 @@
                 SoundDefOf.BulletImpact_Ground.PlayOneShot(new TargetInfo(this.Position, map));
                 if (this.Position.GetTerrain(map).takeSplashes)
                 {
-                    MoteMaker.MakeWaterSplash(this.ExactPosition, map, Mathf.Sqrt(this.power) * 1f, 4f);
+                    MoteMaker.MakeWaterSplash(this.ExactPosition, map, Mathf.Sqrt(power) * 1f, 4f);
                 }
                 else
                 {

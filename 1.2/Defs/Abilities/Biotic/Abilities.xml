@@ -31,7 +31,7 @@
     <range>24</range>
     <iconPath>UI/Abilities/Biotic_Throw</iconPath>
     <power>6</power>
-    <castSound>RE_Shot_Avenger</castSound>
+    <castSound>RE_Biotic_Throw</castSound>
     <castMote>Mote_BlastDry</castMote>
     <targetMotes>
       <li>RE_Mote_BioticDistortion</li>
@@ -57,6 +57,7 @@
     <graphicData>
       <texPath>Things/AbilityEffects/BioticThrow_Shot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>Transparent</shaderType>
     </graphicData>
     <projectile>
       <damageDef>Blunt</damageDef>
@@ -75,11 +76,15 @@
     <targetMode>Pawn</targetMode>
     <castTime>60</castTime>
     <range>24</range>
+	<castSound>RE_Biotic_Pull</castSound>
     <iconPath>UI/Abilities/Biotic_Pull</iconPath>
     <requiredHediff>
       <hediffDef>RE_BioticAmpHediff</hediffDef>
       <minimumLevel>1</minimumLevel>
     </requiredHediff>
+    <targetMotes>
+      <li>RE_Mote_BioticDistortion</li>
+    </targetMotes>
     <modExtensions>
       <li Class="RimEffect.AbilityExtension_Hediff">
         <hediff>RE_Prone</hediff>
@@ -94,10 +99,13 @@
     <defName>RE_Prone</defName>
     <label>knocked prone</label>
     <labelNoun>knocked prone</labelNoun>
-    <description>You were knocked prone</description>
+    <description>Knocked prone.</description>
     <comps>
       <li Class="HediffCompProperties_Disappears">
         <disappearsAfterTicks>600~600</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>RE_Dominate</stateEffecter>
       </li>
     </comps>
     <stages>
@@ -120,16 +128,37 @@
     <targetMode>Self</targetMode>
     <castTime>600</castTime>
     <iconPath>UI/Abilities/Biotic_Focus</iconPath>
+	<castSound>RE_Biotic_Focus</castSound>
     <requiredHediff>
       <hediffDef>RE_BioticAmpHediff</hediffDef>
       <minimumLevel>2</minimumLevel>
     </requiredHediff>
+	<casterHediff>RE_Biotic_Focus</casterHediff>
     <modExtensions>
       <li Class="RimEffect.AbilityExtension_Biotic">
         <energyUsed>-25</energyUsed>
       </li>
     </modExtensions>
   </RimEffect.AbilityDef>
+ 
+  <HediffDef ParentName="DiseaseBase">
+    <defName>RE_Biotic_Focus</defName>
+    <label>biotic focus</label>
+    <labelNoun>biotic focus</labelNoun>
+    <description>Biotic focus state.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>300~300</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>RE_Dominate</stateEffecter>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+    </stages>
+  </HediffDef>
 
   <RimEffect.AbilityDef>
     <defName>RE_Biotic_Charge</defName>
@@ -140,17 +169,41 @@
     <castTime>60</castTime>
     <range>30</range>
     <power>14</power>
+	<castSound>RE_Biotic_Charge</castSound>
     <iconPath>UI/Abilities/Biotic_Charge</iconPath>
     <requiredHediff>
       <hediffDef>RE_BioticAmpHediff</hediffDef>
       <minimumLevel>2</minimumLevel>
     </requiredHediff>
+    <targetMotes>
+      <li>RE_Mote_BioticDistortion</li>
+    </targetMotes>
+	<casterHediff>RE_Biotic_Charge</casterHediff>
     <modExtensions>
       <li Class="RimEffect.AbilityExtension_Biotic">
         <energyUsed>25</energyUsed>
       </li>
     </modExtensions>
   </RimEffect.AbilityDef>
+  
+  <HediffDef ParentName="DiseaseBase">
+    <defName>RE_Biotic_Charge</defName>
+    <label>biotic charge</label>
+    <labelNoun>biotic charge</labelNoun>
+    <description>Biotic charge state.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>300~300</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>RE_Dominate</stateEffecter>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+    </stages>
+  </HediffDef>
 
   <RimEffect.AbilityDef>
     <defName>RE_Biotic_Barrier</defName>
@@ -161,6 +214,7 @@
     <castTime>60</castTime>
     <power>50</power>
     <iconPath>UI/Abilities/Biotic_Barrier</iconPath>
+	<castSound>RE_Biotic_Barrier</castSound>
     <requiredHediff>
       <hediffDef>RE_BioticAmpHediff</hediffDef>
       <minimumLevel>2</minimumLevel>
@@ -184,6 +238,7 @@
     <range>30</range>
     <castTime>60</castTime>
     <iconPath>UI/Abilities/Biotic_Dominate</iconPath>
+	<castSound>RE_Biotic_Dominate</castSound>
     <requiredHediff>
       <hediffDef>RE_BioticAmpHediff</hediffDef>
       <minimumLevel>3</minimumLevel>
@@ -206,6 +261,7 @@
     <radius>3</radius>
     <durationTime>600</durationTime>
     <iconPath>UI/Abilities/Biotic_Singularity</iconPath>
+	<castSound>RE_Biotic_Singularity</castSound>
     <requiredHediff>
       <hediffDef>RE_BioticAmpHediff</hediffDef>
       <minimumLevel>3</minimumLevel>
@@ -225,6 +281,7 @@
       <texPath>Things/AbilityEffects/Singularity</texPath>
       <color>(255,255,255,255)</color>
       <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>Transparent</shaderType>
     </graphicData>
     <tickerType>Normal</tickerType>
     <drawerType>RealtimeOnly</drawerType>
@@ -245,6 +302,7 @@
     <radius>10</radius>
     <power>80</power>
     <iconPath>UI/Abilities/Biotic_Flare</iconPath>
+	<castSound>RE_Biotic_Flare</castSound>
     <requiredHediff>
       <hediffDef>RE_BioticAmpHediff</hediffDef>
       <minimumLevel>4</minimumLevel>
@@ -264,6 +322,7 @@
       <texPath>Things/AbilityEffects/BioticFlare/BioticFlare</texPath>
       <color>(255,255,255,255)</color>
       <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>Transparent</shaderType>
     </graphicData>
     <tickerType>Normal</tickerType>
     <drawerType>RealtimeOnly</drawerType>
@@ -285,6 +344,7 @@
     <power>5</power>
     <durationTime>900</durationTime>
     <iconPath>UI/Abilities/Biotic_AnnihilationField</iconPath>
+	<castSound>RE_Biotic_AnnihilationField</castSound>
     <requiredHediff>
       <hediffDef>RE_BioticAmpHediff</hediffDef>
       <minimumLevel>4</minimumLevel>
@@ -304,6 +364,7 @@
       <texPath>Things/AbilityEffects/AnnihilationField</texPath>
       <color>(255,255,255,255)</color>
       <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>Transparent</shaderType>
     </graphicData>
     <tickerType>Normal</tickerType>
     <drawerType>RealtimeOnly</drawerType>

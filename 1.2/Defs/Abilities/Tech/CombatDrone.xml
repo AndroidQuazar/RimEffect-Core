@@ -9,6 +9,7 @@
             <texPath>Things/AbilityEffects/Drone/TechDrone_Base</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(1.5,1.5)</drawSize>
+			<shaderType>Transparent</shaderType>
             <damageData>
                 <rect>(0.2,0.2,0.6,0.6)</rect>
             </damageData>
@@ -82,7 +83,7 @@
             <texPath>Things/AbilityEffects/Drone/TechDrone_TurretTop</texPath>
             <graphicClass>Graphic_Single</graphicClass>
 			<shaderType>Transparent</shaderType>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(1.6,1.6)</drawSize>
         </graphicData>
         <statBases>
             <AccuracyTouch>0.70</AccuracyTouch>

@@ -36,9 +36,11 @@
         public Texture2D icon = BaseContent.BadTex;
         public string iconPath;
 
-        public SoundDef castSound;
-        public ThingDef castMote;
-        public List<ThingDef> targetMotes;
+        public SoundDef                 castSound;
+        public ThingDef                 castMote;
+        public HediffDef                casterHediff;
+
+        public List<ThingDef>           targetMotes;
 
         public override IEnumerable<string> ConfigErrors()
         {

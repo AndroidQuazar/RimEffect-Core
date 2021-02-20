@@ -20,7 +20,7 @@
         public static void Postfix(PawnRenderer __instance, Pawn ___pawn)
         {
             Pawn pawn = ___pawn;
-            if (!pawn.Dead)
+            if (!pawn.Dead && pawn.RaceProps.Humanlike && pawn.Spawned)
             {
                 if ((pawn.equipment?.PrimaryEq is null && ((pawn.stances.curStance is Stance_Busy stanceBusy && !stanceBusy.neverAimWeapon && stanceBusy.focusTarg.IsValid) || carryOpenlyDelegate(__instance))) ||
                     (!(pawn.equipment?.PrimaryEq?.PrimaryVerb.IsMeleeAttack ?? true) && pawn.mindState.MeleeThreatStillThreat))

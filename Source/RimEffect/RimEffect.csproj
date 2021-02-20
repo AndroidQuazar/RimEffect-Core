@@ -61,6 +61,7 @@
     <Compile Include="Abilities\Abilities\Ability_SpawnBuilding.cs" />
     <Compile Include="Abilities\Ability.cs" />
     <Compile Include="Abilities\AbilityDef.cs" />
+    <Compile Include="Abilities\AbilityPawnFlyer.cs" />
     <Compile Include="Abilities\AbilityProjectile.cs" />
     <Compile Include="Abilities\Command_Ability.cs" />
     <Compile Include="Abilities\CompAbilities.cs" />
