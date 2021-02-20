@@ -31,14 +31,8 @@
 
                 if (hitThing is Pawn pawn)
                 {
-                    AbilityExtension_Hediff extensionHediff = this.ability.def.GetModExtension<AbilityExtension_Hediff>();
-                    if (extensionHediff != null)
-                    {
-                        Hediff hediff = HediffMaker.MakeHediff(extensionHediff.hediff, pawn);
-                        hediff.Severity = extensionHediff.severity;
-                        pawn.health.AddHediff(hediff);
-                    }
-
+                    this.ability.ApplyHediffs(pawn);
+                    
                     if (pawn.stances != null && pawn.BodySize <= this.def.projectile.StoppingPower + 0.001f)
                     {
                         pawn.stances.StaggerFor(95);

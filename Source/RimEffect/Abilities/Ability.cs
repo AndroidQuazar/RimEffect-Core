@@ -143,19 +143,10 @@
                 bioticAmp.UseEnergy(biotic.GetEnergyUsedByPawn(this.pawn));
             }
 
-            if (target.HasThing)
-            {
-                AbilityExtension_Hediff hediffExtension = this.def.GetModExtension<AbilityExtension_Hediff>();
-                if (hediffExtension?.applyAuto ?? false)
-                {
-                    Hediff localHediff = HediffMaker.MakeHediff(hediffExtension.hediff, this.pawn);
-                    if (Math.Abs(hediffExtension.severity - -1f) > float.Epsilon)
-                        localHediff.Severity = hediffExtension.severity;
-                    target.Pawn.health.AddHediff(localHediff);
-                }
-            }
+            this.CheckCastEffects(target, out bool cast, out bool targetMote, out bool hediffApply);
 
-            this.CheckCastEffects(target, out bool cast, out bool targetMote);
+            if(hediffApply)
+                ApplyHediffs(target);
 
             if (cast) 
                 this.CastEffects(target);
@@ -180,8 +171,23 @@
                     MoteMaker.MakeStaticMote(targetInfo.Cell, this.pawn.Map, mote);
         }
 
-        public virtual void CheckCastEffects(LocalTargetInfo targetInfo, out bool cast, out bool target) => 
-            cast = target = true;
+        public virtual void ApplyHediffs(LocalTargetInfo targetInfo)
+        {
+            if (targetInfo.Pawn != null)
+            {
+                AbilityExtension_Hediff hediffExtension = this.def.GetModExtension<AbilityExtension_Hediff>();
+                if (hediffExtension?.applyAuto ?? false)
+                {
+                    Hediff localHediff = HediffMaker.MakeHediff(hediffExtension.hediff, this.pawn);
+                    if (Math.Abs(hediffExtension.severity - -1f) > float.Epsilon)
+                        localHediff.Severity = hediffExtension.severity;
+                    targetInfo.Pawn.health.AddHediff(localHediff);
+                }
+            }
+        }
+
+        public virtual void CheckCastEffects(LocalTargetInfo targetInfo, out bool cast, out bool target, out bool hediffApply) => 
+            cast = target = hediffApply = true;
 
         public void ExposeData()
         {

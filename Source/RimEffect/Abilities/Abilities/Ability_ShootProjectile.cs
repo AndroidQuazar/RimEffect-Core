@@ -17,9 +17,9 @@
             projectile?.Launch(this.pawn, this.pawn.DrawPos, target, target, ProjectileHitFlags.IntendedTarget);
         }
 
-        public override void CheckCastEffects(LocalTargetInfo targetInfo, out bool cast, out bool target)
+        public override void CheckCastEffects(LocalTargetInfo targetInfo, out bool cast, out bool target, out bool hediffApply)
         {
-            base.CheckCastEffects(targetInfo, out cast, out _);
+            base.CheckCastEffects(targetInfo, out cast, out _, out hediffApply);
             target = false;
         }
     }

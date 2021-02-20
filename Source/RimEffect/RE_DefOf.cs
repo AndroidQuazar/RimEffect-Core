@@ -58,6 +58,8 @@ namespace RimEffect
         public static SoundDef       RE_Biotic_AnnihilationSphere_Sustainer;
         public static MentalStateDef RE_SabotageBerserk;
         public static MentalStateDef RE_DominationBerserk;
+        public static ThingDef       RE_AbilityFlyer;
+        public static ThingDef       RE_AbilityFlyer_Charge;
 
         public static ThingDef RE_ProtheanBeacon;
         public static ThingDef RE_CrashedKodiakShuttle;
