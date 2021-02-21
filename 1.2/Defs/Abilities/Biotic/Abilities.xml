@@ -108,16 +108,6 @@
         <stateEffecter>RE_Dominate</stateEffecter>
       </li>
     </comps>
-    <stages>
-      <li>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <setMax>0.1</setMax>
-          </li>
-        </capMods>
-      </li>
-    </stages>
   </HediffDef>
 
   <RimEffect.AbilityDef>

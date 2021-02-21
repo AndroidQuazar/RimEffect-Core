@@ -1,8 +1,10 @@
 ﻿namespace RimEffect
 {
+    using System;
     using RimWorld;
     using UnityEngine;
     using Verse;
+    using Verse.AI.Group;
 
     public class AbilityPawnFlyer : PawnFlyer
     {
@@ -17,17 +19,22 @@
             base.Tick();
         }
 
-        public override void DrawAt(Vector3 drawLoc, bool flip = false)
-        {
+        public override void DrawAt(Vector3 drawLoc, bool flip = false) => 
             this.FlyingPawn.DrawAt(this.position, flip);
-        }
 
         protected override void RespawnPawn()
         {
-            Position = this.target.ToIntVec3();
+            this.Position = this.target.ToIntVec3();
             Pawn pawn = this.FlyingPawn;
             base.RespawnPawn();
             this.ability.ApplyHediffs(pawn);
+
+            int? staggerTicks = this.ability.def.GetModExtension<AbilityExtension_Hediff>()?.hediff.CompProps<HediffCompProperties_Disappears>()?.disappearsAfterTicks.RandomInRange;
+            if (staggerTicks.HasValue)
+            {
+                pawn.stances.SetStance(new Stance_Cooldown(staggerTicks.Value + 1, this.ability.CasterPawn, null));
+                pawn.stances.StaggerFor(staggerTicks.Value);
+            }
         }
 
         public override void ExposeData()
