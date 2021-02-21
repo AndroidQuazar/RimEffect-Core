@@ -9,7 +9,7 @@
         public override void Cast(LocalTargetInfo target)
         {
             base.Cast(target);
-            GenExplosion.DoExplosion(target.Cell, this.pawn.Map, this.GetRadiusForPawn(), DamageDefOf.Blunt, this.pawn, Mathf.RoundToInt(this.GetPowerForPawn()), 1f, SoundDefOf.PlanetkillerImpact);
+            GenExplosion.DoExplosion(target.Cell, this.pawn.Map, this.GetRadiusForPawn(), DamageDefOf.Blunt, this.pawn, Mathf.RoundToInt(this.GetPowerForPawn()), 1f, null);
             Flare flare = (Flare) GenSpawn.Spawn(RE_DefOf.RE_Biotic_FlareThing, target.Cell, this.pawn.Map);
             flare.radius    = this.GetRadiusForPawn();
             flare.startTick = Find.TickManager.TicksGame;
