@@ -102,7 +102,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
-      <li>Brain</li>
+      <li>Torso</li>
     </appliedOnFixedBodyParts>
     <addsHediff>RE_AdrenalineModule</addsHediff>
   </RecipeDef>
@@ -258,7 +258,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
-      <li>Brain</li>
+      <li>Torso</li>
     </appliedOnFixedBodyParts>
     <addsHediff>RE_StrengthEnhancer</addsHediff>
   </RecipeDef>
