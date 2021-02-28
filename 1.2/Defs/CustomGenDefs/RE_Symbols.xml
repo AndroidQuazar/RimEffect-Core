@@ -802,6 +802,12 @@
   <rotation>West</rotation>
   <symbol>RE_RE_PrefabBedsideTable_Steel_West</symbol>
 </KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_ManufacturingBench_East</defName>
+  <thing>RE_ManufacturingBench</thing>
+  <rotation>East</rotation>
+  <symbol>RE_RE_ManufacturingBench_East</symbol>
+</KCSG.SymbolDef>
 
 
 </Defs>
