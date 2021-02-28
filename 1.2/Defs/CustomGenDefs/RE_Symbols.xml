@@ -413,7 +413,117 @@
   <stackCount>1~1</stackCount>
   <symbol>RE_Item_RE_Gun_AllianceAssaultRifle</symbol>
 </KCSG.SymbolDef>
-
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabEndTableWithLamp_Steel_East</defName>
+  <thing>RE_PrefabEndTableWithLamp</thing>
+  <stuff>Steel</stuff>
+  <rotation>East</rotation>
+  <symbol>RE_RE_PrefabEndTableWithLamp_Steel_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabBed_Steel_East</defName>
+  <thing>RE_PrefabBed</thing>
+  <stuff>Steel</stuff>
+  <rotation>East</rotation>
+  <symbol>RE_RE_PrefabBed_Steel_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_SpacerTechResearchBench_Steel_South</defName>
+  <thing>RE_SpacerTechResearchBench</thing>
+  <stuff>Steel</stuff>
+  <rotation>South</rotation>
+  <symbol>RE_RE_SpacerTechResearchBench_Steel_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabDresser_Steel_South</defName>
+  <thing>RE_PrefabDresser</thing>
+  <stuff>Steel</stuff>
+  <rotation>South</rotation>
+  <symbol>RE_RE_PrefabDresser_Steel_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabEndTableWithLamp_Steel_South</defName>
+  <thing>RE_PrefabEndTableWithLamp</thing>
+  <stuff>Steel</stuff>
+  <rotation>South</rotation>
+  <symbol>RE_RE_PrefabEndTableWithLamp_Steel_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_FusionCell_West</defName>
+  <thing>RE_FusionCell</thing>
+  <rotation>West</rotation>
+  <symbol>RE_RE_FusionCell_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_GalaxyMap_South</defName>
+  <thing>RE_GalaxyMap</thing>
+  <rotation>South</rotation>
+  <symbol>RE_RE_GalaxyMap_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_ElementZeroExtractor</defName>
+  <thing>RE_ElementZeroExtractor</thing>
+  <symbol>RE_RE_ElementZeroExtractor</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_ManufacturingBench_West</defName>
+  <thing>RE_ManufacturingBench</thing>
+  <rotation>West</rotation>
+  <symbol>RE_RE_ManufacturingBench_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_AllianceTerminal_South</defName>
+  <thing>RE_AllianceTerminal</thing>
+  <rotation>South</rotation>
+  <symbol>RE_RE_AllianceTerminal_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabDoubleBed_Steel_South</defName>
+  <thing>RE_PrefabDoubleBed</thing>
+  <stuff>Steel</stuff>
+  <rotation>South</rotation>
+  <symbol>RE_RE_PrefabDoubleBed_Steel_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabEndTable_Steel_South</defName>
+  <thing>RE_PrefabEndTable</thing>
+  <stuff>Steel</stuff>
+  <rotation>South</rotation>
+  <symbol>RE_RE_PrefabEndTable_Steel_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabEndTableWithLamp_Steel_North</defName>
+  <thing>RE_PrefabEndTableWithLamp</thing>
+  <stuff>Steel</stuff>
+  <rotation>North</rotation>
+  <symbol>RE_RE_PrefabEndTableWithLamp_Steel_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabDoubleBed_Steel_North</defName>
+  <thing>RE_PrefabDoubleBed</thing>
+  <stuff>Steel</stuff>
+  <rotation>North</rotation>
+  <symbol>RE_RE_PrefabDoubleBed_Steel_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabEndTable_Steel_North</defName>
+  <thing>RE_PrefabEndTable</thing>
+  <stuff>Steel</stuff>
+  <rotation>North</rotation>
+  <symbol>RE_RE_PrefabEndTable_Steel_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabDresser_Steel_North</defName>
+  <thing>RE_PrefabDresser</thing>
+  <stuff>Steel</stuff>
+  <rotation>North</rotation>
+  <symbol>RE_RE_PrefabDresser_Steel_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_SteamGeyser</defName>
+  <thing>SteamGeyser</thing>
+  <symbol>RE_SteamGeyser</symbol>
+</KCSG.SymbolDef>
 
 
 </Defs>
