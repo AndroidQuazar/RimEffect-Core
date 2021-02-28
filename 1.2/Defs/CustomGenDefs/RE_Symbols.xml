@@ -524,6 +524,71 @@
   <thing>SteamGeyser</thing>
   <symbol>RE_SteamGeyser</symbol>
 </KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_Table2x2c_Steel</defName>
+  <thing>Table2x2c</thing>
+  <stuff>Steel</stuff>
+  <symbol>RE_Table2x2c_Steel</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabBedsideTableLamp_Steel_North</defName>
+  <thing>RE_PrefabBedsideTableLamp</thing>
+  <stuff>Steel</stuff>
+  <rotation>North</rotation>
+  <symbol>RE_RE_PrefabBedsideTableLamp_Steel_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabBedsideTable_Steel_North</defName>
+  <thing>RE_PrefabBedsideTable</thing>
+  <stuff>Steel</stuff>
+  <rotation>North</rotation>
+  <symbol>RE_RE_PrefabBedsideTable_Steel_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabTelevision_East</defName>
+  <thing>RE_PrefabTelevision</thing>
+  <rotation>East</rotation>
+  <symbol>RE_RE_PrefabTelevision_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabShelf_West</defName>
+  <thing>RE_PrefabShelf</thing>
+  <rotation>West</rotation>
+  <symbol>RE_RE_PrefabShelf_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabShelf_East</defName>
+  <thing>RE_PrefabShelf</thing>
+  <rotation>East</rotation>
+  <symbol>RE_RE_PrefabShelf_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabEndTable_Steel_West</defName>
+  <thing>RE_PrefabEndTable</thing>
+  <stuff>Steel</stuff>
+  <rotation>West</rotation>
+  <symbol>RE_RE_PrefabEndTable_Steel_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabTable1x2c_Steel_West</defName>
+  <thing>RE_PrefabTable1x2c</thing>
+  <stuff>Steel</stuff>
+  <rotation>West</rotation>
+  <symbol>RE_RE_PrefabTable1x2c_Steel_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabCooler_East</defName>
+  <thing>RE_PrefabCooler</thing>
+  <rotation>East</rotation>
+  <symbol>RE_RE_PrefabCooler_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_TableButcher_Steel_North</defName>
+  <thing>TableButcher</thing>
+  <stuff>Steel</stuff>
+  <rotation>North</rotation>
+  <symbol>RE_TableButcher_Steel_North</symbol>
+</KCSG.SymbolDef>
 
 
 </Defs>
