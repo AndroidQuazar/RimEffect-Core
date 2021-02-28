@@ -85,7 +85,7 @@
         </li>
         <li Class="KCSG.ScenPart_AddStartingStructure">
           <def>VFEC_AddStartingStructure</def>
-          <structureLabel>An abandoned factory</structureLabel>
+          <structureLabel>An abandoned Alliance colony</structureLabel>
           <nearMapCenter>True</nearMapCenter>
           <chooseFrom>
             <li>AlliancePlayerBase1</li>
