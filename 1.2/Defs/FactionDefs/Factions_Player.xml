@@ -18,8 +18,8 @@
         </categories>
       </li>
     </backstoryFilters>
-    <factionIconPath>World/WorldObjects/Expanding/AllianceColony</factionIconPath>
-	<settlementTexturePath>World/WorldObjects/Expanding/AllianceColony</settlementTexturePath>
+    <factionIconPath>World/WorldObjects/AllianceColony</factionIconPath>
+	<settlementTexturePath>World/WorldObjects/AllianceColonyExpanding</settlementTexturePath>
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
     <factionNameMaker>NamerFactionOutlander</factionNameMaker>
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
