@@ -83,6 +83,18 @@
           <text>You have been chosen to found a new Alliance colony. Are you capable of founding a thriving colony or will you perish in this outlying world?</text>
           <closeSound>GameStartSting</closeSound>
         </li>
+        <li Class="KCSG.ScenPart_AddStartingStructure">
+          <def>VFEC_AddStartingStructure</def>
+          <structureLabel>An abandoned factory</structureLabel>
+          <nearMapCenter>True</nearMapCenter>
+          <chooseFrom>
+            <li>AlliancePlayerBase1</li>
+            <li>AlliancePlayerBase2</li>
+            <li>AlliancePlayerBase3</li>
+            <li>AlliancePlayerBase4</li>
+            <li>AlliancePlayerBase5</li>
+          </chooseFrom>
+        </li>
       </parts>
     </scenario>
   </ScenarioDef>
