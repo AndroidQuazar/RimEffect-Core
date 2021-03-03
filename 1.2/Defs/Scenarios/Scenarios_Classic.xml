@@ -12,15 +12,24 @@
         <factionDef>RE_AlliancePlayerColony</factionDef>
       </playerFaction>
       <parts>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Steel</thingDef>
+          <count>850</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>WoodLog</thingDef>
+          <count>150</count>
+        </li>
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
           <def>ConfigPage_ConfigureStartingPawns</def>
-          <pawnCount>3</pawnCount>
+          <pawnCount>5</pawnCount>
           <pawnChoiceCount>8</pawnChoiceCount>
         </li>
         <li Class="ScenPart_PlayerPawnsArriveMethod">
           <def>PlayerPawnsArriveMethod</def>
-          <method>DropPods</method>
-          <visible>false</visible>
+          <method>Standing</method>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
@@ -30,7 +39,7 @@
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>ComponentSpacer</thingDef>
-          <count>14</count>
+          <count>10</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
@@ -40,26 +49,22 @@
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>MealSurvivalPack</thingDef>
-          <count>30</count>
+          <count>50</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>MedicineUltratech</thingDef>
+          <thingDef>RE_MediGel</thingDef>
+          <count>10</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef>
           <count>20</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>Plasteel</thingDef>
-          <count>100</count>
-        </li>
-        <li Class="ScenPart_StartingThing_Defined">
-          <def>StartingThing_Defined</def>
-          <thingDef>Steel</thingDef>
-          <count>500</count>
-        </li>
-        <li Class="ScenPart_StartingThing_Defined">
-          <def>StartingThing_Defined</def>
-          <thingDef>RE_Gun_AllianceBattleRifle</thingDef>
+          <thingDef>RE_Gun_AllianceAssaultRifle</thingDef>
+		  <count>2</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
@@ -67,16 +72,15 @@
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>RE_Apparel_LightAllianceArmor</thingDef>
+          <thingDef>RE_Apparel_AllianceArmor</thingDef>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>RE_Apparel_LightAllianceHelmet</thingDef>
+          <thingDef>RE_Apparel_AllianceHelmet</thingDef>
         </li>
-        <li Class="ScenPart_ScatterThingsNearPlayerStart">
-          <def>ScatterThingsNearPlayerStart</def>
-          <thingDef>WoodLog</thingDef>
-          <count>300</count>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>RE_OmniTool</thingDef>
         </li>
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
