@@ -4,7 +4,7 @@
 	<StorytellerDef ParentName="BaseStoryteller">
 		<defName>RE-JaneRenegade</defName>
 		<label>Jane Renegade</label>
-		<description>Igor Invader holds no regard for boring stories about thriving colonies. The only story worth telling is the one of combat. He will send raids every two or three days, rewarding players for dealing with them swiftly, and punishing player for any losses. This storyteller doubles all damage types.</description>
+		<description>Jane Renegade is certain that ends always justify the means. She appreciates ruthlessness, strength and conquest. She will send more bad events the more allies you have.</description>
 		<portraitLarge>HeroArt/JaneRenegade</portraitLarge>
 		<portraitTiny>HeroArt/JaneRenegadeTiny</portraitTiny>
 		<listOrder>95</listOrder>

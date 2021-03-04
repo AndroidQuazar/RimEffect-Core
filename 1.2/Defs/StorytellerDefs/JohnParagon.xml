@@ -4,7 +4,7 @@
 	<StorytellerDef ParentName="BaseStoryteller">
 		<defName>RE-JohnParagon</defName>
 		<label>John Paragon</label>
-		<description>Igor Invader holds no regard for boring stories about thriving colonies. The only story worth telling is the one of combat. He will send raids every two or three days, rewarding players for dealing with them swiftly, and punishing player for any losses. This storyteller doubles all damage types.</description>
+		<description>John Paragon holds integrity, compassion and heroism in high regards. He tells the story of kinship and persevering numerous dangers together, as one united force. He will send more bad events the more enemies you have.</description>
 		<portraitLarge>HeroArt/JohnParagon</portraitLarge>
 		<portraitTiny>HeroArt/JohnParagonTiny</portraitTiny>
 		<listOrder>95</listOrder>
