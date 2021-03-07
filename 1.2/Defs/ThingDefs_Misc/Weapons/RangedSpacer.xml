@@ -21,7 +21,7 @@
       <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
-      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <researchPrerequisite>RE_MassEffectFieldManipulation</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -113,7 +113,7 @@
       <RangedWeapon_Cooldown>1.85</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
-      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <researchPrerequisite>RE_MassEffectFieldManipulation</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -209,7 +209,7 @@
       <WorkToMake>45000</WorkToMake>
     </statBases>
     <recipeMaker>
-      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <researchPrerequisite>RE_MassEffectFieldManipulation</researchPrerequisite>
       <skillRequirements>
         <Crafting>10</Crafting>
       </skillRequirements>
@@ -300,7 +300,7 @@
     </statBases>
 	<equippedAngleOffset>50</equippedAngleOffset>
     <recipeMaker>
-      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <researchPrerequisite>RE_MassEffectFieldManipulation</researchPrerequisite>
       <skillRequirements>
         <Crafting>10</Crafting>
       </skillRequirements>
@@ -394,7 +394,7 @@
       <WorkToMake>40000</WorkToMake>
     </statBases>
     <recipeMaker>
-      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <researchPrerequisite>RE_MassEffectFieldManipulation</researchPrerequisite>
       <skillRequirements>
         <Crafting>10</Crafting>
       </skillRequirements>
@@ -464,7 +464,7 @@
       <WorkToMake>38000</WorkToMake>
     </statBases>
     <recipeMaker>
-      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <researchPrerequisite>RE_MassEffectFieldManipulation</researchPrerequisite>
       <skillRequirements>
         <Crafting>9</Crafting>
       </skillRequirements>
@@ -551,7 +551,7 @@
 	  <MarketValue>900</MarketValue>
     </statBases>
     <recipeMaker>
-      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <researchPrerequisite>RE_MassEffectFieldManipulation</researchPrerequisite>
       <skillRequirements>
         <Crafting>9</Crafting>
       </skillRequirements>
@@ -643,7 +643,7 @@
     </statBases>
 	<equippedAngleOffset>50</equippedAngleOffset>
     <recipeMaker>
-      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <researchPrerequisite>RE_MassEffectFieldManipulation</researchPrerequisite>
       <skillRequirements>
         <Crafting>10</Crafting>
       </skillRequirements>
@@ -727,7 +727,7 @@
       <recipeUsers>
         <li>RE_ManufacturingBench</li>
       </recipeUsers>
-      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <researchPrerequisite>RE_MassEffectFieldManipulation</researchPrerequisite>
       <skillRequirements>
         <Crafting>10</Crafting>
       </skillRequirements>
@@ -825,7 +825,7 @@
       <WorkToMake>45000</WorkToMake>
     </statBases>
     <recipeMaker>
-      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <researchPrerequisite>RE_MassEffectFieldManipulation</researchPrerequisite>
       <skillRequirements>
         <Crafting>10</Crafting>
       </skillRequirements>
