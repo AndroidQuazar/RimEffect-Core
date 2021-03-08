@@ -808,6 +808,166 @@
   <rotation>East</rotation>
   <symbol>RE_RE_ManufacturingBench_East</symbol>
 </KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabEndTableWithLamp_WoodLog_North</defName>
+  <thing>RE_PrefabEndTableWithLamp</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+  <symbol>RE_RE_PrefabEndTableWithLamp_WoodLog_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabEndTableWithLamp_WoodLog_South</defName>
+  <thing>RE_PrefabEndTableWithLamp</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+  <symbol>RE_RE_PrefabEndTableWithLamp_WoodLog_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_Marble</defName>
+  <thing>Marble</thing>
+  <symbol>RE_Marble</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_ManufacturingBench_North</defName>
+  <thing>RE_ManufacturingBench</thing>
+  <rotation>North</rotation>
+  <symbol>RE_RE_ManufacturingBench_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_FusionReactor_East</defName>
+  <thing>RE_FusionReactor</thing>
+  <rotation>East</rotation>
+  <symbol>RE_RE_FusionReactor_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabBedsideTableLamp_Steel_East</defName>
+  <thing>RE_PrefabBedsideTableLamp</thing>
+  <stuff>Steel</stuff>
+  <rotation>East</rotation>
+  <symbol>RE_RE_PrefabBedsideTableLamp_Steel_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabBedsideTableLamp_Steel_West</defName>
+  <thing>RE_PrefabBedsideTableLamp</thing>
+  <stuff>Steel</stuff>
+  <rotation>West</rotation>
+  <symbol>RE_RE_PrefabBedsideTableLamp_Steel_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabStool_Silver_North</defName>
+  <thing>RE_PrefabStool</thing>
+  <stuff>Silver</stuff>
+  <rotation>North</rotation>
+  <symbol>RE_RE_PrefabStool_Silver_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabStool_Silver_West</defName>
+  <thing>RE_PrefabStool</thing>
+  <stuff>Silver</stuff>
+  <rotation>West</rotation>
+  <symbol>RE_RE_PrefabStool_Silver_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabAutodoor_Silver</defName>
+  <thing>RE_PrefabAutodoor</thing>
+  <stuff>Silver</stuff>
+  <symbol>RE_RE_PrefabAutodoor_Silver</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabMedicalBed_Steel_North</defName>
+  <thing>RE_PrefabMedicalBed</thing>
+  <stuff>Steel</stuff>
+  <rotation>North</rotation>
+  <symbol>RE_RE_PrefabMedicalBed_Steel_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabCooler_North</defName>
+  <thing>RE_PrefabCooler</thing>
+  <rotation>North</rotation>
+  <symbol>RE_RE_PrefabCooler_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_Item_RE_PrefabComponent</defName>
+  <thing>RE_PrefabComponent</thing>
+  <isItem>true</isItem>
+  <stackCount>1~50</stackCount>
+  <symbol>RE_Item_RE_PrefabComponent</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_GalaxyMap_East</defName>
+  <thing>RE_GalaxyMap</thing>
+  <rotation>East</rotation>
+  <symbol>RE_RE_GalaxyMap_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabTable2x4c_Steel_North</defName>
+  <thing>RE_PrefabTable2x4c</thing>
+  <stuff>Steel</stuff>
+  <rotation>North</rotation>
+  <symbol>RE_RE_PrefabTable2x4c_Steel_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabChair_Silver_West</defName>
+  <thing>RE_PrefabChair</thing>
+  <stuff>Silver</stuff>
+  <rotation>West</rotation>
+  <symbol>RE_RE_PrefabChair_Silver_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabStool_Silver_South</defName>
+  <thing>RE_PrefabStool</thing>
+  <stuff>Silver</stuff>
+  <rotation>South</rotation>
+  <symbol>RE_RE_PrefabStool_Silver_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_KodiakShuttle_West</defName>
+  <thing>RE_KodiakShuttle</thing>
+  <rotation>West</rotation>
+  <symbol>RE_RE_KodiakShuttle_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabWardrobe_Silver_West</defName>
+  <thing>RE_PrefabWardrobe</thing>
+  <stuff>Silver</stuff>
+  <rotation>West</rotation>
+  <symbol>RE_RE_PrefabWardrobe_Silver_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabDresser_Silver_West</defName>
+  <thing>RE_PrefabDresser</thing>
+  <stuff>Silver</stuff>
+  <rotation>West</rotation>
+  <symbol>RE_RE_PrefabDresser_Silver_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_Item_WoolAlpaca</defName>
+  <thing>WoolAlpaca</thing>
+  <isItem>true</isItem>
+  <stackCount>1~100</stackCount>
+  <symbol>RE_Item_WoolAlpaca</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabArmchair_Leather_Panthera_East</defName>
+  <thing>RE_PrefabArmchair</thing>
+  <stuff>Leather_Panthera</stuff>
+  <rotation>East</rotation>
+  <symbol>RE_RE_PrefabArmchair_Leather_Panthera_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabBedsideTable_Silver_West</defName>
+  <thing>RE_PrefabBedsideTable</thing>
+  <stuff>Silver</stuff>
+  <rotation>West</rotation>
+  <symbol>RE_RE_PrefabBedsideTable_Silver_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE_RE_PrefabBedsideTable_Silver_East</defName>
+  <thing>RE_PrefabBedsideTable</thing>
+  <stuff>Silver</stuff>
+  <rotation>East</rotation>
+  <symbol>RE_RE_PrefabBedsideTable_Silver_East</symbol>
+</KCSG.SymbolDef>
 
 
 </Defs>
