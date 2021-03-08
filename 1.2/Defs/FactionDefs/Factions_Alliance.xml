@@ -151,6 +151,21 @@
         </colorSpectrum>
         <startingGoodwill>10</startingGoodwill>
         <naturalColonyGoodwill>-50~50</naturalColonyGoodwill>
+      <modExtensions>
+        <li Class="KCSG.FactionSettlement">
+          <useStructureLayout>True</useStructureLayout>
+          <chooseFromlayouts>
+            <li>AllianceFactionColony1</li>
+            <li>AllianceFactionColony2</li>
+            <li>AllianceFactionColony3</li>
+            <li>AllianceFactionColony4</li>
+            <li>AllianceFactionColony5</li>
+            <li>AllianceFactionColony6</li>
+            <li>AllianceFactionColony7</li>
+            <li>AllianceFactionColony8</li>
+          </chooseFromlayouts>
+        </li>
+      </modExtensions>
     </FactionDef>
 
 </Defs>
