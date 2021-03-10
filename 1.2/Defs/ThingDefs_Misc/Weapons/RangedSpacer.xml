@@ -720,8 +720,8 @@
     </statBases>
     <equippedAngleOffset>45</equippedAngleOffset>
     <costList>
-      <Plasteel>160</Plasteel>
-      <ComponentSpacer>4</ComponentSpacer>
+      <Plasteel>40</Plasteel>
+      <Uranium>20</Uranium>
     </costList>
     <recipeMaker>
       <recipeUsers>
