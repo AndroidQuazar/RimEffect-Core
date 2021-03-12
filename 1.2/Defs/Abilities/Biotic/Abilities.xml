@@ -113,7 +113,7 @@
   <RimEffect.AbilityDef>
     <defName>RE_Biotic_Focus</defName>
     <label>biotic focus</label>
-    <description>Decreases biotic heat after a short combat meditation time.</description>
+    <description>Regenerates biotic energy after a short meditation period.</description>
     <abilityClass>RimEffect.Ability_Blank</abilityClass>
     <targetMode>Self</targetMode>
     <castTime>600</castTime>
@@ -258,7 +258,7 @@
     </requiredHediff>
     <modExtensions>
       <li Class="RimEffect.AbilityExtension_Biotic">
-        <energyUsed>25</energyUsed>
+        <energyUsed>50</energyUsed>
       </li>
     </modExtensions>
   </RimEffect.AbilityDef>
