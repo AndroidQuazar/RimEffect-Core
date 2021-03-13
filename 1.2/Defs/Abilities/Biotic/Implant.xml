@@ -7,7 +7,7 @@
     <description>hey</description>
     <thingClass>ThingWithComps</thingClass>
     <category>Item</category>
-    <techLevel>Archotech</techLevel>
+    <techLevel>Ultra</techLevel>
     <useHitPoints>true</useHitPoints>
     <pathCost>14</pathCost>
     <selectable>true</selectable>
@@ -16,7 +16,7 @@
     <alwaysHaulable>true</alwaysHaulable>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
     <thingCategories>
-      <li>BodyPartsArchotech</li>
+      <li>RE_Implants</li>
     </thingCategories>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
@@ -24,13 +24,32 @@
       <Mass>1</Mass>
       <MarketValue>2600</MarketValue>
       <DeteriorationRate>0</DeteriorationRate>
+	  <WorkToMake>36000</WorkToMake>
     </statBases>
+    <costList>
+      <ComponentSpacer>2</ComponentSpacer>
+	  <RE_ElementZero>20</RE_ElementZero>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>RE_BioticAmp</researchPrerequisite>
+      <recipeUsers>
+        <li>RE_ManufacturingBench</li>
+      </recipeUsers>
+    </recipeMaker>
     <graphicData>
       <texPath>Things/Item/Health/BioticAmp</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <tradeTags>
-      <li>PsylinkNeuroformer</li>
+      <li>RE_Amps</li>
     </tradeTags>
     <comps>
       <li Class="CompProperties_Usable">

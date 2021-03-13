@@ -6,8 +6,8 @@
     <children>
       <li>
         <subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
-        <scale>0.5~0.7</scale>
-        <chancePerTick>0.02</chancePerTick>
+        <scale>0.7~0.9</scale>
+        <chancePerTick>0.04</chancePerTick>
         <positionRadius>0.3</positionRadius>
         <moteDef>Mote_Tech_Sabotage</moteDef>
         <speed>0.18~0.18</speed>
@@ -21,8 +21,8 @@
     <children>
       <li>
         <subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
-        <scale>0.5~0.7</scale>
-        <chancePerTick>0.01</chancePerTick>
+        <scale>0.7~0.9</scale>
+        <chancePerTick>0.03</chancePerTick>
         <positionRadius>0.3</positionRadius>
         <moteDef>Mote_Dominate</moteDef>
         <speed>0.18~0.18</speed>
