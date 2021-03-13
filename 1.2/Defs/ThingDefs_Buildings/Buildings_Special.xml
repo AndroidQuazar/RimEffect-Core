@@ -82,7 +82,7 @@
       <ComponentSpacer>6</ComponentSpacer>
     </costList>
     <researchPrerequisites>
-      <li>RE_AllianceCooperation</li>
+      <li>RE_ElementZero</li>
     </researchPrerequisites>
     <building>
       <destroySound>BuildingDestroyed_Metal_Big</destroySound>
