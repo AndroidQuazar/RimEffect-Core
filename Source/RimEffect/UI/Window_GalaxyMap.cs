@@ -138,8 +138,6 @@ namespace RimEffect
 						{
 							tmpRemainingQuestParts.Clear();
 							tmpRemainingQuestParts.AddRange(selected.quest.PartsListForReading);
-							Log.Message("TEST 2: " + tmpRemainingQuestParts + " - " + selected + " - " + selected?.quest + " - " + 
-								selected?.quest?.PartsListForReading + " - " + selected.quest_Part_choice + " - " + selected.quest_Part_choice?.choices);
 
 							for (int l = 0; l < selected.quest_Part_choice.choices.Count; l++)
 							{
@@ -167,14 +165,7 @@ namespace RimEffect
 								selected.quest_Part_choice.Choose(selected.choice);
 							}, requiresAccepter);
 						}
-					}
-					else
-					{
-						if (!QuestUtility.CanAcceptQuest(selected.quest))
-						{
-							GUI.color = Color.grey;
-						}
-						if (Widgets.ButtonText(rect4, "AcceptQuest".Translate()))
+						else
 						{
 							AcceptQuestByInterface(null, selected.quest.RequiresAccepter);
 						}
@@ -823,9 +814,7 @@ namespace RimEffect
 							Log.Message(pLocal + " - " + selected + " - " + selected?.quest + " - " + selected?.quest?.name);
 							Messages.Message("MessageQuestAccepted".Translate(pLocal, selected.quest.name), pLocal, MessageTypeDefOf.TaskCompletion, historical: false);
 							Log.Message(" - AcceptAction - selected.quest.Accept(pLocal); - 5", true);
-							selected.quest.Accept(pLocal);
-							Log.Message(" - AcceptAction - questGiverManager.ActivateQuest(selected); - 6", true);
-							questGiverManager.ActivateQuest(selected);
+							questGiverManager.ActivateQuest(pLocal, selected);
 							Log.Message(" - AcceptAction - selected = null; - 7", true);
 							selected = null;
 						}
@@ -845,8 +834,7 @@ namespace RimEffect
 				{
 					preAcceptAction();
 				}
-				selected.quest.Accept(null);
-				questGiverManager.ActivateQuest(selected);
+				questGiverManager.ActivateQuest(null, selected);
 				selected = null;
 			}
 			else
